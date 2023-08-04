@@ -5,9 +5,21 @@
 
 Por [Eduardo Graells-Garrido](http://datagramas.cl).
 
-Este repositorio contiene datos, código y notebooks relacionados con mi [curso de Visualización de Información](http://datagramas.cl/courses/infovis) y mi trabajo diario. Lo he estructurado en un paquete llamado `aves`, sigla descrita en el título de este documento. 
+Este repositorio contiene datos, código y notebooks relacionados 
+con mi [curso de Visualización de Información](http://datagramas.cl/courses/infovis) y
+mi trabajo diario. Lo he estructurado en un paquete llamado `aves`, sigla descrita en el
+título de este documento. 
 
-Todavía no existe una documentación exhaustiva para `aves`, ya que su uso es primariamente interno, pero estos ejemplos muestran cómo se utilizan sus funciones. En lo que respecta a visualización, se mantiene el esquema típico que se utiliza en `matplotlib` y `seaborn`, las bibliotecas de visualización de bajo nivel más utilizadas en Python. De cierto modo, `aves` es un conjunto de herramientas de bajos niveles de abstracción, es decir, utiliza un paradigma imperativo, donde le damos instrucciones específicas al programa (**cómo** hacerlo); en contraste, una herramienta de alto nivel se enfoca en **qué** hacer, ocultando los detalles de implementación.
+Todavía no existe una documentación exhaustiva para `aves`, 
+ya que su uso es primariamente interno, pero estos ejemplos 
+muestran cómo se utilizan sus funciones. En lo que respecta
+a visualización, se mantiene el esquema típico que se utiliza en
+`matplotlib` y `seaborn`, las bibliotecas de visualización de bajo 
+nivel más utilizadas en Python. 
+
+De cierto modo, `aves` es un conjunto de
+herramientas de bajos niveles de abstracción, es decir, utiliza un paradigma imperativo,
+donde le damos instrucciones específicas al programa (**cómo** hacerlo); en contraste, una herramienta de alto nivel se enfoca en **qué** hacer, ocultando los detalles de implementación.
 
 Para comprender la funcionalidad del código puedes explorar la carpeta `notebooks`. Sin embargo, los notebooks se preocupan de trabajar conceptos que en ocasiones están más allá del alcance de `aves`, ya que los utilizo en los cursos que dicto. Esos conceptos incluyen trabajar con `DataFrames` de `pandas` o utilizar técnicas de visualización implementadas en bibliotecas como `geopandas`, `matplotlib` y `seaborn` (que `aves` utiliza de manera interna).
 

@@ -1,0 +1,993 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AVES: Análisis y Visualización, Educación y Soporte">
+      
+      
+        <meta name="author" content="Francisco Alfaro">
+      
+      
+        <link rel="canonical" href="https://github.com/fralfaro/aves/">
+      
+      <link rel="icon" href="images/ave.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bienvenidos-a-aves" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="." title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="images/logo.bmp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bienvenidos a aves!
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Home" class="md-nav__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="images/logo.bmp" alt="logo">
+
+    </a>
+    Home
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bienvenidos a aves!
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Bienvenidos a aves!
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    Ejemplos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-tablas" class="md-nav__link">
+    Visualización de Tablas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-datos-geograficos" class="md-nav__link">
+    Visualización de Datos Geográficos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-redes" class="md-nav__link">
+    Visualización de Redes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-redes-con-contexto-geografico" class="md-nav__link">
+    Visualización de Redes con Contexto Geográfico
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frecuencia-y-tendencia-de-palabras-usando-bubble-plots" class="md-nav__link">
+    Frecuencia y Tendencia de Palabras usando Bubble Plots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-y-requisitos" class="md-nav__link">
+    Configuración y Requisitos
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración y Requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-preparacion" class="md-nav__link">
+    Paso 1: Preparación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-creacion-del-entorno" class="md-nav__link">
+    Paso 2: Creación del Entorno
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-ejecucion-en-jupyter" class="md-nav__link">
+    Paso 3: Ejecución en Jupyter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizacion-de-dependencias" class="md-nav__link">
+    Actualización de Dependencias
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creditos" class="md-nav__link">
+    Créditos
+  </a>
+  
+    <nav class="md-nav" aria-label="Créditos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personas-y-contribuciones" class="md-nav__link">
+    Personas y Contribuciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datasets" class="md-nav__link">
+    Datasets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-asuntos" class="md-nav__link">
+    Otros Asuntos
+  </a>
+  
+    <nav class="md-nav" aria-label="Otros Asuntos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipogafias" class="md-nav__link">
+    Tipogafías
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    Ejemplos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-tablas" class="md-nav__link">
+    Visualización de Tablas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-datos-geograficos" class="md-nav__link">
+    Visualización de Datos Geográficos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-redes" class="md-nav__link">
+    Visualización de Redes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacion-de-redes-con-contexto-geografico" class="md-nav__link">
+    Visualización de Redes con Contexto Geográfico
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frecuencia-y-tendencia-de-palabras-usando-bubble-plots" class="md-nav__link">
+    Frecuencia y Tendencia de Palabras usando Bubble Plots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-y-requisitos" class="md-nav__link">
+    Configuración y Requisitos
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración y Requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-preparacion" class="md-nav__link">
+    Paso 1: Preparación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-creacion-del-entorno" class="md-nav__link">
+    Paso 2: Creación del Entorno
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-ejecucion-en-jupyter" class="md-nav__link">
+    Paso 3: Ejecución en Jupyter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizacion-de-dependencias" class="md-nav__link">
+    Actualización de Dependencias
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creditos" class="md-nav__link">
+    Créditos
+  </a>
+  
+    <nav class="md-nav" aria-label="Créditos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personas-y-contribuciones" class="md-nav__link">
+    Personas y Contribuciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datasets" class="md-nav__link">
+    Datasets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-asuntos" class="md-nav__link">
+    Otros Asuntos
+  </a>
+  
+    <nav class="md-nav" aria-label="Otros Asuntos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipogafias" class="md-nav__link">
+    Tipogafías
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="bienvenidos-a-aves">Bienvenidos a aves!</h1>
+<p>🐦 <code>aves</code>: Análisis y Visualización, Educación y Soporte</p>
+<blockquote>
+<p>Por <a href="http://datagramas.cl">Eduardo Graells-Garrido</a>.</p>
+</blockquote>
+<p>Este repositorio contiene datos, código y notebooks relacionados con mi <a href="http://datagramas.cl/courses/infovis">curso de Visualización de Información</a> y mi trabajo diario. Lo he estructurado en un paquete llamado <code>aves</code>, sigla descrita en el título de este documento. </p>
+<p>Todavía no existe una documentación exhaustiva para <code>aves</code>, ya que su uso es primariamente interno, pero estos ejemplos muestran cómo se utilizan sus funciones. En lo que respecta a visualización, se mantiene el esquema típico que se utiliza en <code>matplotlib</code> y <code>seaborn</code>, las bibliotecas de visualización de bajo nivel más utilizadas en Python. De cierto modo, <code>aves</code> es un conjunto de herramientas de bajos niveles de abstracción, es decir, utiliza un paradigma imperativo, donde le damos instrucciones específicas al programa (<strong>cómo</strong> hacerlo); en contraste, una herramienta de alto nivel se enfoca en <strong>qué</strong> hacer, ocultando los detalles de implementación.</p>
+<p>Para comprender la funcionalidad del código puedes explorar la carpeta <code>notebooks</code>. Sin embargo, los notebooks se preocupan de trabajar conceptos que en ocasiones están más allá del alcance de <code>aves</code>, ya que los utilizo en los cursos que dicto. Esos conceptos incluyen trabajar con <code>DataFrames</code> de <code>pandas</code> o utilizar técnicas de visualización implementadas en bibliotecas como <code>geopandas</code>, <code>matplotlib</code> y <code>seaborn</code> (que <code>aves</code> utiliza de manera interna).</p>
+<h2 id="ejemplos">Ejemplos</h2>
+<h3 id="visualizacion-de-tablas">Visualización de Tablas</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">barchart</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">barchart</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">modo_comuna</span><span class="p">,</span> <span class="n">stacked</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sort_categories</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sort_items</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Uso de Modo de Transporte en Viajes al Trabajo (Día Laboral)&quot;</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Fracción de los Viajes&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_barchart.png" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">scatterplot</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">scatterplot</span><span class="p">(</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">ax</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">modo_comuna_ingreso</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="s2">&quot;ingreso&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="s2">&quot;Bip!&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">annotate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="n">avoid_collisions</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="n">text_args</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="s2">&quot;x-small&quot;</span><span class="p">),</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">scatter_args</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;purple&quot;</span><span class="p">),</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Ingreso Promedio por Hogar&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Proporción de Uso de Transporte Público&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="s2">&quot;Relación entre Uso de Transporte Público e Ingreso por Comunas de RM (Fuente: EOD2012)&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="p">)</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="n">ax</span><span class="o">.</span><span class="n">ticklabel_format</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;plain&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_scatterplot.png" /></p>
+<h3 id="visualizacion-de-datos-geograficos">Visualización de Datos Geográficos</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">aves.visualization.figures</span> <span class="kn">import</span> <span class="n">GeoFacetGrid</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">choropleth_map</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">GeoFacetGrid</span><span class="p">(</span><span class="n">zones</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">distancia_zonas</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">),</span> <span class="n">height</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="s2">&quot;../data/processed/scl_toner_12.tif&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">choropleth_map</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="s2">&quot;distancia_al_trabajo&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">k</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">binning</span><span class="o">=</span><span class="s2">&quot;fisher_jenks&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;RdPu&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="n">cbar_args</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Distancia (m)&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="n">height</span><span class="o">=</span><span class="s2">&quot;20%&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        <span class="n">width</span><span class="o">=</span><span class="s2">&quot;1%&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        <span class="n">orientation</span><span class="o">=</span><span class="s2">&quot;vertical&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="n">location</span><span class="o">=</span><span class="s2">&quot;center right&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        <span class="n">label_size</span><span class="o">=</span><span class="s2">&quot;x-small&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>        <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="p">),</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="p">)</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_map_elements</span><span class="p">()</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="n">grid</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distancia al Trabajo&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_choropleth.png" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">aves.visualization.figures</span> <span class="kn">import</span> <span class="n">GeoFacetGrid</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">heat_map</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">GeoFacetGrid</span><span class="p">(</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">origenes_urbanos</span><span class="p">[</span><span class="n">origenes_urbanos</span><span class="p">[</span><span class="s2">&quot;Proposito&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Al trabajo&quot;</span><span class="p">],</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">context</span><span class="o">=</span><span class="n">zones</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;ModoDifusion&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">col_order</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Auto&quot;</span><span class="p">,</span> <span class="s2">&quot;Bip!&quot;</span><span class="p">,</span> <span class="s2">&quot;Caminata&quot;</span><span class="p">,</span> <span class="s2">&quot;Bicicleta&quot;</span><span class="p">],</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">height</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">)</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="s2">&quot;../data/processed/scl_toner_12.tif&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="n">heat_map</span><span class="p">,</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;PesoLaboral&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">n_levels</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    <span class="n">bandwidth</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="n">low_threshold</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;inferno&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="p">)</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_global_colorbar</span><span class="p">(</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    <span class="s2">&quot;inferno&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>    <span class="mi">10</span><span class="p">,</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Intensidad de Viajes (de menos a más)&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    <span class="n">orientation</span><span class="o">=</span><span class="s2">&quot;horizontal&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_geofacetgrid.png" /></p>
+<h3 id="visualizacion-de-redes">Visualización de Redes</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">aves</span> <span class="kn">import</span> <span class="n">Network</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">NodeLink</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">network</span> <span class="o">=</span> <span class="n">Network</span><span class="o">.</span><span class="n">from_edgelist</span><span class="p">(</span><span class="n">edgelist</span><span class="p">,</span> <span class="n">directed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">nodelink</span> <span class="o">=</span> <span class="n">NodeLink</span><span class="p">(</span><span class="n">network</span><span class="p">)</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">nodelink</span><span class="o">.</span><span class="n">layout_nodes</span><span class="p">()</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">nodelink</span><span class="o">.</span><span class="n">set_node_drawing</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;plain&quot;</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">network</span><span class="o">.</span><span class="n">node_degree</span><span class="p">(</span><span class="s2">&quot;total&quot;</span><span class="p">))</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">nodelink</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">nodes</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">node_size</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_nodelink.png" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">aves</span> <span class="kn">import</span> <span class="n">Network</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">NodeLink</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">network</span> <span class="o">=</span> <span class="n">Network</span><span class="o">.</span><span class="n">from_edgelist</span><span class="p">(</span><span class="n">edgelist</span><span class="p">,</span> <span class="n">directed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">nodelink</span> <span class="o">=</span> <span class="n">NodeLink</span><span class="p">(</span><span class="n">network</span><span class="p">)</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">heb</span> <span class="o">=</span> <span class="n">nodelink</span><span class="o">.</span><span class="n">bundle_edges</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;hierarchical&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">nodelink</span><span class="o">.</span><span class="n">set_node_drawing</span><span class="p">(</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="s2">&quot;labeled&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="n">radial</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>    <span class="n">offset</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="n">weights</span><span class="o">=</span><span class="n">network</span><span class="o">.</span><span class="n">node_degree</span><span class="p">(</span><span class="s2">&quot;total&quot;</span><span class="p">),</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="n">categories</span><span class="o">=</span><span class="n">heb</span><span class="o">.</span><span class="n">get_node_memberships</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="p">)</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="n">nodelink</span><span class="o">.</span><span class="n">set_edge_drawing</span><span class="p">(</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="s2">&quot;community-gradient&quot;</span><span class="p">,</span> <span class="n">node_communities</span><span class="o">=</span><span class="n">heb</span><span class="o">.</span><span class="n">get_node_memberships</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="p">)</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="n">nodelink</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    <span class="n">ax</span><span class="p">,</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="n">nodes</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>        <span class="n">node_size</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;plasma&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="s2">&quot;medium&quot;</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>    <span class="p">),</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>    <span class="n">edges</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;#abacab&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;plasma&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">),</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="p">)</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_heb.png" /></p>
+<h3 id="visualizacion-de-redes-con-contexto-geografico">Visualización de Redes con Contexto Geográfico</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">aves.visualization.figures</span> <span class="kn">import</span> <span class="n">GeoFacetGrid</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span> <span class="nn">aves</span> <span class="kn">import</span> <span class="n">Network</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">NodeLink</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">zone_od_network</span> <span class="o">=</span> <span class="n">Network</span><span class="o">.</span><span class="n">from_edgelist</span><span class="p">(</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">matriz_zonas</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s2">&quot;ZonaOrigen&quot;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s2">&quot;ZonaDestino&quot;</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;n_viajes&quot;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">)</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">zone_nodelink</span> <span class="o">=</span> <span class="n">NodeLink</span><span class="p">(</span><span class="n">zone_od_network</span><span class="p">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">zone_nodelink</span><span class="o">.</span><span class="n">layout_nodes</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;geographical&quot;</span><span class="p">,</span> <span class="n">geodataframe</span><span class="o">=</span><span class="n">merged_zones</span><span class="p">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">zone_nodelink</span><span class="o">.</span><span class="n">bundle_edges</span><span class="p">(</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="n">method</span><span class="o">=</span><span class="s2">&quot;force-directed&quot;</span><span class="p">,</span> <span class="n">K</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">S</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">I</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">compatibility_threshold</span><span class="o">=</span><span class="mf">0.65</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">6</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">)</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="n">zone_nodelink</span><span class="o">.</span><span class="n">set_node_drawing</span><span class="p">(</span><span class="s2">&quot;plain&quot;</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">zone_od_network</span><span class="o">.</span><span class="n">node_degree</span><span class="p">(</span><span class="s2">&quot;in&quot;</span><span class="p">))</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="n">zone_nodelink</span><span class="o">.</span><span class="n">set_edge_drawing</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;origin-destination&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="k">def</span> <span class="nf">plot_network</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">geo_data</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    <span class="n">zone_nodelink</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="n">grid</span> <span class="o">=</span> <span class="n">GeoFacetGrid</span><span class="p">(</span><span class="n">zones</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">zones</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">zones</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;#efefef&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">comunas_urbanas</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;#abacab&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="n">grid</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>    <span class="n">plot_network</span><span class="p">,</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>    <span class="n">nodes</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.95</span><span class="p">),</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>    <span class="n">edges</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.25</span><span class="p">),</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="p">)</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="n">grid</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Viajes al trabajo en Santiago (en días laborales, EOD 2012)&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_geo_fdb.png" /></p>
+<h3 id="frecuencia-y-tendencia-de-palabras-usando-bubble-plots">Frecuencia y Tendencia de Palabras usando Bubble Plots</h3>
+<p>El dataframe <code>unisex_names</code> se calcula a partir del dataset guaguas (ver sección datasets).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">aves.visualization</span> <span class="kn">import</span> <span class="n">bubble_plot</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">bubble_plot</span><span class="p">(</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="n">ax</span><span class="p">,</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="n">unisex_names</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(),</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="s2">&quot;tendency&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="s2">&quot;n&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">label_column</span><span class="o">=</span><span class="s2">&quot;nombre&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;cool&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="n">max_label_size</span><span class="o">=</span><span class="mi">56</span><span class="p">,</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="n">starting_y_range</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">margin</span><span class="o">=</span><span class="mi">2</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="p">)</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>    <span class="s2">&quot;Nombres compartidos por hombres y mujeres (1920-2020, Registro Civil de Chile)&quot;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="p">)</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>    <span class="s2">&quot;Más usado por mujeres →&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>    <span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">),</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>    <span class="n">xycoords</span><span class="o">=</span><span class="s2">&quot;axes fraction&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>    <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>    <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>    <span class="n">fontsize</span><span class="o">=</span><span class="s2">&quot;medium&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#abacab&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="p">)</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>    <span class="s2">&quot;← Más usado por hombres&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>    <span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">),</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>    <span class="n">xycoords</span><span class="o">=</span><span class="s2">&quot;axes fraction&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a>    <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a>    <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a>    <span class="n">fontsize</span><span class="o">=</span><span class="s2">&quot;medium&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a>    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#abacab&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="p">)</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a>    <span class="s2">&quot;Fuente: guaguas, por @RivaQuiroga.&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a>    <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">),</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a>    <span class="n">xycoords</span><span class="o">=</span><span class="s2">&quot;axes fraction&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a>    <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a>    <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a>    <span class="n">fontsize</span><span class="o">=</span><span class="s2">&quot;medium&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a>    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#abacab&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a><span class="p">)</span>
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a>
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a><span class="n">fig</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s2">&quot;#efefef&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</code></pre></div>
+<p><img alt="" src="docs/reports/figures/example_bubbleplot.png" /></p>
+<h2 id="configuracion-y-requisitos">Configuración y Requisitos</h2>
+<h3 id="paso-1-preparacion">Paso 1: Preparación</h3>
+<p>Si usas Windows, te recomiendo instalar el <a href="https://docs.microsoft.com/es-es/windows/wsl/install-win10">Windows Subsystem for Linux</a>. Puede ser la versión 1 o 2 (recomiendo WSL2). Como distribución te recomiendo Ubuntu 22.04 (es la que uso yo). </p>
+<p>Abre la consola (<em>shell</em>) de Ubuntu y ejecuta el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo apt install make libxcursor1 libgdk-pixbuf2.0-dev libxdamage-dev osmctools gcc
+</code></pre></div>
+<p>Esto instalará algunas bibliotecas que son necesarias para el funcionamiento de <code>aves</code> (particularmente de <code>graph-tool</code> que es usada por aves).</p>
+<p>Además, para administrar el entorno de ejecución de aves necesitas una instalación de <code>conda</code> (<a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> es una buena alternativa) y de <code>mamba</code>. Primero debes instalar <code>conda</code>, y una vez que la tengas, puedes ejecutar:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>conda install mamba
+</code></pre></div>
+<p>¿Por qué <code>mamba</code>? Es una versión más eficiente de <code>conda</code>. ¡Te ahorrará muchos minutos de instalación!</p>
+<h3 id="paso-2-creacion-del-entorno">Paso 2: Creación del Entorno</h3>
+<p>Después de descargar o clonar el repositorio (utilizando el comando <code>git clone</code>), debes instalar el entorno de <code>conda</code> con los siguientes comandos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>make conda-create-env
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>make install-package
+</code></pre></div>
+<p>Ello creará un entorno llamado <code>aves</code> que puedes utilizar a través del comando <code>conda activate aves</code>. </p>
+<h3 id="paso-3-ejecucion-en-jupyter">Paso 3: Ejecución en Jupyter</h3>
+<p>El principal modo de uso de aves es a través de los notebooks de Jupyter.</p>
+<p>Es posible que ya tengas un entorno de <code>conda</code> en el que ejecutes Jupyter. En ese caso, puedes agregar el entorno de <code>aves</code> como <em>kernel</em> ejecutando este comando desde el entorno que contiene Jupyter:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>make install-kernel
+</code></pre></div>
+<p>Así quedará habilitado acceder al entorno de aves desde Jupyter.</p>
+<h2 id="actualizacion-de-dependencias">Actualización de Dependencias</h2>
+<p>Para añadir o actualizar dependencias:</p>
+<ol>
+<li>Agrega el nombre (y la versión si es necesaria) a la lista en <code>environment.yml</code>.</li>
+<li>Ejecuta <code>conda env update --name aves --file environment.yml  --prune</code>.</li>
+<li>Actualiza el archivo <code>environment.lock.yml</code> ejecutando <code>conda env export &gt; environment.lock.yml</code>.</li>
+</ol>
+<h2 id="creditos">Créditos</h2>
+<h3 id="personas-y-contribuciones">Personas y Contribuciones</h3>
+<ul>
+<li>Parte del tiempo dedicado a este código ha sido financiado por el proyecto <strong>ANID Fondecyt de Iniciación 11180913</strong>.</li>
+<li>La implementación de Force Directed Edge Bundling está inspirada en la versión de Javascript de esa técnica, y fue inicialmente desarrollada por <a href="https://github.com/verasativa">Vera Sativa</a> y luego modificada por <a href="https://github.com/tabitaCatalan/s">Tabita Catalán</a>. Adapté esa versión inicial para que fuese 100% Python y funcionase con el resto de <code>aves</code>. </li>
+<li>El módulo <code>aves.features.twokenize</code> es una versión modificada de <a href="https://github.com/myleott/ark-twokenize-py">ark-twokenize</a> de <a href="https://github.com/myleott">Myle Ott</a>.</li>
+<li>Este repositorio fue creado gracias al template de <em>Cookie Cutter / Data Science with Conda</em> hecho por <a href="https://github.com/pareyesv/">Patricio Reyes</a>.</li>
+<li>Gran parte de la funcionalidad de <code>aves</code> es proporcionada por las bibliotecas <code>matplotlib</code>, <code>seaborn</code>, <code>pandas</code>, <code>geopandas</code>, <code>contextily</code>, <code>graph-tool</code>, <code>scikit-learn</code>, <code>pysal</code>, <code>scikit-fusion</code> y más. </li>
+<li>Para los notebooks de mapas: Map tiles by <a href="http://stamen.com/">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org/">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.</li>
+</ul>
+<h3 id="datasets">Datasets</h3>
+<p>Este repositorio incluye los siguientes datasets:</p>
+<ul>
+<li><a href="http://datos.gob.cl/dataset/31616">Encuesta Origen-Destino, Santiago 2012</a> (por SECTRA).</li>
+<li><a href="http://konect.uni-koblenz.de/networks/arenas-jazz">Arenas' Jazz Network</a>.</li>
+<li>Shapefiles del <a href="http://www.censo2017.cl/servicio-de-mapas/">Censo 2017 de Chile</a> para la Región Metropolitana. En <a href="https://github.com/diegocaro/chile_census_2017_shapefiles">este repositorio de Diego Caro</a> pueden encontrar todas las regiones del país.</li>
+<li>Inscripciones de nombres en el Registro Civil de Chile a través del dataset <a href="https://github.com/rivaquiroga/guaguas">guaguas</a> preparado por <a href="https://twitter.com/rivaquiroga">Riva Quiroga</a>.</li>
+</ul>
+<h2 id="otros-asuntos">Otros Asuntos</h2>
+<h3 id="tipogafias">Tipogafías</h3>
+<p>En los notebooks me gusta utilizar la familia de fuentes <a href="https://bboxtype.com/typefaces/FiraSans/#!layout=specimen">Fira Sans</a> y <a href="https://github.com/tonsky/FiraCode">Fira Code</a>. Copia la fuente en la carpeta <code>.fonts</code> de tu directorio principal y luego ejecuta esto en un intérprete de Python o en un notebook:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span> <span class="nn">matplotlib.font_manager</span> <span class="kn">import</span> <span class="n">FontManager</span><span class="p">;</span> <span class="n">FontManager</span><span class="p">()</span><span class="o">.</span><span class="n">findfont</span><span class="p">(</span><span class="s1">&#39;Fira Sans Extra Condensed&#39;</span><span class="p">,</span> <span class="n">rebuild_if_missing</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<p>Después de copiar las fuentes, debes eliminar este fichero: <code>~/.cache/matplotlib/fontlist-v330.json</code>.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/fralfaro" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://gitlab.com/fralfaro" target="_blank" rel="noopener" title="gitlab.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m510.486 284.482-27.262-83.963c.012.038.016.077.028.115-.013-.044-.021-.088-.033-.132v-.01L429.1 33.871a21.328 21.328 0 0 0-20.445-14.6A21.038 21.038 0 0 0 388.466 34l-51.372 158.154H175L123.533 33.989a21.033 21.033 0 0 0-20.183-14.715h-.113A21.467 21.467 0 0 0 82.86 34L28.888 200.475l-.008.021c-.013.042-.019.084-.033.127.012-.038.017-.077.029-.115L1.514 284.482a30.6 30.6 0 0 0 11.117 34.283l236.262 171.662c.035.026.074.041.109.067.1.072.2.146.3.214-.1-.065-.187-.136-.282-.2.015.012.033.02.05.031l.041.024h.006a11.992 11.992 0 0 0 1.137.7c.054.03.1.068.157.1.033.016.064.038.1.054s.053.02.077.032.038.015.056.023c.044.021.092.034.136.057.205.1.421.178.633.264.2.082.389.177.592.248l.025.011c.034.012.064.028.1.04s.083.032.125.046l.05.012c.053.016.11.024.163.039.019.006.042.009.063.015.284.086.579.148.872.213.115.026.225.062.341.083.017 0 .032.009.05.012.038.008.073.021.112.027.062.011.122.031.186.04.049.007.1 0 .151.012h.033a11.918 11.918 0 0 0 1.7.136h.019a11.971 11.971 0 0 0 1.7-.136h.033c.05-.008.1 0 .153-.012s.124-.029.187-.04c.038-.006.073-.019.11-.027.017 0 .032-.009.049-.012.118-.023.231-.059.349-.084.288-.064.578-.126.861-.21.019-.006.039-.008.059-.014.055-.017.113-.024.169-.041.016-.006.035-.007.051-.012.044-.013.086-.032.129-.047s.063-.028.1-.041l.026-.01c.214-.076.417-.175.627-.261s.394-.154.584-.245c.047-.023.1-.036.142-.059.018-.009.04-.015.058-.024s.053-.02.078-.033.068-.04.1-.056c.056-.028.106-.069.161-.1a12.341 12.341 0 0 0 1.132-.695c.029-.02.062-.035.092-.056.008-.006.017-.009.024-.015.035-.026.076-.043.11-.068l236.3-171.666a30.6 30.6 0 0 0 11.107-34.281ZM408.8 49.48l46.342 142.674H362.46Zm-305.6 0 46.428 142.675h-92.68ZM26.817 299.251a6.526 6.526 0 0 1-2.361-7.308l20.34-62.42L193.835 420.6Zm38.245-82.972h92.411l65.881 202.941Zm183.416 273.83c-.047-.038-.092-.079-.138-.118l-.028-.026a8.366 8.366 0 0 1-.268-.231c-.172-.15-.341-.3-.5-.462.014.012.029.022.043.035l.055.046a12.191 12.191 0 0 0 1.091.929l.012.011c.018.013.033.03.051.045-.107-.075-.216-.148-.318-.229Zm7.514-48.482L217.226 322.21l-34.387-105.931h146.414Zm7.935 48.107c-.091.079-.178.157-.27.233l-.032.028c-.047.038-.091.079-.136.117-.1.08-.209.152-.313.229.018-.013.033-.032.053-.044l.009-.009a11.69 11.69 0 0 0 1.086-.926c.014-.013.03-.024.044-.036s.038-.03.054-.047c-.16.156-.322.307-.495.455Zm90.7-273.455h92.4l-18.91 24.23-139.468 178.7Zm130.567 82.967L318.2 420.563l149.084-191.025 20.258 62.393a6.528 6.528 0 0 1-2.353 7.315Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/faam/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.kaggle.com/faamds" target="_blank" rel="noopener" title="www.kaggle.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M304.2 501.5 158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@fralfaro" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://fralfaro.github.io/portfolio/" target="_blank" rel="noopener" title="fralfaro.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.1-20.4-4.2-41.8-4.2-64 0-22.2 2.1-43.6 4.2-64h185.4c2.1 20.4 3.3 41.8 3.3 64zm151.9-64c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42.9 3.2-64 0-22-1.1-43.4-3.2-64h123.1zm-10.5-32H376.7c-10-63.86-29.8-117.38-55.3-151.558C399.8 29.09 463.4 85.94 493.4 160zm-149.1 0H167.7c6.1-36.4 15.5-68.62 27-94.65 10.5-23.61 22.2-40.74 33.5-51.54C239.4 3.178 248.7 0 256 0c7.3 0 16.6 3.178 27.8 13.81 11.3 10.8 23 27.93 33.5 51.54 11.5 26.03 20.9 58.25 27 94.65zm-325.69 0C48.59 85.94 112.2 29.09 190.6 8.442 165.1 42.62 145.3 96.14 135.3 160H18.61zm112.59 32c-2.1 20.6-4.1 42-4.1 64 0 21.1 2 43.4 4.1 64H8.065C2.8 299.5 0 278.1 0 256s2.8-43.5 8.065-64H131.2zm63.5 254.6c-11.5-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.7-22.2 40.8-33.5 51.6-11.2 10.6-20.5 13.8-28.7 13.8-6.4 0-15.7-3.2-26.9-13.8-11.3-10.8-23-27.9-33.5-51.6zm-4.1 57C112.2 482.9 48.59 426.1 18.61 352H135.3c10 63.9 29.8 117.4 55.3 151.6zm130.8 0c25.5-34.2 45.3-87.7 55.3-151.6h116.7c-30 74.1-93.6 130.9-172 151.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

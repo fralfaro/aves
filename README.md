@@ -13,7 +13,7 @@ Para comprender la funcionalidad del código puedes explorar la carpeta `noteboo
 ### Visualización de Tablas
 
 ```python
-from aves.visualization.tables import barchart
+from aves.visualization import barchart
 
 fig, ax = plt.subplots(1, 1, figsize=(12, 4))
 
@@ -25,10 +25,10 @@ ax.set_xlabel("")
 ax.set_ylabel("Fracción de los Viajes")
 ```
 
-![](reports/figures/example_barchart.png)
+![](docs/reports/figures/example_barchart.png)
 
 ```python
-from aves.visualization.tables import scatterplot
+from aves.visualization import scatterplot
 
 fig, ax = plt.subplots(1, 1, figsize=(12, 6))
 
@@ -56,12 +56,13 @@ sns.despine(ax=ax, left=True, bottom=True, right=True, top=True)
 
 ```
 
-![](reports/figures/example_scatterplot.png)
+![](docs/reports/figures/example_scatterplot.png)
 
 ### Visualización de Datos Geográficos
+
 ```python
 from aves.visualization.figures import GeoFacetGrid
-from aves.visualization.maps import choropleth_map
+from aves.visualization import choropleth_map
 
 grid = GeoFacetGrid(zones.join(distancia_zonas, how="inner"), height=7)
 
@@ -89,11 +90,11 @@ grid.add_map_elements()
 grid.set_title("Distancia al Trabajo")
 ```
 
-![](reports/figures/example_choropleth.png)
+![](docs/reports/figures/example_choropleth.png)
 
 ```python
 from aves.visualization.figures import GeoFacetGrid
-from aves.visualization.maps import heat_map
+from aves.visualization import heat_map
 
 grid = GeoFacetGrid(
     origenes_urbanos[origenes_urbanos["Proposito"] == "Al trabajo"],
@@ -123,13 +124,13 @@ grid.add_global_colorbar(
 
 ```
 
-![](reports/figures/example_geofacetgrid.png)
+![](docs/reports/figures/example_geofacetgrid.png)
 
 ### Visualización de Redes
 
 ```python
-from aves.models.network import Network
-from aves.visualization.networks import NodeLink
+from aves import Network
+from aves.visualization import NodeLink
 
 network = Network.from_edgelist(edgelist, directed=False)
 nodelink = NodeLink(network)
@@ -144,11 +145,11 @@ ax.set_axis_off()
 ax.set_aspect("equal")
 ```
 
-![](reports/figures/example_nodelink.png)
+![](docs/reports/figures/example_nodelink.png)
 
 ```python
-from aves.models.network import Network
-from aves.visualization.networks import NodeLink
+from aves import Network
+from aves.visualization import NodeLink
 
 network = Network.from_edgelist(edgelist, directed=False)
 nodelink = NodeLink(network)
@@ -179,14 +180,14 @@ ax.set_axis_off()
 ax.set_aspect("equal")
 ```
 
-![](reports/figures/example_heb.png)
+![](docs/reports/figures/example_heb.png)
 
 ### Visualización de Redes con Contexto Geográfico
 
 ```python
 from aves.visualization.figures import GeoFacetGrid
-from aves.models.network import Network
-from aves.visualization.networks import NodeLink
+from aves import Network
+from aves.visualization import NodeLink
 
 zone_od_network = Network.from_edgelist(
     matriz_zonas, source="ZonaOrigen", target="ZonaDestino", weight="n_viajes"
@@ -215,14 +216,14 @@ grid.add_layer(
 grid.set_title("Viajes al trabajo en Santiago (en días laborales, EOD 2012)")
 ```
 
-![](reports/figures/example_geo_fdb.png)
+![](docs/reports/figures/example_geo_fdb.png)
 
 ### Frecuencia y Tendencia de Palabras usando Bubble Plots
 
 El dataframe `unisex_names` se calcula a partir del dataset guaguas (ver sección datasets).
 
 ```python
-from aves.visualization.tables.bubbles import bubble_plot
+from aves.visualization import bubble_plot
 
 fig, ax = plt.subplots(figsize=(16, 9))
 
@@ -273,7 +274,7 @@ fig.set_facecolor("#efefef")
 fig.tight_layout()
 ```
 
-![](reports/figures/example_bubbleplot.png)
+![](docs/reports/figures/example_bubbleplot.png)
 
 ## Configuración y Requisitos
 

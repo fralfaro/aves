@@ -1,9 +1,8 @@
-# 🐦 `aves`: Análisis y Visualización, Educación y Soporte
+# Bienvenidos a aves!
 
-![example workflow](https://github.com/fralfaro/aves/actions/workflows/documentation.yml/badge.svg)
-<a href="https://fralfaro.github.io/aves/"><img alt="Link a la Documentación" src="https://img.shields.io/badge/docs-link-brightgreen"></a>
+🐦 `aves`: Análisis y Visualización, Educación y Soporte
 
-Por [Eduardo Graells-Garrido](http://datagramas.cl).
+> Por [Eduardo Graells-Garrido](http://datagramas.cl).
 
 Este repositorio contiene datos, código y notebooks relacionados con mi [curso de Visualización de Información](http://datagramas.cl/courses/infovis) y mi trabajo diario. Lo he estructurado en un paquete llamado `aves`, sigla descrita en el título de este documento. 
 

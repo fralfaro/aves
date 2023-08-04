@@ -2,13 +2,13 @@
 
 # Project information
 site_name: Home
-site_url: https://github.com/fralfaro/MAT281_2023
+site_url: https://github.com/fralfaro/aves
 site_author: Francisco Alfaro
-site_description:
+site_description: "AVES: Análisis y Visualización, Educación y Soporte"
 
 # Repository
-repo_name: fralfaro/MAT281_2023
-repo_url: https://github.com/fralfaro/MAT281_2023
+repo_name: fralfaro/aves
+repo_url: https://github.com/fralfaro/aves
 edit_uri: ''
 
 
@@ -38,7 +38,7 @@ theme:
   name: material
   language: es
   logo: images/logo.bmp
-  favicon: images/usm.png
+  favicon: images/ave.png
   features:
     - navigation.instant
     - navigation.top
@@ -89,37 +89,5 @@ plugins:
 # TOC
 nav:
     - index.md
-    - Basic Tools:
-        - lectures/basic_tools/bt_intro.ipynb
-        - lectures/basic_tools/bt_01.ipynb
-        - lectures/basic_tools/bt_02.ipynb
-        - lectures/basic_tools/bt_03.ipynb
-    - Scientific Computing:
-        - lectures/data_manipulation/sc_01.ipynb
-        - lectures/data_manipulation/sc_02.ipynb
-        - lectures/data_manipulation/sc_03.ipynb
-    - Data Manipulation:
-        - lectures/data_manipulation/pd_intro.ipynb
-        - lectures/data_manipulation/pd_01.ipynb
-        - lectures/data_manipulation/pd_02.ipynb
-        - lectures/data_manipulation/pd_03.ipynb
-        - lectures/data_manipulation/pd_04.ipynb
-    - Visualization:
-        - lectures/data_manipulation/vi_intro.ipynb
-        - lectures/data_manipulation/vi_01.ipynb
-        - lectures/data_manipulation/vi_02.ipynb
-    - EDA:
-        - lectures/data_manipulation/eda_intro.md
-        - lectures/data_manipulation/eda_01.ipynb
-    - Machine Learning:
-        - lectures/machine_learning/ml_intro.ipynb
-        - lectures/machine_learning/reg_01.ipynb
-        - lectures/machine_learning/reg_02.ipynb
-        - lectures/machine_learning/cla_01.ipynb
-        - lectures/machine_learning/ns_01.ipynb
-        - lectures/machine_learning/ns_02.ipynb
-        - lectures/machine_learning/over_01.ipynb
-        - lectures/machine_learning/over_02.ipynb
-        - lectures/machine_learning/ts_01.ipynb
 
 

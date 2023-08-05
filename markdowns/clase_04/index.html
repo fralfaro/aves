@@ -1,0 +1,1193 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AVES: Análisis y Visualización, Educación y Soporte">
+      
+      
+        <meta name="author" content="Francisco Alfaro">
+      
+      
+        <link rel="canonical" href="https://github.com/fralfaro/aves/markdowns/clase_04/">
+      
+      <link rel="icon" href="../../images/ave.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>¿Cómo visualizar? Codificación Visual - Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#como-visualizar-codificacion-visual" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ¿Cómo visualizar? Codificación Visual
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Home" class="md-nav__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    Home
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Visualización de Información
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Instrucciones
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Instrucciones" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Instrucciones
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rubrica-proyecto/" class="md-nav__link">
+        Proyecto del Curso
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Recursos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../showcase/" class="md-nav__link">
+        Exhibición de Visualizaciones
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Unidades Teóricas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Teóricas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Teóricas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_01/" class="md-nav__link">
+        ¿Qué es Visualización?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_02/" class="md-nav__link">
+        ¿Qué visualizar? Abstracción de Datos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_03/" class="md-nav__link">
+        ¿Para qué visualizar? Abstracción de Tareas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ¿Cómo visualizar? Codificación Visual
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        ¿Cómo visualizar? Codificación Visual
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-venta-de-autos-usados" class="md-nav__link">
+    Ejercicio: Venta de Autos Usados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codificacion-visual-y-principios-de-diseno" class="md-nav__link">
+    Codificación Visual y Principios de Diseño
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posibles-soluciones-al-ejercicio-de-muchas" class="md-nav__link">
+    Posibles Soluciones al Ejercicio (de muchas)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-determina-cuando-un-canal-es-mas-efectivo-que-otro" class="md-nav__link">
+    ¿Cómo se determina cuando un canal es más efectivo que otro?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-circulos-y-barras" class="md-nav__link">
+    Ejemplo: Círculos y Barras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-graficos-de-torta" class="md-nav__link">
+    Ejemplo: Gráficos de Torta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marcas-compuestas-glifos" class="md-nav__link">
+    Marcas Compuestas: Glifos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fin-de-la-unidad" class="md-nav__link">
+    Fin de la Unidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lectura-recomendada" class="md-nav__link">
+    Lectura Recomendada
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_05/" class="md-nav__link">
+        Visualización de Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_06/" class="md-nav__link">
+        Visualización de Datos Geográficos y Espaciales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_07/" class="md-nav__link">
+        Visualización de Redes y Árboles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_08/" class="md-nav__link">
+        Colores e Ilusiones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_09/" class="md-nav__link">
+        Buenas Prácticas y Evaluación
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_10/" class="md-nav__link">
+        Visualización de Texto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_11/" class="md-nav__link">
+        Reducción de Complejidad
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Unidades Prácticas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Prácticas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Prácticas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/01-python-tools/" class="md-nav__link">
+        Unidad Práctica 1: Introducción al curso de visualización con Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/02-python-tablas/" class="md-nav__link">
+        Unidad Práctica 2: Visualización de Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas-preliminario/" class="md-nav__link">
+        Unidad Práctica 3: Preparación de Datos de GeoPandas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas/" class="md-nav__link">
+        Unidad Práctica 3: Visualización de Mapas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/04-python-redes-preliminario/" class="md-nav__link">
+        Unidad Práctica 5 (preliminar): Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/05-python-redes-eod/" class="md-nav__link">
+        Unidad Práctica 5: Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/06-python-texto-guaguas/" class="md-nav__link">
+        Unidad Práctica 6: Texto en Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/07-python-gridspec/" class="md-nav__link">
+        Práctica 7: Esqueleto de una Infografía en Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-venta-de-autos-usados" class="md-nav__link">
+    Ejercicio: Venta de Autos Usados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codificacion-visual-y-principios-de-diseno" class="md-nav__link">
+    Codificación Visual y Principios de Diseño
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posibles-soluciones-al-ejercicio-de-muchas" class="md-nav__link">
+    Posibles Soluciones al Ejercicio (de muchas)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-determina-cuando-un-canal-es-mas-efectivo-que-otro" class="md-nav__link">
+    ¿Cómo se determina cuando un canal es más efectivo que otro?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-circulos-y-barras" class="md-nav__link">
+    Ejemplo: Círculos y Barras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-graficos-de-torta" class="md-nav__link">
+    Ejemplo: Gráficos de Torta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marcas-compuestas-glifos" class="md-nav__link">
+    Marcas Compuestas: Glifos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fin-de-la-unidad" class="md-nav__link">
+    Fin de la Unidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lectura-recomendada" class="md-nav__link">
+    Lectura Recomendada
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="como-visualizar-codificacion-visual">¿Cómo visualizar? Codificación Visual</h1>
+<p>A partir de ahora el curso se enfocará en el diseño e implementación de visualizaciones. Hay cuatro aspectos de diseño en una visualización: <strong>codificación</strong>, <strong>manipulación</strong>, <strong>facetamiento</strong>, <strong>reducción</strong>.</p>
+<p>En esta unidad nos enfocaremos en la codificación, que, siguiendo las temáticas de las unidades anteriores, puede ser interpretada como <strong>abstracción visual</strong>. Los otros aspectos los definiremos en unidades posteriores de manera transversal, puesto que aparecen al trabajar en nuestros proyectos y al definir técnicas de visualización.</p>
+<p><img alt="¿Cómo visualizar? Diseñando una solución en cuatro aspectos: codificación, manipulación, facetamiento y reducción. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/how_conceptual_framework_hu645184129b0910567c496478c7e94821_106714_660x0_resize_box_3.png" /></p>
+<p>¿Cómo visualizar? Diseñando una solución en cuatro aspectos: codificación, manipulación, facetamiento y reducción. Fuente: Visualization Analysis &amp; Design.</p>
+<p>Lo que buscamos con la abstracción visual es llevar las observaciones y atributos relevantes y útiles de nuestros datasets a una representación gráfica que nos permita resolver las tareas que hemos definido. Sin embargo, en esta unidad la definición de abstracción es ligeramente distinta a la de las unidades anteriores, porque antes existía una traducción directa desde lo que contenían los datos y su organización hasta la definicińo de tipos y atributos. Lo mismo para la definición de tareas, a partir de una pregunta era posible convertirla en un par acción <code>+</code> objectivo. En cambio, ahora tenemos al menos dos pasos de codificación: primero, organizar las observaciones del dataset en el espacio visual (<em>arrange</em>); segundo, definir como los atributos de las observaciones definen sus propiedades visuales (<em>map</em>). En ese proceso deberemos tomar decisiones que habiliten el desarrollo de la tarea propuesta de manera óptima.</p>
+<p>Aquí veremos que la manera de tomar esas decisiones se basa en dos principios: el <strong>principio de efectividad</strong> y el <strong>principio de expresividad</strong>. Veremos, también, como se determinó la teoría que nos permite tomar decisiones que respeten esos principios. El primer paso para ello es elegir una codificación visual correcta.</p>
+<p>Antes de sumergirnos en los conceptos de la codificación visual, haremos un ejercicio. En este punto, es probable que todes hayamos estados expuestes a realizar gráficos de algún modo, al ser éste un curso de postgrado. Entonces aprovecharemos eso para ejemplificar el proceso de codificación visual a partir de nuestras propias experiencias.</p>
+<h2 id="ejercicio-venta-de-autos-usados">Ejercicio: Venta de Autos Usados</h2>
+<p>Supongamos que somos diseñadores de visualización y un nuevo negocio de venta de autos usados nos ha contactado. La nueva dueña de este negocio quiere utilizar los datos que tiene del dueño anterior para entender y mejorar su desempeño financiero.</p>
+<p>Los datos son los siguientes:</p>
+<p>Modelo de Auto</p>
+<p>Millas Recorridas</p>
+<p>Precio de Venta (USD)</p>
+<p>Accord</p>
+<p>26</p>
+<p>5700</p>
+<p>AMC Pacer</p>
+<p>16</p>
+<p>4800</p>
+<p>Audi 5000</p>
+<p>16</p>
+<p>9800</p>
+<p>BMW 320i</p>
+<p>26</p>
+<p>10000</p>
+<p>Champ</p>
+<p>32</p>
+<p>4500</p>
+<p>Chev Nova</p>
+<p>19</p>
+<p>4000</p>
+<p>Civic</p>
+<p>28</p>
+<p>4500</p>
+<p>Datsun 210</p>
+<p>33</p>
+<p>4700</p>
+<p>Datsun 810</p>
+<p>22</p>
+<p>8200</p>
+<p>Deville</p>
+<p>13</p>
+<p>11250</p>
+<p>Le Car</p>
+<p>25</p>
+<p>3750</p>
+<p>Linc Cont</p>
+<p>12</p>
+<p>11500</p>
+<p>Horizon</p>
+<p>24</p>
+<p>4700</p>
+<p>Mustang</p>
+<p>21</p>
+<p>4250</p>
+<p>Peugeot</p>
+<p>13</p>
+<p>13250</p>
+<p>Saab 9000</p>
+<p>21</p>
+<p>5500</p>
+<p>Subaru</p>
+<p>35</p>
+<p>3600</p>
+<p>Volvo 260</p>
+<p>16</p>
+<p>11990</p>
+<p>VW Dasher</p>
+<p>22</p>
+<p>7250</p>
+<p>El ejercicio consiste en:</p>
+<ol>
+<li>Determinar una tarea a resolver con los datos.</li>
+<li>Diseñar una visualización para resolver la tarea.</li>
+</ol>
+<p>Es suficiente con hacerlo en una hoja de papel. Les pido que le saquen una foto a la hoja en la cual resuelvan el problema, para que la veamos en la clase mediante Zoom.</p>
+<p>Los datos provienen del artículo <em>Automating the Design of Graphical Presentations of Relational Information</em> de Mackinlay, 1986.</p>
+<p>Discutiremos soluciones para este problema después de la siguiente sección.</p>
+<h2 id="codificacion-visual-y-principios-de-diseno">Codificación Visual y Principios de Diseño</h2>
+<p>La codificacioń visual es el proceso en el que asignamos propiedades gráficas (formas, colores) a los atributos de nuestros datos. Este proceso se hace a través de <strong>marcas</strong> y <strong>canales</strong>.</p>
+<p><img alt="Marcas (barras, círculos) y Canales (eje x, eje y, tamaño, color). Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/visual_encoding_huf4cdd3ec58152f5f00b09431f22443e1_9631_660x0_resize_box_3.png" /></p>
+<p>Marcas (barras, círculos) y Canales (eje x, eje y, tamaño, color). Fuente: Visualization Analysis &amp; Design.</p>
+<p>Las marcas (<em>marks</em>) son primitivas geométricas que sirven de bloques de construcción de elementos gráficos. Ejemplos incluyen puntos, líneas y áreas:</p>
+<p><img alt="Primitivas básicas que definen marcas. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/marks_hu02e31612a8b77d407671b91b66655c6c_13125_660x0_resize_box_3.png" /></p>
+<p>Primitivas básicas que definen marcas. Fuente: Visualization Analysis &amp; Design.</p>
+<p>Los canales controlan la apariencia de las marcas. Existen canales de <em>posición</em>, de <em>forma</em>, de <em>tamaño</em>, de <em>color</em>, de <em>inclinación</em>, de <em>volumen</em>:</p>
+<p><img alt="Canales básicos. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/channels_hua614831a3d1afd305d8fc12ff340a2b4_31036_660x0_resize_box_3.png" /></p>
+<p>Canales básicos. Fuente: Visualization Analysis &amp; Design.</p>
+<p>Los canales pueden ser combinados e incluso ser redundantes. Interactúan con las marcas, es decir, el tipo de marca determina los canales que se pueden utilizar con ella. Por ejemplo, un punto solamente tiene posición (es 0D), pero puede tener un tamaño (en el gráfico) o una forma específica (por ej., un triángulo en vez de un círculo). No puede tener inclinación.</p>
+<p>El concepto de marcas y canales en la codificación visual fue propuesto por Jacques Bertin en 1967, en su libro Sémiologie Graphique (La Semiología de los Gráficos):</p>
+<p><img alt="Fuente: The Semiology of Graphics." src="../../../courses/infovis/06_codificacion/images/bertin_visual_encoding_hu9c04aa7f0a41cde44ba49738fc32f346_328510_660x0_resize_box_3.png" /></p>
+<p>Fuente: The Semiology of Graphics.</p>
+<p>Como ven, la imagen incluso propone la separación de canales para datos ordinales (O) y cuantitativos (Q). El trabajo de Bertin ha generado un legado innegable. La popular biblioteca <code>ggplot</code> de R está basada en los conceptos propuestos por Bertin.</p>
+<p>Continuemos. Podemos separar los canales en dos categorías: aquellos que expresan <em>magnitud</em> y aquellos que expresan <em>identidad</em>. Los canales de magnitud se aplican a atributos ordinales o cuantitativos; los de identidad, a atributos categóricos.</p>
+<p>Una vez que tenemos una tarea a resolver con datos, debemos elegir las marcas que utilizaremos para representar gráficamente los datos, así como los canales adecuados para que la resolución de la tarea sea óptima. La elección de marcas, y sobretodo de canales, será crucial en lograr ese objetivo. Pero, ¿cómo se hace?</p>
+<p>En la literatura actual existe un ranking de efectividad de canales, de modo que podemos elegir los mejores canales disponibles para los distintos atributos que necesitemos representar en la visualización. Este ranking es el siguiente (los mejores canales están en la parte superior de la imagen):</p>
+<p><img alt="Ranking de canales para magnitud (izquierda) e identidad (derecha). Los mejores canales aparecen en la parte superior. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/expressiveness_effectiveness_hu08e88542d782b2aa870e85e1d054e0f0_79259_660x0_resize_box_3.png" /></p>
+<p>Ranking de canales para magnitud (izquierda) e identidad (derecha). Los mejores canales aparecen en la parte superior. Fuente: Visualization Analysis &amp; Design.</p>
+<p>El ranking define que el mejor canal para expresar magnitud es la <em>posición en una escala común</em>. Eso significa que si tenemos dos ejes ortogonales (como suele suceder en los gráficos estadísticos), y tenemos dos posiciones distintas para una marca (que puede ser un punto), deterimar cuál marca está más arriba/abajo/izquierda/derecha es eficiente. Cuando la escala no es común, es decir, cuando los ejes no son iguales para distintas marcas (por ejemplo, ¡existen gráficos que tienen dos ejes y!), la comparación se vuelve más difícil.</p>
+<p>Otro canal efectivo para medir y comparar magnitudes es el <em>largo</em>. Por ejemplo, saber cuál de dos barras es más larga y por cuanto (¿el doble?¿el triple?) es una operación eficiente y directa de hacer. En cambio, saber por cuánto es más grande una área (como un círculo o un cuadrado) que otra es más difícil: sabemos que es más grande, pero no por cuánto.</p>
+<p>Algo similar sucede con los colores. Utilizar la <em>luminancia</em> (cantidad de luz o blanco en un color) o la <em>saturación</em> (intensidad del color) nos permite saber si un color es maś oscuro o más intenso, pero no por cuánto. Entonces, si nuestra tarea requiere determinar la diferencia en magnitudes, no es un buen canal. Si nuestra tarea requiere determinar el orden o <em>ranking</em>, entonces es un canal aceptable (pero siguen siendo mejores los otros canales ya mencionados).</p>
+<p>Respecto a los canales de identidad, el mejor canal es la <em>posición en el espacio</em>. Si organizamos una biblioteca de modo que todos los libros de ficción estén en el anaquel de arriba y los libros académicos en el anaquel de abajo, como observadores notamos enseguida esa separación, y tendemos a asumir que es categórica, sin necesidad de que la altura del anaquel tenga significado.</p>
+<p>El segundo atributo de identidad es la <em>tonalidad</em> (<em>hue</em>) del color. La tonalidad nos permite separar categorías. ¡Por eso suele ser un error utilizar una escala de colores de arcoiris con valores cuantitativos! Porque no es un canal efectivo para ello, sin mencionar otros problemas, que analizaremos en la clase de colores.</p>
+<p>El peor canal para identidad es la <em>forma</em>. Es común en un gráfico de dispersión (<em>scatterplot</em>) que se utilice la forma para identificar categorías distintas. De acuerdo a este ranking de canales, no es la mejor opción — pero a veces también debemos tomar esas decisiones porque hay que balancear otros aspectos. Un scatterplot ya utiliza los canales de posición x e y para <em>organizar</em> las marcas, por tanto, el canal de región espacial no está disponible. Y si estamos trabajando en una visualización que será impresa, tendremos que asegurarnos de que incluso en blanco y negro se vea bien.</p>
+<p>Noten que no he comentado todos los canales porque solo me he enfocado en los más frecuentes. Dejo el resto para su reflexión personal.</p>
+<p>Ya tenemos marcas y canales a disposición para crear visualizaciones. Estamos en posición de definir los principios de efectividad y expresividad:</p>
+<p>Efectividad</p>
+<p>Expresividad</p>
+<p>“Codificar los atributos más importantes de los datos con los canales más efectivos”</p>
+<p>“Debe haber coherencia entre el tipo de canal (magnitud, identidad) con la semántica del atributo (cuantitativo, ordinal, categórico)”</p>
+<p>El principio de efectividad implica que debemos elegir el mejor canal disponible en cada decisión que tomemos. El principio de expresividad implica que si usamos un canal de identidad para magnitud, estaremos cometiendo un error. Así, si seguimos estos principios a la hora de diseñar una visualización, aseguraremos un desempeño óptimo en la resolución de la tarea.</p>
+<p>Por supuesto, una visualización puede funcionar si no se respetan estos principios. Pero para romper las reglas es necesario dominarlas primero, de modo que logremos identificar cuándo las reglas nos limitan tanto que la solución que lleguemos solo sea un óptimo local.</p>
+<h2 id="posibles-soluciones-al-ejercicio-de-muchas">Posibles Soluciones al Ejercicio (de muchas)</h2>
+<p>Retomemos el ejercicio de venta de autos usados, viendo dos posibles soluciones del problema. Noten que existen tantas soluciones como tareas podamos definir para esos datos.</p>
+<p><strong>Solución 1</strong>: El negocio necesita desarrollar una estrategia de compra/venta. Para ello, ha determinado que respnder “¿existe relación entre el kilometraje (o millaje en este caso) de un automóvil y su precio de venta?” permitiría elegir mejor los automóviles de sus transacciones.</p>
+<p>Primero, convertimos la pregunta a una tarea: <code>identificar correlación entre dos atributos</code>. Luego procedemos a la codificación visual: los dos atributos que tenemos son cuantitativos, y tenemos dos canales libres: <code>posición en una misma escala (eje x y eje y)</code>. Entonces, usaremos un <code>scatterplot</code>.</p>
+<p>El resultado se ve así:</p>
+<p><img alt="Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information." src="../../../courses/infovis/06_codificacion/images/cars_scatter_hu9662dfd87da40accd211f7d63dc77cdb_47221_660x0_resize_box_3.png" /></p>
+<p>Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.</p>
+<p>¡La correlación es evidente! Sin embargo, no tenemos detalles sobre cada auto específico. Agregar etiquetas haría el gráfico más difícil de leer, puesto que éstas podrían ocultar la relación al llenar la visualización con texto.</p>
+<p><strong>Solución 2</strong>: El negocio acaba de empezar y todavía no domina del todo el inventario que tiene. ¿Cuál es el inventario completo? Si conociese la respuesta podría elegir mejor los automóviles a comprar (para vender).</p>
+<p>La tarea consiste en <code>descubrir la distribución de cada atributo</code>. Como son dos atributos, necesitamos dos gráficos. Como tenemos un solo atributo cuantitativo en cada tarea, podemos utilizar el canal <code>posición en una misma escala (eje x)</code>. Como marca utilizaremos <code>barras</code>, aunque también podrían ser puntos. Como en el eje y agregaremos las etiquetas de cada auto, las barras nos facilitarán asociar una marca gráfica a una marca de auto.</p>
+<p>El resultado se ve así:</p>
+<p><img alt="Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information." src="../../../courses/infovis/06_codificacion/images/cars_bars_hubc553251f0a80caf5e1ad91045b33d87_56324_660x0_resize_box_3.png" /></p>
+<p>Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.</p>
+<p>Con esta visualización es directo descubrir una aproximación de la distribución de cada atributo. Podemos conocer sus extremos, los que están en medio, y los que están sobre o bajo la media. Si a la tienda le quieren vender un Peugeot caro y con mucho kilometraje, con esta visualización una persona puede descartar inmediatamente una compra por parte del negocio: los Peugeot se venden caros, pero ya tenemos uno con bajo kilometraje, no tiene sentido comprar un auto peor. ¿Qué más observan en esta visualización?</p>
+<p>Una limitación de esta segunda solución es que perdemos la relación entre atributos. Una manera de resolver ese aspecto es ordenando los autos de acuerdo al valor de algún atributo, pero eso vuelve difícil la búsqueda de una marca de auto específica, al perder el orden alfabético. Como ven, <strong>siempre hay trade-offs</strong>. Es parte del juego. Los aspectos de interactividad y facetamiento nos permiten disminuir esas decisiones difíciles y potenciar la funcionalidad, a costa de un mayor costo de implementación y de complejidad de uso.</p>
+<h2 id="como-se-determina-cuando-un-canal-es-mas-efectivo-que-otro">¿Cómo se determina cuando un canal es más efectivo que otro?</h2>
+<p>La efectividad (o falta de esta) de los canales se deterimna a partir de estudios miden la precisión, discriminabilidad, separabilidad, saliencia y relatividad de los canales. Definiremos estos conceptos a continuacioń.</p>
+<p>Este tipo de estudios no es exclusivo de la visualización. El cómo percibimos los estímulos es una rama propia de la <em>psicofísica</em>. En esta área existen diversas leyes empíricas relacionadas con la intensidad de los estímulos y nuestra percepción sobre éstos. Una ley de percepción vigente (en tanto es aceptada) es la <a href="https://en.wikipedia.org/wiki/Stevens%27s_power_law">Ley de Stevens</a>. Stanley Smith Stevens publicó en 1957 su ley, que postula que el cuerpo humano rige la percepción de los estímulos utilizando una ley de potencias, y que distintos estímulos configuran distintos exponentes en esta ecuación. La siguiente imagen ilustra las curvas exponenciales (y sus exponentes) de algunos estímulos, resultados de experimentos de Stevens:</p>
+<p><img alt="&lt;em&gt;Ley de Stevens&lt;/em&gt; sobre percepción de estímulos. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/psychophysics_scale_hu6b78279ef88da4dc36092acc91594904_95457_660x0_resize_box_3.png" /></p>
+<p><em>Ley de Stevens</em> sobre percepción de estímulos. Fuente: Visualization Analysis &amp; Design.</p>
+<p>En sus experimentos, Stevens midió la variación en la percepción de los estímulos. Simplificando, imaginen que les muestro una línea que mide 1 metro, y luego una que mide 2 metros. Si les pregunto cuál es la proporción entre ambas líneas, la respuesta será “el doble.” Eso significa que la relación entre cambio en el estímulo y cambio en la percepción es 1 a 1. Por eso el exponente del estímulo <em>largo</em> (<em>length</em>) es 1. El exponente del estímulo <em>área</em> es 0.7, es decir, si un cuadrado tiene el doble de área que otro, nosotres tendemos a percibir que el aumento es menor al real.</p>
+<p>Stevens hizo muchos experimentos en los que midió estímulos de todo tipo. Eso incluye la percepción de lo salado, de lo dulce, e incluso del dolor. En el gráfico vemos que el <em>shock eléctrico</em> tiene un exponente de 3.5. Eso significa que si comparamos dos golpes de corriente, un pequeño incremento en la intensidad del segundo golpe se sentirá como una gran diferencia. La <a href="https://en.wikipedia.org/wiki/Stevens%27s_power_law">página de Wikipedia sobre la ley</a> contiene todos los estímulos medidos por Stevens.</p>
+<p>Los pioneros en visualización estadística Cleveland y McGill hicieron estudios en 1984 (el título del paper es <em>Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods</em>, en la revista de la American Statistical Association) en el que hicieron experimentos de percepción para medir cuales visualizaciones eran más <strong>precisas</strong>. Una manera simple de describir estos experimentos es que se les muestran visualizaciones a distintas personas con las que se les pide que resuelvan tareas numéricas. Al ser numéricas, es posible medir el error en la ejecución de la tarea. Por tanto, se pueden ordenar las visualizaciones de acuerdo a su precisión general.</p>
+<p>Heer y Bostock (otros pioneros, pero de la visualización moderna) utilizaron Mechanical Turk para extender el experimento de Cleveland y McGill. Mechanical Turk es un sitio de <em>crowdsourcing</em>, en el que se conectan personas de todo el mundo para ejecutar tareas a través de la pantalla de sus computadores. Las tareas pueden ser de todo tipo, por lo que Heer y Bostock aprovecharon de poner a prueba el método de evaluación, esta vez de manera distribuida y a escala, puesto que se pueden obtener cientos de respuestas en poco tiempo. Los resultados se muestran a continuación:</p>
+<p><img alt="Fuente: Heer &amp; Bostock, Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design." src="../../../courses/infovis/06_codificacion/images/precision_study_hu64bb79fb6cc80e8ce38271937985cbf2_82300_660x0_resize_box_3.png" /></p>
+<p>Fuente: Heer &amp; Bostock, Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design.</p>
+<p>El experimento en Mechanical Turk comparó las mismas visualizaciones que el experimento original, más otras — ¡algunas incluso no existían cuando Cleveland y McGill definieron su estudio! La imagen nos muestra cuáles son los canales que se comparan en cada visualizacioń (izquierda), así como el error promedio y su variación (derecha). El gráfico que mejor se desempeña es el <code>barchart</code>.</p>
+<p>El siguiente concepto es la <strong>discriminabilidad</strong>. Se refiere a la siguiente pregunta: ¿cuánto podemos distinguir un valor de otro de acuerdo a la codificación visual empleada? Un ejemplo concreto es ¿cuántos colores puedo distinguir?</p>
+<p>Observemos el siguiente mapa:</p>
+<p><img alt="Flujo de tráfico en la red de telefónica entre países de Europa a fines de los 90. Fuente: Mappa Mundi Magazine." src="../../../courses/infovis/06_codificacion/images/discriminability_hu2d9a69824d482d862618aa7448eb9a51_70390_660x0_resize_box_3.png" /></p>
+<p>Flujo de tráfico en la red de telefónica entre países de Europa a fines de los 90. Fuente: Mappa Mundi Magazine.</p>
+<p>En el <a href="https://mappa.mundi.net/maps/maps_014/index.html#telegeography">mapa</a> se muestra el flujo de llamadas telefónicas entre países (una <code>red</code>), medido en millones de minutos (el período de medición no está claro en la fuente del mapa). El grosor de cada línea codifica el tamaño del flujo entre un país y otro. Al ver la leyenda, notamos que existen solamente tres tipos de flujo (pequeño, medio y grande). ¿Lo habían notado?¿Si fuesen cinco tipos de flujo, ¿podrían distinguir el tercero del cuarto?¿Y si fuesen diez? Probablemente no podríamos diferenciarlos.</p>
+<p>Otros conceptos importantes son la <strong>separabilidad</strong> e <strong>integridad</strong> de los canales. Ambos conceptos se refieren a la cualidad de los canales de ser percibidos de manera independiente (ser separables) o como un todo (estar integrados). Veamos unos ejemplos:</p>
+<p><img alt="Ejemplos de distintos grados de separabilidad e integridad. Fuente: Visualizacion Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/separability_hua23abf88a0f709d2e3884614cc08cac9_51244_660x0_resize_box_3.png" /></p>
+<p>Ejemplos de distintos grados de separabilidad e integridad. Fuente: Visualizacion Analysis &amp; Design.</p>
+<p>El primer cuadro presenta dos canales (posición y tono). La posición y el tono son claramente separables, porque podemos ver si dos puntos están lejos o cerca independiente del color que tengan, y podemos entender el color de un punto independiente de su posición. El segundo cuadro presenta el canal de tamaño (<em>size</em>) y tono. Existen interferencias entre el color que percibimos y el tamaño de la marca que contiene el color. Esta interferencia puede crear problemas al interpretar una visualización — y es un problema común cuando se visualizan mapas, puesto que las áreas geográficas suelen presentar tamaños dispares. Aún así, la interferencia entre tamaño y color es manejable. Pero existen otras interferencias que debemos evitar. Los siguientes dos cuadros ejemplifican esto. El tercero utiliza el canal ancho (<em>width</em>) y el canal altura (<em>height</em>) Las marcas tienen un ancho y un alto que dependen de los atributos que se estén visualizando, sin embargo, une asocia ambos atributos juntos como una propiedad de la marca (por ejemplo, si es un círculo, une piensa en el <em>radio</em> en vez de dos atributos separados). El cuarto nos muestra los colores rojo y verde como canales de una marca punto. Podemos saber cuando un punto es rojo o verde, pero, ¿qué pasa con un punto gris?¿Es por ausencia de rojo?¿Por ausencia de verde?¿Por ausencia de ambos? No podemos saberlo. La interferencia en ambos casos es enorme. Afortunadamente, estos últimos dos casos presentan codificaciones que no son frecuentes.</p>
+<p>La <strong>saliencia</strong> es el siguiente concepto. Se refiere a la cualidad de uno o más elementos de sobresalir por sobre el resto. Como vimos en la primera clase, encuentren el punto rojo en cada uno de los siguientes cuadros:</p>
+<p><img alt="¡Encuentra el punto rojo! Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/saliency_hu7071f014a715db6772e88b5ef7297822_44646_660x0_resize_box_3.png" /></p>
+<p>¡Encuentra el punto rojo! Fuente: Visualization Analysis &amp; Design.</p>
+<p>Nuestro cerebro es capaz de procesar información en paralelo, y algunos canales pueden facilitar ese proceso. La primera columna de la imagen muestra dos cuadros en los que el punto rojo es totalmente saliente — sabemos su posición incluso antes de preguntarnos dónde está, independientemente de la cantidad de puntos azules que haya en la cada cuadro. La segunda columna vuelve un poco más difícil el proceso, a pesar de que hay un único punto rojo, el uso de un canal distinto (<em>forma</em>) para diferenciarlo de los demás ha hecho que tengamos que hacer un recorrido visual por cada cuadro para poder encontrar el punto. Por tener que hacer ese recorrido nos demoramos más en efectuar la misma tarea. La tercera columna mezcla los canales de forma y color, de modo que incluso ante la presencia de pocos elementos debemos realizar un barrido completo de la imagen para poder encontrar el punto. La presencia de elementos distractores implica que el barrido para encontrar el punto rojo sea prácticamente línea por línea de la imagen. Al hacer ese proceso serial hemos perdido la oportunidad de utilizar el potencial de percepción que tiene nuestro cerebro.</p>
+<p>Finalmente, el concepto de <strong>relatividad</strong> se refiere a que nuestro sistema de percepción opera mayoritariamente con razonamiento relativo, no absoluto. Esto también lo explica la psicofísica a través de la <a href="https://en.wikipedia.org/wiki/Weber%E2%80%93Fechner_law">Ley de Weber-Fechner</a>, que postula que la percepción de la diferencia de un estímulo es proporcial a un estímulo inicial. Esto explica porque el canal de magnitud más efectivo es una posición alineada respecto a un eje: es un canal que codifica nuestra manera de percibir las cosas. La siguiente imagen ejemplifica esto:</p>
+<p><img alt="Relatividad al juzgar los tamaños de las barras. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/06_codificacion/images/alignment_huba4b8e8d6d7074a6bb39618e5e63866d_35525_660x0_resize_box_3.png" /></p>
+<p>Relatividad al juzgar los tamaños de las barras. Fuente: Visualization Analysis &amp; Design.</p>
+<p>En el primer gráfico, las barras <code>A</code> y <code>B</code> no están alineadas (no comparten el mismo estímulo inicial). Es decir, las podemos comparar mediante el canal <em>largo</em> de la barra. ¡Es difícil determinar la diferencia entre ellas porque tenemos que calcular dos diferencias en sentidos opuestos! En el segundo gráfico se ha añadido un marco de referencia para cada barra, lo cual facilita un poco la comparación, porque ahora tenemos otra alternativa: comparar los rectángulos blancos que fueron formados por los marcos de referencia. En cambio, el tercer gráfico alinea las barras, lo que nos permite enfocarnos directamente en la diferencia entre ellas.</p>
+<p>Hay que tener cuidado cuando elegimos canales para configurar nuestra visualización. Las herramientas para generar visualizaciones existen, pero las buenas decisiones de diseño siguen siendo responsabilidad nuestra. Como hemos visto en esta unidad, afortunadamente muchas personas ya han generado suficiente conocimiento para que podamos tomar buenas decisiones hoy.</p>
+<h2 id="ejemplo-circulos-y-barras">Ejemplo: Círculos y Barras</h2>
+<p>La siguiente imagen muestra dos alternativas para visualizar el valor de mercado de empresa:</p>
+<p><img alt="Fuente: Alberto Cairo." src="../../../courses/infovis/06_codificacion/images/bars_and_circles.png" /></p>
+<p>Fuente: Alberto Cairo.</p>
+<p>A la izquierda, tenemos lo que se conoce como un tipo de <code>bubblechart</code>. A la derecha tenemos un <code>barchart</code>. ¿Cuál es las dos visualizaciones es mejor? Si la tarea es comparar el atributo valor de mercado, el <code>barchart</code> sin duda es mejor, porque elige los canales adecuados para representar magnitudes. Como vimos, las áreas no son fáciles de comparar, por tanto, en la primera visualización solo sabemos que el 2009 se redujo el valor de mercado, y podríamos equivocarnos al pensar que se redujo a la mitad, cuando en realidad se redujo a casi un tercio.</p>
+<p>¿Qué pasaría si la tarea fue presentar la tendencia? A las personas suelen gustarles las formas circulares y orgánicas, y los <code>bubblechart</code> son populares por eso.</p>
+<p>Usualmente es mejor usar un <code>barchart</code>, pero eso se debe a que la tarea de comparación es más frecuente que la tarea de presentar y enganchar a una audiencia. ¡La tarea siempre debe estar clara antes de diseñar o elegir una visualización!</p>
+<h2 id="ejemplo-graficos-de-torta">Ejemplo: Gráficos de Torta</h2>
+<p>No sólo las áreas son difíciles de comparar, los ángulos también. Y un <code>piechart</code> o gráfico de torta mezcla ambas cosas. Esta visualización es utilizada a destajo y hemos visto crímenes horrorosos con ella, cuya denuncia quedará para otra unidad. Aquí nos enfocaremos en sus propiedades de codificación visual, ejemplificadas en la siguiente imagen:</p>
+<p><img alt="Fuente: https://en.wikipedia.org/wiki/Pie_chart" src="../../../courses/infovis/06_codificacion/images/pie_ordering_hud06917dff821073c021a2c76a3fe8aaf_51399_660x0_resize_box_3.png" /></p>
+<p>Fuente: <a href="https://en.wikipedia.org/wiki/Pie">https://en.wikipedia.org/wiki/Pie</a>_chart</p>
+<p>Las tortas <code>A</code>, <code>B</code> y <code>C</code> se parecen mucho. Si les pidiera ordenar los colores de menor a mayor (basándose en su ángulo o área) seguramente les tomaría tiempo hacerlo, y posiblemente tendrían errores. Como vemos en los gráficos de barra inferiores, las distribuciones son totalmente distintas — mucho más distintas entre sí que las tortas a primera vista.</p>
+<p>Este es otro caso de elegir la visualización adecuada para la tarea, porque también es un error decir que siempre se deben preferir los gráficos de barra a los gráficos de torta. Si la tarea y los datos son adecuados, un <code>piechart</code> puede presentar una visualización directa y llamativa:</p>
+<p><img alt="Fuente: https://xkcd.com/290/" src="../../../courses/infovis/06_codificacion/images/mario_kart.png" /></p>
+<p>Fuente: <a href="https://xkcd.com/290/">https://xkcd.com/290/</a></p>
+<h2 id="marcas-compuestas-glifos">Marcas Compuestas: Glifos</h2>
+<p>Finalizamos esta unidad con un tipo de marca que no hemos visto. Una visualización también puede ser una marca. Es lo que se conoce como <em>glifo</em> Una visualización también puede ser una marca (un <em>glifo</em>). Existen distintos tipos de glifo, como se ve en la imagen a continuación:</p>
+<p><img alt="Tipos de Glifo. Fuente: Systematising Glyph Design for Visualization, de E.J aguire." src="../../../courses/infovis/06_codificacion/images/glyph_design_hufd45eac1c69bdd90564205c649ce45d2_227114_660x0_resize_box_3.png" /></p>
+<p>Tipos de Glifo. Fuente: Systematising Glyph Design for Visualization, de E.J aguire.</p>
+<p>La imagen contiene elementos diversos: a) glifos de perfil, b) glifos tipo estrella, c) metroglifos de Anderson, d) palitos y árboles, e) autoglifo y cajas-glifo, f) las caras de Chernoff, g) flechas, entre otros. Cada uno de estos elementos es susceptible de ser parametrizado por canales: se pueden situar en una visualización utilizando canales de posición, se pueden escalar utilizando canales de tamaño, se pueden pintar utilizando canales de color, se pueden inclinar, etc.</p>
+<p>Quizás el primer ejemplo de uso de glifos es del año 1858, en una <a href="https://commons.wikimedia.org/wiki/File:Minard-carte-viande-1858.png">visualización de Charles Minard</a> que utiliza múltiples <code>piechart</code> para categorizar distribución geográfica de cantidad y categorías de un producto (carne) en Francia:</p>
+<p><img alt="&ldquo;Carte figurative et approximative des quantités de viandes de boucherie envoyées sur pied par les départements et consommateurs à Paris,&rdquo; traducido como &ldquo;Mapa figurativo y aproximado de las cantidades de carne de carnicero enviadas a pie por los departamentos y consumidores de París,&rdquo; por Charles Minard, 1858. Fuente: Wikimedia Commons." src="../../../courses/infovis/06_codificacion/images/1064px-Minard-carte-viande-1858_hu44b2b6151eaea88551da138eef153dde_1732961_660x0_resize_box_3.png" /></p>
+<p><em>Carte figurative et approximative des quantités de viandes de boucherie envoyées sur pied par les départements et consommateurs à Paris</em>, traducido como <em>Mapa figurativo y aproximado de las cantidades de carne de carnicero enviadas a pie por los departamentos y consumidores de París</em>, por Charles Minard, 1858. Fuente: Wikimedia Commons.</p>
+<p>Que increíble, ¿no? Hace más de 150 años ya había gente creando visualizaciones que hacen estallar nuestras mentes (en un sentido visual, no literal). En este curso veremos como realizar este tipo de gráficos en Python una vez que lleguemos a la clase de visualización con mapas. El siguiente es un ejemplo de los tipos de gráfico que podremos hacer:</p>
+<p><img alt="¿Cómo se movían las personas de las comunas de Santiago durante la pandemia de COVID-19? Fuente: Eduardo Graells-Garrido." src="../../../courses/infovis/06_codificacion/images/20200522_mobility_incidence_map_huc39e1bcc0a1d60bc609c467775598b4e_1580178_660x0_resize_box_3.png" /></p>
+<p>¿Cómo se movían las personas de las comunas de Santiago durante la pandemia de COVID-19? Fuente: Eduardo Graells-Garrido.</p>
+<h2 id="fin-de-la-unidad">Fin de la Unidad</h2>
+<p>Al terminar esta unidad, ya tenemos una idea clara del proceso fundamental de visualización:</p>
+<blockquote>
+<p>¿Qué visualizar? <code>datos (tipos + atributos)</code></p>
+<p>¿Para qué visualizar?: <code>-&gt; tareas (acción + objetivo)</code></p>
+<p>¿Cómo visualizar? <code>-&gt; codificaciones visuales (marcas + canales)</code></p>
+</blockquote>
+<p>En las siguientes unidades veremos técnicas de visualización específicas para cada tipo de dataset.</p>
+<h2 id="lectura-recomendada">Lectura Recomendada</h2>
+<ul>
+<li>Cleveland, William S., and Robert McGill. <a href="http://www.math.pku.edu.cn/teachers/xirb/Courses/biostatistics/Biostatistics2016/GraphicalPerception_Jasa1984.pdf"><em>Graphical perception: Theory, experimentation, and application to the development of graphical methods</em></a>. Journal of the American statistical association 79, no. 387 (1984).</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        
+        <a href="../clase_03/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: ¿Para qué visualizar? Abstracción de Tareas" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              ¿Para qué visualizar? Abstracción de Tareas
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../clase_05/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Visualización de Tablas" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Visualización de Tablas
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/fralfaro" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://gitlab.com/fralfaro" target="_blank" rel="noopener" title="gitlab.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m510.486 284.482-27.262-83.963c.012.038.016.077.028.115-.013-.044-.021-.088-.033-.132v-.01L429.1 33.871a21.328 21.328 0 0 0-20.445-14.6A21.038 21.038 0 0 0 388.466 34l-51.372 158.154H175L123.533 33.989a21.033 21.033 0 0 0-20.183-14.715h-.113A21.467 21.467 0 0 0 82.86 34L28.888 200.475l-.008.021c-.013.042-.019.084-.033.127.012-.038.017-.077.029-.115L1.514 284.482a30.6 30.6 0 0 0 11.117 34.283l236.262 171.662c.035.026.074.041.109.067.1.072.2.146.3.214-.1-.065-.187-.136-.282-.2.015.012.033.02.05.031l.041.024h.006a11.992 11.992 0 0 0 1.137.7c.054.03.1.068.157.1.033.016.064.038.1.054s.053.02.077.032.038.015.056.023c.044.021.092.034.136.057.205.1.421.178.633.264.2.082.389.177.592.248l.025.011c.034.012.064.028.1.04s.083.032.125.046l.05.012c.053.016.11.024.163.039.019.006.042.009.063.015.284.086.579.148.872.213.115.026.225.062.341.083.017 0 .032.009.05.012.038.008.073.021.112.027.062.011.122.031.186.04.049.007.1 0 .151.012h.033a11.918 11.918 0 0 0 1.7.136h.019a11.971 11.971 0 0 0 1.7-.136h.033c.05-.008.1 0 .153-.012s.124-.029.187-.04c.038-.006.073-.019.11-.027.017 0 .032-.009.049-.012.118-.023.231-.059.349-.084.288-.064.578-.126.861-.21.019-.006.039-.008.059-.014.055-.017.113-.024.169-.041.016-.006.035-.007.051-.012.044-.013.086-.032.129-.047s.063-.028.1-.041l.026-.01c.214-.076.417-.175.627-.261s.394-.154.584-.245c.047-.023.1-.036.142-.059.018-.009.04-.015.058-.024s.053-.02.078-.033.068-.04.1-.056c.056-.028.106-.069.161-.1a12.341 12.341 0 0 0 1.132-.695c.029-.02.062-.035.092-.056.008-.006.017-.009.024-.015.035-.026.076-.043.11-.068l236.3-171.666a30.6 30.6 0 0 0 11.107-34.281ZM408.8 49.48l46.342 142.674H362.46Zm-305.6 0 46.428 142.675h-92.68ZM26.817 299.251a6.526 6.526 0 0 1-2.361-7.308l20.34-62.42L193.835 420.6Zm38.245-82.972h92.411l65.881 202.941Zm183.416 273.83c-.047-.038-.092-.079-.138-.118l-.028-.026a8.366 8.366 0 0 1-.268-.231c-.172-.15-.341-.3-.5-.462.014.012.029.022.043.035l.055.046a12.191 12.191 0 0 0 1.091.929l.012.011c.018.013.033.03.051.045-.107-.075-.216-.148-.318-.229Zm7.514-48.482L217.226 322.21l-34.387-105.931h146.414Zm7.935 48.107c-.091.079-.178.157-.27.233l-.032.028c-.047.038-.091.079-.136.117-.1.08-.209.152-.313.229.018-.013.033-.032.053-.044l.009-.009a11.69 11.69 0 0 0 1.086-.926c.014-.013.03-.024.044-.036s.038-.03.054-.047c-.16.156-.322.307-.495.455Zm90.7-273.455h92.4l-18.91 24.23-139.468 178.7Zm130.567 82.967L318.2 420.563l149.084-191.025 20.258 62.393a6.528 6.528 0 0 1-2.353 7.315Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/faam/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.kaggle.com/faamds" target="_blank" rel="noopener" title="www.kaggle.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M304.2 501.5 158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@fralfaro" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://fralfaro.github.io/portfolio/" target="_blank" rel="noopener" title="fralfaro.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.1-20.4-4.2-41.8-4.2-64 0-22.2 2.1-43.6 4.2-64h185.4c2.1 20.4 3.3 41.8 3.3 64zm151.9-64c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42.9 3.2-64 0-22-1.1-43.4-3.2-64h123.1zm-10.5-32H376.7c-10-63.86-29.8-117.38-55.3-151.558C399.8 29.09 463.4 85.94 493.4 160zm-149.1 0H167.7c6.1-36.4 15.5-68.62 27-94.65 10.5-23.61 22.2-40.74 33.5-51.54C239.4 3.178 248.7 0 256 0c7.3 0 16.6 3.178 27.8 13.81 11.3 10.8 23 27.93 33.5 51.54 11.5 26.03 20.9 58.25 27 94.65zm-325.69 0C48.59 85.94 112.2 29.09 190.6 8.442 165.1 42.62 145.3 96.14 135.3 160H18.61zm112.59 32c-2.1 20.6-4.1 42-4.1 64 0 21.1 2 43.4 4.1 64H8.065C2.8 299.5 0 278.1 0 256s2.8-43.5 8.065-64H131.2zm63.5 254.6c-11.5-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.7-22.2 40.8-33.5 51.6-11.2 10.6-20.5 13.8-28.7 13.8-6.4 0-15.7-3.2-26.9-13.8-11.3-10.8-23-27.9-33.5-51.6zm-4.1 57C112.2 482.9 48.59 426.1 18.61 352H135.3c10 63.9 29.8 117.4 55.3 151.6zm130.8 0c25.5-34.2 45.3-87.7 55.3-151.6h116.7c-30 74.1-93.6 130.9-172 151.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

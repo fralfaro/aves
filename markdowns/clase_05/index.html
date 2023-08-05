@@ -1,0 +1,1252 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AVES: Análisis y Visualización, Educación y Soporte">
+      
+      
+        <meta name="author" content="Francisco Alfaro">
+      
+      
+        <link rel="canonical" href="https://github.com/fralfaro/aves/markdowns/clase_05/">
+      
+      <link rel="icon" href="../../images/ave.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Visualización de Tablas - Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visualizacion-de-tablas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Visualización de Tablas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Home" class="md-nav__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    Home
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Visualización de Información
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Instrucciones
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Instrucciones" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Instrucciones
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rubrica-proyecto/" class="md-nav__link">
+        Proyecto del Curso
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Recursos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../showcase/" class="md-nav__link">
+        Exhibición de Visualizaciones
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Unidades Teóricas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Teóricas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Teóricas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_01/" class="md-nav__link">
+        ¿Qué es Visualización?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_02/" class="md-nav__link">
+        ¿Qué visualizar? Abstracción de Datos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_03/" class="md-nav__link">
+        ¿Para qué visualizar? Abstracción de Tareas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_04/" class="md-nav__link">
+        ¿Cómo visualizar? Codificación Visual
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Visualización de Tablas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Visualización de Tablas
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scatterplot-grafico-de-dispersion" class="md-nav__link">
+    Scatterplot / Gráfico de Dispersión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#line-chart-grafico-de-lineas" class="md-nav__link">
+    Line Chart / Gráfico de Líneas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bar-chart-grafico-de-barras" class="md-nav__link">
+    Bar Chart / Gráfico de Barras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-usar-barras-o-lineas" class="md-nav__link">
+    ¿Cuándo usar barras o líneas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacked-bar-chart" class="md-nav__link">
+    Stacked Bar Chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalized-stacked-bar-chart" class="md-nav__link">
+    Normalized Stacked Bar Chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marimekko-chart-o-mosaic-plot" class="md-nav__link">
+    Marimekko Chart (o Mosaic Plot)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacked-area-charts-y-streamgraphs" class="md-nav__link">
+    Stacked Area Charts y Streamgraphs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalized-stacked-area" class="md-nav__link">
+    Normalized Stacked Area
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmap-mapa-de-calor" class="md-nav__link">
+    Heatmap / Mapa de Calor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-heatmap" class="md-nav__link">
+    Cluster Heatmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scatterplot-matrix-splom" class="md-nav__link">
+    Scatterplot Matrix (SPLOM)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-coordinates" class="md-nav__link">
+    Parallel Coordinates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pie-y-polar-area-charts" class="md-nav__link">
+    Pie y Polar Area charts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-plot" class="md-nav__link">
+    Box Plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-llevarse-para-la-casa" class="md-nav__link">
+    Qué llevarse para la casa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    Lecturas Recomendadas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_06/" class="md-nav__link">
+        Visualización de Datos Geográficos y Espaciales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_07/" class="md-nav__link">
+        Visualización de Redes y Árboles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_08/" class="md-nav__link">
+        Colores e Ilusiones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_09/" class="md-nav__link">
+        Buenas Prácticas y Evaluación
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_10/" class="md-nav__link">
+        Visualización de Texto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_11/" class="md-nav__link">
+        Reducción de Complejidad
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Unidades Prácticas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Prácticas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Prácticas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/01-python-tools/" class="md-nav__link">
+        Unidad Práctica 1: Introducción al curso de visualización con Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/02-python-tablas/" class="md-nav__link">
+        Unidad Práctica 2: Visualización de Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas-preliminario/" class="md-nav__link">
+        Unidad Práctica 3: Preparación de Datos de GeoPandas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas/" class="md-nav__link">
+        Unidad Práctica 3: Visualización de Mapas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/04-python-redes-preliminario/" class="md-nav__link">
+        Unidad Práctica 5 (preliminar): Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/05-python-redes-eod/" class="md-nav__link">
+        Unidad Práctica 5: Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/06-python-texto-guaguas/" class="md-nav__link">
+        Unidad Práctica 6: Texto en Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/07-python-gridspec/" class="md-nav__link">
+        Práctica 7: Esqueleto de una Infografía en Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scatterplot-grafico-de-dispersion" class="md-nav__link">
+    Scatterplot / Gráfico de Dispersión
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#line-chart-grafico-de-lineas" class="md-nav__link">
+    Line Chart / Gráfico de Líneas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bar-chart-grafico-de-barras" class="md-nav__link">
+    Bar Chart / Gráfico de Barras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-usar-barras-o-lineas" class="md-nav__link">
+    ¿Cuándo usar barras o líneas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacked-bar-chart" class="md-nav__link">
+    Stacked Bar Chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalized-stacked-bar-chart" class="md-nav__link">
+    Normalized Stacked Bar Chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marimekko-chart-o-mosaic-plot" class="md-nav__link">
+    Marimekko Chart (o Mosaic Plot)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stacked-area-charts-y-streamgraphs" class="md-nav__link">
+    Stacked Area Charts y Streamgraphs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalized-stacked-area" class="md-nav__link">
+    Normalized Stacked Area
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heatmap-mapa-de-calor" class="md-nav__link">
+    Heatmap / Mapa de Calor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-heatmap" class="md-nav__link">
+    Cluster Heatmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scatterplot-matrix-splom" class="md-nav__link">
+    Scatterplot Matrix (SPLOM)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-coordinates" class="md-nav__link">
+    Parallel Coordinates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pie-y-polar-area-charts" class="md-nav__link">
+    Pie y Polar Area charts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-plot" class="md-nav__link">
+    Box Plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-llevarse-para-la-casa" class="md-nav__link">
+    Qué llevarse para la casa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    Lecturas Recomendadas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="visualizacion-de-tablas">Visualización de Tablas</h1>
+<p>En esta unidad veremos técnicas de visualización para tablas, el tipo de dataset más común. Las técnicas que se utilizan con datasets de tablas suelen enfocarse en <strong>expresar</strong> el contenido de estás. Como las tablas contienen muchos elementos (o al menos podemos suponer que es así), necesitamos organizarlos (<em>arrange</em>) en el espacio de la visualización. Dependiendo de la tarea que debamos resolver esa organización será a través de maneras de <strong>separar</strong> las marcas, de <strong>ordenarlas</strong>, o de <strong>compararlas</strong> con una base alineada.</p>
+<p>Además tenemos que considerar que existen distintos tipos de tablas. Si definimos que una llave (<em>key</em>) es la manera de identificar un elemento en una taba, podemos clasificar las tablas de acuerdo a la cantidad de <em>llaves</em> (<em>keys</em>) que tienen. Una tabla con <code>1</code> llave es una lista de elementos (que pueden tener varios atributos). Una tabla con <code>2</code> llaves es una matriz 2D. Una tabla con <code>3</code> llaves es una matriz 3D o un volumen. Y una tabla con <code>3+</code> llaves, o incluso sin un número constante de llaves, puede ser considerada como una tabla que se puede dividir recursivamente en otras tablas (<em>recursive subdivision</em>).</p>
+<p>Estos conceptos son ilustrados en la siguiente imagen:</p>
+<p><img alt="Organización de tablas. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/07_tablas/images/arrange_tables_hu8c9686d8c28e0e356d226d8e5d2ccf79_119524_660x0_resize_box_3.png" /></p>
+<p>Organización de tablas. Fuente: Visualization Analysis &amp; Design.</p>
+<p>Los otros conceptos que son relevantes a la hora de organizar elementos son la <strong>orientación de los ejes</strong> y la <strong>densidad de a organización</strong>. Tradicionalmente la orientación es <em>rectilínea y ortogonal</em> (como en los típicos ejes x e y), pero también puede haber <em>ejes paralelos</em> y <em>radiales</em>. Respecto a la densidad, hay dos tipos: <em>densa</em>, en la que puede haber muchos elementos en pantalla, pero también hay espacio que no es utilizado, o <em>exhaustiva</em> (<em>space-filling</em>), porque utiliza todo el espacio disponible (es decir, cada píxel) independiente del número de elementos.</p>
+<p>En esta unidad comentaremos técnicas de visualización para resolver tareas con tablas. Comentaremos estos aspectos de las visualizaciones, y también responderemos preguntas relevantes, como ¿para qué tarea se utiliza esta visualización?¿cuál codificación visual utiliza?¿cuántos datos puedo mostrar sin sacrificar eficiencia?</p>
+<p>Iniciemos el recorrido.</p>
+<h2 id="scatterplot-grafico-de-dispersion">Scatterplot / Gráfico de Dispersión</h2>
+<p>El clásico <code>scatterplot</code> es un gráfico denso que expresa atributos cuantitativos. Se suele ver así:</p>
+<p><img alt="Scatterplots básicos. Al segundo gráfico se le ha agregado una curva de tendencia. Fuente: A layered grammar of graphics, Wickham." src="../../../courses/infovis/07_tablas/images/scatterplot_basic_hu822ce5e3c758a8be1d1911b9c0bfd8cd_134830_660x0_resize_box_3.png" /></p>
+<p>Scatterplots básicos. Al segundo gráfico se le ha agregado una curva de tendencia. Fuente: A layered grammar of graphics, Wickham.</p>
+<p>Como datos, el <code>scatterplot</code> utiliza 2 atributos cuantitativos de la tabla. No usa las llaves de ésta en tanto no le importa el identificador de cada elemento (pero sí los nombres de los atributos). La marca utilizada es un punto por cada observación), que es posicionada en el espacio a través de los canales de posición en x e y.</p>
+<p>Este gráfico se utiliza para <strong>encontrar patrones</strong>, <strong>outliers</strong>, <strong>distribuciones</strong>, <strong>correlaciones</strong>, e <strong>identificar clústers</strong>. Su escalabilidad es limitada, podemos mostrar cientos de observaciones. Con más la puede haber demasiada sobreposicioń (<em>overlapping</em>), de modo que por mostrar mucho no vemos nada.</p>
+<p>El siguiente es un <code>scatterplot</code> que grafica ejemplifica algunas tareas:</p>
+<p><img alt="Infografía de 538." src="../../../courses/infovis/07_tablas/images/scatterplot_movies_hu2be6b8c721c539cd61ad0a46c6be2bf2_236565_660x0_resize_box_3.png" /></p>
+<p>Infografía de 538.</p>
+<p>Esta visualización nos muestra la correlación entre la crítica de un libro (eje x) y la crítica de la película que adapta cada libro (eje y). Al mismo tiempo, se encarga de anunciarnos los outliers, que son de varios tipos, como aquellos libros malos con películas horrendas (<em>Battlefield Earth</em>), y aquellos libros buenos con películas aclamadas (<em>The Godfather</em>).</p>
+<p>El <code>scatterplot</code> es parte de la navaja suiza de toda persona que haga visualización. Es un buen punto de partida para explorar un dataset.</p>
+<h2 id="line-chart-grafico-de-lineas">Line Chart / Gráfico de Líneas</h2>
+<p>El <code>linechart</code> es otro gráfico clásico. Al igual que el gráfico anterior, muestra dos valores cuantitativos; a diferencia, uno de éstos valores es la llave de la tabla. La marca son puntos conectados a través de líneas, lo que configura una polílinea en la visualización (los puntos pueden tener tamaño 0, de modo que solamente la línea es visible). Este ejemplo nos muestra el peso de un gato (atributo) a lo largo de los años (llave):</p>
+<p><img alt="Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/07_tablas/images/line_chart_hudac677ed5fb275774111fc360ebea419_48419_660x0_resize_box_3.png" /></p>
+<p>Fuente: Visualization Analysis &amp; Design.</p>
+<p>Nos damos cuenta que la posición vertical de los puntos expresa un valor cuantitativo, y la posición horizontal es ordenada por la llave. El orden de la llave es importante: este gráfico no tendría sentido si los años estuviesen dispuestos al azar, porque las líneas que conectan cada par consecutivo de puntos enfatizan la relación que hay entre un ítem y el siguiente. El orden es el que permite que en un <code>linechart</code> se pueden realizar tareas de encontrar tendencias y patrones. También resulta directo encontrar extremos locales y globales.</p>
+<p>El ejemplo del <code>linechart</code> nos permite ejemplificar el uso de las llaves. La llave en el ejemplo es el tiempo porque es el atributo que identifica a cada observación — un año no se puede repetir en esos datos, pero un peso sí.</p>
+<p>Ahora bien, ¿qué pasa si tenemos múltiples entidades en un gráfico? Veamos un <code>linechart</code> con múltiples líneas:</p>
+<p><img alt="Visualización de cantidad de visitas que recibió cada candidate presidencial o la presidenta Bachelet en el período de la última elección. Fuente: Wikipedia Pageviews" src="../../../courses/infovis/07_tablas/images/line_chart_wikipedia_huf37dcaa229bd7ad4b7d2721a0f8144e2_723949_660x0_resize_box_3.png" /></p>
+<p>Visualización de cantidad de visitas que recibió cada candidate presidencial o la presidenta Bachelet en el período de la última elección. Fuente: Wikipedia Pageviews.</p>
+<p>Este gráfico creado en una <a href="https://tools.wmflabs.org/pageviews/?project=es.wikipedia.org&amp;platform=all-access&amp;agent=user&amp;start=2015-07&amp;end=2018-08&amp;pages=Michelle_Bachelet%7cSebasti%C3%A1n_Pi%C3%B1era%7cManuel_Jos%C3%A9_Ossand%C3%B3n%7cCarolina_Goi%C4%87%7CJos%C3%A9_Antonio_Kast%7cEvelyn_Matthei">herramienta de Wikipedia</a> nos muestra la cantidad de visitas que recibieron los artículos de les candidates presidenciales de la última elección en Chile. Este gráfico tiene dos llaves, de modo que podemos identificar el número de visitas (atributo) en una fecha determinada (llave 1) a un artículo (llave 2).</p>
+<p>Otra característica del ejemplo es que su canal de posición para el atributo cuantitativo utiliza una escala logarítmica en vez de una escala lineal. Eso permite comparar tendencias en el <em>orden de magnitud</em> de la serie temporal más que en la magnitud en sí misma. Prueben en la herramienta como luce el gráfico con la escala tradicional — notarán que los insights que se obtienen del gráfico son otros. Por ejemplo, en este gráfico se aprecia cuándo Carolina Goic se anunció como candidata gracias a la escala logarítmica. En la escala lineal, debido a la magnitud que tienen otras personas más populares, los cambios en esa tendencia se pierden.</p>
+<h2 id="bar-chart-grafico-de-barras">Bar Chart / Gráfico de Barras</h2>
+<p>Para cerrar la trilogía de clásicos estudiaremos el <code>barchart</code>. Esta visualización expresa un atributo categórico y uno cuantitativo de la siguiente manera:</p>
+<p><img alt="Dos maneras de graficar los mismos datos con un barchart. Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/07_tablas/images/bar_chart_hu2ae71d9be86e049330efe1df89963082_41801_660x0_resize_box_3.png" /></p>
+<p>Dos maneras de graficar los mismos datos con un barchart. Fuente: Visualization Analysis &amp; Design.</p>
+<p>El ejemplo muestra dos gráficos para enfatizar que tenemos un atributo categórico (la raza de un animal) y un atributo cuantitativo (su peso promedio). La marca es una línea, que consideramos una barra debido a su grosor. El canal de largo de la barra nos permite expresar el valor cuantitativo, y la ubicación de la barra en cada región del espacio (definiendo una por marca o barra) nos permite expresar el valor categórico. Hay dos ejemplos para ilustrar que aquí sí tiene sentido establecer distintos órdenes para el atributo categórico: a la izquierda se ve el orden alfabético; a la derecha, el orden de acuerdo al valor, de menor a mayor.</p>
+<p>Las tareas que permite un <code>barchart</code> son comparar, encontrar valores, encontrar extremos. Se pueden mostrar de decentas a cientos de niveles para el atributo llave, pero no más, de otro modo se vuelve difícil distinguir barras y sus etiquetas.</p>
+<p>Ilustremos un uso con más categorías y con una configuración de canales distinta. Este gráfico muestra el uso de transporte público en comparación al privado en cada comuna de Santiago:</p>
+<p><img alt="Uso de transporte público en Santiago, por comuna, usando Encuesta OD 2012." src="../../../courses/infovis/07_tablas/images/bar_chart_transantiago_hu5cd9e39bea92ff11f2a23a151d38b56a_127159_660x0_resize_box_3.png" /></p>
+<p>Uso de transporte público en Santiago, por comuna, usando Encuesta OD 2012.</p>
+<p>Lo primero que vemos es que los canales para la llave y el atributo cuantitativo han cambiado de rol — ahora las barras son <em>horizontales</em>. También apreciamos que el valor que expresan las barras puede ser divergente, lo que causa que un grupo de barras apunte en una dirección y otro grupo en la dirección opuesta. Además se utiliza un canal adicional, el <em>tono</em> de cada marca, para expresar otro atributo categórico (el sector al que pertenece cada comuna).</p>
+<p>Un <code>barchart</code> es un gráfico que, pese a la rigidez que parezca comunicar un grupo de barras alineadas, es en realidad flexible para realizar múltiples tareas, de apariencia configurable, y fácil de componer con otras visualizaciones para crear visualizaciones profundas, atractivas y sobretodo, eficientes.</p>
+<h2 id="cuando-usar-barras-o-lineas">¿Cuándo usar barras o líneas?</h2>
+<p>Tanto <code>linechart</code> como <code>barchart</code> visualizan dos atributos, y es posible hacer que el atributo categórico del <code>barchart</code> funcione como llave en el <code>linechart</code> Sin embargo, que sea posible lo significa que sea correcto. Veamos dos ejemplos donde se visualiza la altura de dos grupos de población, primero por sexo y luego por edad:</p>
+<p><img alt="“Mientras más hombre sea el sexo de una persona, más alta es”. Fuente: Visualization Analysis &amp; Design, basado en &lt;em&gt;Bars and Lines: A Study of Graphic Communication&lt;/em&gt; de Zacks &amp; Tversky, en Memory and Cognition." src="../../../courses/infovis/07_tablas/images/bars_and_lines_hudf6bd69d6abe28fb6cb74cea89723138_61429_660x0_resize_box_3.png" /></p>
+<p>“Mientras más hombre sea el sexo de una persona, más alta es”. Fuente: Visualization Analysis &amp; Design, basado en <em>Bars and Lines: A Study of Graphic Communication</em> de Zacks &amp; Tversky, en Memory and Cognition.</p>
+<p>La fila superior muestra como variable categórica el sexo (binario, hombre o mujer) y la fila inferior muestra una variable cuantitativa (10 o 12 años). Nos damos cuenta que un gráfico de barras se puede usar siempre (lo que no significa que siempre sea óptimo usarlo), en cambio, el gráfico de líneas para la variable sexo no es adecuado, ya que puede llevar a un error de interpretación. En el caso de la edad, una persona podría mirar el punto medio de la línea, e interpolar los valores de modo de calcular una aproximación de la altura para los 11 años de edad. Realizar el mismo proceso para la variable sexo es errado, puesto que es un valor categórico no ordinal.</p>
+<p>¿Cuál usar? En resumen, <code>barchart</code> si la llave es categórica, <code>linechart</code> si es ordinal o cuantitativo. Usar <code>linechart</code> con llaves categóricas no ordinales rompe el principio de expresividad.</p>
+<h2 id="stacked-bar-chart">Stacked Bar Chart</h2>
+<p>El <code>stacked_barchart</code> es un gráfico de barras apiladas. Esto quiere decir que ya no usamos solamente una barra por categoría, sino múltiples, una sobre otra. Como ejemplo, el siguiente gráfico demuestra como distintas componentes de un sistema computacional (procesador, procedimiento, estructura de datos) intentan leer información que no están en la memoria caché, forzando una lectura lenta del sistema para traer datos a la memoria. Ese tipo de análisis es crucial es la implementación de aplicaciones y sistemas de alta <em>performance</em>:</p>
+<p><img alt="Uso de memoria caché en un sistema. Fuente: &lt;em&gt;Using Visualization to Understand the Behavior of Computer Systems&lt;/em&gt;. Bosch. Ph.D. thesis, Stanford Computer Science, 2001." src="../../../courses/infovis/07_tablas/images/stacked_bar_chart_hua4d7d590d2c1e1a9273cb9b412d6b315_238435_660x0_resize_box_3.png" /></p>
+<p>Uso de memoria caché en un sistema. Fuente: <em>Using Visualization to Understand the Behavior of Computer Systems</em>. Bosch. Ph.D. thesis, Stanford Computer Science, 2001.</p>
+<p>Para generar este gráfico necesitamos un atributo extra, otro atributo categórico (sumado al categórico y al cuantitativo que ya teníamos). La marca es una pila vertical de múltiples barras, un <em>glifo</em> que compone múltiples marcas. Los canales son el largo de cada barra, la región espacial (una por glifo, expresando a la categoría principal), y el tono de cada barra (expresando a la categoría secundaria dentro de cada glifo).</p>
+<p>Al ser un <code>barchart</code> anidado, el <code>stacked_barchart</code> hereda las operaciones del gráfico base, añadiendo la tarea adicional de ver relaciones de parte con el todo. Su escalabilidad para el atributo categórico principal sigue intacta, pero respecto al atributo utilizado en la pila, no es recomendable ir más allá de una docena de niveles.</p>
+<p>Noten que los glifos se alinean a través de la barra que está en la posición inferior. Por tanto, las operaciones de comparación serán más fáciles con esas barras que con el resto.</p>
+<h2 id="normalized-stacked-bar-chart">Normalized Stacked Bar Chart</h2>
+<p>Existe una variación para el gráfico anterior, llamada <code>normalized_stacked_barchart</code>. Como lo dice su nombre, este gráfico normaliza cada glifo — es decir, antes de graficar cada glifo, divide los valores de cada barra por la suma total de valores en el glifo. De este modo, todos los glifos tienen el mismo tamaño y utilizan todo el espacio vertical. El siguiente gráfico con la distribución de uso de modo de transporte en Santiago ejemplifica esto:</p>
+<p><img alt="Uso de modos de transporte en Santiago." src="../../../courses/infovis/07_tablas/images/normalized_stacked_bar_mode_of_transportation_huc508b00f318ce4d1c428b22a04bbaad6_128165_660x0_resize_box_3.png" /></p>
+<p>Uso de modos de transporte en Santiago.</p>
+<p>Sabemos que cada comuna tiene una población distinta, por tanto, en un gráfico sin normalización veríamos el total de viajes por modo de transporte en cada comuna. Eso puede ser informativo, pero si nos interesa un valor relativo que nos permita comparar proporciones, el gráfico normalizado nos permite hacerlo, facilitando las tareas de entender relaciones parte-de-un-todo, y comparaciones relativas.</p>
+<h2 id="marimekko-chart-o-mosaic-plot">Marimekko Chart (o Mosaic Plot)</h2>
+<p>¿Qué sucede cuando al <code>normalized_stacked_barchart</code> le agregamos un canal para otro atributo cuantitativo? En la siguiente imagen se despliega como cada estado (atributo categórico) en los Estados Unidos generó energía eléctrica. El glifo codifica la distribución de las fuentes de energía (atributos categórico secundario para el color, y el atributo cuantitativo para el tamaño). La cantidad de energía total generada por cada estado es expresada en el canal de grosor de cada glifo:</p>
+<p><img alt="Consumo de energía en los US. Fuente: Washington Post" src="../../../courses/infovis/07_tablas/images/marimekko_hubb8413a3fc12eb6939595e33e3b73026_1015412_660x0_resize_q75_h2_box_2.webp" /></p>
+<p>Consumo de energía en los US. Fuente: Washington Post.</p>
+<p>El <a href="https://www.washingtonpost.com/climate-environment/2020/07/30/biden-calls-100-percent-clean-electricity-by-2035-heres-how-far-we-have-go/?arc404=true">Washington Post</a> publicó esto. Además, quienes diseñaron el gráfico tomaron decisiones de diseño brillantes: la paleta de colores que utilizó para cada fuente de energía tiene relación con su tipo (limpia o no), y el alineamiento de los glifos sutilmente divide las energías limpias de las sucias. Con esto enfatizan ciertas interpretaciones por parte de quien lee y observa la visualización.</p>
+<p>Este tipo de visualización es conocida como <code>marimekko_chart</code> o <code>mosaic_plot</code>.</p>
+<h2 id="stacked-area-charts-y-streamgraphs">Stacked Area Charts y Streamgraphs</h2>
+<p>Del mismo modo que un <code>linechart</code> presenta una llave de tipo cuantitativa u ordinal, y el <code>barchart</code> de tipo categórica, el <code>stacked_area_chart</code> presenta una llave de tipo cuantitativa u ordinal. Así, pasamos de una o más línea que expresaban valores, a una o múltiples áreas que expresan valores: la visualización presenta distintas capas (<em>layers</em>). Esto implica que necesitamos un atributo adicional que se codifica en un canal: el orden de estas capas. El sitio <a href="http://www.storytellingwithdata.com/blog/2020/4/9/what-is-an-area-graph">Storytelling with Data</a> nos brinda un ejemplo que visualiza la venta de música en distintos formatos:</p>
+<p><img alt="&ldquo;What is an area graph.&rdquo; Fuente: Mike Cisneros, en Storytelling with Data." src="../../../courses/infovis/07_tablas/images/area_stacked_music_sales_hub2f3901fa0e6eacf000895bea84b54e4_169971_660x0_resize_box_3.png" /></p>
+<p>‘What is an area graph.’ Fuente: Mike Cisneros, en Storytelling with Data.</p>
+<p>Para cada año existe un volumen de ventas de cada medio. Se aprencia claramente la edad dorada de las cintas y los CDs, y la emergencia del <em>streaming</em>. ¿Alcanzaste a comprar <em>cassettes</em> de música? Creo que el primero que me regalaron fue <em>Use your illusion II</em> de Guns ’n Roses.</p>
+<p>La siguiente imagen ilustra que un <code>stacked_area_chart</code> puede usar distintas funciones de conexión entre elementos de la llave índice (años en este caso). Por ejemplo, se puede usar la _step function_o <a href="https://es.wikipedia.org/wiki/Funci%C3%B3n_escalonada"><em>función escalonada</em></a> que hace que tenga una curva que no es suave, pero que no fuerza interpolaciones entre observaciones, dando a entender que hay una medición por año. La visualización se refiere a la carrera por llegar al espacio:</p>
+<p><img alt="&ldquo;The space race is dominated by new contenders.&rdquo; Fuente: The Economist." src="../../../courses/infovis/07_tablas/images/stacked_area_space_hu6a710a59c2238b9301bde9058abad995_356182_660x0_resize_box_3.png" /></p>
+<p><em>The space race is dominated by new contenders</em>. Fuente: The Economist.</p>
+<p>Como vemos, el atributo categórico de cada año es un país, y el valor es la cantidad de lanzamientos al espacio al año. El gráfico tiene una curiosidad y es que en realidad son dos visualizaciones: una superior, ya descrita, y una inferior, donde el atributo categórico es una compañía privada. La codificación visual es similar, pero el canal de largo de los glifos está invertido. Así, tenemos una separación clara entre entidades (países / privados).</p>
+<p>Esa separación nos lleva a mostrar un tipo de visualización derivada, conocida como <code>streamgraph</code>. Los <code>streamgraph</code> generalizan las visualizaciones de áreas apiladas al definir una base que no es constante para los glifos — hasta este momento, todos los glifos han estado <em>alineados</em> respecto a un eje. ¿Qué pasa si ese eje es variable?</p>
+<p>Así se ve un <code>streamgraph</code> de acuerdo al paper que estableció su definición formal:</p>
+<p><img alt="Fuente: &lt;em&gt;Stacked Graphs Geometry &amp; Aesthetics&lt;/em&gt;. Byron and Wattenberg. IEEE Trans. Visualization and Computer Graphics." src="../../../courses/infovis/07_tablas/images/streamgraph_hucc78ca518b250699d4ffe249d37846af_975544_660x0_resize_box_3.png" /></p>
+<p>Fuente: <em>Stacked Graphs Geometry &amp; Aesthetics</em>. Byron and Wattenberg. IEEE Trans. Visualization and Computer Graphics.</p>
+<p>Esta visualización tiene una apariencia orgánica que puede ser atractiva si se configura bien. Mencioné que el paper la define formalmente porque antes ya existían técnicas similares, pero la definición de <code>streamgraph</code> las generaliza. Por ejemplo, el <code>stacked_area_chart</code> es un caso especial de <code>streamgraph</code> donde la base es una recta.</p>
+<p>En tiempos de COVID-19 también se han realizado visualizaciones que incluyen <code>streamgraph</code> (y <code>normalized_stacked_bar_chart</code>), como muestra <a href="https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938">este artículo del Financial Times</a>:</p>
+<p><img alt="Fuente: Financial Times." src="../../../courses/infovis/07_tablas/images/covid_streamgraph_hu96364faff485c12253d33365a7e26ad5_271044_660x0_resize_q75_h2_box_2.webp" /></p>
+<p>Fuente: Financial Times.</p>
+<p>Pongamos la atención en el <code>streamgraph</code>: el no tener una base fija nos facilita la comparación entre el número de muertes relacionadas a COVID-19 entre cada país/región. El tono de las áreas, así como el orden de las capas, nos permite realizar las tareas que hemos comentado anteriormente no solo para áreas específicas sino también para gruposde éstas.</p>
+<p>Aunque esta última visualización tenga pocas áreas (en orden de decenas), un <code>streamgraph</code> puede mostrar hasta cientos de llaves temporales debido a la amplitud de la ventana temporal que puede desplegar. En comparación, el <code>stacked_area_chart</code> no tiene la capacidad de mostrar tantas. El motivo, más que en las técnicas de visualización, está en los datos: en un <code>streamgraph</code> se suelen mostrar períodos de tiempo con áreas que destacan mucho en un solo instante, dejando espacio libre en otros momentos, mientras que en un <code>stacked_area_chart</code> la variación no es tanta.</p>
+<h2 id="normalized-stacked-area">Normalized Stacked Area</h2>
+<p>Éste gráfico es el análogo del <code>normalized_stacked_barchart</code>, pero para áreas. Quizás uno de los gráficos de tipo <code>normalized_stacked_area</code> que más me ha inspirado es el siguiente, proveniente del <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2009/07/31/business/20080801-metrics-graphic.html">New York Times</a> (aunque ya no funciona en todos los navegadores debido a la tecnología que utilizaba), mostrando las rutinas diarias de las personas en Estados Unidos de acuerdo a una encuesta de uso del tiempo:</p>
+<p><img alt="¿Qué hacen las personas en un día? Gráfico interactivo del New York Times." src="../../../courses/infovis/07_tablas/images/normalized_area_chart_hucc6b60c9a00260d18d1f34509c6ed45e_295666_660x0_resize_box_3.png" /></p>
+<p>¿Qué hacen las personas en un día? Gráfico interactivo del New York Times.</p>
+<p>La rutina desplegada en la imagen representa el promedio de la población. Sin embargo, la visualización no se limita a eso — mediante controles de interactividad, era posible ver el mismo gráfico para hombres, mujeres, personas sin empleo, ancianes, gente de color, etc. La interactividad resaltaba las diferencias e injusticias de la sociedad, al mostrar que no todo el mundo dedicaba el mismo tiempo a las actividades de ocio, sociabilidad, relajo e incluso al descanso.</p>
+<h2 id="heatmap-mapa-de-calor">Heatmap / Mapa de Calor</h2>
+<p>Las visualizaciones anteriores eran de tipo denso, utilizaban ejes rectilíneos, y trabajaban con datos de una llave. En cambio, la visualización <code>heatmap</code> es de tipo <em>space-filling</em> y trabaja con datos de dos llaves, es decir, con matrices. El siguiente es un ejemplo de un <code>heatmap</code> básico:</p>
+<p><img alt="Tamaño de cosecha de distintas granjas por tipo de producto. Fuente: matplotlib." src="../../../courses/infovis/07_tablas/images/heatmap_basic.png" /></p>
+<p>Tamaño de cosecha de distintas granjas por tipo de producto. Fuente: matplotlib.</p>
+<p>Los datos consisten en dos llaves (categóricas) y un atributo ordinal o cuantitativo. La marca es una área, y todas las arcas están separadas y alineadas en una matriz 2D. Los canales de posición mapean las categorías a posiciones x e y de cada área, y el canal de luminancia o saturación de cada área expresa el valor cuantitativo correspondiente. Esta codificación permite que el <code>heatmap</code> sea efectivo para encontrar outliers y clusters (basado en la similaridad entre filas y columnas). Su escalabilidad es flexible, pudiendo mostrar hasta 1 millón de áreas, cientos ed niveles categóricos, y aproximadamente 10 niveles en el atributo cuantitativo (veremos el por qué de este límite en la clase de colores).</p>
+<p>En la clase de exhibición de proyectos vimos este <code>heatmap</code> creado en el <a href="https://graphics.wsj.com/infectious-diseases-and-vaccines/">Wall Street Journal</a> sobre la aplicación de la vacuna para el sarampión en los Estados Unidos:</p>
+<p><img alt="Heatmap de incidencia de sarampión en los Estados Unidos. Fuente: Wall Street Journal." src="../../../courses/infovis/07_tablas/images/heatmap_hu2ebbfb0c77f82bf3f354aeaebb08ee69_159506_660x0_resize_box_3.png" /></p>
+<p>Heatmap de incidencia de sarampión en los Estados Unidos. Fuente: Wall Street Journal.</p>
+<p>Este <code>heatmap</code> tuvo impacto, fue difundido y discutido por mucha gente alrededor del mundo. Entrega un mensaje claro. Y, lamentablemente, rompe el principio de expresividad, ya que utiliza un canal (<em>tono</em>) para un atributo cuantitativo. Sin embargo, eso no impide entender la visualización, porque el principal insight que se obtiene en ella es la distribución pre- y post-vacuna. Al observar la paleta de colores (particularmente la distribución de tonos en ella) podemos sugerir que el proceso de elección de esa paleta de colores fue deliberado, debido a la escasa presencia del tono celeste/azul, que sin embargo domina la matriz. ¡Quizás fue una manera de acentuar esa prominencia en el gráfico!</p>
+<h2 id="cluster-heatmap">Cluster Heatmap</h2>
+<p>La técnica <code>clustermap</code> extiende el <code>heatmap</code> de la siguiente manera: primero, se añade una tarea de derivar datos, que consiste en realizar <em>clustering</em> de las filas y las columnas del heatmap; segundo, se agrega una nueva marca, el <em>dendrograma</em>, un árbol que visualiza los resultados del clustering (son dos en total), utilizando líneas que determinan las conexiones jerárquicas de los clusters; finalmente, una marca extra que consiste en un área alineada con cada llave, cuyo tono identifica el cluster al que pertenece (esta marca es opcional, no siempre se utiliza). Como ejemplo, una red de zonas del cerebro se ve así en un ejemplo de la biblioteca <code>seaborn</code></p>
+<p><img alt="Fuente: &lt;code&gt;seaborn&lt;/code&gt;." src="../../../courses/infovis/07_tablas/images/structured_heatmap_hu6892bdd3144683fc30464540aef7436b_62234_660x0_resize_box_3.png" /></p>
+<p>Fuente: <code>seaborn</code>.</p>
+<p>La propuesta del <code>clustermap</code> es que utiliza el clustering para (re-)ordenar las llaves de acuerdo a su posición en los árboles. Esto permite entender las relaciones grupales en el dataset de manera directa. También es utilizado en análisis exploratorio, con el fin de aplicar técnicas más avanzadas de clustering de manera posterior.</p>
+<h2 id="scatterplot-matrix-splom">Scatterplot Matrix (SPLOM)</h2>
+<p>Hemos visto gráficos <em>space-filling</em> que visualizan matrices, y gráficos de <em>densidad</em> que visualizan tablas de una dimensión. La técnica <code>splom</code> mezcla lo mejor de ambos mundos: ¡una matriz de visualizaciones <code>scatterplot</code>! La <code>splom</code> explora todos los pares posibles de atributos de una tabla con un <code>scatterplot</code> de cada uno de esos pares. Una tabla donde cada fila es un modelo de automóvil y sus atributos son caballos de fuerza (<em>horsepower</em>), peso (<em>weight</em>), aceleración (<em>acceleration</em>) y desplazamiento (<em>displacement</em>) se ve así:</p>
+<p><img alt="Scatterplot Matrix (SPLOM)." src="../../../courses/infovis/07_tablas/images/scatter_matrix_hueb058e7a261a6a170d7a056e80a6cb79_427610_660x0_resize_box_3.png" /></p>
+<p>Scatterplot Matrix (SPLOM).</p>
+<p>Observamos que cada <code>scatterplot</code> hereda la codificación visual del gráfico individual. La <code>splom</code> se suele utilizar para identificar pares de variables que presenten relaciones interesantes (de acuerdo a su correlación). Existen variaciones del gráfico, por ejemplo, se pueden mostrar los <code>scatterplot</code> solamente en la mitad superior o en la inferior, y utilizar un gráfico diferente en la otra mitad (puesto que los <code>scatterplot</code> son simétricos). También se puede utilizar la diagonal para mostrar un gráfico específico para cada variable (puede ser un gráfico de distribución, como un histograma).</p>
+<p>La escalabilidad de la <code>splom</code> llega a la docena de atributos, y, como cada <code>scatterplot</code> puede ser pequeño, a decenas o cientos de ítemes.</p>
+<h2 id="parallel-coordinates">Parallel Coordinates</h2>
+<p>La técnica de coordenadas paralelas (<code>parallel_coordinates</code>), al igual que <code>splom</code>, se encarga de visualizar datos multidimensionales, particularmente múltiples atributos cuantitativos. Utiliza codificaciones visuales conocidas pero de una manera distinta. Hay dos tipos de marcas, las dos son líneas: primero, cada observación/fila/ítem de la tabla es una polilínea; segundo, cada atributo es representado por un eje. Los ejes pueden ser horizontales o verticales, pero solo puede haber un tipo de eje. Están dispuestos de manera paralela (por ello el nombre de la visualización), de modo que cada polilínea conecta los valores de cada atributo del ítem correspondiente. En el sitio <a href="https://observablehq.com/@d3/parallel-coordinates">Observable</a> muestran un dataset de automóviles similar al de la visualización anterior, esta vez utilizando <code>parallel_coordinates</code>:</p>
+<p><img alt="Demostración de Parallel Coordinates. Fuente: Observable." src="../../../courses/infovis/07_tablas/images/parallel_coordinates_hu203288a16bafc7ca6226d7e68908bb65_1561582_660x0_resize_q75_h2_box_2.webp" /></p>
+<p>Demostración de Parallel Coordinates. Fuente: Observable.</p>
+<p>De acuerdo a la definición, cada línea es un automóvil. Además se utiliza el canal de tono de cada línea para identificar su valor de uno de los ejes, en el caso de la imagen, el atributo <em>economy</em>. Eso lo vuelve un canal redundante, pues <em>economy</em> es también un eje, sin embargo, darle color a las líneas facilita la interpretación del gráfico y la distinción de éstas.</p>
+<p>Una dificultad en la interpretación de este gráfico es determinar el orden de los ejes. Dos ejes juntos permiten ver relaciones entre los dos atributos codificados en ellos, en función de las líneas que los conectan, pero se pierden las relaciones con los ejes que están más lejanos. Debido a eso, algunas implementaciones de <code>parallel_coordinates</code> permiten cambiar la posición de cada eje de manera interactiva.</p>
+<p>El diseño de <code>parallel_coordinates</code> tiene una escalabilidad de decenas de atributos y cientos de ítemes.</p>
+<h2 id="pie-y-polar-area-charts">Pie y Polar Area charts</h2>
+<p>Otros clásicos de la visualización (y cómo no decirlo, controversiales también) son el <code>pie_chart</code> y el <code>polar_area_chart</code>. Ambos tienen apariencias similares y utilizan ejes radiales, pero utilizan canales distintos. Son gráficos basados en ángulos, que visualizan un atributo llave categórico y un atributo cuantitativo. En ambos la marca es un área que nace en un círculo y que tiene un radio y ángulo. La siguiente imagen muestra ambos gráficos:</p>
+<p><img alt="Pie Chart y Polar Area Chart. Fuente: A layered grammar of graphics, Wickham." src="../../../courses/infovis/07_tablas/images/radial_charts_hua27e8ce3f0aea1807ca0c25519cd51a8_39686_660x0_resize_q75_h2_box_2.webp" /></p>
+<p>Pie Chart y Polar Area Chart. Fuente: A layered grammar of graphics, Wickham.</p>
+<p>Las diferencias en los canales son las siguientes:</p>
+<ul>
+<li><code>pie_chart</code>: todas las marcas tienen el mismo radio. El canal angular codifica el valor cuantitativo.</li>
+<li><code>polar_area_chart</code>: todas las marcas tienen el mismo ángulo. El canal radial (por tanto, área) codifica el valor cuantitativo.</li>
+</ul>
+<p>En ambos el tono codifica la llave categórica. Las tareas que se pueden realizar con estas visualizaciones son la comparación de relaciones y el entendimiento de parte-de-un-todo. Sin embargo, ángulo y área son canales menos precisos que el largo de una línea o barra para realizar comparaciones.</p>
+<p>Comparando estos gráficos con otras técnicas, la disposición circular implica que se necesita un área de gran tamaño para entender las relaciones, lo que podría utilizar mucho espacio en comparación con otras alternativas basadas en barras (que pueden ser rectángulos delgados): un <code>pie_chart</code> es el equivalente de un glifo de barras apiladas en el <code>normalized_stacked_bar_chart</code>, un <code>polar_area_chart</code> es el equivalente de un <code>bar_chart</code>.</p>
+<h2 id="box-plot">Box Plot</h2>
+<p>Las técnicas que hemos visto en esta unidad trabajan directamente con la tabla a visualizar. Ahora bien, existen ocasiones en las que no necesitamos ver cada elemento de la tabla, sino que la tarea es encontrar la distribución de grupos dentro de la tabla, y comparar dichas distribuciones. Ésa es la funcionalidad de un <code>box_plot</code>, que agrega los ítemes de una tabla, como se ve a continuación:</p>
+<p><img alt="Datos de experimentos que mide la velocidad de la luz. Fuente: Wikipedia." src="../../../courses/infovis/07_tablas/images/boxplot_hue94a72c9c1d321b127225699e8771e13_54029_660x0_resize_box_3.png" /></p>
+<p>Datos de experimentos que mide la velocidad de la luz. Fuente: Wikipedia.</p>
+<p>Este <code>box_plot</code> muestra los resultados de distintos experimentos (numerados del 1 al 5) para medir la velocidad de la luz. Cada experimento cuenta con múltiples medidas, de modo que se puede mostrar una distribución de la velocidad en cada experimento. Como dice su nombre, el <code>box_plot</code> está basado en cajas (<em>boxes</em>). Cada caja es un glifo que expresa los siguientes datos <em>derivados</em> de la tabla: la mediana (línea central en la caja, con mayor grosor de línea); los cuartiles inferior y superior (límites de la caja); los límiites inferior y superior, definidos usualmente como una medida del IQR, que muestran los límites de datos no outliers en la distribución (<em>Inter Quartile Range</em>, o rango entre cuartiles); y finalmente los outliers, que están tan lejos de los demás elementos que se representan como puntos alejados de la caja. Todas las posiciones de estas marcas utizan el canal de posición y de largo (en el caso de la caja) para expresar sus valores.</p>
+<p>Hoy este gráfico sigue siendo utilizado para comparar distribuciones y encontrar outliers, tanto en análisis exploratorio como en tareas específicas. Ahora bien, los <code>box_plot</code> fueron diseñados en una época en la que las visualizaciones se hacían con papel y lápiz, por tanto tienen defectos derivados de los límites del medio original. El principal es que omiten características relevantes de las distribuciones de los datos. Existen alternativas más modernas que modifican las marcas para que incluyan información de las distribuciones:</p>
+<p><img alt="Existen alternativas al &lt;code&gt;box_plot&lt;/code&gt;. Fuente: 40 years of boxplots, Wickam &amp; Stryjewski." src="../../../courses/infovis/07_tablas/images/box_plots_distributions_hu4b83e6f27602cf432e67cdfc1c5d6f9a_122799_660x0_resize_box_3.png" /></p>
+<p>Existen alternativas al <code>box_plot</code>. Fuente: 40 years of boxplots, Wickam &amp; Stryjewski.</p>
+<p>Las alternativas que muestra el gráfico son el gráfico de vasija, el <code>violin_plot</code> y el <code>bean_plot</code>. Estas técnicas (y otras) suelen estar presentes en los módulos de visualización. Aún así, los <code>box_plot</code> se siguen utilizando. Tienen un aspecto familiar y simple de interpretar, mientras que las alternativas requieren derivar la distribución — y eso hace que surjan preguntas respecto a los métodos de derivación. Antes de elegir una alternativa es importante conocer a la audiencia del gráfico y las propiedades de nuestros datos.</p>
+<h2 id="que-llevarse-para-la-casa">Qué llevarse para la casa</h2>
+<p>La mayoría de las visualizaciones en esta unidad son conocidas o al menos familiares. Incluso algunas las hemos utilizado en Python. Lo que ha cambiado es la manera de describirlas y definirlas, utilizando nuestro marco conceptual de marcas y canales. Al analizar cómo se define una visualización en función del qué se visualiza (los datos), el para qué (la tarea) y el cómo (la codificación), hemos ganado conocimiento que nos permitirá tomar mejores decisiones en nuestros proyectos. Este proceso de decisión no es fácil ni simple, sin embargo, una vez que tengan práctica, comenzarán a ver la ciencia de datos con otros ojos, al poseer nuevas maneras de observar y analizar.</p>
+<h2 id="lecturas-recomendadas">Lecturas Recomendadas</h2>
+<ul>
+<li>Collins, Christopher, Gerald Penn, and Sheelagh Carpendale. <a href="http://vialab.science.uoit.ca/wp-content/papercite-data/pdf/col2009c.pdf"><em>Bubble sets: Revealing set relations with isocontours over existing visualizations</em></a>. IEEE Transactions on Visualization and Computer Graphics 15, no. 6 (2009).</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        
+        <a href="../clase_04/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: ¿Cómo visualizar? Codificación Visual" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              ¿Cómo visualizar? Codificación Visual
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../clase_06/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Visualización de Datos Geográficos y Espaciales" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Visualización de Datos Geográficos y Espaciales
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/fralfaro" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://gitlab.com/fralfaro" target="_blank" rel="noopener" title="gitlab.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m510.486 284.482-27.262-83.963c.012.038.016.077.028.115-.013-.044-.021-.088-.033-.132v-.01L429.1 33.871a21.328 21.328 0 0 0-20.445-14.6A21.038 21.038 0 0 0 388.466 34l-51.372 158.154H175L123.533 33.989a21.033 21.033 0 0 0-20.183-14.715h-.113A21.467 21.467 0 0 0 82.86 34L28.888 200.475l-.008.021c-.013.042-.019.084-.033.127.012-.038.017-.077.029-.115L1.514 284.482a30.6 30.6 0 0 0 11.117 34.283l236.262 171.662c.035.026.074.041.109.067.1.072.2.146.3.214-.1-.065-.187-.136-.282-.2.015.012.033.02.05.031l.041.024h.006a11.992 11.992 0 0 0 1.137.7c.054.03.1.068.157.1.033.016.064.038.1.054s.053.02.077.032.038.015.056.023c.044.021.092.034.136.057.205.1.421.178.633.264.2.082.389.177.592.248l.025.011c.034.012.064.028.1.04s.083.032.125.046l.05.012c.053.016.11.024.163.039.019.006.042.009.063.015.284.086.579.148.872.213.115.026.225.062.341.083.017 0 .032.009.05.012.038.008.073.021.112.027.062.011.122.031.186.04.049.007.1 0 .151.012h.033a11.918 11.918 0 0 0 1.7.136h.019a11.971 11.971 0 0 0 1.7-.136h.033c.05-.008.1 0 .153-.012s.124-.029.187-.04c.038-.006.073-.019.11-.027.017 0 .032-.009.049-.012.118-.023.231-.059.349-.084.288-.064.578-.126.861-.21.019-.006.039-.008.059-.014.055-.017.113-.024.169-.041.016-.006.035-.007.051-.012.044-.013.086-.032.129-.047s.063-.028.1-.041l.026-.01c.214-.076.417-.175.627-.261s.394-.154.584-.245c.047-.023.1-.036.142-.059.018-.009.04-.015.058-.024s.053-.02.078-.033.068-.04.1-.056c.056-.028.106-.069.161-.1a12.341 12.341 0 0 0 1.132-.695c.029-.02.062-.035.092-.056.008-.006.017-.009.024-.015.035-.026.076-.043.11-.068l236.3-171.666a30.6 30.6 0 0 0 11.107-34.281ZM408.8 49.48l46.342 142.674H362.46Zm-305.6 0 46.428 142.675h-92.68ZM26.817 299.251a6.526 6.526 0 0 1-2.361-7.308l20.34-62.42L193.835 420.6Zm38.245-82.972h92.411l65.881 202.941Zm183.416 273.83c-.047-.038-.092-.079-.138-.118l-.028-.026a8.366 8.366 0 0 1-.268-.231c-.172-.15-.341-.3-.5-.462.014.012.029.022.043.035l.055.046a12.191 12.191 0 0 0 1.091.929l.012.011c.018.013.033.03.051.045-.107-.075-.216-.148-.318-.229Zm7.514-48.482L217.226 322.21l-34.387-105.931h146.414Zm7.935 48.107c-.091.079-.178.157-.27.233l-.032.028c-.047.038-.091.079-.136.117-.1.08-.209.152-.313.229.018-.013.033-.032.053-.044l.009-.009a11.69 11.69 0 0 0 1.086-.926c.014-.013.03-.024.044-.036s.038-.03.054-.047c-.16.156-.322.307-.495.455Zm90.7-273.455h92.4l-18.91 24.23-139.468 178.7Zm130.567 82.967L318.2 420.563l149.084-191.025 20.258 62.393a6.528 6.528 0 0 1-2.353 7.315Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/faam/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.kaggle.com/faamds" target="_blank" rel="noopener" title="www.kaggle.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M304.2 501.5 158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@fralfaro" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://fralfaro.github.io/portfolio/" target="_blank" rel="noopener" title="fralfaro.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.1-20.4-4.2-41.8-4.2-64 0-22.2 2.1-43.6 4.2-64h185.4c2.1 20.4 3.3 41.8 3.3 64zm151.9-64c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42.9 3.2-64 0-22-1.1-43.4-3.2-64h123.1zm-10.5-32H376.7c-10-63.86-29.8-117.38-55.3-151.558C399.8 29.09 463.4 85.94 493.4 160zm-149.1 0H167.7c6.1-36.4 15.5-68.62 27-94.65 10.5-23.61 22.2-40.74 33.5-51.54C239.4 3.178 248.7 0 256 0c7.3 0 16.6 3.178 27.8 13.81 11.3 10.8 23 27.93 33.5 51.54 11.5 26.03 20.9 58.25 27 94.65zm-325.69 0C48.59 85.94 112.2 29.09 190.6 8.442 165.1 42.62 145.3 96.14 135.3 160H18.61zm112.59 32c-2.1 20.6-4.1 42-4.1 64 0 21.1 2 43.4 4.1 64H8.065C2.8 299.5 0 278.1 0 256s2.8-43.5 8.065-64H131.2zm63.5 254.6c-11.5-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.7-22.2 40.8-33.5 51.6-11.2 10.6-20.5 13.8-28.7 13.8-6.4 0-15.7-3.2-26.9-13.8-11.3-10.8-23-27.9-33.5-51.6zm-4.1 57C112.2 482.9 48.59 426.1 18.61 352H135.3c10 63.9 29.8 117.4 55.3 151.6zm130.8 0c25.5-34.2 45.3-87.7 55.3-151.6h116.7c-30 74.1-93.6 130.9-172 151.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1110 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AVES: Análisis y Visualización, Educación y Soporte">
+      
+      
+        <meta name="author" content="Francisco Alfaro">
+      
+      
+        <link rel="canonical" href="https://github.com/fralfaro/aves/markdowns/clase_01/">
+      
+      <link rel="icon" href="../../images/ave.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>¿Qué es Visualización? - Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#que-es-visualizacion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ¿Qué es Visualización?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Home" class="md-nav__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    Home
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Visualización de Información
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Instrucciones
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Instrucciones" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Instrucciones
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rubrica-proyecto/" class="md-nav__link">
+        Proyecto del Curso
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Recursos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../showcase/" class="md-nav__link">
+        Exhibición de Visualizaciones
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Unidades Teóricas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Teóricas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Teóricas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ¿Qué es Visualización?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        ¿Qué es Visualización?
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#las-personas-son-importantes" class="md-nav__link">
+    Las Personas son importantes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enfoque-en-tecnologia-y-computadoras" class="md-nav__link">
+    Enfoque en Tecnología y Computadoras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lo-visual" class="md-nav__link">
+    Lo Visual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tareas-como-objetivo-en-la-visualizacion" class="md-nav__link">
+    Tareas como Objetivo en la Visualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siguientes-pasos" class="md-nav__link">
+    Siguientes pasos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    Lecturas Recomendadas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_02/" class="md-nav__link">
+        ¿Qué visualizar? Abstracción de Datos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_03/" class="md-nav__link">
+        ¿Para qué visualizar? Abstracción de Tareas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_04/" class="md-nav__link">
+        ¿Cómo visualizar? Codificación Visual
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_05/" class="md-nav__link">
+        Visualización de Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_06/" class="md-nav__link">
+        Visualización de Datos Geográficos y Espaciales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_07/" class="md-nav__link">
+        Visualización de Redes y Árboles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_08/" class="md-nav__link">
+        Colores e Ilusiones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_09/" class="md-nav__link">
+        Buenas Prácticas y Evaluación
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_10/" class="md-nav__link">
+        Visualización de Texto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_11/" class="md-nav__link">
+        Reducción de Complejidad
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Unidades Prácticas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Prácticas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Prácticas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/01-python-tools/" class="md-nav__link">
+        Unidad Práctica 1: Introducción al curso de visualización con Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/02-python-tablas/" class="md-nav__link">
+        Unidad Práctica 2: Visualización de Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas-preliminario/" class="md-nav__link">
+        Unidad Práctica 3: Preparación de Datos de GeoPandas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas/" class="md-nav__link">
+        Unidad Práctica 3: Visualización de Mapas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/04-python-redes-preliminario/" class="md-nav__link">
+        Unidad Práctica 5 (preliminar): Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/05-python-redes-eod/" class="md-nav__link">
+        Unidad Práctica 5: Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/06-python-texto-guaguas/" class="md-nav__link">
+        Unidad Práctica 6: Texto en Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/07-python-gridspec/" class="md-nav__link">
+        Práctica 7: Esqueleto de una Infografía en Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#las-personas-son-importantes" class="md-nav__link">
+    Las Personas son importantes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enfoque-en-tecnologia-y-computadoras" class="md-nav__link">
+    Enfoque en Tecnología y Computadoras
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lo-visual" class="md-nav__link">
+    Lo Visual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tareas-como-objetivo-en-la-visualizacion" class="md-nav__link">
+    Tareas como Objetivo en la Visualización
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siguientes-pasos" class="md-nav__link">
+    Siguientes pasos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    Lecturas Recomendadas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="que-es-visualizacion">¿Qué es Visualización?</h1>
+<p>Tamara Munzner provee la siguiente definición para <em>Visualización de Información</em>:</p>
+<blockquote>
+<p>Los <strong>sistemas computacionales</strong> de visualización <strong>proveen representaciones visuales de conjuntos de datos</strong> diseñadas para ayudar a las <strong>personas</strong> a efectuar <strong>tareas de manera más efectiva</strong>.</p>
+</blockquote>
+<p>No es la única definición, pero es la que mejor se adecúa a los propósitos de este curso, ya que está vinculada a <strong>data science</strong>: queremos resolver tareas (de un dominio específico) en sistemas computacionales.</p>
+<p>Para motivar esta definición hay dos videos que podrían ser de interés. El primero se titula “200 países, 200 años, 4 minutos - La alegría de las Estadísticas” de Hans Rosling:</p>
+<p>Es una maravilla ver en tan solo cuatro minutos una explicación visual del desarrollo de la humanidad en los últimos siglos. Esa misma historia se puede contar solo con palabras, pero, ¿sería igual de efectiva? Ciertamente no. Por otro lado, la cantidad de datos que fueron analizados no se pueden plasmar (al menos de manera realista) en palabras. Por otro lado, no podemos dejar de lado el carisma de Hans Rosling al contar la historia. En visualización también importa la comunicación.</p>
+<p>El siguiente video es de la empresa Carto, que provee servicios de análisis y visualización de datos geográficos:</p>
+<p>Un aspecto interesante del video es que no solo habla de las posibilidades de la visualización interactiva y geográfica, sino que también habla de la relevancia que tendrá la programación en el futuro profesional de las personas.</p>
+<p>Ahora bien, los dos ejemplos que hemos visto utilizan el tiempo y la interactividad como recurso. Pero también es posible hacer visualización de impacto mundial con un gráfico estadístico. Un ejemplo de ello son las visualizaciones que ha publicado <a href="https://twitter.com/jburnmurdoch">John Burn-Murdoch</a> sobre la evolución del COVID-19:</p>
+<p><img alt="Fuente: Financial Times." src="../../../courses/infovis/01_intro/images/john-burn-murdoch_hud94c1ff31eb06ead99876a04b357db60_536195_660x0_resize_q75_box.jpg" /></p>
+<p>Fuente: Financial Times.</p>
+<p>Todas estas visualizaciones han sido realizadas con <strong>sistemas computacionales</strong> y ayudan a las <strong>personas</strong> a efectuar <strong>tareas de manera más efectiva</strong>. Veamos ahora los distintos aspectos de la definición de qué es visualización.</p>
+<h2 id="las-personas-son-importantes">Las Personas son importantes</h2>
+<p>Hay personas involucradas en todo el proceso de visualización, por tanto, la visualización no es un proceso automatizado. Algunos motivos de por qué es así:</p>
+<ul>
+<li>No siempre conocemos las preguntas que queremos hacer a los datos. En cambio, podemos explorarlos y crear la pregunta a través de la visualización.</li>
+<li>No podemos programar un algoritmo, o usar aprendizaje de máquinas, para responder cada pregunta.</li>
+<li>Porque algunos casos de uso no pueden ser automatizados, al no poder formalizar lo que se busca, pero sí poder reconocerlo al visualizarlo.</li>
+</ul>
+<p>Además, las visualizaciones son utilizadas por una persona, y esta persona no suele ser quien programa, diseña o implementa la visualización. Un proceso de análisis, diseño y uso de una visualización luce así:</p>
+<p><img alt="Fuente: Dürsteler &amp; Engelhardt." src="../../../courses/infovis/01_intro/images/esquema_notacional_hu961dd776a5abfd0752aefb9e387e2b0b_363552_660x0_resize_box_3.png" /></p>
+<p>Fuente: Dürsteler &amp; Engelhardt.</p>
+<p>Los datos son filtrados y procesados, convirtiéndolos en información. La codificación visual genera una representación gráfica, que es percibida e interpretada por la persona que usa la visualización. Ahora bien, el contexto cultural y social es muy importante y define los esquemas notacionales de las personas. No hay dos personas iguales, por tanto, en visualización debemos considerar las características de quien diseña y también de quien usa el sistema. Hacerlo nos acercará a nuestro objetivo de efectuar tareas de manera más efectiva.</p>
+<h2 id="enfoque-en-tecnologia-y-computadoras">Enfoque en Tecnología y Computadoras</h2>
+<p>Nuestra definición habla de sistema computacional. Históricamente, la visualización ha sido definida como una tecnología. Alberto Cairo dice en su libro The Functional Art:</p>
+<blockquote>
+<p>La visualización debe entenderse como una <strong>tecnología</strong>[…] ¿Qué define a una tecnología?</p>
+<ol>
+<li>Es una extensión de nosotros.</li>
+<li>Es un medio para alcanzar un objetivo.</li>
+</ol>
+<p>Un gráfico en sí mismo también es una tecnología, un medio para alcanzar un fin, un dispositivo cuyo propósito es ayudar a una audiencia a completas tareas específicas.</p>
+</blockquote>
+<p>De hecho, se ha hecho visualización utilizando tecnologías analógicas. Si retrocedemos un poco, podemos ver el <a href="https://medium.economist.com/data-visualisation-from-1987-to-today-65d0609c6017">proceso completo de las visualizaciones que se incluían en The Economist</a> en los 80s, consistentes en apilar y pintar transparencias:</p>
+<p><img alt="Fuente: Graham Douglas, The Economist." src="../../../courses/infovis/01_intro/images/layered_visualization.png" /></p>
+<p>Fuente: Graham Douglas, The Economist.</p>
+<p>Podemos retroceder más y llegar a los 20s, y encontrar el <a href="http://www.aviz.fr/diyMatrix/">trabajo mecánico de Jacques Bertin</a> en la visualización de matrices:</p>
+<p><img alt="Fuente: Jacques Bertin en http://www.aviz.fr/diyMatrix/." src="../../../courses/infovis/01_intro/images/physical_matrix_hu98d0873056c247521661595e39c37106_650846_660x0_resize_box_3.png" /></p>
+<p>Fuente: Jacques Bertin en <a href="http://www.aviz.fr/diyMatrix/">http://www.aviz.fr/diyMatrix/</a>.</p>
+<p>El diseño de Bertin era una maravilla no solo por su flexibilidad, sino también por el uso compartido que habilitaba. Hace algunos años en la conferencia IEEE VIS se le hizo un homenaje que reconstruyó sus mecanismos de visualización:</p>
+<p><img alt="Fuente: http://www.aviz.fr/diyMatrix/." src="../../../courses/infovis/01_intro/images/physical_matrix_modern_hu81bbf02bcdbc9f61438b72846976d34a_622402_660x0_resize_box_3.png" /></p>
+<p>Fuente: <a href="http://www.aviz.fr/diyMatrix/">http://www.aviz.fr/diyMatrix/</a>.</p>
+<p>Los sistemas computacionales abren nuevas puertas en la <strong>colaboración</strong>. El enfoque más directo es la habilitación de un espacio de trabajo con datos, como los <em>Wall Displays</em>:</p>
+<p><img alt="Investigadores del Instituto de Data Science UDD, INRIA Chile, Metro de Santiago, Secretaría de Transporte, CEDEUS." src="../../../courses/infovis/01_intro/images/inria_transporte_hu7e9ea0b2fbcdfa4991d41c61cf5da8aa_7077888_660x0_resize_q75_box.jpg" /></p>
+<p>Investigadores del Instituto de Data Science UDD, INRIA Chile, Metro de Santiago, Secretaría de Transporte, CEDEUS.</p>
+<p>Un <em>Wall Display</em> no es solamente un monitor gigante compuesto por muchos monitores pequeños, también tiene nuevas maneras de interactuar con el sistema porque cada persona puede tener su propio puntero en la pantalla (o, en las implementaciones más avanzadas, tocar el lugar que desee). Pueden ver la historia detrás de esta imagen en el paper <a href="https://www.mdpi.com/2071-1050/12/15/6001"><em>Adoption-Driven Data Science for Transportation Planning: Methodology, Case Study, and Lessons Learned</em></a>.</p>
+<p>Ahora bien, en este tiempo ya no es necesario que estemos todes en la misma sala para colaborar. ¡Las posibilidades que ofrece la Internet son vastas!</p>
+<p>¿En qué otros aspectos las computadoras potencian la visualización? Sabemos que tienen una <strong>capacidad de procesamiento de datos</strong> que sobrepasa la capacidad humana con creces. Además, mientras más rápido se analicen los datos, no solo realizaremos tareas más rápido, sino que podremos realizar más. Podemos asegurarnos de explorar distintas fuentes de variabilidad en el proceso de análisis, distintos enfoques, etc. Y todo esto es <strong>escalable</strong>.</p>
+<p>Quizás un límite que tienen las computadoras es el número de píxeles en pantalla. Sin embargo, también nos proveen <strong>interactividad</strong>. Una visualización estática permite una única vista de los datos, la interactividad permite que lo que se muestra cambie, creando potencialmente infinitas vistas de los datos. Una cita famosa en el área es la siguiente:</p>
+<blockquote>
+<p>Una imagen vale mil palabras. Una interfaz de usuario vale mil imágenes.</p>
+<p>– Ben Shneiderman</p>
+</blockquote>
+<p>Un ejemplo típico de sistema interactivo son las <a href="https://www.tableau.com/learn/articles/business-intelligence-dashboards-examples">dashboards</a>. La siguiente fue construida con el software Tableau:</p>
+<p><img alt="http://giitral.iingen.unam.mx/Estudios/EOD-Estadisticas-01.html" src="../../../courses/infovis/01_intro/images/EOD_H_2017_EntreSemana_hudb18341b11c5ce41792771f74b6cf6a2_888265_660x0_resize_box_3.png" /></p>
+<p><a href="http://giitral.iingen.unam.mx/Estudios/EOD-Estadisticas-01.html">http://giitral.iingen.unam.mx/Estudios/EOD-Estadisticas-01.html</a></p>
+<p>Como vemos, una dashboard tiende a contener múltiples visualizaciones entre sí, cada una respondiendo una pregunta específica, con todas las visualizaciones unidas en torno a un contexto común, en este caso una encuesta de movilidad en la Zona Metropolitana del Valle de México. Sin embargo el poder de la visualización emerge ante la interactividad: hacer clic en una visualización para obtener más detalles hace que todas las demás reaccionen y actualicen su contenido. Esto es útil cuando se ven patrones a nivel general y una persona quiere indagar en detalles por zonas o conjuntos de zonas específicas.</p>
+<h2 id="lo-visual">Lo Visual</h2>
+<p>En este punto ya estamos convencidos del rol de las personas en la visualización. Otra pregunta que podemos hacernos es: ¿por qué enfocarnos en lo visual? ¿Por qué no “sonificación” o “representación táctil” de los datos?¿Por qué depender de la visión?</p>
+<p>La visión es un <strong>sentido perceptualmente eficiente</strong> porque la comunicación con el cerebro es rápida y el procesamiento es paralelo a nivel preconciente. En contraste, otros sentidos son secuenciales (como el oído). Por lo demás, todavía no tenemos ni el entendimiento ni la tecnología para ser eficientes con otros sentidos, todavía no tenemos interfaces hápticas mainstream como las que hay en las películas (ej., Ready Player One).</p>
+<p>Intenten encontrar el círculo rojo en la siguiente imagen:</p>
+<p><img alt="Perception in Visualization, Christopher G. Healey. https://www.csc2.ncsu.edu/faculty/healey/PP/." src="../../../courses/infovis/01_intro/images/saliency.gif" /></p>
+<p>Perception in Visualization, Christopher G. Healey. <a href="https://www.csc2.ncsu.edu/faculty/healey/PP/">https://www.csc2.ncsu.edu/faculty/healey/PP/</a>.</p>
+<p>La eficiencia con la cual pudieron responder la pregunta es una demostración de la percepción y del procesamiento en paralelo. Sin embargo, hay que considerar que no siempre la respuesta es tan fácil y rápida de obtener. Nuevamente, intenten encontrar el círculo rojo en la siguiente imagen:</p>
+<p><img alt="Perception in Visualization, Christopher G. Healey. https://www.csc2.ncsu.edu/faculty/healey/PP/." src="../../../courses/infovis/01_intro/images/saliency_same_color.gif" /></p>
+<p>Perception in Visualization, Christopher G. Healey. <a href="https://www.csc2.ncsu.edu/faculty/healey/PP/">https://www.csc2.ncsu.edu/faculty/healey/PP/</a>.</p>
+<p>Ahora tomó más tiempo, ¿no es así? Entender cómo funciona nuestra percepción es un área vigente de investigación, y visualización es parte de ella. Saber como percibimos permitirá crear interfaces y visualizaciones más eficientes.</p>
+<p>Así, la visualización permite tener una <em>representación externa</em> de la información que reemplaza <strong>cognición</strong> por <strong>percepción</strong>. Pero, ¿qué es la percepción visual? El concepto ha sido de interés por siglos, no solo para las ciencias, sino también para el arte. De hecho, la explicación que más me gusta proviene del mundo del cómic, de la tinta de Scott McCloud:</p>
+<p><img alt="Scott McCloud, Understanding Comics." src="../../../courses/infovis/01_intro/images/mccloud_abstraccion.png" /></p>
+<p>Scott McCloud, Understanding Comics.</p>
+<p>Al ver una imagen recibimos información que es interpretada de manera automática (<strong>percepción</strong>), al leer un texto debemos utilizar nuestro conocimiento interpretarlo (<strong>cognición</strong>) y así poder percibir su contenido (<strong>percepción</strong>). Entonces, ¿dónde se ubica la visualización en este espectro? En el lado derecho, el análogo es ver una tabla con datos, que para nosotros es similar a leer un texto: hay que avanzar secuencialmente por la tabla de tal manera que capturamos e interpretamos secuencialmente su contenido, por ejemplo, para recordar el valor máximo o mínimo que contenga. Por el lado derecho, usualmente no existe una manera única de desplegar “una foto” de los datos. Por ello, una visualización, en cambio, provee una representación visual <em>abstracta</em>, ubicándose al medio del espectro.</p>
+<p>Pero, ¿qué es la abstracción? Nuevamente usemos el ejemplo del cómic:</p>
+<p><img alt="Scott McCloud, Understanding Comics." src="../../../courses/infovis/01_intro/images/mccloud_abstraccion_significado_hu55d77d222c00a17a28a4e2c41e2ac9d3_883963_660x0_resize_box_3.png" /></p>
+<p>Scott McCloud, Understanding Comics.</p>
+<p>La abstracción es el mecanismo por el cual expresamos lo importante de una entidad. En el ejemplo, lo importante son los rasgos faciales que configuran la expresión de un rostro. Eso es lo que hace un <em>artista</em>. De manera equivalente, lo que hace un(a) <em>diseñador(a) de visualizaciones</em> es destacar los atributos importantes de los datos para que expresen información, y así podamos resolver tareas con ellos.</p>
+<p>La metáfora del texto se puede ilustrar de la siguiente manera. La tabla contiene las ventas domésticas e internacionales de una empresa:</p>
+<p><img alt="Stephen Few, Why do we visualize Quantitative Data? https://www.perceptualedge.com/blog/?p=1897." src="../../../courses/infovis/01_intro/images/sales_table_hubd68666757d4ad8a08b82a6e6ed80911_18503_660x0_resize_q75_box.jpg" /></p>
+<p>Stephen Few, Why do we visualize Quantitative Data? <a href="https://www.perceptualedge.com/blog/?p=1897">https://www.perceptualedge.com/blog/?p=1897</a>.</p>
+<p>Algunas preguntas que podemos hacer sobre esta tabla son:</p>
+<ol>
+<li>¿Cómo se compara el negocio de ventas domésticas en relación a las ventas internacionales?</li>
+<li>¿Cuáles son los meses de mejor venta en comparación con sus meses vecinos?</li>
+<li>¿Cual es el mes con peores ventas internacionales?</li>
+</ol>
+<p>Responder cada una de estas preguntas implica tener que escanear los valores que contiene, memorizarlos, y realizar operaciones matemáticas en nuestra mente. Utilizamos la <strong>cognición</strong>. En cambio, una representación visual como la siguiente permite realizar operaciones que en la tabla son más difíciles. Comparar, buscar períodos relevantes, medir tendencias locales, etc.:</p>
+<p><img alt="Stephen Few, Why do we visualize Quantitative Data? https://www.perceptualedge.com/blog/?p=1897" src="../../../courses/infovis/01_intro/images/sales_chart.jpg" /></p>
+<p>Stephen Few, Why do we visualize Quantitative Data? <a href="https://www.perceptualedge.com/blog/?p=1897">https://www.perceptualedge.com/blog/?p=1897</a></p>
+<p>Para responder preguntas que no son directas (como máximos o mínimos) <strong>no necesitamos memorizar</strong> – nuestra percepción visual se encarga del trabajo. Por ello lo visual es tan potente.</p>
+<p>Veamos otro ejemplo, un ejercicio clásico basado en la estadística descriptiva. De cierto modo, <em>estas estadísticas ya abstraen los datos de una manera</em>, al presentar medidas como el promedio, la varianza, la correlación, etc. Sin embargo, esta abstracción oculta variabilidad que puede ser importante, por un lado, puede inducir a errores de interpretación:</p>
+<blockquote>
+<p>Hay dos panes. Usted se come dos. Yo ninguno. Consumo promedio: un pan por persona</p>
+<p>– Nicanor Parra</p>
+</blockquote>
+<p>Por otro lado, la estadística descriptiva limita la capacidad de encontrar algo que no esperábamos, porque la agregación usualmente se hace pensando en un fin específico. De manera análoga, puede ocultar patrones en los datos que sean relevantes.</p>
+<p>Un dataset que ilustra estas limitantes se llama “El Cuarteto de Anscombe” y consiste en cuatro conjuntos con las mismas estadísticas descriptivas básicas: tienen el mismo promedio (x=9, y=7.5), varianza (x=11, y=4.125), correlación de r=0.816, y misma regresión lineal (y = 3 + 0.5x). Sin embargo, tienen naturalezas diferentes:</p>
+<p><img alt="https://en.wikipedia.org/wiki/Anscombe%27s_quartet." src="../../../courses/infovis/01_intro/images/anscombe_hub7d1f2c88ec8e274c1a4a2610d8eaef0_36010_660x0_resize_box_3.png" /></p>
+<p><a href="https://en.wikipedia.org/wiki/Anscombe%27s">https://en.wikipedia.org/wiki/Anscombe%27s</a>_quartet.</p>
+<p>Vemos que datasets lineales, cuadráticos, y con outliers severos poseen las mismas estadísticas. Este ejemplo llevado al extremo (y al absurdo, de cierto modo) es el Datasaurus Dozen:</p>
+<p><img alt="AUTODESK Research https://www.autodeskresearch.com/publications/samestats." src="../../../courses/infovis/01_intro/images/AllDinosGrey_1_hu0b4d0572c21b173cbde617a5414601e6_623480_660x0_resize_box_3.png" /></p>
+<p>AUTODESK Research <a href="https://www.autodeskresearch.com/publications/samestats">https://www.autodeskresearch.com/publications/samestats</a>.</p>
+<p>Todos esos datasets comparten las mismas estadísticas. Cuando les describan datos, siempre deben preocuparse de conocer su distribución. Lo meramente descriptivo puede ocultar información valiosa.</p>
+<p>Por lo tanto, podemos decir que visualizar datos es abstraerlos de manera que podamos realizar tareas con ello. Lo siguiente que discutiremos es el enfoque en las tareas.</p>
+<h2 id="tareas-como-objetivo-en-la-visualizacion">Tareas como Objetivo en la Visualización</h2>
+<p>De acuerdo a la RAE, una tarea es un <em>trabajo que debe hacerse en tiempo limitado</em>. En nuestro contexto, lo que haremos es <strong>utilizar una tecnología</strong> (visualización) con el <strong>objetivo de lograr un resultado</strong> (realizar un trabajo) en un tiempo limitado. La búsqueda de un resultado diferencia a la visualización del arte visual. Una visualización puede llegar a ser arte, pero su propósito es proveer una <strong>herramienta efectiva</strong> para llevar a cabo una tarea, no <strong>ser una obra</strong>.</p>
+<p>La definición de <strong>efectiva</strong> será importante en el curso. Depende del contexto: ¿cuál es la tarea que queremos lograr? En función de ello podremos decidir si más efectivo es:</p>
+<ul>
+<li>Más rápido: hacer algo en menos tiempo (en comparación con utilizar una visualización menos efectiva o no utilizar visualización).</li>
+<li>Más preciso: obtener un resultado cuantitativo más cercano a un valor exacto que utilizando otra técnica o sin utilizar visualización.</li>
+<li>Más barato: ¿nos cuesta menos recursos utilizar esta visualización para hacer la tarea? La definición de recurso es amplia. Puede ser dinero directamente, pero también uso de procesamiento, de memoria, etc.</li>
+<li>Más enriquecedor: ¿descubrimos algo que de otro modo hubiese pasado por alto?¿Generamos más valor?</li>
+</ul>
+<p>Además es necesario considerar que no todas las tareas están relacionadas a necesidades de negocio. Hay ocasiones en que la tarea es única y personal, incluyendo actividades como explorar, aprender, divertirse, exponer.</p>
+<p>Imaginemos que ya tenemos una noción de las tareas que debemos realizar en nuestro proyecto. La siguiente pregunta que nos debemos hacer es: ¿debemos usar visualización para cada una? ¡No siempre! Dependerá principalmente de dos factores: la claridad de la tarea y la disponibilidad de todos los datos necesarios para llevarla a cabo. Observemos el siguiente diagrama:</p>
+<p><img alt="Metodología de Diseño. Fuente: Tamara Munzner, http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/." src="../../../courses/infovis/01_intro/images/design_methodology_hu6ff35125d68ee7d6fd5558db0248d112_163935_660x0_resize_box_3.png" /></p>
+<p>Metodología de Diseño. Fuente: Tamara Munzner, <a href="http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/">http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/</a>.</p>
+<p>Entre los dos ejes mencionados hay tres situaciones:</p>
+<ul>
+<li><strong>No hay suficientes datos estructurados</strong>. En tal caso, independiente de qué tan clara sea la tarea a realizar, no podemos visualizar los datos utilizando un sistema computacional, porque los datos no están dentro de dicho sistema.</li>
+<li><strong>La tarea está claramente definida y todos los datos necesarios para llevarla a cabo están en el sistema computacional</strong>. En tal caso, probablemente podamos <strong>automatizar</strong> la realización de la tarea. No sería necesario usar visualización.</li>
+<li>Una situación intermedia: la tarea puede estar vagamente definida o muy clara, y puede haber datos estructurados en el sistema computacional, sin embargo, también son necesarios datos disponibles en las personas (por ej., su experiencia) para llevarla a cabo. Ésta es la situación ideal para usar visualización, ya que permite <strong>combinar el conocimiento humano con las capacidades computacionales</strong>, donde el todo es más que la suma que las partes.</li>
+</ul>
+<p>Veamos dos ejemplos clásicos. El primero es el mapa de cólera en la Londres victoriana que hizo <a href="https://es.wikipedia.org/wiki/John_Snow">John Snow</a> (el que sí sabe):</p>
+<p><img alt="Fuente: https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak_." src="../../../courses/infovis/01_intro/images/john_snow_hub40daff58806067c22f461db271ce5a7_779537_660x0_resize_box_3.png" /></p>
+<p>Fuente: <a href="https://en.wikipedia.org/wiki/1854">https://en.wikipedia.org/wiki/1854</a>_Broad_Street_cholera_outbreak_.</p>
+<p>En el siglo 19, en plena epidemia de cólera, no estaba claro el modo de transmisión del cólera. John Snow proponía que se transmitía a través de las fecas, sobretodo en el agua, sin embargo, había otras teorías que tenían más apoyo, como la del miasma (es decir, que se transmite por “aire sucio”). El mapa muestra las muertes por cólera en el centro de la ciudad en 1854 y cómo se ubican cerca de las fuentes de agua, particularmente de la ubicada en la calle Broad. Entonces, podríamos decir que este mapa permite realizar la tarea de <strong>encontrar fenómenos relacionados con la incidencia de una enfermedad</strong>. Ahora bien, ¿se utilizó para ello? Este mapa considerado uno de los trabajos de visualización más influyentes, ya que se cuenta que John Snow detuvo la transmisión del cólera a través del mapa, y, al mismo tiempo, creó la epidemiología. <a href="https://madisonleighrose.wordpress.com/2012/08/27/john-snow-and-the-cholera-myth/">Lamentablemente parte de esa historia épica es falsa</a>, sin embargo, él sí utilizó el mapa en 1855 para evidenciar el modo de transmisión. Lo que sí sabemos, es que él estaba en lo correcto respecto a su teoría.</p>
+<p>El segundo ejemplo también proviene del siglo 19, de 1857 en particular. La enfermera y estadística <a href="https://es.wikipedia.org/wiki/Florence_Nightingale">Florence Nightingale</a> utilizó un gráfico de área polar (que lleva su nombre ahora, el <em>diagrama de rosa de Nightingale</em>) para <strong>medir la distribución de las causas de muerte en los hospitales en las colonias inglesas</strong> y entender su <strong><a href="https://www.ft.com/content/2e43b3e8-01c7-11e6-ac98-3c15a1aa2e62?siteedition=intl#axzz465hy8PL1">relación con los eventos importantes</a></strong>. El gráfico luce así (en su versión restaurada digital):</p>
+<p><img alt="Fuente: https://es.wikipedia.org/wiki/Florence_Nightingale." src="../../../courses/infovis/01_intro/images/nightingale_hu6d7c10d9a4874d97b0e66c40b6083ac5_415098_660x0_resize_q75_box.jpg" /></p>
+<p>Fuente: <a href="https://es.wikipedia.org/wiki/Florence">https://es.wikipedia.org/wiki/Florence</a>_Nightingale.</p>
+<p>La composición de dos gráficos permite entender cómo se distribuyen distintas causas de muerte (codificadas en las áreas coloreadas en cada mes) antes y después de las intervenciones de higiene en los hospitales de la India. Por supuesto, su trabajo no se limita a este gráfico. Fue reconocida como la primera mujer de la Sociedad Real de Estadística en el Reino Unido.</p>
+<p>En este curso veremos una manera de definir formalmente tareas para visualización. Ahora bien, no existe una manera única de identificar y categorizar las tareas. Por ejemplo, el <a href="https://ft-interactive.github.io/visual-vocabulary/">Vocabulario Visual Interactivo</a> del Financial Times define multiples tareas a realizar y para cada una lista las visualizaciones que pueden ser adecuadas para el caso. Su versión póster luce así:</p>
+<p><img alt="Vocabulario Visual del Financial Times. Para tareas, visualizaciones." src="../../../courses/infovis/01_intro/images/visual_vocabulary_hu1c57fdedc012372e09eca268a594a5fc_1061415_660x0_resize_box_3.png" /></p>
+<p>Vocabulario Visual del Financial Times. Para tareas, visualizaciones.</p>
+<p>Este tipo de taxonomía muestra que no todos los diseños de visualización son efectivos para cada tarea. Si estás leyendo esto, probablemente conoces o has realizado visualizaciones durante tu vida académica o profesional, y estás al tanto de algunos de esos diseños. Uno de los propósitos de este curso es expandir el espacio de soluciones conocidas, de modo que ante una tarea que se te presente en el futuro, puedas elegir entre las opciones que conozcan, que seguramente incluirán un diseño que sea al menos adecuado para realizar la tarea:</p>
+<p><img alt="Espacio de Soluciones por Tamara Munzner." src="../../../courses/infovis/01_intro/images/solution_space_hu67ff674d0b8518cebd41d42f7361babb_246179_660x0_resize_box_3.png" /></p>
+<p>Espacio de Soluciones por Tamara Munzner.</p>
+<p>Nos queda una decisión aún. Si tenemos un conjunto de diseños/soluciones buena para una tarea, ¿cómo elegir? Dado que en visualización estamos <em>abstrayendo datos</em>, estamos decidiendo qué es importante de mostrar y cómo hacerlo. Recordemos, también, que tenemos que considerar a la persona que hará uso de la visualización. Teniendo todo eso en cuenta, podemos utilizar las siguientes dimensiones para elegir:</p>
+<p><img alt="Rueda de Abstracción por Alberto Cairo." src="../../../courses/infovis/01_intro/images/rueda_trade-offs_hu93b7cfb5a1eb51d7b5903167939ef481_157321_660x0_resize_box_3.png" /></p>
+<p>Rueda de Abstracción por Alberto Cairo.</p>
+<p>La elección de diseño no siempre se relaciona a cuál es la mejor visualización en términos objetivos, sino en los <strong>trade-offs</strong> involucrados. <strong>Las técnicas que son buenas en un contexto no lo son en otro</strong>. Por ejemplo, debemos elegir entre <em>familiaridad</em> y <em>novedad</em> del diseño. Si las personas objetivo son especialistas en visualización, quizás presentar una técnica novedosa sea buena idea, encontrarán la manera de interpretarla y navegarle. Pero si son expertos de otra área, o son el público general, como puede ser en el caso de un periódico, entonces debiésemos preferir una visualización que les sea familiar.</p>
+<h2 id="siguientes-pasos">Siguientes pasos</h2>
+<p>En este momento ya tenemos una imagen global de qué es visualización basados en una definición específica, una noción respecto a cuándo utilizarla y por qué, y conocimiento de sus beneficios en comparación con otras alternativas de abstracción. Por tanto, los siguientes pasos involucran conocer el proceso de diseño de una visualización, que se compone de tres etapas:</p>
+<ol>
+<li>Abstracción de los datos disponibles.</li>
+<li>Abstracción de las tareas a realizar.</li>
+<li>Codificación visual.</li>
+</ol>
+<p>Esas tres etapas contienen la base teórica completa de este curso. Construiremos sobre ella las visualizaciones para distintos tipos de datos, y nos permitirán comparar entre visualizaciones y también evaluar si el diseño que nos entregan otras personas es adecuado.</p>
+<h2 id="lecturas-recomendadas">Lecturas Recomendadas</h2>
+<ul>
+<li>Heer, Jeffrey, Michael Bostock, and Vadim Ogievetsky. <a href="https://idl.cs.washington.edu/files/2012-VisualizationZoo-CACM.pdf"><em>A tour through the visualization zoo</em></a>. Commun. Acm 53, no. 6 (2010).</li>
+<li>Van Wijk, Jarke J. <a href="https://hci.stanford.edu/courses/cs448b/papers/vanwijk_vov.pdf"><em>The value of visualization</em></a>. IEEE Visualization, 2005.</li>
+<li>Liu, Shixia, Weiwei Cui, Yingcai Wu, and Mengchen Liu. <a href="http://shixialiu.com/publications/InfovisSurvey/paper.pdf"><em>A survey on information visualization: recent advances and challenges</em></a>. The Visual Computer 30, no. 12 (2014).</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        
+        <a href="../showcase/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Exhibición de Visualizaciones" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Exhibición de Visualizaciones
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../clase_02/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ¿Qué visualizar? Abstracción de Datos" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              ¿Qué visualizar? Abstracción de Datos
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/fralfaro" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://gitlab.com/fralfaro" target="_blank" rel="noopener" title="gitlab.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m510.486 284.482-27.262-83.963c.012.038.016.077.028.115-.013-.044-.021-.088-.033-.132v-.01L429.1 33.871a21.328 21.328 0 0 0-20.445-14.6A21.038 21.038 0 0 0 388.466 34l-51.372 158.154H175L123.533 33.989a21.033 21.033 0 0 0-20.183-14.715h-.113A21.467 21.467 0 0 0 82.86 34L28.888 200.475l-.008.021c-.013.042-.019.084-.033.127.012-.038.017-.077.029-.115L1.514 284.482a30.6 30.6 0 0 0 11.117 34.283l236.262 171.662c.035.026.074.041.109.067.1.072.2.146.3.214-.1-.065-.187-.136-.282-.2.015.012.033.02.05.031l.041.024h.006a11.992 11.992 0 0 0 1.137.7c.054.03.1.068.157.1.033.016.064.038.1.054s.053.02.077.032.038.015.056.023c.044.021.092.034.136.057.205.1.421.178.633.264.2.082.389.177.592.248l.025.011c.034.012.064.028.1.04s.083.032.125.046l.05.012c.053.016.11.024.163.039.019.006.042.009.063.015.284.086.579.148.872.213.115.026.225.062.341.083.017 0 .032.009.05.012.038.008.073.021.112.027.062.011.122.031.186.04.049.007.1 0 .151.012h.033a11.918 11.918 0 0 0 1.7.136h.019a11.971 11.971 0 0 0 1.7-.136h.033c.05-.008.1 0 .153-.012s.124-.029.187-.04c.038-.006.073-.019.11-.027.017 0 .032-.009.049-.012.118-.023.231-.059.349-.084.288-.064.578-.126.861-.21.019-.006.039-.008.059-.014.055-.017.113-.024.169-.041.016-.006.035-.007.051-.012.044-.013.086-.032.129-.047s.063-.028.1-.041l.026-.01c.214-.076.417-.175.627-.261s.394-.154.584-.245c.047-.023.1-.036.142-.059.018-.009.04-.015.058-.024s.053-.02.078-.033.068-.04.1-.056c.056-.028.106-.069.161-.1a12.341 12.341 0 0 0 1.132-.695c.029-.02.062-.035.092-.056.008-.006.017-.009.024-.015.035-.026.076-.043.11-.068l236.3-171.666a30.6 30.6 0 0 0 11.107-34.281ZM408.8 49.48l46.342 142.674H362.46Zm-305.6 0 46.428 142.675h-92.68ZM26.817 299.251a6.526 6.526 0 0 1-2.361-7.308l20.34-62.42L193.835 420.6Zm38.245-82.972h92.411l65.881 202.941Zm183.416 273.83c-.047-.038-.092-.079-.138-.118l-.028-.026a8.366 8.366 0 0 1-.268-.231c-.172-.15-.341-.3-.5-.462.014.012.029.022.043.035l.055.046a12.191 12.191 0 0 0 1.091.929l.012.011c.018.013.033.03.051.045-.107-.075-.216-.148-.318-.229Zm7.514-48.482L217.226 322.21l-34.387-105.931h146.414Zm7.935 48.107c-.091.079-.178.157-.27.233l-.032.028c-.047.038-.091.079-.136.117-.1.08-.209.152-.313.229.018-.013.033-.032.053-.044l.009-.009a11.69 11.69 0 0 0 1.086-.926c.014-.013.03-.024.044-.036s.038-.03.054-.047c-.16.156-.322.307-.495.455Zm90.7-273.455h92.4l-18.91 24.23-139.468 178.7Zm130.567 82.967L318.2 420.563l149.084-191.025 20.258 62.393a6.528 6.528 0 0 1-2.353 7.315Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/faam/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.kaggle.com/faamds" target="_blank" rel="noopener" title="www.kaggle.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M304.2 501.5 158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@fralfaro" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://fralfaro.github.io/portfolio/" target="_blank" rel="noopener" title="fralfaro.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.1-20.4-4.2-41.8-4.2-64 0-22.2 2.1-43.6 4.2-64h185.4c2.1 20.4 3.3 41.8 3.3 64zm151.9-64c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42.9 3.2-64 0-22-1.1-43.4-3.2-64h123.1zm-10.5-32H376.7c-10-63.86-29.8-117.38-55.3-151.558C399.8 29.09 463.4 85.94 493.4 160zm-149.1 0H167.7c6.1-36.4 15.5-68.62 27-94.65 10.5-23.61 22.2-40.74 33.5-51.54C239.4 3.178 248.7 0 256 0c7.3 0 16.6 3.178 27.8 13.81 11.3 10.8 23 27.93 33.5 51.54 11.5 26.03 20.9 58.25 27 94.65zm-325.69 0C48.59 85.94 112.2 29.09 190.6 8.442 165.1 42.62 145.3 96.14 135.3 160H18.61zm112.59 32c-2.1 20.6-4.1 42-4.1 64 0 21.1 2 43.4 4.1 64H8.065C2.8 299.5 0 278.1 0 256s2.8-43.5 8.065-64H131.2zm63.5 254.6c-11.5-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.7-22.2 40.8-33.5 51.6-11.2 10.6-20.5 13.8-28.7 13.8-6.4 0-15.7-3.2-26.9-13.8-11.3-10.8-23-27.9-33.5-51.6zm-4.1 57C112.2 482.9 48.59 426.1 18.61 352H135.3c10 63.9 29.8 117.4 55.3 151.6zm130.8 0c25.5-34.2 45.3-87.7 55.3-151.6h116.7c-30 74.1-93.6 130.9-172 151.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

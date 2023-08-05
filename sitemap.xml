@@ -2,407 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/fralfaro/aves/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/01-scl-travel-survey-maps/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_01/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/02-scm-openstreetmap/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_02/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/03-geographical-operations/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_03/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/04-exploratory-analysis/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_04/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/05-point-data-initial-analysis/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_05/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/06-networks/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_06/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/07-gravity-model/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_07/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/08-network-analysis/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_08/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/09-glyph-over-map/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_09/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/10-scl-accidents/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_10/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/aves/notebooks/gds-course/11-electoral-data-fusion/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <loc>https://github.com/fralfaro/aves/markdowns/clase_11/</loc>
+         <lastmod>2023-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/aves/markdowns/resources/</loc>
+         <lastmod>2023-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/aves/markdowns/rubrica-proyecto/</loc>
+         <lastmod>2023-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/aves/markdowns/showcase/</loc>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/talleres/constituciones-text-analysis/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/talleres/extra-00-data-cleaning-casen/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/talleres/zorzal-tv-01-mapas/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/01-python-tools/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/02-python-tablas/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/03-python-mapas-preliminario/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/03-python-mapas/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/04-python-redes-preliminario/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/05-python-redes-eod/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/06-python-texto-guaguas/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/aves/notebooks/vis-course/07-python-gridspec/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/version/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/data/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/data/census/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/data/eod/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/geo/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/geometry/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/sparse/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/utils/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/osm/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/osm/pois/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/twokenize/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/features/twokenize/ark_twokenize/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/datafusion/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/datafusion/base/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/datafusion/diagram/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/datafusion/utils/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/grid/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/grid/base/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/grid/h3/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/grid/s2/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/network/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/network/base/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/network/edge/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/models/network/layouts/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/collections/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/collections/labels/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/collections/lines/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/colors/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/colors/base/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/figures/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/figures/geography/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/maps/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/maps/bubble/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/maps/choropleth/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/maps/heatmap/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/maps/utils/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/networks/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/networks/base/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/networks/edges/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/networks/nodes/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/networks/fdeb/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/networks/heb/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/primitives/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/primitives/renderstrategy/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/tables/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/tables/areas/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/tables/bars/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/tables/boxplot/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/tables/bubbles/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/tables/scatter/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/text/__init__/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/text/emoji/</loc>
-         <lastmod>2023-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/fralfaro/aves/src/aves/visualization/text/word_cloud/</loc>
-         <lastmod>2023-08-04</lastmod>
+         <lastmod>2023-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -1,0 +1,1170 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AVES: Análisis y Visualización, Educación y Soporte">
+      
+      
+        <meta name="author" content="Francisco Alfaro">
+      
+      
+        <link rel="canonical" href="https://github.com/fralfaro/aves/markdowns/clase_07/">
+      
+      <link rel="icon" href="../../images/ave.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Visualización de Redes y Árboles - Home</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visualizacion-de-redes-y-arboles" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Home
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Visualización de Redes y Árboles
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Home" class="md-nav__button md-logo" aria-label="Home" data-md-component="logo">
+      
+  <img src="../../images/logo.bmp" alt="logo">
+
+    </a>
+    Home
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fralfaro/aves" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fralfaro/aves
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Visualización de Información
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Instrucciones
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Instrucciones" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Instrucciones
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rubrica-proyecto/" class="md-nav__link">
+        Proyecto del Curso
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Recursos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../showcase/" class="md-nav__link">
+        Exhibición de Visualizaciones
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Unidades Teóricas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Teóricas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Teóricas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_01/" class="md-nav__link">
+        ¿Qué es Visualización?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_02/" class="md-nav__link">
+        ¿Qué visualizar? Abstracción de Datos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_03/" class="md-nav__link">
+        ¿Para qué visualizar? Abstracción de Tareas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_04/" class="md-nav__link">
+        ¿Cómo visualizar? Codificación Visual
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_05/" class="md-nav__link">
+        Visualización de Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_06/" class="md-nav__link">
+        Visualización de Datos Geográficos y Espaciales
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Visualización de Redes y Árboles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Visualización de Redes y Árboles
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#node-link-diagrams" class="md-nav__link">
+    Node-Link Diagrams
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matriz-de-adyacencia" class="md-nav__link">
+    Matriz de Adyacencia
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-elegir-node-link-matriz-de-adyacenciapuedo-usar-ambas" class="md-nav__link">
+    ¿Cuándo elegir Node-Link, Matriz de Adyacencia?¿Puedo usar ambas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edge-bundling" class="md-nav__link">
+    Edge Bundling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arc-diagram" class="md-nav__link">
+    Arc Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive-plot" class="md-nav__link">
+    Hive Plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radial-node-link" class="md-nav__link">
+    Radial Node-Link
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#treemap" class="md-nav__link">
+    Treemap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voronoi-treemap" class="md-nav__link">
+    Voronoi TreeMap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fin-de-unidad" class="md-nav__link">
+    Fin de Unidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    Lecturas Recomendadas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_08/" class="md-nav__link">
+        Colores e Ilusiones
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_09/" class="md-nav__link">
+        Buenas Prácticas y Evaluación
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_10/" class="md-nav__link">
+        Visualización de Texto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_11/" class="md-nav__link">
+        Reducción de Complejidad
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Unidades Prácticas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Unidades Prácticas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Unidades Prácticas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/01-python-tools/" class="md-nav__link">
+        Unidad Práctica 1: Introducción al curso de visualización con Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/02-python-tablas/" class="md-nav__link">
+        Unidad Práctica 2: Visualización de Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas-preliminario/" class="md-nav__link">
+        Unidad Práctica 3: Preparación de Datos de GeoPandas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/03-python-mapas/" class="md-nav__link">
+        Unidad Práctica 3: Visualización de Mapas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/04-python-redes-preliminario/" class="md-nav__link">
+        Unidad Práctica 5 (preliminar): Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/05-python-redes-eod/" class="md-nav__link">
+        Unidad Práctica 5: Introducción a la Visualización de Redes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/06-python-texto-guaguas/" class="md-nav__link">
+        Unidad Práctica 6: Texto en Tablas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebooks/vis-course/07-python-gridspec/" class="md-nav__link">
+        Práctica 7: Esqueleto de una Infografía en Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#node-link-diagrams" class="md-nav__link">
+    Node-Link Diagrams
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matriz-de-adyacencia" class="md-nav__link">
+    Matriz de Adyacencia
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-elegir-node-link-matriz-de-adyacenciapuedo-usar-ambas" class="md-nav__link">
+    ¿Cuándo elegir Node-Link, Matriz de Adyacencia?¿Puedo usar ambas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edge-bundling" class="md-nav__link">
+    Edge Bundling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arc-diagram" class="md-nav__link">
+    Arc Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive-plot" class="md-nav__link">
+    Hive Plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radial-node-link" class="md-nav__link">
+    Radial Node-Link
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#treemap" class="md-nav__link">
+    Treemap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voronoi-treemap" class="md-nav__link">
+    Voronoi TreeMap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fin-de-unidad" class="md-nav__link">
+    Fin de Unidad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecturas-recomendadas" class="md-nav__link">
+    Lecturas Recomendadas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="visualizacion-de-redes-y-arboles">Visualización de Redes y Árboles</h1>
+<p>En esta unidad aprenderemos técnicas de visualización de redes y árboles, dos estructuras de datos importantes que permiten modelar fenómenos complejos, ya que contienen relaciones entre elementos. Asimismo, visualizar una red o un árbol no es fácil debido a esa complejidad inherente en los datos.</p>
+<p>Una red se define por dos tipos de elementos: sus nodos o vértices (<em>nodes</em> o <em>vertex</em>), que representan ítems, elementos, personas, y demases; y sus aristas o enlaces (<em>edges</em> o <em>links</em>), que representan relaciones entre nodos. Por tanto, la especificación de una red consiste en definir qué es un nodo y cómo dos nodos se relacionan. Por ejemplo:</p>
+<ul>
+<li>Una red de personas, donde dos personas están conectadas si:<ul>
+<li>Son amigas en una red social.</li>
+<li>Dan “me gusta” a las mismas páginas.</li>
+<li>Han visitado los mismos lugares.</li>
+<li>Colaboran para realizar un trabajo (ejemplo: colaboración musical, científica, etc.).</li>
+<li>Una ha contagiado a la otra de COVID-19.</li>
+</ul>
+</li>
+<li>Una red de lugares, donde dos lugares están conectados si:<ul>
+<li>Alguien va desde uno de ellos hasta el otro.</li>
+<li>Tienen el mismo uso de suelo, o proveen los mismos servicios.</li>
+</ul>
+</li>
+<li>Una red de productos, donde dos productos están conectados si:<ul>
+<li>Son producidos por la misma entidad (proveedor, ciudad, región, país, etc.).</li>
+<li>Los compra la misma persona.</li>
+<li>Comparten ingredientes o composición.</li>
+</ul>
+</li>
+<li>Una red cerebral, dos neuronas están conectadas si se activan al mismo tiempo frente a un estímulo.</li>
+</ul>
+<p>El siguiente ejemplo muestra parcialmente una red de trazado de contactos de COVID, de una <a href="https://graphics.reuters.com/CHINA-HEALTH-SOUTHKOREA-CLUSTERS/0100B5G33SB/index.html">paciente que contagió a cientos de personas en Corea del Sur</a>:</p>
+<p><img alt="Trazado de Contactos COVID-19. Fuente: REUTERS." src="../../../courses/infovis/10_redes/images/covid_contact_tracing_huba0e9024174cc43062c1c3a2463e80de_1116816_660x0_resize_box_3.png" /></p>
+<p>Trazado de Contactos COVID-19. Fuente: REUTERS.</p>
+<p>Esta visualización enseña las relaciones entre algunos contactos, mostrando cómo se contagió el virus de una persona a otra, y cuál era el tamaño de la comunidad susceptible de infectarse para cada contagiado. Es una visualización parcial, puesto que no muestra todas las conexiones de la red: en el caso de la paciente 31, sabemos que hay más de mil contactos involucrados, pero no sabemos como se relacionan entre sí. Es una muestra de cómo trabajar con redes y visualizarlas es un desafío, puesto que suelen tener una cantidad considerable de nodos y aristas. Además no suelen tener atributos que podamos codificar directamente, a excepción de nodos o aristas con datos geográficos. Ahora bien, eso no es necesariamente un problema, ya que las tareas que se efectúan visualizando redes son distintas a las que vimos en las unidades anteriores. Estas tareas nos permitirán comprender la topología de la red: ¿cuál es el proceso que generó esta red?; su estructura: ¿cuál es el camino desde un nodo hasta otro?¿cuántas comunidades contiene?, o en el caso de un árbol, ¿cuál es su profundidad?¿cómo varía ésta en las distintas ramas del árbol?</p>
+<p>Un dataset emblemático en la ciencia de redes es el <a href="https://en.wikipedia.org/wiki/Zachary%27s_karate_club">Club de Karate de Zachary</a>. Zachary es un investigador que documentó la red social de un club de Karate durante tres años. En medio de su investigación, el administrador del club y el <em>sensei</em> tuvieron un problema que disolvió el <em>dojo</em>. ¿Qué harían les estudiantes del club?¿Seguirían a su maestro, al administrador, o abandonarían el club? Zachary predijo correctamente todas las decisiones de los miembros del club, con excepción de una persona, utilizando análisis de redes. Así luce la red:</p>
+<p><img alt="Club de Karate de Zachary. Fuente: Wikipedia." src="../../../courses/infovis/10_redes/images/zachary_club.png" /></p>
+<p>Club de Karate de Zachary. Fuente: Wikipedia.</p>
+<p>Cada nodo es una persona. ¿Qué observan en esta red? El color de los nodos nos ayuda a interpretar: hay dos comunidades que reflejan quiénes se quedaron en el dojo y quiénes no. No es coincidencia que la densidad de conexiones explique este fenómeno — quedarse (o no) en el dojo es una decisión social, un fenómeno bien modelado por estas estructuras.</p>
+<p>La siguiente red muestra como luce una red de conceptos en Wikipedia, <a href="https://wikimediafoundation.org/news/2018/01/18/on-that-net-neutrality-clickstream-diagram/">construida en función de los clics que hacen les visitantes del sitio</a>. Quienes visitan el artículo de <em>neutralidad en la red</em>, ¿hacia dónde siguen leyendo?¿desde dónde llegan a ese artículo?¿cuál es la temática alrededor de ese artículo?</p>
+<p><img alt="Wikipedia Clickstream del artículo Neutralidad en la Red, en inglés." src="../../../courses/infovis/10_redes/images/net_neutrality_clickstream_hu9323b975ca3f47632f512595a0e514a6_1198745_660x0_resize_box_3.png" /></p>
+<p>Wikipedia Clickstream del artículo Neutralidad en la Red, en inglés.</p>
+<p>Ahora bien, en esta introducción hemos hablado de redes, pero la unidad es de redes <strong>y</strong> árboles. Si recuerdan nuestra unidad de abstracción de datos, sabrán que todo árbol es una red, pero no toda red es un árbol. Esto se debe a que los árboles tienen una estructura jerárquica, con un nodo raíz. Esto puede facilitar la visualización o incluso habilitar metáforas visuales. El siguiente ejemplo toma el <a href="https://www.sssscomic.com/comic.php?page=196">nombre de árbol de manera literal para visualizar la relación entre las lenguas indoeuropeas</a>:</p>
+<p><img alt="Árbol de lenguas en el mundo. Fuente: Stand Still Stay Silent." src="../../../courses/infovis/10_redes/images/language_tree_hu1eb9907dd3d2887fd440ee510df5ae3d_1333096_660x0_resize_q75_box.jpg" /></p>
+<p>Árbol de lenguas en el mundo. Fuente: Stand Still Stay Silent.</p>
+<p>En esta infografía es posible ver como a partir de la raíz de lenguas indoeuropeas se separan las lenguas indo-iranesas y europeas. Luego se ramifican los lenguajes que conocemos, con sus respectivas variaciones. El español (castellano) se encuentra en la rama de las lenguas romance.</p>
+<p>Si quieren profundizar sobre el uso de redes para estructurar y modelar conocimiento, y de su uso en visualización, entonces les recomiendo la siguiente charla de Manuel Lima. Manuel nos cuenta de la complejidad y las redes de manera visual. Es fascinante e inspiradora:</p>
+<p>El resto de la unidad está estructurada de la misma manera que las unidades anteriores: revisaremos técnicas de visualización de redes y comentaremos para qué tareas son efectivas.</p>
+<h2 id="node-link-diagrams">Node-Link Diagrams</h2>
+<p>La visualización del Club de Karate es del tipo nodo-arista o <code>node_link</code>. Es la manera tradicional de representar una red, con nodos visualizados con una marca circular o con símbolos, y con las aristas representadas con marcas de líneas que unen sus nodos correspondientes. Estas líneas pueden ser decoradas con flechas, para indicar la dirección de la relación (si es que no es bidireccional), y no tienen por qué ser rectas, pueden ser curvas y seguir caminos.</p>
+<p>En las técnicas <code>node_link</code> la visualización contiene un paso previo de organización de nodos y aristas. Este preproceso calcula una posición para los nodos y un recorrido para las aristas de tal modo que se cumpla alguna condición basada en la conectividad y en los atributos de los nodos, o también en restricciones geométricas (por ej., los nodos deben estar a una distancia promedio específica, o estar organizados en un círculo). En la mayoría de los casos, la posición se da en un espacio 2D, pero también puede ser 3D.</p>
+<p>La técnica <code>force_directed_placement</code> extiende <code>node_link</code> a través del cálculo de las posiciones de los nodos utilizando fuerzas de repulsión. Imaginen que cada arista de la red es un resorte, de modo que al disponer los nodos de manera aleatoria en el espacio, algunos resortes estarán comprimidos y otros estarán estirados. Esto provoca que cada resorte tire o empuje a sus nodos; el cálculo de las fuerzas ejercidas por todas las aristas busca encontrar la posición de los nodos que minimice la tensión en ellas. El siguiente ejemplo muestra una red visualizada así:</p>
+<p><img alt="Ejemplo de Force-Directed Placement. Fuente: Mike Bostock." src="../../../courses/infovis/10_redes/images/force_directed_hu982a286b1c7d8d88aca71f53ebf177b3_135221_660x0_resize_box_3.png" /></p>
+<p>Ejemplo de Force-Directed Placement. Fuente: Mike Bostock.</p>
+<p>El ejemplo muestra que podemos utilizar canales en los nodos y en las aristas para expresar atributos de éstos: podemos utilizar color y tamaño en los nodos, y color y grosor en las aristas.</p>
+<p>Una visualización <code>node_link</code> (y por tanto, <code>force_directed_placement</code>) permite explorar la topología de la red, identificar caminos, y encontrar nodos específicos debido a su conectividad o a sus características. En términos de escalabilidad, puede contener decenas o cientos de nodos, pero manteniendo una relación de densidad nodo/arista: <code>E &lt; 4N</code>. De otro modo, podemos tener el problema de las bolas de pelo o <em>hairballs</em>, es decir, una visualización que muestra tanto que se vuelve inentendible.</p>
+<p>Consideren que la posición de los nodos en esta visualización es un dato <strong>derivado</strong>. No codifica atributos de los nodos, por el contrario, es ajustada por la visualización en pos de la estética. Esto implica que la posición, la proximidad de los nodos o el largo de una arista <strong>no siempre tiene significado</strong>. Más bien son artefactos del algoritmo que derivó los datos. Debemos interpretar esta visualización con cuidado, ya que podríamos ver una estructura en los datos que quizás no esté presente.</p>
+<p>Existe una extensión llamada <code>sfdp</code>, que realiza un <code>force_directed_placement</code> multinivel: deriva de la red una jerarquía de clusters, y ejecuta <code>force_directed_placement</code> en cada nivel en vez de la red completa, separando el problema de calcular la organización de toda la red en organizaciones más pequeñas. Esto hace que la visualización sea más escalable en términos de cómputo, permitiendo visualizar 1K nodos y 10K aristas en un tiempo razonable. La apariencia de esta técnica no es <em>tan</em> distinta de <code>force_directed_placement</code>:</p>
+<p><img alt="Multilevel Graph Drawing with sfdp. Fuente: Yifan Hu, Efficient and high quality force-directed graph drawing." src="../../../courses/infovis/10_redes/images/sfdp.png" /></p>
+<p>Multilevel Graph Drawing with sfdp. Fuente: Yifan Hu, Efficient and high quality force-directed graph drawing.</p>
+<p>En las clases prácticas veremos como implementar estas visualizaciones en Python. Ahora bien, existe el software <a href="http://www.gephi.org">Gephi</a> que se define como “el Photoshop de las redes.” Tiene motivos para hacerlo, puesto que permite cargar datos en muchos formatos, incluyendo CSV, y crear o manipular redes en estilo <code>node_link</code> con múltiples métodos de organización, incluyendo los que hemos mencionado aquí. El programa luce así:</p>
+<p><img alt="Fuente: Gephi.org en Wikipedia" src="../../../courses/infovis/10_redes/images/gephi_hu95f694deac06f2a74dde875f9301289e_423725_660x0_resize_box_3.png" /></p>
+<p>Fuente: Gephi.org en Wikipedia.</p>
+<p>Además de la visualización en sí misma, Gephi permite estimar comunidades, métricas de nodos y aristas, realizar animaciones, conectarse con bases de datos, entre otras características. ¡Es un buen punto de partida para experimentar con redes!</p>
+<h2 id="matriz-de-adyacencia">Matriz de Adyacencia</h2>
+<p>Otra manera tradicional de visualizar redes es la matriz de adyacencia o <code>adjacency_matrix</code>, una visualización que utiliza la misma codificación visual que el <code>heatmap</code> (ver unidad de Visualización de Tablas). En este caso, la marca de cada arista es un cuadro, una celda de la matriz, y su color (o la ausencia de éste) codifica si hay una relación entre los nodo representados en la fila y columna correspondientes. La codificación puede ser binaria (hay o no hay relación), o cuantativa (la relación tiene un peso). La <code>adjacency_matrix</code> es también (primero es esto, de hecho) una estructura de datos para almacenar grafos. Un ejemplo de esta estructura es el siguiente:</p>
+<p><img alt="Matrices de Adyacencia. Fuente: Wikipedia." src="../../../courses/infovis/10_redes/images/adjacency_matrix_hu31dc0059dc2b597f0dd780b383c634cf_204095_660x0_resize_box_3.png" /></p>
+<p>Matrices de Adyacencia. Fuente: Wikipedia.</p>
+<p>Esta configuración implica que la escalabilidad de <code>adjacency_matrix</code> es enorme: permite mostrar tantas aristas como píxeles dispongamos en pantalla. Un número máximo recomendado es 1K nodos con 1M de aristas. Estas matrices también pueden ser interactivas. Una operación posible es ordenar las filas y columnas de acuerdo a algún criterio específico.</p>
+<p>El siguiente ejemplo muestra una <code>adjacency_matrix</code> con datos que hemos visto: la conectividad en Santiago entre comunas para viajes realizados por motivos de salud. Es decir, las comunas de la ciudad son nodos, y dos comunas <code>A -&gt; B</code> están conectadas si alguien que vive en la comuna <code>A</code> va a la comuna <code>B</code> para ir al consultorio, al hospital, a una consulta médica o dental, entre otras:</p>
+<p><img alt="Ejemplo de Matriz de Adjacencia de viajes, o Matriz Origen-Destino. Fuente: Eduardo Graells-Garrido." src="../../../courses/infovis/10_redes/images/od_matrix_hube831279f22c40f7e678c2fc5fcfeaab_215459_660x0_resize_box_3.png" /></p>
+<p>Ejemplo de Matriz de Adjacencia de viajes, o Matriz Origen-Destino. Fuente: Eduardo Graells-Garrido.</p>
+<p>Observamos que la matriz no es densa, y que la mayoría de los viajes se realizan dentro de una misma comuna (una explicación es la disponibilidad de consultorios en todas las comunas); que hay agrupaciones de comunas que van a la misma comuna dentro de su mismo sector en la ciudad para viajes fuera de ellas (una explicación es que no todas las comunas tienen hospitales, y que cada hospital cubre varias comunas dentro de un sector –norte, sur, etc.–). Esta última observación la podemos hacer porque la matriz contiene una marca adicional para cada comuna, que indica el sector al que pertenecen utilizando el canal de tono.</p>
+<p>Así, vemos que la visualización <code>adjacency_matrix</code> permite realizar tareas de identificación de grupos, de encontrar nodos que cumplen con criterios específicos, y de medir la densidad de la red.</p>
+<h2 id="cuando-elegir-node-link-matriz-de-adyacenciapuedo-usar-ambas">¿Cuándo elegir Node-Link, Matriz de Adyacencia?¿Puedo usar ambas?</h2>
+<p>Para responder la primera pregunta necesitamos enumerar las ventajas de cada visualización.</p>
+<ul>
+<li><code>node_link</code>: la <strong>topología</strong> es evidente, se pueden ver <strong>caminos</strong>, es <strong>intuitiva</strong>, no necesita entrenar a las personas para ser utilizada.</li>
+<li><code>adjacency_matrix</code>: es <strong>predecible</strong>, <strong>escalable</strong>, permite <strong>reordenar</strong> y agregar marcas adicionales sin interferir con las marcas de nodos y aristas. A veces se puede ver la topología.</li>
+</ul>
+<p>Entonces, dependiendo de cuál de esas ventajas se necesite para la tarea a resolver, se podrá elegir adecuadamente. Un estudio efectuado el 2005 por Ghoniem et. al, titulado <em>On the readability of graphs using node-link and matrix-based representations: a controlled experiment and statistical analysis</em>, en la revista Information Visualization, determinó mediante un experimento con personas realizando tareas que <code>node_link</code> es mejor para redes pequeñas, y que <code>adjacency_matrix</code> es mejor para redes grandes, si es que las tareas <strong>no</strong> son de topología de la red (determinar caminos o estructura).</p>
+<p>Podemos ejemplificar la tarea de identificar topología y cómo se diferencia entre ambas visualizaciones en este <a href="http://www.michaelmcguffin.com/courses/vis/">diagrama de Michael J. McGuffin</a>:</p>
+<p><img alt="Fuente: Michael J. McGuffin" src="../../../courses/infovis/10_redes/images/adjacency_comparison_hu0924a28ddb4c293fe8649acf08c5c678_384349_660x0_resize_box_3.png" /></p>
+<p>Fuente: Michael J. McGuffin.</p>
+<p>¿Por qué es complicado ver topología en <code>adjacency_matrix</code>? En el caso de las comunidades que dan estructura a la red, porque depende estrictamente del orden utilizado para nodos y aristas. Usualmente no es un orden natural (como alfabético o por orden de inserción en la red), sino un dato derivado luego de aplicar un algoritmo de clustering. En el caso de los caminos, porque perdemos la noción de cual arista precede o prosigue a otra: dos aristas cercanas en la red pueden estar en lados opuestos de la matriz.</p>
+<p>La segunda pregunta del encabezado se puede responder: ¡sí! Existe una técnica llamada <code>NodeTrix</code> que combina lo mejor de ambos mundos: una organizacińo basada en <code>node_link</code>, donde cada nodo es en realidad una sub-red representada con un glifo de <code>adjacency_matrix</code>:</p>
+<p><img alt="&lt;code&gt;NodeTrix&lt;/code&gt; combina ambas técnicas: &lt;code&gt;node_link&lt;/code&gt; y &lt;code&gt;adjacency_matrix&lt;/code&gt;. Fuente: Henry et al, NodeTrix: a hybrid visualization of social networks." src="../../../courses/infovis/10_redes/images/nodetrix_hu03b4c033c84d90965171205e6d8695a1_12608_660x0_resize_box_3.png" /></p>
+<p><code>NodeTrix</code> combina ambas técnicas: <code>node_link</code> y <code>adjacency_matrix</code>. Fuente: Henry et al, NodeTrix: a hybrid visualization of social networks.</p>
+<p>Genial, ¿no? Esta visualización puede ser útil cuando nos interesa la estructura de la red, particularmente, los caminos entre una comunidad y otra. Un ejemplo de aplicación de <code>NodeTrix</code> visualiza redes cerebrales:</p>
+<p><img alt="Fuente: Yang et al, Blockwise human brain network visual comparison using NodeTrix representation." src="../../../courses/infovis/10_redes/images/brain_networks_hua1dbd4a1af5fe310749864d31531ea41_495033_660x0_resize_box_3.png" /></p>
+<p>Fuente: Yang et al, Blockwise human brain network visual comparison using NodeTrix representation.</p>
+<p>Esta visualización permite conocer la red de cada área del cerebro (con una <code>adjacency_matrix</code> por cada área), y también saber como las distintas áreas se relacionan entre sí (<code>node_link</code> entre áreas). En el diagrama vemos que el último paso realiza un agrupamiento de aristas entre comunidades. Ésa es la siguiente técnica que veremos.</p>
+<h2 id="edge-bundling">Edge Bundling</h2>
+<p>¿Qué pasa cuando tenemos demasiadas aristas en una visualización <code>node_link</code>? Tendremos la imagen sobrepasada de marcas, incluso llegando al extremo de tener una bola de pelos (<em>hairball</em>) que no será útil para resolver nuestras tareas. Una manera de facilitar la visualización es reducir el desorden (<em>clutter</em>) causado por el exceso de aristas, no reduciendo la cantidad de éstas, sino agrupándolas (<em>bundling</em>). Así, una técnica de <code>edge_bundling</code> agrupa aristas que son similares en una red, donde similaridad usualmente se define en función de los nodos que son conectados por las aristas: dos aristas que conectan nodos cercanos entre sí, son similares.</p>
+<p>Existen muchas técnicas de <code>edge_bundling</code>. Quizás las más ad-hoc al contenido introductorio de este curso son dos: <code>force_directed_edge_bundling</code> y <code>hierarchical_edge_bundling</code>. La segunda es la técnica pionera, al ser la primera en plantear la idea, sin embargo, la primera es más aplicable a lo que hemos visto. En <code>force_directed_edge_bundling</code> se parte de un gráfico <code>node_link</code>, con aristas representadas como líneas rectas. El propósito de la técnica es que las aristas que sean similares tengan recorridos cercanos en la visualización, casi como si un elástico las restringiese en sus puntos más cercanos. Así, un algoritmo de esta técnica debe identificar o crear esos puntos cercanos, y manipular la forma geométrica de las aristas para que se agrupen, convirtiéndolas en curvas suaves. La siguiente imagen ilustra un par de técnicas en una red de vuelos entre aeropuertos en los Estados Unidos:</p>
+<p><img alt="Force Directed Edge Bundling. Fuente: Holten &amp; Van Wijk, Force‐directed edge bundling for graph visualization." src="../../../courses/infovis/10_redes/images/force_directed_edge_bundling_hu01715f337a6263cdc0d6e2202692f6c3_1502366_660x0_resize_box_3.png" /></p>
+<p>Force Directed Edge Bundling. Fuente: Holten &amp; Van Wijk, Force‐directed edge bundling for graph visualization.</p>
+<p>¡Al utilizar estas técnicas la legibilidad de una visualización <code>node_link</code> aumenta considerablemente! Sin embargo, debemos tener en cuenta que la agrupación de las aristas sigue un criterio basado en las posiciones de los nodos, que no siempre tienen significado en una visualización <code>node_link</code> (en el ejemplo sí lo tienen, puesto que son nodos con posición geográfica). Por tanto, <code>edge_bundling</code> en un gráfico <code>node_link</code> no habilita nuevas tareas, sino que podría facilitar algunas — ¡no todas! Por ejemplo, es posible que al modificar la forma de las aristas perdamos la noción de camino entre nodos.</p>
+<p>La primera aplicación concreta de esta técnica se publicó el año 2006, llamada <code>hierarchical_edge_bundling</code>. Tiene el nombre <em>hierarchical</em> porque se aplica principalmente a árboles, o a redes en los que se puede inferir una estructura jerárquica (esto es posible en algunos algoritmos de detección de comunidades o de clustering). La técnica tiene la siguiente apariencia:</p>
+<p><img alt="Hierarchical Edge Bundling. Fuente: Holten, Hierarchical edge bundles: Visualization of adjacency relations in hierarchical data." src="../../../courses/infovis/10_redes/images/hierarchical_edge_bundling_hu063c3bb77914e7ad8424800af43a0580_2109830_660x0_resize_box_3.png" /></p>
+<p>Hierarchical Edge Bundling. Fuente: Holten, Hierarchical edge bundles: Visualization of adjacency relations in hierarchical data.</p>
+<p>En <code>hierarchical_edge_bundling</code> se utiliza una codificación similar a <code>node_link</code>. Los nodos se expresan con marcas de círculos o puntos organizados de manera circular, por comunidades. En el ejemplo, se muestra la red de código fuente de un <em>framework</em>, de modo que existen componentes (comunidades) dentro de macro-componentes, y todas las macro-componentes pertenecen al mismo framework. Los nodos son conectados entre sí con aristas, como en <code>node_link</code>, sin embargo estas aristas no son líneas rectas, sino que son curvas siguen el camino jerárquico: imaginen que existen círculos internos en la visualización, uno por cada nivel de jerarquía, hasta llegar al centro del círculo, que contiene la raíz de ésta. Cada arista sigue un camino que la acerca a los nodos de la jerarquía que marcan el camino desde un nodo a otro. Para ejemplificar veamos una red pequeña, el genoma del gusano <a href="https://es.wikipedia.org/wiki/Caenorhabditis_elegans">C. elegans</a>:</p>
+<p><img alt="Red del genoma de un gusano. Fuente: graph-tool." src="../../../courses/infovis/10_redes/images/celegans-hsbm-fit_hu18ae759eb648deedb76acb41f67192b3_6480920_660x0_resize_box_3.png" /></p>
+<p>Red del genoma de un gusano. Fuente: graph-tool.</p>
+<p>Este genoma no tiene una jerarquía de comunidades en sus nodos, pero ésta puede ser inferida. La biblioteca de Python <a href="https://graph-tool.skewed.de/static/doc/demos/inference/inference.html"><code>graph-tool</code></a> toma una red e infiere dicha estructura. Así, los nodos están dispuestos de acuerdo a la comunidad a la que pertenecen, y la red jerárquica de comunidades aparece desplegada como líneas celestes al interior del círculo. Como ven, cuando un gen se relaciona con otro, la curva que los une se mueve a través de la jerarquía — la jerarquía es el camino a seguir de cada arista. Las aristas, entonces, son agrupadas implícitamente: más que definir cómo una arista es similar a otra, dos aristas que siguen el mismo camino jerárquico serán cercanas en la visualización.</p>
+<p>En términos de implementación, cada arista es una curva <a href="https://es.wikipedia.org/wiki/B-spline">B-Spline</a> cuyos puntos de control son los nodos de la jerarquía (organizados dentro del círculo utilizando un método radial para <code>node_link</code>).</p>
+<h2 id="arc-diagram">Arc Diagram</h2>
+<p>La técnica <code>arc_diagram</code> puede ser similar a <code>node_link</code>, en tanto los nodos se posicionan en una línea recta, y las aristas son arcos sobre o bajo esta línea, dispuestos de acuerdo a algún criterio (como orden temporal, o inferido utilizando un algoritmo). Un ejemplo de esta visualización es <a href="http://mariandoerk.de/edgemaps/">Edge Maps</a>, que muestra relaciones de influencia entre personajes filosóficos:</p>
+<p><img alt="Edge Maps, una visualización estilo &lt;code&gt;arc_diagram&lt;/code&gt;. Fuente: Marian Dörk." src="../../../courses/infovis/10_redes/images/edgemaps_hucd5b310d07c027d9276cea1555b61fdb_206285_660x0_resize_box_3.png" /></p>
+<p>Edge Maps, una visualización estilo <code>arc_diagram</code>. Fuente: Marian Dörk.</p>
+<p>Como vemos en la imagen, las personas están organizadas temporalmente. En este caso, esto implica que las relaciones de haberse inspirado en las ideas de otras personas van hacia atrás, y por tanto se muestran abajo de los nodos, mientras que las relaciones de influir a otras personas van hacia adelante en el tiempo, apareciendo en la parte superior del gráfico.</p>
+<p>Este tipo de visualización es menos escalable que <code>node_link</code> debido a la restricción de espacio de los nodos, que solamente se pueden organizar en una línea recta. También podría dificultar ver caminos entre nodos, pero eso dependerá de la interacción y de los canales utilizados en las aristas. Ahora bien, permite encontrar patrones relacionados con los atributos de los nodos de manera más directa que en <code>node_link</code>.</p>
+<p>En <code>arc_diagram</code> también podemos utilizar un glifo como nodo. El siguiente ejemplo de <a href="http://www.gastonsanchez.com/visually-enforced/got-plot/crunching-data/2013/02/03/Star-Wars-Arc-Diagram/">Gastón Sánchez</a> muestra relaciones de personajes en Star Wars, donde cada nodo además de incorporar el nombre del o de la personaje correspondiente, muestra un gráfico de barras con sus palabras más usadas en los diálogos de la película:</p>
+<p><img alt="Star Wars &lt;code&gt;arc_diagram&lt;/code&gt;. Fuente: Gastón Sánchez." src="../../../courses/infovis/10_redes/images/arc_diagram_hu7489a94c865c80c3113470582c22215e_1133411_660x0_resize_box_3.png" /></p>
+<p>Star Wars <code>arc_diagram</code>. Fuente: Gastón Sánchez.</p>
+<p>Al ser una técnica que funciona sobre una línea recta, es posible complementar una <code>adjacency_matrix</code> con <code>arc_diagram</code> en sus dos ejes. En algunas ocasiones, es posible que esto facilite hacer tareas difíciles en <code>adjacency_matrix</code>, como seguir caminos.</p>
+<h2 id="hive-plot">Hive Plot</h2>
+<p>La técnica <code>hive_plot</code> busca resolver el problema de la falta de estructura (o una estructura artificial basada en criterios estéticos de un algoritmo) en los diagramas tradicionales, al definir ejes estructurales donde posicionar los nodos. La especificación de la técnica es la siguiente:</p>
+<p><img alt="Diseño de &lt;code&gt;hive_plot&lt;/code&gt;. Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks." src="../../../courses/infovis/10_redes/images/hive_plot_hubdf8c09c1eedb10f9c297a6853db8b6c_301257_660x0_resize_box_3.png" /></p>
+<p>Diseño de <code>hive_plot</code>. Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks.</p>
+<p>Es una idea similar a <code>parallel_coordinates</code> para visualizar tablas, pero para redes. Las tareas relacionadas con estructura y topología de la red pueden facilitarse en función de la definición de los ejes de esta visualización. Los nodos pueden repetirse entre ejes, dependiendo de lo que codifique cada uno de ellos. Al igual que <code>parallel_coordinates</code> es una técnica que requiere entrenamiento para ser utilizada. Eso no es una limitante, pero sí es algo que debe ser considerado. La siguiente imagen ilustra la diferencia entre <code>node_link</code> y <code>hive_plot</code>:</p>
+<p><img alt="Diferencia entre &lt;code&gt;node_link&lt;/code&gt; y &lt;code&gt;hive_plot&lt;/code&gt;. Fuente: Krzywinski et al." src="../../../courses/infovis/10_redes/images/hive_plots_examples_hu6499bc234b239b92fc808b36dbe9d7be_1548625_660x0_resize_box_3.png" /></p>
+<p>Diferencia entre <code>node_link</code> y <code>hive_plot</code>. Fuente: Krzywinski et al.</p>
+<p>Una tarea que se vuelve posible con esta visualización, que no era factible con las vistas anteriormente, es la comparación de redes. Si dos redes difieren en sus nodos o aristas, las visualizaciones anteriores serán irremediablemente distintas en su estructura (por ej., teniendo menos filas y columnas en la <code>adjacency_matrix</code>, o teniendo una organización diferente en <code>node_link</code> debido a su naturaleza algorítmica). En cambio, como <code>hive_plot</code> define ejes estructurales, lo que comparamos al ver dos (o más) instancias de esta visualización es cómo distintas redes presentan (o no) esa estructura específica.</p>
+<h2 id="radial-node-link">Radial Node-Link</h2>
+<p>La técnica <code>radial_node_link</code> es una instancia específica de <code>node_link</code> para árboles. Utiliza la misma codificación visual, pero la organización y orientación de los nodos está restringida por la estructura de la red. El nodo central es la raíz del árbol, y desde allí se ramifican las aristas a cada nivel de profundidad del árbol. Luce así:</p>
+<p><img alt="Ejemplo de &lt;code&gt;radial_node_link&lt;/code&gt;. Fuente: Mike Bostock." src="../../../courses/infovis/10_redes/images/radial_node_link.png" /></p>
+<p>Ejemplo de <code>radial_node_link</code>. Fuente: Mike Bostock.</p>
+<p>Además de las tareas y especificaciones de escalabilidad de <code>node_link</code>, al utilizar <code>radial_node_link</code> se vuelve posible realizar otras operaciones, como saber si dos nodos son hermanos o no, debido a la proximidad angular de los nodos, o bien saber el nivel o profundidad a la que se encuentra un nodo, ya que este atributo está codificado por la distancia hacia el centro (raíz) del árbol.</p>
+<h2 id="treemap">Treemap</h2>
+<p>La visualización <code>treemap</code> también está orientada a árboles. Sin embargo, presenta un esquema distinto a las visualizaciones anteriores, ya que es una técnica de estilo <em>space filling</em>, es decir, llena todo el espacio de la visualización. Es una visualización recursiva que utiliza la estructura de la red para dividir el espacio, que utiliza rectángulos como marca para cada nodo. Primero, la raíz ocupa todo el espacio rectangular. Luego, cada uno de los nodos es representando con un rectángulo cuyo tamaño es proporcional a la cantidad de nodos que descienden de él (o de un valor total calculado para todos sus nodos descendientes a partir de un atributo cuantitativo). Cada uno de esos rectángulos es dividido siguiendo el mismo esquema. Una manera de ejemplificar esto es a través del sistema <a href="https://en.wikipedia.org/wiki/TreeSize">TreeSize</a>, que visualiza el contenido de un dispositivo de almacenamiento:</p>
+<p><img alt="Ejemplo de &lt;code&gt;treemap&lt;/code&gt; en el sistema TreeSize. Fuente: Wikipedia." src="../../../courses/infovis/10_redes/images/treemap_hud849eb11742d8f427eb45b98c0f8ec68_32637_660x0_resize_box_3.png" /></p>
+<p>Ejemplo de <code>treemap</code> en el sistema TreeSize. Fuente: Wikipedia.</p>
+<p>Observamos que la raíz del disco (<code>C:\</code>) es un rectángulo que contiene otros directorios (rectángulos), cuyo tamaño es proporcional al espacio que ocupa cada directorio en el disco. En este caso el canal de color utiliza la saturación y la luminosidad para codificar la profundidad de cada directorio en el disco.</p>
+<p>Las tareas que se pueden realizar con un <code>treemap</code> incluyen explorar las distribuciones de los atributos de los nodos y consultar atributos de los nodos hoja (los últimos en la profundidad), y cuantificar relaciones parte-de-un-todo. Su escalabilidad dependerá del tamaño de la visualización a utilizar, pero, al igual que <code>adjacency_matrix</code>, puede alcanzar el millón de hojas si queremos que cada hoja sea representada con un píxel. Su limitante es que el tamaño de los rectángulos solo es una aproximación de los valores reales asociados a cada hoja, ya que no siempre es posible dividir el espacio de manera exacta utilizando rectángulos.</p>
+<p>Esta técnica de visualización está implementada en todos los sistemas de visualización comercial y BI. Es directa de utilizar y de interactuar, y su codificación visual no es compleja. Dependiendo de los canales utilizados, puede tener un alto valor estético también. Por tanto, es un buen punto de partida para explorar datos que se puedan estructurar en árboles. Pueden ver una página con la <a href="http://www.cs.umd.edu/hcil/treemap-history/index.shtml">historia de los treemaps y sus variantes</a> preparada por su creador, Ben Shneiderman.</p>
+<h2 id="voronoi-treemap">Voronoi TreeMap</h2>
+<p>La técnica <code>voronoi_treemap</code> extiende la propuesta de <code>treemap</code> a áreas flexibles en vez de rectángulos, lo que consigue una mejor relación entre el tamaño asignado a un área y el valor codificado por ella. Como su nombre lo dice, utiliza <a href="https://es.wikipedia.org/wiki/Pol%C3%ADgonos_de_Thiessen">diagramas de Voronoi</a> para lograr ese efecto. Un ejemplo que visualiza un repositorio de código luce así:</p>
+<p><img alt="Ejemplo de &lt;code&gt;voronoi_treemap&lt;/code&gt; para un repositorio de código. Fuente: Balzer et al, Voronoi treemaps for the visualization of software metrics." src="../../../courses/infovis/10_redes/images/voronoi_treemap_hud95b7c059ab86011b91dfb2b53f10613_8523528_660x0_resize_box_3.png" /></p>
+<p>Ejemplo de <code>voronoi_treemap</code> para un repositorio de código. Fuente: Balzer et al, Voronoi treemaps for the visualization of software metrics.</p>
+<p>Como vemos, la apariencia es más orgánica y flexible que en el <code>treemap</code> tradicional, aunque es también puede perjudicar la comprensión de la visualización. Sin embargo, ésa es también la fortaleza de esta visualización. Al ser adaptable a cualquier forma los podemos utilizar dentro de otras visualizaciones, por ejemplo con datos geográficos. El New York Times realizó una visualización que convirtió las tasas de migración interna e internacional en cada estado en los Estados Unidos en una estructura de árbol, donde la raíz es el país, los nodos del primer nivel son los estados, y los nodos del segundo nivel son los orígenes de la población de cada estado. Por tanto, es posible construir una visualización mixta:</p>
+<p><img alt="&ldquo;Mapping Migration in the US,&rdquo; un ejemplo de visualización mixta de mapas y &lt;code&gt;voronoi_treemap&lt;/code&gt;. Fuente: New York Times." src="../../../courses/infovis/10_redes/images/voronoi_treemap_us_huec6e1bd0f88633b7a3ed6714e76769ec_1544418_660x0_resize_box_3.png" /></p>
+<p><em>Mapping Migration in the US</em>, un ejemplo de visualización mixta de mapas y <code>voronoi_treemap</code>. Fuente: New York Times.</p>
+<p>La visualización permite ver para cada estado cuál es la distribución de migrantes (o locales), es decir, tareas parte-de-un-todo, que son fácilmente comparables entre estados debido al uso del canal de color para mostrar el atributo categórico de origen.</p>
+<p>A pesar de que la escabilidad de <code>voronoi_treemap</code> es alta, sus usos más efectivos suelen ser aquellos donde la red no es grande, como el ejemplo del New York Times, o en árboles geográficos con resultados de votación. Aún así, es una visualización que tiene buen potencial estético y comunicativo.</p>
+<h2 id="fin-de-unidad">Fin de Unidad</h2>
+<p>En esta unidad hemos visto técnicas de visualización para redes. A pesar de que las redes son datos cada día más presentes, sobretodo debido a la disponibilidad de trazas digitales, el abanico de técnicas de visualización es menos amplio que para otros tipos de dataset. Visualizar redes de manera efectiva plantea desafíos importantes, tanto de escalabilidad, de análisis de los datos, y también de interpretabilidad y legibilidad en la visualización. Vale la pena enfrentar esos desafíos, ya que los fenómenos que podemos trabajar y analizar a través de las redes no son transferibles a otros tipos de dataset. Las necesidades de la sociedad hoy son complejas, y la visualización es una manera de poner esa complejidad ante nuestros ojos y poder interactuar con ella, sumergirnos en su profundidad, y extraer conocimiento que nos ayude a resolver los problemas actuales que nos aquejan.</p>
+<h2 id="lecturas-recomendadas">Lecturas Recomendadas</h2>
+<ul>
+<li>Hadlak, Steffen, Heidrun Schumann, and Hans-Jörg Schulz. <a href="https://www.researchgate.net/profile/Hans-Joerg_Schulz/publication/274633015_A_Survey_of_Multi-faceted_Graph_Visualization/links/5523cb010cf2b351d9c33836.pdf"><em>A Survey of Multi-faceted Graph Visualization</em></a>. In EuroVis (STARs), 2015.</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        
+        <a href="../clase_06/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Visualización de Datos Geográficos y Espaciales" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Visualización de Datos Geográficos y Espaciales
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../clase_08/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Colores e Ilusiones" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Colores e Ilusiones
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/fralfaro" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://gitlab.com/fralfaro" target="_blank" rel="noopener" title="gitlab.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m510.486 284.482-27.262-83.963c.012.038.016.077.028.115-.013-.044-.021-.088-.033-.132v-.01L429.1 33.871a21.328 21.328 0 0 0-20.445-14.6A21.038 21.038 0 0 0 388.466 34l-51.372 158.154H175L123.533 33.989a21.033 21.033 0 0 0-20.183-14.715h-.113A21.467 21.467 0 0 0 82.86 34L28.888 200.475l-.008.021c-.013.042-.019.084-.033.127.012-.038.017-.077.029-.115L1.514 284.482a30.6 30.6 0 0 0 11.117 34.283l236.262 171.662c.035.026.074.041.109.067.1.072.2.146.3.214-.1-.065-.187-.136-.282-.2.015.012.033.02.05.031l.041.024h.006a11.992 11.992 0 0 0 1.137.7c.054.03.1.068.157.1.033.016.064.038.1.054s.053.02.077.032.038.015.056.023c.044.021.092.034.136.057.205.1.421.178.633.264.2.082.389.177.592.248l.025.011c.034.012.064.028.1.04s.083.032.125.046l.05.012c.053.016.11.024.163.039.019.006.042.009.063.015.284.086.579.148.872.213.115.026.225.062.341.083.017 0 .032.009.05.012.038.008.073.021.112.027.062.011.122.031.186.04.049.007.1 0 .151.012h.033a11.918 11.918 0 0 0 1.7.136h.019a11.971 11.971 0 0 0 1.7-.136h.033c.05-.008.1 0 .153-.012s.124-.029.187-.04c.038-.006.073-.019.11-.027.017 0 .032-.009.049-.012.118-.023.231-.059.349-.084.288-.064.578-.126.861-.21.019-.006.039-.008.059-.014.055-.017.113-.024.169-.041.016-.006.035-.007.051-.012.044-.013.086-.032.129-.047s.063-.028.1-.041l.026-.01c.214-.076.417-.175.627-.261s.394-.154.584-.245c.047-.023.1-.036.142-.059.018-.009.04-.015.058-.024s.053-.02.078-.033.068-.04.1-.056c.056-.028.106-.069.161-.1a12.341 12.341 0 0 0 1.132-.695c.029-.02.062-.035.092-.056.008-.006.017-.009.024-.015.035-.026.076-.043.11-.068l236.3-171.666a30.6 30.6 0 0 0 11.107-34.281ZM408.8 49.48l46.342 142.674H362.46Zm-305.6 0 46.428 142.675h-92.68ZM26.817 299.251a6.526 6.526 0 0 1-2.361-7.308l20.34-62.42L193.835 420.6Zm38.245-82.972h92.411l65.881 202.941Zm183.416 273.83c-.047-.038-.092-.079-.138-.118l-.028-.026a8.366 8.366 0 0 1-.268-.231c-.172-.15-.341-.3-.5-.462.014.012.029.022.043.035l.055.046a12.191 12.191 0 0 0 1.091.929l.012.011c.018.013.033.03.051.045-.107-.075-.216-.148-.318-.229Zm7.514-48.482L217.226 322.21l-34.387-105.931h146.414Zm7.935 48.107c-.091.079-.178.157-.27.233l-.032.028c-.047.038-.091.079-.136.117-.1.08-.209.152-.313.229.018-.013.033-.032.053-.044l.009-.009a11.69 11.69 0 0 0 1.086-.926c.014-.013.03-.024.044-.036s.038-.03.054-.047c-.16.156-.322.307-.495.455Zm90.7-273.455h92.4l-18.91 24.23-139.468 178.7Zm130.567 82.967L318.2 420.563l149.084-191.025 20.258 62.393a6.528 6.528 0 0 1-2.353 7.315Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/faam/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.kaggle.com/faamds" target="_blank" rel="noopener" title="www.kaggle.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M304.2 501.5 158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@fralfaro" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://fralfaro.github.io/portfolio/" target="_blank" rel="noopener" title="fralfaro.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.1-20.4-4.2-41.8-4.2-64 0-22.2 2.1-43.6 4.2-64h185.4c2.1 20.4 3.3 41.8 3.3 64zm151.9-64c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42.9 3.2-64 0-22-1.1-43.4-3.2-64h123.1zm-10.5-32H376.7c-10-63.86-29.8-117.38-55.3-151.558C399.8 29.09 463.4 85.94 493.4 160zm-149.1 0H167.7c6.1-36.4 15.5-68.62 27-94.65 10.5-23.61 22.2-40.74 33.5-51.54C239.4 3.178 248.7 0 256 0c7.3 0 16.6 3.178 27.8 13.81 11.3 10.8 23 27.93 33.5 51.54 11.5 26.03 20.9 58.25 27 94.65zm-325.69 0C48.59 85.94 112.2 29.09 190.6 8.442 165.1 42.62 145.3 96.14 135.3 160H18.61zm112.59 32c-2.1 20.6-4.1 42-4.1 64 0 21.1 2 43.4 4.1 64H8.065C2.8 299.5 0 278.1 0 256s2.8-43.5 8.065-64H131.2zm63.5 254.6c-11.5-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.7-22.2 40.8-33.5 51.6-11.2 10.6-20.5 13.8-28.7 13.8-6.4 0-15.7-3.2-26.9-13.8-11.3-10.8-23-27.9-33.5-51.6zm-4.1 57C112.2 482.9 48.59 426.1 18.61 352H135.3c10 63.9 29.8 117.4 55.3 151.6zm130.8 0c25.5-34.2 45.3-87.7 55.3-151.6h116.7c-30 74.1-93.6 130.9-172 151.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.top", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

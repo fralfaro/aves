@@ -1,366 +1,71 @@
-# Bienvenidos a aves!
+# Visualización de Información
 
-🐦 `aves`: Análisis y Visualización, Educación y Soporte
+**¡Bienvenide a mi curso introductorio de Visualización de Información!** En esta página encontrarás todo el material teórico y práctico que tengo disponible.
 
-> Por [Eduardo Graells-Garrido](http://datagramas.cl).
-
-Este repositorio contiene datos, código y notebooks relacionados con mi [curso de Visualización de Información](http://datagramas.cl/courses/infovis) y mi trabajo diario. Lo he estructurado en un paquete llamado `aves`, sigla descrita en el título de este documento. 
-
-Todavía no existe una documentación exhaustiva para `aves`, ya que su uso es primariamente interno, pero estos ejemplos muestran cómo se utilizan sus funciones. En lo que respecta a visualización, se mantiene el esquema típico que se utiliza en `matplotlib` y `seaborn`, las bibliotecas de visualización de bajo nivel más utilizadas en Python. De cierto modo, `aves` es un conjunto de herramientas de bajos niveles de abstracción, es decir, utiliza un paradigma imperativo, donde le damos instrucciones específicas al programa (**cómo** hacerlo); en contraste, una herramienta de alto nivel se enfoca en **qué** hacer, ocultando los detalles de implementación.
-
-Para comprender la funcionalidad del código puedes explorar la carpeta `notebooks`. Sin embargo, los notebooks se preocupan de trabajar conceptos que en ocasiones están más allá del alcance de `aves`, ya que los utilizo en los cursos que dicto. Esos conceptos incluyen trabajar con `DataFrames` de `pandas` o utilizar técnicas de visualización implementadas en bibliotecas como `geopandas`, `matplotlib` y `seaborn` (que `aves` utiliza de manera interna).
-
-## Ejemplos 
-
-### Visualización de Tablas
-
-```python
-from aves.visualization import barchart
-
-fig, ax = plt.subplots(1, 1, figsize=(12, 4))
-
-barchart(ax, modo_comuna, stacked=True, sort_categories=True, sort_items=True)
-
-ax.set_title("Uso de Modo de Transporte en Viajes al Trabajo (Día Laboral)", loc="left")
-ax.set_ylim([0, 1])
-ax.set_xlabel("")
-ax.set_ylabel("Fracción de los Viajes")
-```
-
-![](docs/reports/figures/example_barchart.png)
-
-```python
-from aves.visualization import scatterplot
-
-fig, ax = plt.subplots(1, 1, figsize=(12, 6))
-
-scatterplot(
-    ax,
-    modo_comuna_ingreso,
-    "ingreso",
-    "Bip!",
-    annotate=True,
-    avoid_collisions=True,
-    text_args=dict(fontsize="x-small"),
-    scatter_args=dict(color="purple"),
-)
-
-ax.set_xlabel("Ingreso Promedio por Hogar")
-ax.set_ylabel("Proporción de Uso de Transporte Público")
-ax.set_title(
-    "Relación entre Uso de Transporte Público e Ingreso por Comunas de RM (Fuente: EOD2012)",
-    loc="left",
-)
-ax.grid(alpha=0.5)
-ax.ticklabel_format(style="plain")
-
-sns.despine(ax=ax, left=True, bottom=True, right=True, top=True)
-
-```
-
-![](docs/reports/figures/example_scatterplot.png)
-
-### Visualización de Datos Geográficos
-
-```python
-from aves.visualization.figures import GeoFacetGrid
-from aves.visualization import choropleth_map
-
-grid = GeoFacetGrid(zones.join(distancia_zonas, how="inner"), height=7)
-
-grid.add_basemap("../data/processed/scl_toner_12.tif")
-grid.add_layer(
-    choropleth_map,
-    "distancia_al_trabajo",
-    k=6,
-    linewidth=0.5,
-    edgecolor="black",
-    binning="fisher_jenks",
-    palette="RdPu",
-    alpha=0.75,
-    cbar_args=dict(
-        label="Distancia (m)",
-        height="20%",
-        width="1%",
-        orientation="vertical",
-        location="center right",
-        label_size="x-small",
-        bbox_to_anchor=(0.0, 0.0, 0.9, 1.0),
-    ),
-)
-grid.add_map_elements()
-grid.set_title("Distancia al Trabajo")
-```
-
-![](docs/reports/figures/example_choropleth.png)
-
-```python
-from aves.visualization.figures import GeoFacetGrid
-from aves.visualization import heat_map
-
-grid = GeoFacetGrid(
-    origenes_urbanos[origenes_urbanos["Proposito"] == "Al trabajo"],
-    context=zones,
-    col="ModoDifusion",
-    col_wrap=2,
-    col_order=["Auto", "Bip!", "Caminata", "Bicicleta"],
-    height=7,
-)
-
-grid.add_basemap("../data/processed/scl_toner_12.tif")
-grid.add_layer(
-    heat_map,
-    weight="PesoLaboral",
-    n_levels=10,
-    bandwidth=1000,
-    low_threshold=0.05,
-    alpha=0.75,
-    palette="inferno",
-)
-grid.add_global_colorbar(
-    "inferno",
-    10,
-    title="Intensidad de Viajes (de menos a más)",
-    orientation="horizontal",
-)
-
-```
-
-![](docs/reports/figures/example_geofacetgrid.png)
-
-### Visualización de Redes
-
-```python
-from aves import Network
-from aves.visualization import NodeLink
-
-network = Network.from_edgelist(edgelist, directed=False)
-nodelink = NodeLink(network)
-nodelink.layout_nodes()
-nodelink.set_node_drawing(method="plain", weights=network.node_degree("total"))
-
-fig, ax = plt.subplots(figsize=(16, 16))
-
-nodelink.plot(ax, nodes=dict(node_size=150, edgecolor="black", linewidth=1))
-
-ax.set_axis_off()
-ax.set_aspect("equal")
-```
-
-![](docs/reports/figures/example_nodelink.png)
-
-```python
-from aves import Network
-from aves.visualization import NodeLink
-
-network = Network.from_edgelist(edgelist, directed=False)
-nodelink = NodeLink(network)
-heb = nodelink.bundle_edges(method="hierarchical")
-
-nodelink.set_node_drawing(
-    "labeled",
-    radial=True,
-    offset=0.1,
-    weights=network.node_degree("total"),
-    categories=heb.get_node_memberships(1),
-)
-nodelink.set_edge_drawing(
-    "community-gradient", node_communities=heb.get_node_memberships(1)
-)
-
-fig, ax = plt.subplots(figsize=(12, 12))
-
-nodelink.plot(
-    ax,
-    nodes=dict(
-        node_size=150, palette="plasma", edgecolor="none", alpha=0.75, fontsize="medium"
-    ),
-    edges=dict(color="#abacab", palette="plasma", alpha=0.5),
-)
-
-ax.set_axis_off()
-ax.set_aspect("equal")
-```
-
-![](docs/reports/figures/example_heb.png)
-
-### Visualización de Redes con Contexto Geográfico
-
-```python
-from aves.visualization.figures import GeoFacetGrid
-from aves import Network
-from aves.visualization import NodeLink
-
-zone_od_network = Network.from_edgelist(
-    matriz_zonas, source="ZonaOrigen", target="ZonaDestino", weight="n_viajes"
-)
-zone_nodelink = NodeLink(zone_od_network)
-zone_nodelink.layout_nodes(method="geographical", geodataframe=merged_zones)
-zone_nodelink.bundle_edges(
-    method="force-directed", K=1, S=500, I=30, compatibility_threshold=0.65, C=6
-)
-zone_nodelink.set_node_drawing("plain", weights=zone_od_network.node_degree("in"))
-zone_nodelink.set_edge_drawing(method="origin-destination")
-
-
-def plot_network(ax, geo_data, *args, **kwargs):
-    zone_nodelink.plot(ax, *args, **kwargs)
-
-
-grid = GeoFacetGrid(zones, context=zones, height=7)
-grid.add_layer(zones, facecolor="#efefef", edgecolor="white")
-grid.add_layer(comunas_urbanas, facecolor="none", edgecolor="#abacab")
-grid.add_layer(
-    plot_network,
-    nodes=dict(color="white", edgecolor="black", node_size=100, alpha=0.95),
-    edges=dict(linewidth=0.5, alpha=0.25),
-)
-grid.set_title("Viajes al trabajo en Santiago (en días laborales, EOD 2012)")
-```
-
-![](docs/reports/figures/example_geo_fdb.png)
-
-### Frecuencia y Tendencia de Palabras usando Bubble Plots
-
-El dataframe `unisex_names` se calcula a partir del dataset guaguas (ver sección datasets).
-
-```python
-from aves.visualization import bubble_plot
-
-fig, ax = plt.subplots(figsize=(16, 9))
-
-bubble_plot(
-    ax,
-    unisex_names.reset_index(),
-    "tendency",
-    "n",
-    label_column="nombre",
-    palette="cool",
-    max_label_size=56,
-    starting_y_range=60, margin=2
-)
-
-ax.set_axis_off()
-ax.set_title(
-    "Nombres compartidos por hombres y mujeres (1920-2020, Registro Civil de Chile)"
-)
-ax.annotate(
-    "Más usado por mujeres →",
-    (0.95, 0.01),
-    xycoords="axes fraction",
-    ha="right",
-    va="bottom",
-    fontsize="medium",
-    color="#abacab",
-)
-ax.annotate(
-    "← Más usado por hombres",
-    (0.05, 0.01),
-    xycoords="axes fraction",
-    ha="left",
-    va="bottom",
-    fontsize="medium",
-    color="#abacab",
-)
-ax.annotate(
-    "Fuente: guaguas, por @RivaQuiroga.",
-    (0.5, 0.01),
-    xycoords="axes fraction",
-    ha="center",
-    va="bottom",
-    fontsize="medium",
-    color="#abacab",
-)
+Este curso tiene los siguientes objetivos:
 
-fig.set_facecolor("#efefef")
-fig.tight_layout()
-```
+1.  Adquirir un lenguaje común y un entendimiento fundamental dentro del campo visualización de información.
+2.  Ser capaces de **diseñar** una visualización de datos efectiva para el problema a resolver.
+3.  Ser capaces de **evaluar** una visualización con espíritu crítico.
+4.  Aprender a prototipar e implementar visualizaciones en Python.
 
-![](docs/reports/figures/example_bubbleplot.png)
+Cumplir estos objetivos requiere las siguientes capacidades ya desarrolladas en les estudiantes:
 
-## Configuración y Requisitos
+1.  Python intermedio: a nivel de programación (control de flujo, definición de funciones, estructuras de datos, funciones lambda) y de manejo de herramientas (conda environments, Jupyter Lab).
+2.  Conocimiento básico de pandas y sus operaciones, incluyendo filtros y operaciones como groupby. Se espera que hayan cursado (o estén cursando) una asignatura de _análisis de datos_.
+3.  Aunque el material del curso está en castellano, gran parte de los recursos bibliográficos y de código externo están disponibles solo en inglés.
 
-### Paso 1: Preparación
+Los siguientes links son relevantes para quienes hacen el curso formalmente:
 
-Si usas Windows, te recomiendo instalar el [Windows Subsystem for Linux](https://docs.microsoft.com/es-es/windows/wsl/install-win10). Puede ser la versión 1 o 2 (recomiendo WSL2). Como distribución te recomiendo Ubuntu 22.04 (es la que uso yo). 
+*   [Instrucciones y evaluación de proyecto de curso](markdowns/rubrica-proyecto)
+*   [Algunos links a Datasets para proyectos](markdowns/resources)
+*   [Muestra de Visualizaciones](markdowns/showcase)
 
-Abre la consola (_shell_) de Ubuntu y ejecuta el siguiente comando:
+## Unidades Teóricas 
 
-```sh
-sudo apt install make libxcursor1 libgdk-pixbuf2.0-dev libxdamage-dev osmctools gcc
-```
+1.  **Introducción** a la Visualización [📖 Monografía](../../courses/infovis/01_intro). [🖥️ Slides](https://docs.google.com/presentation/d/1IUe26BpVOzEaQnPNwXaR62rxbpKvOBp1kwUtYhOC00A/edit?usp=sharing).
+2.  **¿Qué visualizar?** Abstracción de Datos [📖 Monografía](../../courses/infovis/03_datos). [🖥️ Slides](https://docs.google.com/presentation/d/11gqcGFSjfiEtOrqOfYwYtnmyaUY_FsftoICScHOTwWE/edit?usp=sharing).
+3.  **¿Para qué visualizar?** Abstracción de Tareas [📖 Monografía](../../courses/infovis/04_tareas). [🖥️ Slides](https://docs.google.com/presentation/d/1mDPP6VliSj_16i6CPzLmANIqxlEcF2HAGAg46u0LoO4/edit?usp=sharing).
+4.  **¿Cómo visualizar?** Codificación Visual [📖 Monografía](../../courses/infovis/06_codificacion). [🖥️ Slides](https://docs.google.com/presentation/d/1JZu7qxX0ozFjLlV0Z-Q5a1ZXM4bQIRGfC1qyvKFQOgo/edit?usp=sharing).
+5.  Visualización de **Tablas** [📖 Monografía](../../courses/infovis/07_tablas). [🖥️ Slides](https://docs.google.com/presentation/d/1ibRpdMGI6HJWpzMzTsIVyRN89ZT6wIS1VZpM6yR3_Wk/edit?usp=sharing).
+6.  Visualización de **Datos Geográficos y Espaciales** [📖 Monografía](../../courses/infovis/08_mapas). [🖥️ Slides](https://docs.google.com/presentation/d/1qBhJVLHIZxmHKS9rVicfFiu4NtHvH77mycg1ed-UpIU/edit?usp=sharing).
+7.  Visualización de **Redes y Árboles** [📖 Monografía](../../courses/infovis/10_redes). [🖥️ Slides](https://docs.google.com/presentation/d/1nX9hoMnfW7hOkIcUR41zQVr1k9EtyE8rK9wbL2evUnw/edit?usp=sharing).
+8.  **Colores** e Ilusiones [📖 Monografía](../../courses/infovis/09_colores). [🖥️ Slides](https://docs.google.com/presentation/d/1h13vUj1QnLqQYgxM2i-R1rTbrdE-hA-a0lU1iRq2cUY/edit?usp=sharing).
+9.  **Buenas Prácticas** y **Evaluación** [📖 Monografía](../../courses/infovis/11_practicas). [🖥️ Slides](https://docs.google.com/presentation/d/1Fn8ZyGWPM3BLiN6YjxtukXNZ-ootQ1uQ1gvLZf9UpOg/edit?usp=sharing).
+10.  Visualización de **Texto** [📖 Monografía](../../courses/infovis/12_texto). [🖥️ Slides](https://docs.google.com/presentation/d/1bgKoK5QyMu4n8yR10ZNVwBlxwakaetYic6WbSuy2rIw/edit?usp=sharing).
+11.  **Reducción de Complejidad** [📖 Monografía](../../courses/infovis/13_interactividad). [🖥️ Slides](https://docs.google.com/presentation/d/1BTZ3aPADa14hzv2zihV_dMRfz8sthvLafYM664JT11s/edit?usp=sharing).
 
-Esto instalará algunas bibliotecas que son necesarias para el funcionamiento de `aves` (particularmente de `graph-tool` que es usada por aves).
+## Unidades Prácticas 
 
-Además, para administrar el entorno de ejecución de aves necesitas una instalación de `conda` ([Miniconda](https://docs.conda.io/en/latest/miniconda.html) es una buena alternativa) y de `mamba`. Primero debes instalar `conda`, y una vez que la tengas, puedes ejecutar:
+Estas unidades utilizan el módulo [aves](https://github.com/zorzalerrante/aves) y la Encuesta Origen-Destino de Santiago 2012 (disponible en el repositorio de aves).
+Los siguientes notebooks de Jupyter están en el repositorio de aves. Incluyo un link al repositorio y en algunos casos un link que te permite ejecutarlo en Google Colab:
 
-```sh
-conda install mamba
-```
+1.  Introducción: [Encuesta Origen-Destino + Python](https://github.com/zorzalerrante/aves/blob/master/notebooks/01-python-tools.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/01-python-tools.ipynb)
+2.  Visualización: [Tablas](https://github.com/zorzalerrante/aves/blob/master/notebooks/02-python-tablas.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/02-python-tablas.ipynb)
+3.  Datos Geográficos: [Operaciones en geopandas](https://github.com/zorzalerrante/aves/blob/master/notebooks/03-python-mapas-preliminario.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/03-python-mapas-preliminario.ipynb)
+4.  Datos Geográficos: [dot\_map, bubble\_map, heat\_map, choropleth\_map](https://github.com/zorzalerrante/aves/blob/master/notebooks/03-python-mapas.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/03-python-mapas.ipynb)
+5.  Redes: [Operaciones en graph-tool, visualización: node\_link, hierarchical\_edge\_bundling](https://github.com/zorzalerrante/aves/blob/master/notebooks/04-python-redes-preliminario.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/04-python-redes-preliminario.ipynb)
+6.  Redes: [Redes Geográficas](https://github.com/zorzalerrante/aves/blob/master/notebooks/05-python-redes-eod.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/05-python-redes-eod.ipynb)
+7.  Texto: [streamgraph, bubble\_cloud](https://github.com/zorzalerrante/aves/blob/master/notebooks/06-python-texto-guaguas.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/06-python-texto-guaguas.ipynb)
 
-¿Por qué `mamba`? Es una versión más eficiente de `conda`. ¡Te ahorrará muchos minutos de instalación!
+**Extra**: [Mini-taller de análisis de encuesta CASEN y resultados de elecciones presidenciales 2021](https://github.com/zorzalerrante/aves/blob/master/notebooks/extra-00-data-cleaning-casen.ipynb) [![Abrir en Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zorzalerrante/aves/blob/master/notebooks/extra-00-data-cleaning-casen.ipynb)
 
+## Bibliografía 
 
-### Paso 2: Creación del Entorno
+La parte teórica del curso se basa en estos dos libros:
 
-Después de descargar o clonar el repositorio (utilizando el comando `git clone`), debes instalar el entorno de `conda` con los siguientes comandos:
+*   **[Visualization Analysis & Design](http://www.cs.ubc.ca/~tmm/vadbook/)**, de Tamara Munzner.
+*   **How Charts Lie**, de Alberto Cairo.
 
-```sh
-make conda-create-env
-make install-package
-```
+Los siguientes son libros complementarios:
 
-Ello creará un entorno llamado `aves` que puedes utilizar a través del comando `conda activate aves`. 
+*   **The Functional Art**, de Alberto Cairo.
+*   **Design for Information**, de Isabel Meirelles.
 
-### Paso 3: Ejecución en Jupyter
+Créditos y Agradecimientos [#](#cr%c3%a9ditos-y-agradecimientos)
+----------------------------------------------------------------
 
-El principal modo de uso de aves es a través de los notebooks de Jupyter.
+![](images/vad_book.png)
 
-Es posible que ya tengas un entorno de `conda` en el que ejecutes Jupyter. En ese caso, puedes agregar el entorno de `aves` como _kernel_ ejecutando este comando desde el entorno que contiene Jupyter:
+Este curso incluye material del libro [Visualization Analysis & Design de **Tamara Munzner**](http://www.cs.ubc.ca/~tmm/vadbook/) y de las presentaciones de su curso de visualización. ¡Gracias, Tamara!
 
-```sh
-make install-kernel
-```
-
-Así quedará habilitado acceder al entorno de aves desde Jupyter.
-
-
-## Actualización de Dependencias
-
-Para añadir o actualizar dependencias:
-
-1. Agrega el nombre (y la versión si es necesaria) a la lista en `environment.yml`.
-2. Ejecuta `conda env update --name aves --file environment.yml  --prune`.
-3. Actualiza el archivo `environment.lock.yml` ejecutando `conda env export > environment.lock.yml`.
-
-## Créditos
-
-### Personas y Contribuciones
-
-* Parte del tiempo dedicado a este código ha sido financiado por el proyecto **ANID Fondecyt de Iniciación 11180913**.
-* La implementación de Force Directed Edge Bundling está inspirada en la versión de Javascript de esa técnica, y fue inicialmente desarrollada por [Vera Sativa](https://github.com/verasativa) y luego modificada por [Tabita Catalán](https://github.com/tabitaCatalan/s). Adapté esa versión inicial para que fuese 100% Python y funcionase con el resto de `aves`. 
-* El módulo `aves.features.twokenize` es una versión modificada de [ark-twokenize](https://github.com/myleott/ark-twokenize-py) de [Myle Ott](https://github.com/myleott).
-* Este repositorio fue creado gracias al template de _Cookie Cutter / Data Science with Conda_ hecho por [Patricio Reyes](https://github.com/pareyesv/).
-* Gran parte de la funcionalidad de `aves` es proporcionada por las bibliotecas `matplotlib`, `seaborn`, `pandas`, `geopandas`, `contextily`, `graph-tool`, `scikit-learn`, `pysal`, `scikit-fusion` y más. 
-* Para los notebooks de mapas: Map tiles by [Stamen Design](http://stamen.com/), under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0). Data by [OpenStreetMap](http://openstreetmap.org/), under [ODbL](http://www.openstreetmap.org/copyright).
-
-### Datasets
-
-Este repositorio incluye los siguientes datasets:
-
-* [Encuesta Origen-Destino, Santiago 2012](http://datos.gob.cl/dataset/31616) (por SECTRA).
-* [Arenas' Jazz Network](http://konect.uni-koblenz.de/networks/arenas-jazz).
-* Shapefiles del [Censo 2017 de Chile](http://www.censo2017.cl/servicio-de-mapas/) para la Región Metropolitana. En [este repositorio de Diego Caro](https://github.com/diegocaro/chile_census_2017_shapefiles) pueden encontrar todas las regiones del país.
-* Inscripciones de nombres en el Registro Civil de Chile a través del dataset [guaguas](https://github.com/rivaquiroga/guaguas) preparado por [Riva Quiroga](https://twitter.com/rivaquiroga).
-
-## Otros Asuntos
-
-### Tipogafías
-
-En los notebooks me gusta utilizar la familia de fuentes [Fira Sans](https://bboxtype.com/typefaces/FiraSans/#!layout=specimen) y [Fira Code](https://github.com/tonsky/FiraCode). Copia la fuente en la carpeta `.fonts` de tu directorio principal y luego ejecuta esto en un intérprete de Python o en un notebook:
-
-```python
-from matplotlib.font_manager import FontManager; FontManager().findfont('Fira Sans Extra Condensed', rebuild_if_missing=True)
-```
-
-Después de copiar las fuentes, debes eliminar este fichero: `~/.cache/matplotlib/fontlist-v330.json`.

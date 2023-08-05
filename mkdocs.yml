@@ -49,7 +49,7 @@ theme:
     # Light mode
     - media: '(prefers-color-scheme: light)'
       scheme: default
-      primary: blue grey
+      primary: deep purple
       accent: light blue
       toggle:
         icon: material/toggle-switch-off-outline
@@ -58,7 +58,7 @@ theme:
     # Dark mode
     - media: '(prefers-color-scheme: dark)'
       scheme: slate
-      primary: blue grey
+      primary: deep purple
       accent: light blue
       toggle:
         icon: material/toggle-switch
@@ -89,5 +89,32 @@ plugins:
 # TOC
 nav:
     - index.md
+    - Instrucciones:
+        - markdowns/rubrica-proyecto.md
+        - markdowns/resources.md
+        - markdowns/showcase.md
+    - Unidades Teóricas:
+        - markdowns/clase_01.md
+        - markdowns/clase_02.md
+        - markdowns/clase_03.md
+        - markdowns/clase_04.md
+        - markdowns/clase_05.md
+        - markdowns/clase_06.md
+        - markdowns/clase_07.md
+        - markdowns/clase_08.md
+        - markdowns/clase_09.md
+        - markdowns/clase_10.md
+        - markdowns/clase_11.md
+    - Unidades Prácticas:
+        - notebooks/vis-course/01-python-tools.ipynb
+        - notebooks/vis-course/02-python-tablas.ipynb
+        - notebooks/vis-course/03-python-mapas-preliminario.ipynb
+        - notebooks/vis-course/03-python-mapas.ipynb
+        - notebooks/vis-course/04-python-redes-preliminario.ipynb
+        - notebooks/vis-course/05-python-redes-eod.ipynb
+        - notebooks/vis-course/06-python-texto-guaguas.ipynb
+        - notebooks/vis-course/07-python-gridspec.ipynb
+
+
 
 

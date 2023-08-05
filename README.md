@@ -3,7 +3,6 @@
 ![example workflow](https://github.com/fralfaro/aves/actions/workflows/documentation.yml/badge.svg)
 <a href="https://fralfaro.github.io/aves/"><img alt="Link a la Documentación" src="https://img.shields.io/badge/docs-link-brightgreen"></a>
 
-Por [Eduardo Graells-Garrido](http://datagramas.cl).
 
 Este repositorio contiene datos, código y notebooks relacionados 
 con mi [curso de Visualización de Información](http://datagramas.cl/courses/infovis) y
@@ -22,6 +21,8 @@ herramientas de bajos niveles de abstracción, es decir, utiliza un paradigma im
 donde le damos instrucciones específicas al programa (**cómo** hacerlo); en contraste, una herramienta de alto nivel se enfoca en **qué** hacer, ocultando los detalles de implementación.
 
 Para comprender la funcionalidad del código puedes explorar la carpeta `notebooks`. Sin embargo, los notebooks se preocupan de trabajar conceptos que en ocasiones están más allá del alcance de `aves`, ya que los utilizo en los cursos que dicto. Esos conceptos incluyen trabajar con `DataFrames` de `pandas` o utilizar técnicas de visualización implementadas en bibliotecas como `geopandas`, `matplotlib` y `seaborn` (que `aves` utiliza de manera interna).
+
+> **Nota**: este repositorio es una alternativa al curso oficial de [zorzalerrante/aves](https://github.com/zorzalerrante/aves).
 
 ## Ejemplos 
 

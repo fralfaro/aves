@@ -1007,7 +1007,7 @@
 <p>En esta unidad veremos que existen distintos tipos de datasets. Para cada tipo veremos proyectos de visualización de ejemplo. Luego, definiremos los tipos de atributos que pueden encontrarse en los datos.</p>
 <h2 id="tipos-de-dataset">Tipos de Dataset</h2>
 <p>Trabajaremos con una categorización general que define cuatro tipos: <em>tablas</em>, <em>redes y árboles</em>, <em>campos</em>, y <em>datos espaciales</em>.</p>
-<p><img alt="Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/03_datos/images/dataset_types_hu985c5d0817e4859de4c9a70c43011324_134366_660x0_resize_box_3.png" /></p>
+<p><img alt="Fuente: Visualization Analysis &amp; Design." src="http://datagramas.cl/courses/infovis/03_datos/images/dataset_types_hu985c5d0817e4859de4c9a70c43011324_134366_660x0_resize_box_3.png" /></p>
 <p>Fuente: Visualization Analysis &amp; Design.</p>
 <p>En casos complejos, cualquier tipo de dataset se puede expresar como una combinación de estos tipos de datos. A continuación definiremos cada dataset, mencionaremos las operaciones que se pueden realizar con ellos, y veremos ejemplos para cada uno.</p>
 <h2 id="tablas">Tablas</h2>
@@ -1041,11 +1041,11 @@
 <p>Lo común es aplicar estas operaciones en conjunto. Como ejemplo: se <strong>filtra</strong> la tabla de viajes para obtener los viajes desde el hogar al trabajo, luego se <strong>agrupa</strong> por modo de transporte, y finalmente se calcula (<strong>agrega</strong>) el tiempo de viaje promedio de cada grupo. Como resultado, se obtienen las diferencias de los promedios en ese tipo de viaje entre los distintos modos de transporte disponibles en la ciudad.</p>
 <h3 id="ejemplo-censo-2017-chile">Ejemplo: Censo 2017 (Chile)</h3>
 <p>Un censo genera una tabla donde cada fila es una persona y cada columna es una variable asociada a cada persona. Si se carga en <a href="http://censo2017.cl">censo 2017 de Chile</a> en <code>pandas</code> se ve algo así:</p>
-<p><img alt="Datos del Censo 2017." src="../../../courses/infovis/03_datos/images/tabla_censo_hu6ffc1f4e9fbc534a2937f92902fbf968_26617_660x0_resize_box_3.png" /></p>
+<p><img alt="Datos del Censo 2017." src="http://datagramas.cl/courses/infovis/03_datos/images/tabla_censo_hu6ffc1f4e9fbc534a2937f92902fbf968_26617_660x0_resize_box_3.png" /></p>
 <p>Datos del Censo 2017.</p>
 <p>Algunas columnas representan meta-datos, como la región o el identificador de la comuna, o la edad de la persona. Otras representan las preguntas del censo.</p>
 <p>Un ejemplo de <code>filtrado-&gt;agrupación-&gt;agregación</code> se ve en la siguiente visualización. Primero, filtré a las personas migrantes (dejando fuera a las nacionales), luego agrupé por lugar de origen (la columna <code>P12PAIS_GRUPO</code>). En cada grupo calculé la proporción de personas que llegó en cada año al país.</p>
-<p><img alt="¿Cuál es la historia de los patrones de migración en Chile?" src="../../../courses/infovis/03_datos/images/tabla_censo_heatmap_hudce5657ba7c892121aca550147818294_273057_660x0_resize_box_3.png" /></p>
+<p><img alt="¿Cuál es la historia de los patrones de migración en Chile?" src="http://datagramas.cl/courses/infovis/03_datos/images/tabla_censo_heatmap_hudce5657ba7c892121aca550147818294_273057_660x0_resize_box_3.png" /></p>
 <p>¿Cuál es la historia de los patrones de migración en Chile?</p>
 <p>El código fuente de este ejemplo está en <a href="https://github.com/carnby/mapas_censo_2017">este repositorio</a>.</p>
 <p>Cuando hablamos de tablas, solemos obviar lo que significa una observación. Por ejemplo, en el censo cada persona es una observación – ¿qué pasaría si considerásemos cada <em>respuesta</em> como una fila? Todo dependerá de lo que querramos resolver. Una lectura sugerida al respecto es <a href="http://vita.had.co.nz/papers/tidy-data.pdf">Tidy data</a> de Hadley Wickham (publicado en el Journal of Statistical Software), donde explica como organizar tablas. Esta organización es importante para nosotres ahora porque muchos métodos de <code>seaborn</code> asumen que los datos vienen en formato <em>tidy</em>.</p>
@@ -1065,7 +1065,7 @@
 <h3 id="ejemplo-de-red-atlas-de-complejidad-economica-del-mit-media-lab">Ejemplo de Red: Atlas de Complejidad Económica del MIT Media Lab</h3>
 <p>Este proyecto liderado por César Hidalgo busca crear un mapa del desarrollo económico en el mundo, entre otros aspectos. Una de las maneras de hacerlo es ilustrando el conocimiento y la generación de valor a través de los productos y servicios exportados e importados por las naciones. En el siguiente ejemplo, <em>un nodo es un producto o servicio</em>, y <em>dos nodos están conectados si son producidos por el mismo país</em>. Un atributo de un nodo es la industria a la que pertenece (Minería, Agricultura, Tecnología, etc.).</p>
 <p>A través de esa definición de la red, se puede obtener el siguiente mapa:</p>
-<p><img alt="Nodos en negro son exportados por Guatemala." src="../../../courses/infovis/03_datos/images/economic_complexity_hu60182d33b863e1983297a713034cf20a_171347_660x0_resize_box_3.png" /></p>
+<p><img alt="Nodos en negro son exportados por Guatemala." src="http://datagramas.cl/courses/infovis/03_datos/images/economic_complexity_hu60182d33b863e1983297a713034cf20a_171347_660x0_resize_box_3.png" /></p>
 <p>Nodos en negro son exportados por Guatemala.</p>
 <p>Cada nodo es coloreado de acuerdo a la industria a la que pertenece. Esto permite que veamos el tamaño de cada industria y la complejidad de ésta, basándonos en las conexiones entre productos. Si nos abstraemos de los nodos y nos fijamos en esas comunidades, podremos ver cuales comunidades están conectadas entre sí, y cuáles son opuestas.</p>
 <p>También vemos cuál es el camino que se debe recorrer para poder llegar desde producir un producto <code>A</code> hasta un producto <code>B</code>. Por ejemplo, Chile produce cobre, pero si quisiera producir computadores, tendría que desarrolar al menos todo el conocimiento implícito entre los productos que están en el camino <code>cobre -&gt; ... -&gt; computadores</code>.</p>
@@ -1074,7 +1074,7 @@
 <h3 id="ejemplo-visualizando-un-arbol-de-decision">Ejemplo: Visualizando un Árbol de Decisión</h3>
 <p>Un algoritmo clásico de Machine Learning es la creación e inferencia de <a href="https://es.wikipedia.org/wiki/%C3%81rbol_de_decisi%C3%B3n">árboles de decisión para clasificar datos</a>. Estos árboles presentan secuencias de decisiones estructuradas como árboles, y son los pilares de algoritmos más avanzados y modernos para clasificar datos.</p>
 <p>El siguiente ejemplo muestra como se ve un árbol de decisión:</p>
-<p><img alt="Sitio con animación de un árbol de decisión inferido." src="../../../courses/infovis/03_datos/images/predictions_tree_hue83a3a74c7f847e90a27814b44bf8e54_74903_660x0_resize_box_3.png" /></p>
+<p><img alt="Sitio con animación de un árbol de decisión inferido." src="http://datagramas.cl/courses/infovis/03_datos/images/predictions_tree_hue83a3a74c7f847e90a27814b44bf8e54_74903_660x0_resize_box_3.png" /></p>
 <p>Sitio con animación de un árbol de decisión inferido.</p>
 <p>No solo eso, el sitio también muestra como se utiliza este árbol para clasificar datos a través de interacción y animación. Vean la demostración de esta animación en: <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">http://www.r2d3.us/visual-intro-to-machine-learning-part-1/</a>.</p>
 <h2 id="campos">Campos</h2>
@@ -1086,12 +1086,12 @@
 <li><strong>Estimación de variación y caminos</strong>. No siempre se trabaja con campos estáticos. En ocasiones, también se visualizan cambios o flujos dentro de los campos, es decir, la diferencia del valor entre una celda y sus celdas vecinas. Por ejemplo, el flujo de aire alrededor de una turbina, o el flujo electromagnético sobre un metal.</li>
 </ul>
 <p>Existen distintas maneras de visualizar campos. A continuación se muestran alternativas para las operaciónes de estimación de variación y caminos:</p>
-<p><img alt="Formas de visualizar campos y flujos dentro de éstos. Fuente: R. Moorhead et al, &ldquo;&lt;em&gt;Visualization Research Challenges: A Report Summary&lt;/em&gt;,&rdquo; in Computing in Science &amp; Engineering, vol. 8, pp. 66-73, 2006." src="../../../courses/infovis/03_datos/images/vector_fields_huecf4b9aa442446a6fd16875c02e0c6e2_470198_660x0_resize_box_3.png" /></p>
+<p><img alt="Formas de visualizar campos y flujos dentro de éstos. Fuente: R. Moorhead et al, &ldquo;&lt;em&gt;Visualization Research Challenges: A Report Summary&lt;/em&gt;,&rdquo; in Computing in Science &amp; Engineering, vol. 8, pp. 66-73, 2006." src="http://datagramas.cl/courses/infovis/03_datos/images/vector_fields_huecf4b9aa442446a6fd16875c02e0c6e2_470198_660x0_resize_box_3.png" /></p>
 <p>Formas de visualizar campos y flujos dentro de éstos. Fuente: R. Moorhead et al, <em>Visualization Research Challenges: A Report Summary</em>, in Computing in Science &amp; Engineering, vol. 8, pp. 66-73, 2006.</p>
 <p>¿Cuál de estas alternativas es mejor? No podemos responder esto a priori, puesto que necesitamos conocer la tarea a resolver y la audiencia que hará uso de la visualización.</p>
 <h3 id="ejemplo-mapa-de-viento">Ejemplo: Mapa de Viento</h3>
 <p>El viento es un campo infinito que tiene dirección y cambia constantemente. Los investigadores Fernanda Viegas y Martin Wattenberg tomaron sensores de viento en tiempo semi-real de los Estados Unidos y produjeron la siguiente visualización interactiva:</p>
-<p><img alt="Mapa en tiempo semi-real del viento en los Estados Unidos." src="../../../courses/infovis/03_datos/images/windmap.png" /></p>
+<p><img alt="Mapa en tiempo semi-real del viento en los Estados Unidos." src="http://datagramas.cl/courses/infovis/03_datos/images/windmap.png" /></p>
 <p>Mapa en tiempo semi-real del viento en los Estados Unidos.</p>
 <p>No solo es un espectáculo verla, sino que ha sido utilizada para analizar fenómenos climáticos en el país. Pueden verla en todo su esplendor aquí: <a href="http://hint.fm/wind/">http://hint.fm/wind/</a>.</p>
 <h2 id="datos-geograficos-y-espaciales">Datos Geográficos y Espaciales</h2>
@@ -1105,7 +1105,7 @@
 <li><strong>Superficies</strong>. Podrían ser equivalentes a las áreas en su representación (en caso de usar polígonos), pero existen superficies que teóricamente no están determinadas por líneas, como la superficie de una esfera. Ahora bien, esta superficie de esfera está hueca, no considera volumen.</li>
 </ul>
 <p>Un ejemplo de un mapa que representa información geográfica de manera directa es el siguiente:</p>
-<p><img alt="Mapa Geológico de España y Portugal - por el Ingeniero de Minas D. Federico de Botella y de Hornos - la parte geográfica por D. Francisco Coello - 1879. Recreado por Sean Comway: https://twitter.com/geo_spatialist." src="../../../courses/infovis/03_datos/images/spain_map_hudb0506342062def0b8b386472c24fe8e_1185822_660x0_resize_q75_h2_box_2.webp" /></p>
+<p><img alt="Mapa Geológico de España y Portugal - por el Ingeniero de Minas D. Federico de Botella y de Hornos - la parte geográfica por D. Francisco Coello - 1879. Recreado por Sean Comway: https://twitter.com/geo_spatialist." src="http://datagramas.cl/courses/infovis/03_datos/images/spain_map_hudb0506342062def0b8b386472c24fe8e_1185822_660x0_resize_q75_h2_box_2.webp" /></p>
 <p>Mapa Geológico de España y Portugal - por el Ingeniero de Minas D. Federico de Botella y de Hornos - la parte geográfica por D. Francisco Coello - 1879. Recreado por Sean Comway: <a href="https://twitter.com/geo_spatialist">https://twitter.com/geo_spatialist</a>.</p>
 <p>Es un mapa precioso, de un proyecto que recrea mapas <em>vintage</em> utilizando herramientas modernas. Sin embargo, cuando visualizamos, buscamos realizar operaciones que no son necesariamente eficientes o posibles cuando se utiliza tanto detalle. ¡Todo depende siempre de la tarea a realizar! Entre las operaciones que podemos hacer con mapas se encuentran:</p>
 <ul>
@@ -1118,18 +1118,18 @@
 <p>En Python utilizaremos la biblioteca <code>geopandas</code> para cargar, procesar y visualizar información geográfica. Al ser una biblioteca que extiende <code>pandas</code>, su uso nos será familiar. Además utilizaremos la biblioteca <code>PySAL</code> (Python Spatial Analysis Library), que, como dice su nombre, nos permitirá realizar análisis espacial en pos de las visualizaciones que necesitemos hacer.</p>
 <h3 id="ejemplo-censo-2017-de-chile">Ejemplo: Censo 2017 de Chile</h3>
 <p>Retomemos los datos del censo y démosle contexto geográfico. El siguiente mapa muestra la proporción de inmigrantes en cada distrito censal del radio urbano de Santiago:</p>
-<p><img alt="Mapa de coropletas representando la cantidad de inmigrantes por área censal en Santiago." src="../../../courses/infovis/03_datos/images/santiago_migrantes_hu6cbcfb9368a168be7edb65d07e01273c_772458_660x0_resize_box_3.png" /></p>
+<p><img alt="Mapa de coropletas representando la cantidad de inmigrantes por área censal en Santiago." src="http://datagramas.cl/courses/infovis/03_datos/images/santiago_migrantes_hu6cbcfb9368a168be7edb65d07e01273c_772458_660x0_resize_box_3.png" /></p>
 <p>Mapa de coropletas representando la cantidad de inmigrantes por área censal en Santiago.</p>
 <p>En el mapa observamos los bordes administrativos de cada distrito censal, los bordes administrativos de cada comuna, y el nombre de cada comuna. Esa es información geográfica que se despliega directamente y que da contexto — al colorear cada distrito de manera que el color codifique la proporción de inmigrantes, el mapa nos permite saber cuáles distritos son vecinos, si hay similitud en la proporción de inmigración entre distritos cercanos, y dónde se encuentran los <em>clusters</em> o grupos de distritos que concentran mayor inmigración.</p>
 <h2 id="tipos-de-dataset-no-son-excluyentes">¡Tipos de Dataset no son Excluyentes!</h2>
 <p>Un dataset puede contener una mezcla de tipos. Pr ejemplo, una <em>red de transporte</em> también tiene <em>componentes geográficas</em>. Como vemos en el ejemplo que sigue, esto abre posibilidades: se puede utilizar la red y la geografía para calcular posiciones abstractas basadas en otras variables, como el tiempo total de viaje. La siguiente visualización muestra como se compara el tiempo de viaje entre estaciones en distintas componentes de la red de metro de Nueva York, partiendo desde la estación en Manhattan.</p>
-<p><img alt="Por Amanda Cox y Matthew Ericson, New York Times." src="../../../courses/infovis/03_datos/images/travel_times_hu57f6b04483b2b23aa4a831c541b356c0_297082_660x0_resize_q75_box.jpg" /></p>
+<p><img alt="Por Amanda Cox y Matthew Ericson, New York Times." src="http://datagramas.cl/courses/infovis/03_datos/images/travel_times_hu57f6b04483b2b23aa4a831c541b356c0_297082_660x0_resize_q75_box.jpg" /></p>
 <p>Por Amanda Cox y Matthew Ericson, New York Times.</p>
 <p>Al no utilizar las posiciones geográficas de las estaciones, sino que derivar una posición en la visualización a partir del operador de la línea de tren (son varios operadores) y del tiempo de viaje para llegar a cada estación (es un gráfico radial, a medida que se aleja del centro, es mayor tiempo de viaje), es posible comparar la complejidad y rapidez de distintas líneas del tren.</p>
 <p>No es una visualización directa de ver. Por ello también incluye leyendas y notas que la explican. Es una visualización para zambullirse y explorar en profundidad.</p>
 <h2 id="atributos">Atributos</h2>
 <p>Hasta este momento hemos hablado de la organización y semántica de cada tipo de dataset, con un énfasis en sus observaciones, ítems, registros, etc. Cada observación tiene atributos, por ejemplo, en el censo cada columna de la tabla era un atributo asociado a cada persona. Pero no especificamos si cada una de esas columnas, que definimos como atributos, y que también solemos llamar <em>variables</em>, también siguen una especificación. Ciertamente la siguen. Los tipos de atributos con los que trabajaremos se exhiben a continuación:</p>
-<p><img alt="Fuente: Visualization Analysis &amp; Design." src="../../../courses/infovis/03_datos/images/attributes_huae31e453684dfef17c84187ad8280e07_44615_660x0_resize_box_3.png" /></p>
+<p><img alt="Fuente: Visualization Analysis &amp; Design." src="http://datagramas.cl/courses/infovis/03_datos/images/attributes_huae31e453684dfef17c84187ad8280e07_44615_660x0_resize_box_3.png" /></p>
 <p>Fuente: Visualization Analysis &amp; Design.</p>
 <p>Observamos que los atributos tienen dos características: <strong>tipo</strong> y <strong>dirección</strong>.</p>
 <p>Los tipos de atributo definidos son los siguientes:</p>
@@ -1148,7 +1148,7 @@
 <h3 id="ejemplo-fechas-y-atributos-ciclicos">Ejemplo: Fechas y Atributos Cíclicos</h3>
 <p>La fecha es un atributo interesante, puesto que puede ser interpretada de múltiples maneras. Por un lado, si se considera un punto de partida, es <em>secuencial</em>. Las fechas comunes del calendario gregoriano son divergentes, puesto que se definen a partir de una fecha de referencia. Si consideramos los meses del año, éstos son cíclicos, puesto que a pesar de que existe un orden entre ellos. Sabemos que <code>Enero &lt; Abril &lt; Septiembre</code>, también sabemos que existe la transición <code>Diciembre -&gt; Enero</code>.</p>
 <p>La siguiente visualización es un ejemplo del tratamiento de fechas. Muestra el cambio en la temperatura global en los últimos 170 años:</p>
-<p><img alt="Fuente: http://www.climate-lab-book.ac.uk/spirals/" src="../../../courses/infovis/03_datos/images/cyclic_temperature_hu8aab543e1088fe97419138b7552bb5b5_1298781_660x0_resize_box.gif" /></p>
+<p><img alt="Fuente: http://www.climate-lab-book.ac.uk/spirals/" src="http://datagramas.cl/courses/infovis/03_datos/images/cyclic_temperature_hu8aab543e1088fe97419138b7552bb5b5_1298781_660x0_resize_box.gif" /></p>
 <p>Fuente: <a href="http://www.climate-lab-book.ac.uk/spirals/">http://www.climate-lab-book.ac.uk/spirals/</a></p>
 <p>Este gráfico particular utiliza coordenadas polares para representar los ciclos.</p>
 <h2 id="conclusiones">Conclusiones</h2>

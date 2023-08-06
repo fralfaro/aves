@@ -15,7 +15,7 @@ Podemos encontrar una primera motivación para tratar este tipo de datos y las t
 
 Esta relación de cercanía y dependencia _espacial_ es importante. Tanto así, que para muchos problemas que se resuelven con datos que necesitan tomar en cuenta como la geografía influye en el fenómeno que se esté analizando. Veamos el siguiente ejemplo, una nota en un medio chileno que utiliza un mapa para apoyar e ilustrar el contenido:
 
-![Fuente: El Mercurio.](../../../courses/infovis/08_mapas/images/reportaje_santiago_hu7750726a71825c657521270d20311d6b_1288930_660x0_resize_box_3.png)
+![Fuente: El Mercurio.](http://datagramas.cl/courses/infovis/08_mapas/images/reportaje_santiago_hu7750726a71825c657521270d20311d6b_1288930_660x0_resize_box_3.png)
 
 Fuente: El Mercurio.
 
@@ -41,7 +41,7 @@ Ejemplos de historias que se pueden contar: ¿cuáles son los lugares importante
 
 El mapa de puntos o `dot_map` tiene un nombre que lo describe de manera sucinta: es literalmente un mapa con puntos encima. Cada punto (marca) representa a un elemento en el dataset, posicionada en la imagen de acuerdo a sus coordenadas geográficas. Los canales de color se pueden utilizar para expresar atributos de cada una de esas observaciones. El siguiente ejemplo, llamado [Mobile Devices + Twitter Use](https://labs.mapbox.com/labs/twitter-gnip/brands/), visualiza millones de _tweets_ publicados en el mundo, cada tweet como un punto, con un color que expresa el tipo de dispositivo que publicó cada mensaje. Se ve así:
 
-![Usuaries de Android e iPhone en Santiago. Fuente: MapBox.](../../../courses/infovis/08_mapas/images/dot_map_santiago_hub64801530758ca83b4e483022194fa53_3916920_660x0_resize_box_3.png)
+![Usuaries de Android e iPhone en Santiago. Fuente: MapBox.](http://datagramas.cl/courses/infovis/08_mapas/images/dot_map_santiago_hub64801530758ca83b4e483022194fa53_3916920_660x0_resize_box_3.png)
 
 Usuaries de Android e iPhone en Santiago. Fuente: MapBox.
 
@@ -53,7 +53,7 @@ La escalabilidad de un `dot_map` es grande: podemos mostrar millones de puntos s
 
 El `bubble_map` extiende la codificación visual del `dot_map`, al utilizar el canal de tamaño en cada punto para crear burbujas de tamaños variables. Lo consideramos una visualización distinta porque el uso de ese canal implica que la escalabilidad y las tareas que puede resolver la visualización cambian. Por ejemplo, ya se vuelve difícil determinar la forma específica de las áreas de interés, por lo que usualmente se agrega información auxiliar. El siguiente gráfico es un `bubble_map` que muestra los terremotos asociado a la Placa de Nazca entre los años 1900–2016:
 
-![Fuente: USGS.](../../../courses/infovis/08_mapas/images/bubble_map_hu4541f380d8b02c6daf86c0bd8eeb4362_3414217_660x0_resize_box_3.png)
+![Fuente: USGS.](http://datagramas.cl/courses/infovis/08_mapas/images/bubble_map_hu4541f380d8b02c6daf86c0bd8eeb4362_3414217_660x0_resize_box_3.png)
 
 Fuente: USGS.
 
@@ -63,7 +63,7 @@ Cuando vimos codificación visual aprendimos que el área de un círculo no es u
 
 Usualmente en un `bubble_map` se trabaja con tablas donde la unidad de análisis o elementos son agregados o abarcan un área extensa, en contraste con el `dot_map`, donde los elementos podían ser tan detallados. Veamos dos ejemplos. En el primero se visualizan los orígenes y destinos de viajes en transporte público en Santiago. Los viajes fueron agrupados por zona de origen y zona de destino, de modo que se puede contar cuál es la cantidad de viajes se inicia o que termina en cada zona. Cada burbuja se posiciona en el punto central (o centroide) de la zona correspondiente:
 
-![Orígenes y Destinos en viajes en Transantiago. Fuente: Eduardo Graells-Garrido y Alonso Astroza.](../../../courses/infovis/08_mapas/images/abrecl_huc85c64169f9f5cedc67becac35780631_558047_660x0_resize_box_3.png)
+![Orígenes y Destinos en viajes en Transantiago. Fuente: Eduardo Graells-Garrido y Alonso Astroza.](http://datagramas.cl/courses/infovis/08_mapas/images/abrecl_huc85c64169f9f5cedc67becac35780631_558047_660x0_resize_box_3.png)
 
 Orígenes y Destinos en viajes en Transantiago. Fuente: Eduardo Graells-Garrido y Alonso Astroza.
 
@@ -71,7 +71,7 @@ Estas visualizaciones nos muestran que cierto tipo de viajes (de tres combinacio
 
 El mapa anterior utiliza una burbuja por zona, sin embargo, no muestra los bordes de cada una. Eso puede ser un problema si no estamos familiarizados con la geografía o no se muestra información auxiliar, como las calles. Otra manera de atacar el problema es definiendo una grilla regular, y posicionar cada burbuja en el centroide de cada rectángulo. La grilla sigue sin mostrarse, pero su estructura es explícita al ver los centros de las burbujas alineadas. La siguiente visualización proveniente de [un estudio de brechas de género en la movilidad](https://www.nature.com/articles/s41599-020-0500-x) aprovecha esta situación para juxtaponer un `bubble_map` y un `dot_map`. El `bubble_map` nos indica si una zona (o celda de la grilla) es más rica o más pobre el resto, y para ello utiliza los canales de tamaño y tono. El `dot_map` utiliza el canal de saturación de cada punto, que también representa el centroide de cada celda, para indicar si hay una brecha de movilidad, es decir, si las mujeres se mueven menos de lo esperado en comparación con los hombres:
 
-![Brecha de género en movilidad. Fuente: Gauvin et al.](../../../courses/infovis/08_mapas/images/genderratioentropy_hu23eb546b23659008556c0fc69c63eaca_81994_660x0_resize_q75_box.jpg)
+![Brecha de género en movilidad. Fuente: Gauvin et al.](http://datagramas.cl/courses/infovis/08_mapas/images/genderratioentropy_hu23eb546b23659008556c0fc69c63eaca_81994_660x0_resize_q75_box.jpg)
 
 Brecha de género en movilidad. Fuente: Gauvin et al.
 
@@ -84,7 +84,7 @@ Volveremos a hablar del `bubble_map` luego de revisar el siguiente tipo de visua
 
 El `choropleth_map` es otra de las visualizaciones clásicas de datos geográficos, cuyo foco son las áreas que se están visualizando, a diferencia de las dos visualizaciones anteriores se enfocaban en las posiciones. Así, el `choropleth_map` nos permite encontrar patrones espaciales en las distribuciones de una variable en el espacio, identificar outliers espaciales, y también buscar relaciones con otras variables. El mecanismo para hacerlo es desplegar directamente las áreas de los datos como marcas (por ej., manzanas, distritos, comunas, regiones, países), utilizando el canal de saturación o de luminosidad para expresar valores ordinales o cuantitativos. El siguiente ejemplo muestra cuántas vidas hemos perdido en el planeta durante la pandemia de COVID-19 en asociación al virus:
 
-![Total de muertes asociadas a COVID-19 al 29 de Agosto de 2020. Fuente: Our World in Data.](../../../courses/infovis/08_mapas/images/coronavirus-data-explorer_huaef9fdf4887091ad203854a65ab9ecb8_565810_660x0_resize_box_3.png)
+![Total de muertes asociadas a COVID-19 al 29 de Agosto de 2020. Fuente: Our World in Data.](http://datagramas.cl/courses/infovis/08_mapas/images/coronavirus-data-explorer_huaef9fdf4887091ad203854a65ab9ecb8_565810_660x0_resize_box_3.png)
 
 Total de muertes asociadas a COVID-19 al 29 de Agosto de 2020. Fuente: Our World in Data.
 
@@ -92,7 +92,7 @@ Como vemos en la leyenda, este `choropleth_map` utiliza cada país como una marc
 
 Para resolver el problema podemos utilizar un valor relativo, por ejemplo, [la tasa de muertes por un millón de habitantes](https://ourworldindata.org/grapher/total-covid-deaths-per-million):
 
-![Tasa de muertes asociadas a COVID-19 cada 1M de habitantes al 29 de Agosto de 2020. Fuente: Our World in Data.](../../../courses/infovis/08_mapas/images/total-covid-deaths-per-million_hudf6278e27f6ad4ac43c2584936e48fff_574721_660x0_resize_box_3.png)
+![Tasa de muertes asociadas a COVID-19 cada 1M de habitantes al 29 de Agosto de 2020. Fuente: Our World in Data.](http://datagramas.cl/courses/infovis/08_mapas/images/total-covid-deaths-per-million_hudf6278e27f6ad4ac43c2584936e48fff_574721_660x0_resize_box_3.png)
 
 Tasa de muertes asociadas a COVID-19 cada 1M de habitantes al 29 de Agosto de 2020. Fuente: Our World in Data.
 
@@ -100,7 +100,7 @@ Al usar una tasa podemos realizar comparaciones de manera efectiva. Observen que
 
 Veamos un ejemplo a una escala más pequeña. El siguiente mapa de Santiago ilustra el nivel socio-económico de cada cuadra (o bloque o manzana) de Santiago:
 
-![Fuente: libro Santiago Urbano.](../../../courses/infovis/08_mapas/images/choropleth_map_santiago_hu66bfa918c0bf946ef9940e6d9d95f8f0_863358_660x0_resize_q75_box.jpg)
+![Fuente: libro Santiago Urbano.](http://datagramas.cl/courses/infovis/08_mapas/images/choropleth_map_santiago_hu66bfa918c0bf946ef9940e6d9d95f8f0_863358_660x0_resize_q75_box.jpg)
 
 Fuente: libro Santiago Urbano.
 
@@ -116,7 +116,7 @@ Por último, una advertencia: en la clase de codificación visual hablamos de se
 
 Las tres visualizaciones que hemos visto funcionan para tareas distintas, pero, de manera similar a como hablamos antes de `bar_chart` y `line_chart`, se pueden usar de manera intercambiable — y podemos estar cometiendo errores al hacerlo. Para ejemplificar esta situación revisemos el que posiblemente es el `choropleth_map` más difundido de la historia. Corrresponde a una visualización de los condados de Estados Unidos en los que ganó Donald Trump el año 2016, en una versión publicada en la [introducción del libro How Charts Lie](https://drive.google.com/file/d/1MCR2EEUci2psQmtOiExRdusf0vzMUBdp/view):
 
-![Fuente: How Charts Lie de Alberto Cairo.](../../../courses/infovis/08_mapas/images/us_choropleth_map_elections_hudd4acb4ad41114673ce1cbdc28760a73_1365425_660x0_resize_box_3.png)
+![Fuente: How Charts Lie de Alberto Cairo.](http://datagramas.cl/courses/infovis/08_mapas/images/us_choropleth_map_elections_hudd4acb4ad41114673ce1cbdc28760a73_1365425_660x0_resize_box_3.png)
 
 Fuente: How Charts Lie de Alberto Cairo.
 
@@ -124,7 +124,7 @@ Una versión de este mapa fue [exhibida por Trump en Twitter](https://twitter.co
 
 Si miramos las estadísticas de las elecciones de ese año en los EEUU, veremos que Hillary Clinton obtuvo _más_ votos que Trump, pero no ganó debido a que no obtuvo los votos suficientes de los electores (recuerden que en EEUU una persona vota por un representante en el colegio electoral, no directamente por les candidates). Entonces, ¿cómo es posible que la mayor parte del país se vea de color rojo (que es asociado al Partido Republicano)? La respuesta la encontramos en el siguiente [`dot_map` creado por Kenneth Field](http://cartonerd.blogspot.com/2018/03/dotty-election-map.html), donde cada votante es representando con un punto, cuyo color expresa el partido al que pertenece el votante:
 
-![Fuente: Kenneth Field.](../../../courses/infovis/08_mapas/images/us_dot_map_elections_hu9b59159e48646016d1ee4a9b0be3edf6_3657597_660x0_resize_box_3.png)
+![Fuente: Kenneth Field.](http://datagramas.cl/courses/infovis/08_mapas/images/us_dot_map_elections_hu9b59159e48646016d1ee4a9b0be3edf6_3657597_660x0_resize_box_3.png)
 
 Fuente: Kenneth Field.
 
@@ -132,13 +132,13 @@ Este mapa aclara la situación: la densidad poblacional de cada condado no es ig
 
 El `dot_map` tiene limitaciones, a fin de cuentas sí nos interesa la distribución de los votos por unidad territorial (condados), no los votos de cada persona. Un `bubble_map` nos permite expresar este resultado, al contar la proporción del total de votos en cada condado que recibió el partido ganador correspondiente:
 
-![Fuente: How Charts Lie de Alberto Cairo.](../../../courses/infovis/08_mapas/images/us_bubble_map_elections_hu9f1cc3151e44ec8669e2a53ff80d972f_1175408_660x0_resize_box_3.png)
+![Fuente: How Charts Lie de Alberto Cairo.](http://datagramas.cl/courses/infovis/08_mapas/images/us_bubble_map_elections_hu9f1cc3151e44ec8669e2a53ff80d972f_1175408_660x0_resize_box_3.png)
 
 Fuente: How Charts Lie de Alberto Cairo.
 
 Aquí observamos que efectivamente hay más condados donde ganó Trump, pero que Hillary ganó en áreas donde obtuvo más votos. Ahora bien, este mapa también debe ser interpretado con cuidado: noten que estamos mostrando la proporción del total del partido ganador en cada condado. ¿Qué pasa con los votos del partido perdedor en cada condado? No se despliegan, lo que, junto al gran tamaño de las burbujas grises, puede llevar a sobredimensionar la cantidad de votos que obtuvo Hillary Clinton. Una solución a este problema es mostrar los votos de cada partido en todos los condados, permitiendo expresar el total de los votos. Para evitar la sobreposición, se pueden utilizar dos mapas en paralelo:
 
-![Fuente: How Charts Lie de Alberto Cairo.](../../../courses/infovis/08_mapas/images/us_bubble_maps_elections_hua4f54ffbe6fa1ecd7406f1c15cd15fac_1228973_660x0_resize_box_3.png)
+![Fuente: How Charts Lie de Alberto Cairo.](http://datagramas.cl/courses/infovis/08_mapas/images/us_bubble_maps_elections_hua4f54ffbe6fa1ecd7406f1c15cd15fac_1228973_660x0_resize_box_3.png)
 
 Fuente: How Charts Lie de Alberto Cairo.
 
@@ -154,7 +154,7 @@ Un `heat_map` define a una familia de visualizaciones que comparte nombre con un
 
 En el primer grupo están variantes de las visualizaciones que ya hemos visto. Por ejemplo, en un `heat_map` de puntos, utilizamos el canal de luminosidad de modo que, cuando dos o más puntos se sobreponen, la luminosidad de éstos se suma. El siguiente gráfico creado por Facebook llamado [Visualizing Friendships](https://www.facebook.com/notes/facebook-engineering/visualizing-friendships/469716398919/) utiliza ese concepto para mostrar la popularidad de Facebook. Al igual que en un `dot_map`, la densidad y color de los puntos delimitan los bordes de países y continentes:
 
-![Fuente: Facebook.](../../../courses/infovis/08_mapas/images/dot_map_facebook_hu14e7c6fab2f330de778bdfc2053013e0_5065457_660x0_resize_box_3.png)
+![Fuente: Facebook.](http://datagramas.cl/courses/infovis/08_mapas/images/dot_map_facebook_hu14e7c6fab2f330de778bdfc2053013e0_5065457_660x0_resize_box_3.png)
 
 Fuente: Facebook.
 
@@ -162,7 +162,7 @@ Adicionalmente el mapa contiene líneas que representan las amistades en Faceboo
 
 Un `heat_map` también se puede aplicar sobre líneas o trayectorias. El siguiente mapa utiliza de la misma manera el canal de luminosidad, pero las marcas son líneas en vez de puntos. Las líneas representan las [trayectorias frecuentes de usuaries de Strava](https://www.strava.com/heatmap), una aplicación de registro de viajes deportivos (bicicleta, hiking, trote, etc.):
 
-![Fuente: Strava.](../../../courses/infovis/08_mapas/images/heatmap_strava_hu8e92b5d3016e44b0855eb26c80940116_4019231_660x0_resize_box_3.png)
+![Fuente: Strava.](http://datagramas.cl/courses/infovis/08_mapas/images/heatmap_strava_hu8e92b5d3016e44b0855eb26c80940116_4019231_660x0_resize_box_3.png)
 
 Fuente: Strava.
 
@@ -170,7 +170,7 @@ El efecto es el mismo. Podemos ver dónde se utiliza la bicicleta en la ciudad. 
 
 Cuando un `heat_map` se hace sobre áreas se suele utilizar una grilla. El siguiente ejemplo muestra la [presencia de una especie de aves migratorias (golondrinas en este caso)](https://mailchi.mp/cornell/news-release-a-stunning-new-view-of-bird-migration-1317019?e=f0b505020c) en América:
 
-![Fuente: The Cornell Lab.](../../../courses/infovis/08_mapas/images/cornell_birds_heatmap_huce07ec9b7a172d33a6ce3d7eca8be139_6557354_660x0_resize_box.gif)
+![Fuente: The Cornell Lab.](http://datagramas.cl/courses/infovis/08_mapas/images/cornell_birds_heatmap_huce07ec9b7a172d33a6ce3d7eca8be139_6557354_660x0_resize_box.gif)
 
 Fuente: The Cornell Lab.
 
@@ -178,7 +178,7 @@ La versión animada nos permite ver como varía la distribución en el tiempo da
 
 En los tres `heat_map` anteriores la unidad de análisis era la unidad de agregación (puntos, líneas, áreas). El segundo estilo de `heat_map` toma los datos originales, que usualmente está compuesto por puntos, y deriva una nueva geometría que representa las zonas de alta (o baja) intensidad de una variable de interés. Para esto se pueden utilizar técnicas como Kernel Density Estimation — tal como en una dimensión KDE nos permite obtener una distribución, en 2D también. El siguiente mapa ejemplifica esto, al tener como unidad de análisis las manzanas de Santiago, y derivar zonas de déficit habitacional (`heat_map` de tonalidad azul) y zonas de concentración de proyectos inmobiliarios (`heat_map` de tonalidad roja):
 
-![Fuente: Fundación Vivienda. ](../../../courses/infovis/08_mapas/images/heatmap_santiago_hu5a223a5c3ffb2b39a6e468447ccfaa8a_3881023_660x0_resize_box_3.png)
+![Fuente: Fundación Vivienda. ](http://datagramas.cl/courses/infovis/08_mapas/images/heatmap_santiago_hu5a223a5c3ffb2b39a6e468447ccfaa8a_3881023_660x0_resize_box_3.png)
 
 Fuente: Fundación Vivienda.
 
@@ -190,7 +190,7 @@ Al igual que en el `choropleth_map`, en este tipo de `heat_map` tenemos que deci
 
 Un `contour_map`comparte parte de la codificación visual del `heat_map` que deriva áreas de intensidad alta (o baja). Sin embargo, tiene diferencias a nivel del tipo de dato, ya que se trabaja con un campo escalar cuantitativo sobre la geometría, y a nivel de tarea, ya que se busca encontrar las áreas cuyo contorno tenga un valor específico. Veamos un ejemplo de `contour_map` que visualiza las islas de calor en Santiago:
 
-![Fuente: Las Últimas Noticias, a partir de un estudio de Hugo Romero y Dustyn Opazo.](../../../courses/infovis/08_mapas/images/contour_map_santiago_hu19e6caf1f1dd249b7273e80e5d8e110a_408690_660x0_resize_q75_box.jpg)
+![Fuente: Las Últimas Noticias, a partir de un estudio de Hugo Romero y Dustyn Opazo.](http://datagramas.cl/courses/infovis/08_mapas/images/contour_map_santiago_hu19e6caf1f1dd249b7273e80e5d8e110a_408690_660x0_resize_q75_box.jpg)
 
 Fuente: Las Últimas Noticias, a partir de un estudio de Hugo Romero y Dustyn Opazo.
 
@@ -198,7 +198,7 @@ Esta nota nos muestra los lugares de Santiago cuya temperatura (campo escalar) s
 
 Posiblemente el tipo de mapa de contornos más común es el `topographic_map` o mapa topográfico:
 
-![Fuente: Land Information, New Zealand Data Service.](../../../courses/infovis/08_mapas/images/topographic_map_hu591ad4472d061ca78f80c04b21d7686e_1379453_660x0_resize_box_3.png)
+![Fuente: Land Information, New Zealand Data Service.](http://datagramas.cl/courses/infovis/08_mapas/images/topographic_map_hu591ad4472d061ca78f80c04b21d7686e_1379453_660x0_resize_box_3.png)
 
 Fuente: Land Information, New Zealand Data Service.
 
@@ -206,7 +206,7 @@ En un mapa topográfico, distintos niveles de la altura del territorio son expre
 
 Otra especialización de un `contour_map` son las llamadas _isocronas_ o `isochrones`, áreas derivadas alrededor de un punto de origen que expresan hasta dónde se puede llegar en un tiempo específico — el campo escalar depende de un punto de referencia en el mapa. Las `isochrones` permiten responder una pregunta clave en el análisis de accesibilidad a servicios y amenidades en una ciudad: ¿hasta dónde puedo llegar en 15 minutos desde mi hogar? Un lugar que tenga mejor accesibilidad proveerá mejor accesibilidad a sus habitantes. Así, las `isochrones` permiten visualizar la accesibilidad de un lugar. El sistema [COAXS](http://coaxs.scripts.mit.edu/home/) es un ejemplo de dicha visualización, al permitir comparar la accesibilidad actual de un lugar con la accesibilidad post-implementación de una medida urbana, como puede ser la construcción de una línea de metro:
 
-![Fuente: sistema COAXS por Cristián Navas-Duk. ](../../../courses/infovis/08_mapas/images/isochrones_hu6314d1f2cad1d2943da8e335700dd810_2399710_660x0_resize_box_3.png)
+![Fuente: sistema COAXS por Cristián Navas-Duk. ](http://datagramas.cl/courses/infovis/08_mapas/images/isochrones_hu6314d1f2cad1d2943da8e335700dd810_2399710_660x0_resize_box_3.png)
 
 Fuente: sistema COAXS por Cristián Navas-Duk.
 
@@ -218,7 +218,7 @@ Hasta este momento hemos trabajado con unidades espaciales que tienen una única
 
 La manera más directa y sencilla de representar flujos de movimiento es a través del origen y del destino del movimiento (dos atributos geográficos) y un atributo cuantitativo (de intensidad, importancia o peso del flujo). Las líneas que unen origen y destino se pueden graficar directamente, con algunas propiedades gráficas que permitan identificar su dirección (una flecha, por ejemplo). Su grosor o color (o ambos canales) puede representar su intensidad. El siguiente `flow_map` permite ver los [flujos de movimiento de personas en Santiago en la hora peak del lunes 9 de marzo de 2020](https://t.co/Xka1Xze9Po), antes de que la pandemia de COVID-19 llegase a Chile:
 
-![Fuente: Eduardo Graells-Garrido, con datos de Telefónica y Data Science Institute UDD.](../../../courses/infovis/08_mapas/images/precovid_flows_overview_huc673838198832f35bf11f6ee114fb9ae_2365013_660x0_resize_box_3.png)
+![Fuente: Eduardo Graells-Garrido, con datos de Telefónica y Data Science Institute UDD.](http://datagramas.cl/courses/infovis/08_mapas/images/precovid_flows_overview_huc673838198832f35bf11f6ee114fb9ae_2365013_660x0_resize_box_3.png)
 
 Fuente: Eduardo Graells-Garrido, con datos de Telefónica y Data Science Institute UDD.
 
@@ -226,7 +226,7 @@ Esta visualización interactiva, creada con la herramienta [`flowmap.blue`](http
 
 Quizás uno de los mapas de flujo de Santiago más conocidos proviene de la Tesis de Irene Molina, de 1985. Es una visualización hecha a mano sobre erradicación de campamentos (flujo de personas) durante la dictadura:
 
-![Fuente: Irene Molina.](../../../courses/infovis/08_mapas/images/santiago_erradicacion_original_hue44349a605b422743a4fd08e584c54d1_667872_660x0_resize_q75_box.jpg)
+![Fuente: Irene Molina.](http://datagramas.cl/courses/infovis/08_mapas/images/santiago_erradicacion_original_hue44349a605b422743a4fd08e584c54d1_667872_660x0_resize_q75_box.jpg)
 
 Fuente: Irene Molina.
 
@@ -234,13 +234,13 @@ En los dos `flow_map` que hemos visto, notamos que los orígenes y destinos usan
 
 Una versión avanzada de `flow_map` deriva flujos agregados, que se pueden mostrar como flujos unificados en la visualización. Esta técnica es conocida como `flow_map_layout`. Al analizar las ramificaciones y trayectorias que siguen los flujos es posible minimizar el largo del total de distancia recorrida por las líneas de flujo, y al mismo tiempo evitar sobreponerse o colisionar con la geografía relevante:
 
-![Fuente: Buchin et al, Flow map layout via spiral trees.](../../../courses/infovis/08_mapas/images/flow_map_hu56cb8aca182cd9fdc7706e57166d7dbb_615912_660x0_resize_box_3.png)
+![Fuente: Buchin et al, Flow map layout via spiral trees.](http://datagramas.cl/courses/infovis/08_mapas/images/flow_map_hu56cb8aca182cd9fdc7706e57166d7dbb_615912_660x0_resize_box_3.png)
 
 Fuente: Buchin et al, Flow map layout via spiral trees
 
 Aunque es un desafío implementar `flow_map_layout`, existen visualizaciones que toman algunas de sus premisas. La siguiente es una de ellas, parte del artículo interactivo [Billions of Birds Migrate.Where Do They Go?](https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/):
 
-![Billions of Birds Migrate.Where Do They Go? Fuente: National Geographic.](../../../courses/infovis/08_mapas/images/flow_map_birds_hud910b4b85e208714e52e109f0d0663a0_208929_660x0_resize_q75_box.jpg)
+![Billions of Birds Migrate.Where Do They Go? Fuente: National Geographic.](http://datagramas.cl/courses/infovis/08_mapas/images/flow_map_birds_hud910b4b85e208714e52e109f0d0663a0_208929_660x0_resize_q75_box.jpg)
 
 Billions of Birds Migrate.Where Do They Go? Fuente: National Geographic.
 
@@ -250,7 +250,7 @@ Esta visualización muestra los flujos de aves migratorias en América, donde ca
 
 Un `proportional_symbol_map` es una visualización en la que sobre un mapa se posicionan glifos como marcas compuestas (ver clase de codificación visual para más detalles). De cierto modo son una extensión de un `bubble_map`, reemplazando la burbuja en cada posición por un glifo. De hecho, los glifos sobre los mapas tienden a ser circulares, porque esto hace más fácil su incorporación en el gráfico sin que choquen entre sí, y al mismo tiempo es más orgánico y agradable de ver. Utilizar una marca compuesta permite mostrar múltiples atributos para cada unidad de análisis. Se utiliza el nombre `proportional` porque el tamaño del glifo también suele expresar algún atributo. Un ejemplo típico es el siguiente, que visualiza la prevalencia de distintas enfermedades causadas por insectos en Brasil:
 
-![Prevalencia de dengue, Zika y chikungunya en Brasil. Fuente: V. Vasconcelos y C. Moutinho Duque de Pinho.](../../../courses/infovis/08_mapas/images/brazil_symbol_hudadeca3a02d151dcd0a821357dcbdbb4_111821_660x0_resize_q75_box.jpg)
+![Prevalencia de dengue, Zika y chikungunya en Brasil. Fuente: V. Vasconcelos y C. Moutinho Duque de Pinho.](http://datagramas.cl/courses/infovis/08_mapas/images/brazil_symbol_hudadeca3a02d151dcd0a821357dcbdbb4_111821_660x0_resize_q75_box.jpg)
 
 Prevalencia de dengue, Zika y chikungunya en Brasil. Fuente: V. Vasconcelos y C. Moutinho Duque de Pinho.
 
@@ -258,7 +258,7 @@ Al ver el ejemplo notamos una de las cualidades del `proportional_symbol_map`: s
 
 Los glifos pueden ser de varios tipos. En el ejemplo anterior, un `pie_chart` permite mostrar la distribución interna de una variable en cada unidad de análisis. También es posible utilizar otros glifos que resuelvan tareas distintas. La siguiente visualización se llama `modal_cell` y presenta un glifo que codifica las direcciones y modos de transporte utilizados en cada municipalidad de Santiago:
 
-![Fuente: I. Pérez-Messina y E. Graells-Garrido, Visualizing Transportation Flows with Mode Split using Glyphs.](../../../courses/infovis/08_mapas/images/modal_cell_hue37721d763f37e812045a898a800f008_845214_660x0_resize_box_3.png)
+![Fuente: I. Pérez-Messina y E. Graells-Garrido, Visualizing Transportation Flows with Mode Split using Glyphs.](http://datagramas.cl/courses/infovis/08_mapas/images/modal_cell_hue37721d763f37e812045a898a800f008_845214_660x0_resize_box_3.png)
 
 Fuente: I. Pérez-Messina y E. Graells-Garrido, Visualizing Transportation Flows with Mode Split using Glyphs.
 
@@ -268,13 +268,13 @@ Al agregar flujos, el glifo de `modal_cell` permite resolver tareas geográficas
 
 Tal como existen campos escalares, también existen campos vectoriales, donde para cada punto en el espacio puede haber un flujo local, una flecha que representa la principal dirección de variación o importancia de uno o más atributos. De este flujo local se puede derivar un flujo geométrico, siguiendo la trayectoria de movimiento a través de los flujos locales del campo. La visualización de este flujo geométrico permite encontrar patrones globales en el flujo. Algunos ejemplos de como luce este tipo de visualización se muestran a continuación:
 
-![Fuente: Laidlaw et al, Comparing 2D vector field visualization methods: A user study.](../../../courses/infovis/08_mapas/images/vector_fields_hue44304282d71a5c46f491d428655e81d_2707571_660x0_resize_box_3.png)
+![Fuente: Laidlaw et al, Comparing 2D vector field visualization methods: A user study.](http://datagramas.cl/courses/infovis/08_mapas/images/vector_fields_hue44304282d71a5c46f491d428655e81d_2707571_660x0_resize_box_3.png)
 
 Fuente: Laidlaw et al, Comparing 2D vector field visualization methods: A user study.
 
 Ahora bien, ¿cómo lucen estas técnicas en un mapa? Pueden ver una versión animada de la siguiente técnica en [este trabajo que compara y combina técnicas de visualización de flujo](https://mjlobo.bitbucket.io/fdanimatedflow/):
 
-![Fuente: María Jesús Lobo et al, Comparing 2D vector field visualization methods: A user study.](../../../courses/infovis/08_mapas/images/flow_vector_fields_hub5064c75fb0fd47a808607b2218bf024_1810592_660x0_resize_box_3.png)
+![Fuente: María Jesús Lobo et al, Comparing 2D vector field visualization methods: A user study.](http://datagramas.cl/courses/infovis/08_mapas/images/flow_vector_fields_hub5064c75fb0fd47a808607b2218bf024_1810592_660x0_resize_box_3.png)
 
 Fuente: María Jesús Lobo et al, Comparing 2D vector field visualization methods: A user study.
 
@@ -284,7 +284,7 @@ Este tipo de visualización permite resolver tareas de búsqueda de caminos en e
 
 Quizás una de las variables que más influye en los mapas sin que nos demos cuenta es la población. Existe una [tira cómica de XKCD que ilustra este concepto](https://xkcd.com/1138/), donde si no tenemos cuidado podremos creer que estamos viendo una relación donde no la hay:
 
-![Texto original de la tira: &ldquo;Mapas de perfiles geográficos que son básicamente mapas de población.&rdquo; Fuente: XKCD.](../../../courses/infovis/08_mapas/images/xkcd_heatmap_hu282ce90b03fad28ab5368191a77ab0b4_39504_660x0_resize_q75_box.jpg)
+![Texto original de la tira: &ldquo;Mapas de perfiles geográficos que son básicamente mapas de población.&rdquo; Fuente: XKCD.](http://datagramas.cl/courses/infovis/08_mapas/images/xkcd_heatmap_hu282ce90b03fad28ab5368191a77ab0b4_39504_660x0_resize_q75_box.jpg)
 
 Texto original de la tira: Mapas de perfiles geográficos que son básicamente mapas de población. Fuente: XKCD.
 
@@ -296,7 +296,7 @@ Lo mismo sucede con los mapas.
 
 Las siguientes son algunas de las tantas proyecciones que existen:
 
-![Proyecciones. Fuente: Wikipedia (a través de Google Design).](../../../courses/infovis/08_mapas/images/other-projections_hu7c2b92189f4a91dfc3eead33979cc11f_7466719_660x0_resize_box_3.png)
+![Proyecciones. Fuente: Wikipedia (a través de Google Design).](http://datagramas.cl/courses/infovis/08_mapas/images/other-projections_hu7c2b92189f4a91dfc3eead33979cc11f_7466719_660x0_resize_box_3.png)
 
 Proyecciones. Fuente: Wikipedia (a través de Google Design).
 
@@ -308,7 +308,7 @@ Hasta este momento hemos ejemplificado distintas técnicas de visualización en 
 
 Un ejemplo de dataset espacial es un conjunto de puntos con posición `x`, `y` y `z`. Una visualización directa de estos datos se llama `point_cloud`, ya que posiciona cada elemento directamente en su posición correspondiente, enfocados por una cámara con movimiento libre. El siguiente ejemplo muestra el [resultado de escanear una esquina de San Francisco con el sistema LIDAR](https://en.wikipedia.org/wiki/File:Ouster_OS1-64_lidar_point_cloud_of_intersection_of_Folsom_and_Dore_St,_San_Francisco.png):
 
-![Fuente: Wikipedia.](../../../courses/infovis/08_mapas/images/lidar_point_cloud_hua0e6a81a56b1c20e44ed1486983e6937_1613261_660x0_resize_box_3.png)
+![Fuente: Wikipedia.](http://datagramas.cl/courses/infovis/08_mapas/images/lidar_point_cloud_hua0e6a81a56b1c20e44ed1486983e6937_1613261_660x0_resize_box_3.png)
 
 Fuente: Wikipedia.
 
@@ -316,7 +316,7 @@ Aunque esta técnica muestra directamente cada punto en su posición original, n
 
 El proyecto [Sonomap](https://www.bsc.es/viz/sonomap/) presenta una experiencia de realidad virtual donde una persona vuela sobre la ciudad, representada con una `point_cloud`, y escucha los sonidos característicos de cada lugar. De ahí su nombre de mapa sonoro de la ciudad:
 
-![Sonomap. Fuente: Barcelona Supercomputing Center.](../../../courses/infovis/08_mapas/images/sonomap_hu1255eb0a218dfc5c2807984b5791a0e5_228112_660x0_resize_q75_box.jpg)
+![Sonomap. Fuente: Barcelona Supercomputing Center.](http://datagramas.cl/courses/infovis/08_mapas/images/sonomap_hu1255eb0a218dfc5c2807984b5791a0e5_228112_660x0_resize_q75_box.jpg)
 
 Sonomap. Fuente: Barcelona Supercomputing Center.
 
@@ -328,7 +328,7 @@ Cuando se trabaja con una `point_cloud` se tienen datos heterogéneos. De hecho,
 
 Las técnicas de `volume_rendering` buscan desplegar e interactuar con los elementos escaneados. Una manera de hacerlo es derivar **isosuperficies** de los datos, y desplegar estas superficies en la visualización. El siguiente es un ejemplo de isosuperficies derivadas del escáner de una muela:
 
-![Fuente: Kniss, Interactive Volume Rendering Techniques.](../../../courses/infovis/08_mapas/images/isosurface_hu87d96ddc5d10324d188e75a0741b20f8_494541_660x0_resize_box_3.png)
+![Fuente: Kniss, Interactive Volume Rendering Techniques.](http://datagramas.cl/courses/infovis/08_mapas/images/isosurface_hu87d96ddc5d10324d188e75a0741b20f8_494541_660x0_resize_box_3.png)
 
 Fuente: Kniss, Interactive Volume Rendering Techniques.
 

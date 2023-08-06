@@ -14,7 +14,7 @@ En esta unidad veremos que existen distintos tipos de datasets. Para cada tipo v
 
 Trabajaremos con una categorización general que define cuatro tipos: _tablas_, _redes y árboles_, _campos_, y _datos espaciales_.
 
-![Fuente: Visualization Analysis &amp; Design.](../../../courses/infovis/03_datos/images/dataset_types_hu985c5d0817e4859de4c9a70c43011324_134366_660x0_resize_box_3.png)
+![Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/03_datos/images/dataset_types_hu985c5d0817e4859de4c9a70c43011324_134366_660x0_resize_box_3.png)
 
 Fuente: Visualization Analysis & Design.
 
@@ -52,7 +52,7 @@ Lo común es aplicar estas operaciones en conjunto. Como ejemplo: se **filtra** 
 
 Un censo genera una tabla donde cada fila es una persona y cada columna es una variable asociada a cada persona. Si se carga en [censo 2017 de Chile](http://censo2017.cl) en `pandas` se ve algo así:
 
-![Datos del Censo 2017.](../../../courses/infovis/03_datos/images/tabla_censo_hu6ffc1f4e9fbc534a2937f92902fbf968_26617_660x0_resize_box_3.png)
+![Datos del Censo 2017.](http://datagramas.cl/courses/infovis/03_datos/images/tabla_censo_hu6ffc1f4e9fbc534a2937f92902fbf968_26617_660x0_resize_box_3.png)
 
 Datos del Censo 2017.
 
@@ -60,7 +60,7 @@ Algunas columnas representan meta-datos, como la región o el identificador de l
 
 Un ejemplo de `filtrado->agrupación->agregación` se ve en la siguiente visualización. Primero, filtré a las personas migrantes (dejando fuera a las nacionales), luego agrupé por lugar de origen (la columna `P12PAIS_GRUPO`). En cada grupo calculé la proporción de personas que llegó en cada año al país.
 
-![¿Cuál es la historia de los patrones de migración en Chile?](../../../courses/infovis/03_datos/images/tabla_censo_heatmap_hudce5657ba7c892121aca550147818294_273057_660x0_resize_box_3.png)
+![¿Cuál es la historia de los patrones de migración en Chile?](http://datagramas.cl/courses/infovis/03_datos/images/tabla_censo_heatmap_hudce5657ba7c892121aca550147818294_273057_660x0_resize_box_3.png)
 
 ¿Cuál es la historia de los patrones de migración en Chile?
 
@@ -93,7 +93,7 @@ Este proyecto liderado por César Hidalgo busca crear un mapa del desarrollo eco
 
 A través de esa definición de la red, se puede obtener el siguiente mapa:
 
-![Nodos en negro son exportados por Guatemala.](../../../courses/infovis/03_datos/images/economic_complexity_hu60182d33b863e1983297a713034cf20a_171347_660x0_resize_box_3.png)
+![Nodos en negro son exportados por Guatemala.](http://datagramas.cl/courses/infovis/03_datos/images/economic_complexity_hu60182d33b863e1983297a713034cf20a_171347_660x0_resize_box_3.png)
 
 Nodos en negro son exportados por Guatemala.
 
@@ -111,7 +111,7 @@ Un algoritmo clásico de Machine Learning es la creación e inferencia de [árbo
 
 El siguiente ejemplo muestra como se ve un árbol de decisión:
 
-![Sitio con animación de un árbol de decisión inferido.](../../../courses/infovis/03_datos/images/predictions_tree_hue83a3a74c7f847e90a27814b44bf8e54_74903_660x0_resize_box_3.png)
+![Sitio con animación de un árbol de decisión inferido.](http://datagramas.cl/courses/infovis/03_datos/images/predictions_tree_hue83a3a74c7f847e90a27814b44bf8e54_74903_660x0_resize_box_3.png)
 
 Sitio con animación de un árbol de decisión inferido.
 
@@ -130,7 +130,7 @@ Entre las operaciones que se realizan con campos están:
 
 Existen distintas maneras de visualizar campos. A continuación se muestran alternativas para las operaciónes de estimación de variación y caminos:
 
-![Formas de visualizar campos y flujos dentro de éstos. Fuente: R. Moorhead et al, &ldquo;<em>Visualization Research Challenges: A Report Summary</em>,&rdquo; in Computing in Science &amp; Engineering, vol. 8, pp. 66-73, 2006.](../../../courses/infovis/03_datos/images/vector_fields_huecf4b9aa442446a6fd16875c02e0c6e2_470198_660x0_resize_box_3.png)
+![Formas de visualizar campos y flujos dentro de éstos. Fuente: R. Moorhead et al, &ldquo;<em>Visualization Research Challenges: A Report Summary</em>,&rdquo; in Computing in Science &amp; Engineering, vol. 8, pp. 66-73, 2006.](http://datagramas.cl/courses/infovis/03_datos/images/vector_fields_huecf4b9aa442446a6fd16875c02e0c6e2_470198_660x0_resize_box_3.png)
 
 Formas de visualizar campos y flujos dentro de éstos. Fuente: R. Moorhead et al, _Visualization Research Challenges: A Report Summary_, in Computing in Science & Engineering, vol. 8, pp. 66-73, 2006.
 
@@ -140,7 +140,7 @@ Formas de visualizar campos y flujos dentro de éstos. Fuente: R. Moorhead et al
 
 El viento es un campo infinito que tiene dirección y cambia constantemente. Los investigadores Fernanda Viegas y Martin Wattenberg tomaron sensores de viento en tiempo semi-real de los Estados Unidos y produjeron la siguiente visualización interactiva:
 
-![Mapa en tiempo semi-real del viento en los Estados Unidos.](../../../courses/infovis/03_datos/images/windmap.png)
+![Mapa en tiempo semi-real del viento en los Estados Unidos.](http://datagramas.cl/courses/infovis/03_datos/images/windmap.png)
 
 Mapa en tiempo semi-real del viento en los Estados Unidos.
 
@@ -161,7 +161,7 @@ Las observaciones en este tipo de datos consisten en un conjunto de elementos, u
 
 Un ejemplo de un mapa que representa información geográfica de manera directa es el siguiente:
 
-![Mapa Geológico de España y Portugal - por el Ingeniero de Minas D. Federico de Botella y de Hornos - la parte geográfica por D. Francisco Coello - 1879. Recreado por Sean Comway: https://twitter.com/geo_spatialist.](../../../courses/infovis/03_datos/images/spain_map_hudb0506342062def0b8b386472c24fe8e_1185822_660x0_resize_q75_h2_box_2.webp)
+![Mapa Geológico de España y Portugal - por el Ingeniero de Minas D. Federico de Botella y de Hornos - la parte geográfica por D. Francisco Coello - 1879. Recreado por Sean Comway: https://twitter.com/geo_spatialist.](http://datagramas.cl/courses/infovis/03_datos/images/spain_map_hudb0506342062def0b8b386472c24fe8e_1185822_660x0_resize_q75_h2_box_2.webp)
 
 Mapa Geológico de España y Portugal - por el Ingeniero de Minas D. Federico de Botella y de Hornos - la parte geográfica por D. Francisco Coello - 1879. Recreado por Sean Comway: [https://twitter.com/geo\_spatialist](https://twitter.com/geo_spatialist).
 
@@ -180,7 +180,7 @@ En Python utilizaremos la biblioteca `geopandas` para cargar, procesar y visuali
 
 Retomemos los datos del censo y démosle contexto geográfico. El siguiente mapa muestra la proporción de inmigrantes en cada distrito censal del radio urbano de Santiago:
 
-![Mapa de coropletas representando la cantidad de inmigrantes por área censal en Santiago.](../../../courses/infovis/03_datos/images/santiago_migrantes_hu6cbcfb9368a168be7edb65d07e01273c_772458_660x0_resize_box_3.png)
+![Mapa de coropletas representando la cantidad de inmigrantes por área censal en Santiago.](http://datagramas.cl/courses/infovis/03_datos/images/santiago_migrantes_hu6cbcfb9368a168be7edb65d07e01273c_772458_660x0_resize_box_3.png)
 
 Mapa de coropletas representando la cantidad de inmigrantes por área censal en Santiago.
 
@@ -190,7 +190,7 @@ En el mapa observamos los bordes administrativos de cada distrito censal, los bo
 
 Un dataset puede contener una mezcla de tipos. Pr ejemplo, una _red de transporte_ también tiene _componentes geográficas_. Como vemos en el ejemplo que sigue, esto abre posibilidades: se puede utilizar la red y la geografía para calcular posiciones abstractas basadas en otras variables, como el tiempo total de viaje. La siguiente visualización muestra como se compara el tiempo de viaje entre estaciones en distintas componentes de la red de metro de Nueva York, partiendo desde la estación en Manhattan.
 
-![Por Amanda Cox y Matthew Ericson, New York Times.](../../../courses/infovis/03_datos/images/travel_times_hu57f6b04483b2b23aa4a831c541b356c0_297082_660x0_resize_q75_box.jpg)
+![Por Amanda Cox y Matthew Ericson, New York Times.](http://datagramas.cl/courses/infovis/03_datos/images/travel_times_hu57f6b04483b2b23aa4a831c541b356c0_297082_660x0_resize_q75_box.jpg)
 
 Por Amanda Cox y Matthew Ericson, New York Times.
 
@@ -202,7 +202,7 @@ No es una visualización directa de ver. Por ello también incluye leyendas y no
 
 Hasta este momento hemos hablado de la organización y semántica de cada tipo de dataset, con un énfasis en sus observaciones, ítems, registros, etc. Cada observación tiene atributos, por ejemplo, en el censo cada columna de la tabla era un atributo asociado a cada persona. Pero no especificamos si cada una de esas columnas, que definimos como atributos, y que también solemos llamar _variables_, también siguen una especificación. Ciertamente la siguen. Los tipos de atributos con los que trabajaremos se exhiben a continuación:
 
-![Fuente: Visualization Analysis &amp; Design.](../../../courses/infovis/03_datos/images/attributes_huae31e453684dfef17c84187ad8280e07_44615_660x0_resize_box_3.png)
+![Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/03_datos/images/attributes_huae31e453684dfef17c84187ad8280e07_44615_660x0_resize_box_3.png)
 
 Fuente: Visualization Analysis & Design.
 
@@ -228,7 +228,7 @@ La fecha es un atributo interesante, puesto que puede ser interpretada de múlti
 
 La siguiente visualización es un ejemplo del tratamiento de fechas. Muestra el cambio en la temperatura global en los últimos 170 años:
 
-![Fuente: http://www.climate-lab-book.ac.uk/spirals/](../../../courses/infovis/03_datos/images/cyclic_temperature_hu8aab543e1088fe97419138b7552bb5b5_1298781_660x0_resize_box.gif)
+![Fuente: http://www.climate-lab-book.ac.uk/spirals/](http://datagramas.cl/courses/infovis/03_datos/images/cyclic_temperature_hu8aab543e1088fe97419138b7552bb5b5_1298781_660x0_resize_box.gif)
 
 Fuente: [http://www.climate-lab-book.ac.uk/spirals/](http://www.climate-lab-book.ac.uk/spirals/)
 

@@ -19,7 +19,7 @@ De acuerdo a esta definición hay tareas que no necesitan visualización. Es una
 
 La taxonomía propuesta por Tamara Munzner es la siguiente:
 
-![Taxonomía de tareas: <strong>acción</strong> <code>+</code> <strong>objetivo</strong>. Fuente: Visualization Analysis &amp; Design.](../../../courses/infovis/04_tareas/images/task_conceptual_schema_hu5232e44f30b9b01fe4a72f025a7d3cab_133378_660x0_resize_box_3.png)
+![Taxonomía de tareas: <strong>acción</strong> <code>+</code> <strong>objetivo</strong>. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/04_tareas/images/task_conceptual_schema_hu5232e44f30b9b01fe4a72f025a7d3cab_133378_660x0_resize_box_3.png)
 
 Taxonomía de tareas: **acción** `+` **objetivo**. Fuente: Visualization Analysis & Design.
 
@@ -62,7 +62,7 @@ En la visualización principal cada país es representado por un elemento gráfi
 
 El sitio se ve así en un computador:
 
-![Screenshot del proyecto. ](../../../courses/infovis/04_tareas/images/oecd_better_life_index_hu5ad7edc8736fbf14779261003f2482bb_127150_660x0_resize_q75_box.jpg)
+![Screenshot del proyecto. ](http://datagramas.cl/courses/infovis/04_tareas/images/oecd_better_life_index_hu5ad7edc8736fbf14779261003f2482bb_127150_660x0_resize_q75_box.jpg)
 
 Screenshot del proyecto.
 
@@ -78,7 +78,7 @@ Screenshot del proyecto.
 
 El sistema `sense.us` ya no existe, pero en su tiempo fue un sitio de visualización colaborativa. Varias personas podían explorar las visualizaciones disponibles y dejar comentarios en una conversación, o dejar notas con flechas directamente sobre la visualización. Esto es útil pues permite añadir explicaciones sobre fenómenos observados en los datos que no pueden ser explicados por los datos mismos. Esas explicaciones pueden provenir del conocimiento del contexto o de la experiencia de cada persona, y enriquecen la visualización.
 
-![Análisis colaborativo en sense.us. Fuente: Heer, Viégas &amp; Wattenberg, Voyagers and voyeurs: supporting asynchronous collaborative information visualization.](../../../courses/infovis/04_tareas/images/sense_us_hu95d75a8dff5ddde876a4129f6ebd9e01_1025772_660x0_resize_box_3.png)
+![Análisis colaborativo en sense.us. Fuente: Heer, Viégas &amp; Wattenberg, Voyagers and voyeurs: supporting asynchronous collaborative information visualization.](http://datagramas.cl/courses/infovis/04_tareas/images/sense_us_hu95d75a8dff5ddde876a4129f6ebd9e01_1025772_660x0_resize_box_3.png)
 
 Análisis colaborativo en sense.us. Fuente: Heer, Viégas & Wattenberg, Voyagers and voyeurs: supporting asynchronous collaborative information visualization.
 
@@ -88,7 +88,7 @@ En el ejemplo de la imagen, la funcionalidad que hemos comentado se clasifica co
 
 El proyecto [La Ciudad como Texto](http://www.laciudadcomotexto.cl) busca visualizar los escritos (en numerosas formas: lienzos, graffitis, rayados, etc.) del principal eje de tránsito de Santiago, el eje Alameda-Providencia, durante el estallido social del 18 de Octubre. La visualización se enfoca en mostrar una imagen que compone más de 2 kilóḿetros de calle, vista completamente en la parte inferior de la pantalla, y una vista detallada de un lugar específico de la calle, que tiene gran parte de la pantalla. En la imagen principal aparecen anotaciones que muestran testimonios, poemas y relatos relacionados con el lugar donde se produjo la anotación.
 
-![Distintos textos sobre un paradero del Transantiago, tanto oficiales como de protesta El asterisco verde lleva a un relato sobre la frase &ldquo;Chile despertó dime algo más lindo k eso.&rdquo;](../../../courses/infovis/04_tareas/images/ciudad_como_texto_calle_hub962f12b08b3367c31afc37ac1a06d33_1208470_660x0_resize_q75_box.jpeg)
+![Distintos textos sobre un paradero del Transantiago, tanto oficiales como de protesta El asterisco verde lleva a un relato sobre la frase &ldquo;Chile despertó dime algo más lindo k eso.&rdquo;](http://datagramas.cl/courses/infovis/04_tareas/images/ciudad_como_texto_calle_hub962f12b08b3367c31afc37ac1a06d33_1208470_660x0_resize_q75_box.jpeg)
 
 Distintos textos sobre un paradero del Transantiago, tanto oficiales como de protesta El asterisco verde lleva a un relato sobre la frase ‘Chile despertó dime algo más lindo k eso.’
 
@@ -100,7 +100,7 @@ El proyecto busca ser testimonial, por tanto, la tarea que efectúa es presentar
 
 El ejemplo por excelencia de las acciones de búsqueda es Google Maps. Una consulta típica en esta aplicación (o similares) es la de pedir el camino para llegar de un lugar a otro. El resultado se ve así:
 
-![Respuesta de Google Maps a: ¿Cómo llegar desde la UDD hasta la PUC?](../../../courses/infovis/04_tareas/images/google_maps_hu563651c9d70608dd4619eec26cb4dc07_997760_660x0_resize_q75_h2_box_2.webp)
+![Respuesta de Google Maps a: ¿Cómo llegar desde la UDD hasta la PUC?](http://datagramas.cl/courses/infovis/04_tareas/images/google_maps_hu563651c9d70608dd4619eec26cb4dc07_997760_660x0_resize_q75_h2_box_2.webp)
 
 Respuesta de Google Maps a: ¿Cómo llegar desde la UDD hasta la PUC?
 
@@ -108,19 +108,11 @@ En la visualización se muestran datos geográficos directamente (calles y eleme
 
 Las acciones de búsqueda son múltiples. Además de _mirar_, también están _ubicar_ (conocer la ubicación de algo), _navegar_ (moverse en un lugar en una dirección específica), _explorar_ (usar la búsqueda misma como manera de determinar qué hacer). El tipo de acción de búsqueda se determina en función de conocer la ubicación que necesitamos y de conocer el objetivo de nuestra necesidad de información. Las siguientes tablas
 
-Ubicación 🠖
-
-Conocida
-
-Desconocida
-
-**Objetivo 🠗**
-
-**Conocido**
-
-_Lookup_ (mirar): Sabemos dónde vamos y qué haremos, pero queremos saber qué hay alrededor (o en el camino).
-
-_Locate_ (ubicar): Sabemos lo que necesitamos pero no dónde está. ¿Dónde queda el campus RESB de la Universidad?
+| Ubicación 🠖   | Conocida                                                                                                                    | Desconocida                                                                                                             |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Objetivo 🠗    |                                                                                                                             |                                                                                                                         |
+| Conocido       | Lookup (mirar): Sabemos dónde vamos y qué haremos, pero queremos saber qué hay alrededor (o en el camino).                  | Locate (ubicar): Sabemos lo que necesitamos pero no dónde está. ¿Dónde queda el campus RESB de la Universidad?          |
+| Desconocido    | Browse (navegar): Sabemos el barrio al que iremos, pero no el lugar. específico. ¿A cuál restaurant ir en el Barrio Yungay? | Explore (explorar): sabemos que haremos algo, pero no sabemos qué ni dónde. ¿Usemos el mapa para encontrar un panorama? |
 
 **Desconocido**
 
@@ -136,7 +128,7 @@ La principal diferencia entre buscar y consultar es que en esta última categor�
 
 Un buen ejemplo de una visualización que permite hacer tareas de consulta es _Map of the Market_. Esta visualización fue [diseñada en 1998 por Martin Wattenberg](http://www.bewitched.com/marketmap.html). Aunque ya no está disponible, existe una versión moderna en el sitio [FinViz](https://finviz.com/map.ashx?t=sec%5c_all&st=w52), que cumple con el mismo objetivo. En ella, cada empresa es representada por un rectángulo cuya área es proporcional al valor de la empresa, y el color del rectángulo indica si la empresa ha tenido pérdidas (rojo) o ganancias (verde) en el último tiempo. Las empresas están agrupadas por sector. La técnica de visualización utilizada se llama `treemap` y se ve a continuación:
 
-![Visualización del mercado de acciones en Estados Unidos, basada en <em>Map of the Market</em>.](../../../courses/infovis/04_tareas/images/map_of_the_market_hu6dd3e3b749076ba65114df9501b46114_2001682_660x0_resize_q75_h2_box_2.webp)
+![Visualización del mercado de acciones en Estados Unidos, basada en <em>Map of the Market</em>.](http://datagramas.cl/courses/infovis/04_tareas/images/map_of_the_market_hu6dd3e3b749076ba65114df9501b46114_2001682_660x0_resize_q75_h2_box_2.webp)
 
 Visualización del mercado de acciones en Estados Unidos, basada en _Map of the Market_.
 
@@ -150,7 +142,7 @@ Pongamos el foco en los objetivos, comenzando con una visualización que muestra
 
 En la visualización vemos las portadas de cada tomo organizadas en el perímetro de un gran círculo. Esta organización radial permite que al interior se incorpore otro círculo, cuyo perímetro es dividido por los personajes de la serie. El largo del arco correspondiente a cada personaje es proporcional a su importancia. Entre los dos círculos cada personaje aparece conectado con las portadas de la serie en la que aparece. En el interior del círculo interior es posible ver las conexiones entre personajes, que son muchas — es una serie de romance. Los capítulos del círculo exterior son caracterizados por la proporción de colores presentes en la ilustración de cada portada. La visualización se ve así al hacer clic sobre un capítulo específico:
 
-![Análisis visual de las portadas del manga Card Captor Sakura.](../../../courses/infovis/04_tareas/images/cardcaptor_sakura_detail_2_hu29947a226dfeaa8ef20f06757057a508_379194_660x0_resize_q75_box.jpg)
+![Análisis visual de las portadas del manga Card Captor Sakura.](http://datagramas.cl/courses/infovis/04_tareas/images/cardcaptor_sakura_detail_2_hu29947a226dfeaa8ef20f06757057a508_379194_660x0_resize_q75_box.jpg)
 
 Análisis visual de las portadas del manga Card Captor Sakura.
 
@@ -162,7 +154,7 @@ Cuando trabajamos con todo el dataset podemos hacer cosas complejas, donde la pe
 
 Revisitamos esta visualización que vimos en la introducción del curso, con las trayectorias de los nuevos casos diarios de COVID-19 en muchos países. Esta visualización diseñada por [John Burn-Murdoch](https://twitter.com/jburnmurdoch) utiliza un tipo de gráfico que probablemente todes hemos visto: el gráfico de líneas. Cada línea representa la evolución en la detección de nuevos casos de la enfermedad a lo largo del tiempo. Aunque cada línea representa a un país, la mayoría es coloreada gris, solamente unos cuantos países son coloreados y anotados (según las necesidades de la historia que se desea contar). El gráfico se ve así:
 
-![Casos diarios confirmados de COVID-19 en varios países del mundo (datos del 11 de mayo de 2020).](../../../courses/infovis/01_img/john-burn-murdoch.jpg)
+![Casos diarios confirmados de COVID-19 en varios países del mundo (datos del 11 de mayo de 2020).](https://pbs.twimg.com/profile_banners/43878033/1584563578/1500x500)
 
 Casos diarios confirmados de COVID-19 en varios países del mundo (datos del 11 de mayo de 2020).
 
@@ -174,7 +166,7 @@ Este gráfico ejemplifica como una visualización puede ser efectiva sin necesid
 
 El siguiente gráfico se titula “Cuando el PIB crece, no siempre la desigualdad cae.” En efecto, esa es la historia que cuenta [Alberto Cairo](http://albertocairo.com/) utilizando visualización. Lo logrando graficando la relación entre dos variables cuantitativas de Brasil (índice GINI y PIB) en distintos períodos presidenciales (una variable categórica):
 
-![Fuente: The functional art, de Alberto Cairo.](../../../courses/infovis/04_tareas/images/cairo_pib_brasil_hua8519271c19fec7e8fe7907f5588cafc_1121563_660x0_resize_box_3.png)
+![Fuente: The functional art, de Alberto Cairo.](http://datagramas.cl/courses/infovis/04_tareas/images/cairo_pib_brasil_hua8519271c19fec7e8fe7907f5588cafc_1121563_660x0_resize_box_3.png)
 
 Fuente: The functional art, de Alberto Cairo.
 
@@ -182,7 +174,7 @@ La descripción anterior se refiere a la historia que cuenta el gráfico. En té
 
 Es una visualización efectiva y ha inspirado a muchas personas a crear otras similares, tanto con el mismo espíritu, pero aplicado a otros países, como a otras temáticas, pero siguiendo la misma codificación visual. Para el primer caso, el Barcelona Supercomputing Center hizo una [versión interactiva para varios países del cono-sur de Latinoamérica](http://www.bsc.es/viz/desigualdad/) que luce así:
 
-![Versión interactiva de Desigualdad y Crecimiento Económico, por el Grupo de Visualización Científica del Barcelona Supercomputing Center.](../../../courses/infovis/04_tareas/images/bsc_desigualdad_hu83b09fddbf3d980f2f2b77f74db4dedc_273098_660x0_resize_box_3.png)
+![Versión interactiva de Desigualdad y Crecimiento Económico, por el Grupo de Visualización Científica del Barcelona Supercomputing Center.](http://datagramas.cl/courses/infovis/04_tareas/images/bsc_desigualdad_hu83b09fddbf3d980f2f2b77f74db4dedc_273098_660x0_resize_box_3.png)
 
 Versión interactiva de Desigualdad y Crecimiento Económico, por el Grupo de Visualización Científica del Barcelona Supercomputing Center.
 
@@ -194,7 +186,7 @@ Para poder crear tratamientos contra el cáncer y otras enfermedades es necesari
 
 El investigador Martin Krzywinski es un pionero en el diseño y uso de visualización para estudiar relaciones entre genes, particularmente en el estudio de genes cancerígenos. La imagen a continuación proviene de un artículo científico donde se planea el diseño de [`hive plot`, una manera de visualizar redes](https://academic.oup.com/bib/article/13/5/627/412507), ejemplificado con una red de genes. Los genes están conectados entre sí si es sabido que están asociados a la misma enfermedad. La imagen a continuación fue extraída del paper, e ilustra dos maneras de visualizar la parte relevante de la red para un conjunto de genes específicos:
 
-![Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks.](../../../courses/infovis/04_tareas/images/gene_networks_huec8dde828a282029c8d49caeb63a2fa3_600911_660x0_resize_box_3.png)
+![Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks.](http://datagramas.cl/courses/infovis/04_tareas/images/gene_networks_huec8dde828a282029c8d49caeb63a2fa3_600911_660x0_resize_box_3.png)
 
 Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks.
 
@@ -218,7 +210,7 @@ La visualización resuelve la tarea descubrir `+` la forma gegráfica de cada _l
 
 Como último ejemplo en esta unidad veremos el uso de informacioń geográfica. La siguiente imagen muestra la evolución del Producto Interno Bruto (GDP) per cápita en los países de Europa, utilizando un gráfico de líneas para cada país:
 
-![Gráficos de líneas con el GDP (o Producto Interno Bruto) de los países europeos, organizados de acuerdo a su posición geográfica.](../../../courses/infovis/04_tareas/images/geofacet_europe_hu551c177fc88c0cce09aea58a13792445_503334_660x0_resize_box_3.png)
+![Gráficos de líneas con el GDP (o Producto Interno Bruto) de los países europeos, organizados de acuerdo a su posición geográfica.](http://datagramas.cl/courses/infovis/04_tareas/images/geofacet_europe_hu551c177fc88c0cce09aea58a13792445_503334_660x0_resize_box_3.png)
 
 Gráficos de líneas con el GDP (o Producto Interno Bruto) de los países europeos, organizados de acuerdo a su posición geográfica.
 

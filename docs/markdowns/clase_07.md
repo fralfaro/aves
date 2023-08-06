@@ -22,7 +22,7 @@ Una red se define por dos tipos de elementos: sus nodos o vértices (_nodes_ o _
 
 El siguiente ejemplo muestra parcialmente una red de trazado de contactos de COVID, de una [paciente que contagió a cientos de personas en Corea del Sur](https://graphics.reuters.com/CHINA-HEALTH-SOUTHKOREA-CLUSTERS/0100B5G33SB/index.html):
 
-![Trazado de Contactos COVID-19. Fuente: REUTERS.](../../../courses/infovis/10_redes/images/covid_contact_tracing_huba0e9024174cc43062c1c3a2463e80de_1116816_660x0_resize_box_3.png)
+![Trazado de Contactos COVID-19. Fuente: REUTERS.](http://datagramas.cl/courses/infovis/10_redes/images/covid_contact_tracing_huba0e9024174cc43062c1c3a2463e80de_1116816_660x0_resize_box_3.png)
 
 Trazado de Contactos COVID-19. Fuente: REUTERS.
 
@@ -30,7 +30,7 @@ Esta visualización enseña las relaciones entre algunos contactos, mostrando c�
 
 Un dataset emblemático en la ciencia de redes es el [Club de Karate de Zachary](https://en.wikipedia.org/wiki/Zachary%27s_karate_club). Zachary es un investigador que documentó la red social de un club de Karate durante tres años. En medio de su investigación, el administrador del club y el _sensei_ tuvieron un problema que disolvió el _dojo_. ¿Qué harían les estudiantes del club?¿Seguirían a su maestro, al administrador, o abandonarían el club? Zachary predijo correctamente todas las decisiones de los miembros del club, con excepción de una persona, utilizando análisis de redes. Así luce la red:
 
-![Club de Karate de Zachary. Fuente: Wikipedia.](../../../courses/infovis/10_redes/images/zachary_club.png)
+![Club de Karate de Zachary. Fuente: Wikipedia.](http://datagramas.cl/courses/infovis/10_redes/images/zachary_club.png)
 
 Club de Karate de Zachary. Fuente: Wikipedia.
 
@@ -38,19 +38,25 @@ Cada nodo es una persona. ¿Qué observan en esta red? El color de los nodos nos
 
 La siguiente red muestra como luce una red de conceptos en Wikipedia, [construida en función de los clics que hacen les visitantes del sitio](https://wikimediafoundation.org/news/2018/01/18/on-that-net-neutrality-clickstream-diagram/). Quienes visitan el artículo de _neutralidad en la red_, ¿hacia dónde siguen leyendo?¿desde dónde llegan a ese artículo?¿cuál es la temática alrededor de ese artículo?
 
-![Wikipedia Clickstream del artículo Neutralidad en la Red, en inglés.](../../../courses/infovis/10_redes/images/net_neutrality_clickstream_hu9323b975ca3f47632f512595a0e514a6_1198745_660x0_resize_box_3.png)
+![Wikipedia Clickstream del artículo Neutralidad en la Red, en inglés.](http://datagramas.cl/courses/infovis/10_redes/images/net_neutrality_clickstream_hu9323b975ca3f47632f512595a0e514a6_1198745_660x0_resize_box_3.png)
 
 Wikipedia Clickstream del artículo Neutralidad en la Red, en inglés.
 
 Ahora bien, en esta introducción hemos hablado de redes, pero la unidad es de redes **y** árboles. Si recuerdan nuestra unidad de abstracción de datos, sabrán que todo árbol es una red, pero no toda red es un árbol. Esto se debe a que los árboles tienen una estructura jerárquica, con un nodo raíz. Esto puede facilitar la visualización o incluso habilitar metáforas visuales. El siguiente ejemplo toma el [nombre de árbol de manera literal para visualizar la relación entre las lenguas indoeuropeas](https://www.sssscomic.com/comic.php?page=196):
 
-![Árbol de lenguas en el mundo. Fuente: Stand Still Stay Silent.](../../../courses/infovis/10_redes/images/language_tree_hu1eb9907dd3d2887fd440ee510df5ae3d_1333096_660x0_resize_q75_box.jpg)
+![Árbol de lenguas en el mundo. Fuente: Stand Still Stay Silent.](http://datagramas.cl/courses/infovis/10_redes/images/language_tree_hu1eb9907dd3d2887fd440ee510df5ae3d_1333096_660x0_resize_q75_box.jpg)
 
 Árbol de lenguas en el mundo. Fuente: Stand Still Stay Silent.
 
 En esta infografía es posible ver como a partir de la raíz de lenguas indoeuropeas se separan las lenguas indo-iranesas y europeas. Luego se ramifican los lenguajes que conocemos, con sus respectivas variaciones. El español (castellano) se encuentra en la rama de las lenguas romance.
 
-Si quieren profundizar sobre el uso de redes para estructurar y modelar conocimiento, y de su uso en visualización, entonces les recomiendo la siguiente charla de Manuel Lima. Manuel nos cuenta de la complejidad y las redes de manera visual. Es fascinante e inspiradora:
+Si quieren profundizar sobre el uso de redes para estructurar y modelar conocimiento, 
+y de su uso en visualización, entonces les recomiendo la siguiente charla de Manuel Lima. 
+Manuel nos cuenta de la complejidad y las redes de manera visual. Es fascinante e inspiradora:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BQZKs75RMqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe>
+</div>
 
 El resto de la unidad está estructurada de la misma manera que las unidades anteriores: revisaremos técnicas de visualización de redes y comentaremos para qué tareas son efectivas.
 
@@ -62,7 +68,7 @@ En las técnicas `node_link` la visualización contiene un paso previo de organi
 
 La técnica `force_directed_placement` extiende `node_link` a través del cálculo de las posiciones de los nodos utilizando fuerzas de repulsión. Imaginen que cada arista de la red es un resorte, de modo que al disponer los nodos de manera aleatoria en el espacio, algunos resortes estarán comprimidos y otros estarán estirados. Esto provoca que cada resorte tire o empuje a sus nodos; el cálculo de las fuerzas ejercidas por todas las aristas busca encontrar la posición de los nodos que minimice la tensión en ellas. El siguiente ejemplo muestra una red visualizada así:
 
-![Ejemplo de Force-Directed Placement. Fuente: Mike Bostock.](../../../courses/infovis/10_redes/images/force_directed_hu982a286b1c7d8d88aca71f53ebf177b3_135221_660x0_resize_box_3.png)
+![Ejemplo de Force-Directed Placement. Fuente: Mike Bostock.](http://datagramas.cl/courses/infovis/10_redes/images/force_directed_hu982a286b1c7d8d88aca71f53ebf177b3_135221_660x0_resize_box_3.png)
 
 Ejemplo de Force-Directed Placement. Fuente: Mike Bostock.
 
@@ -74,13 +80,13 @@ Consideren que la posición de los nodos en esta visualización es un dato **der
 
 Existe una extensión llamada `sfdp`, que realiza un `force_directed_placement` multinivel: deriva de la red una jerarquía de clusters, y ejecuta `force_directed_placement` en cada nivel en vez de la red completa, separando el problema de calcular la organización de toda la red en organizaciones más pequeñas. Esto hace que la visualización sea más escalable en términos de cómputo, permitiendo visualizar 1K nodos y 10K aristas en un tiempo razonable. La apariencia de esta técnica no es _tan_ distinta de `force_directed_placement`:
 
-![Multilevel Graph Drawing with sfdp. Fuente: Yifan Hu, Efficient and high quality force-directed graph drawing.](../../../courses/infovis/10_redes/images/sfdp.png)
+![Multilevel Graph Drawing with sfdp. Fuente: Yifan Hu, Efficient and high quality force-directed graph drawing.](http://datagramas.cl/courses/infovis/10_redes/images/sfdp.png)
 
 Multilevel Graph Drawing with sfdp. Fuente: Yifan Hu, Efficient and high quality force-directed graph drawing.
 
 En las clases prácticas veremos como implementar estas visualizaciones en Python. Ahora bien, existe el software [Gephi](http://www.gephi.org) que se define como “el Photoshop de las redes.” Tiene motivos para hacerlo, puesto que permite cargar datos en muchos formatos, incluyendo CSV, y crear o manipular redes en estilo `node_link` con múltiples métodos de organización, incluyendo los que hemos mencionado aquí. El programa luce así:
 
-![Fuente: Gephi.org en Wikipedia](../../../courses/infovis/10_redes/images/gephi_hu95f694deac06f2a74dde875f9301289e_423725_660x0_resize_box_3.png)
+![Fuente: Gephi.org en Wikipedia](http://datagramas.cl/courses/infovis/10_redes/images/gephi_hu95f694deac06f2a74dde875f9301289e_423725_660x0_resize_box_3.png)
 
 Fuente: Gephi.org en Wikipedia.
 
@@ -90,7 +96,7 @@ Además de la visualización en sí misma, Gephi permite estimar comunidades, m�
 
 Otra manera tradicional de visualizar redes es la matriz de adyacencia o `adjacency_matrix`, una visualización que utiliza la misma codificación visual que el `heatmap` (ver unidad de Visualización de Tablas). En este caso, la marca de cada arista es un cuadro, una celda de la matriz, y su color (o la ausencia de éste) codifica si hay una relación entre los nodo representados en la fila y columna correspondientes. La codificación puede ser binaria (hay o no hay relación), o cuantativa (la relación tiene un peso). La `adjacency_matrix` es también (primero es esto, de hecho) una estructura de datos para almacenar grafos. Un ejemplo de esta estructura es el siguiente:
 
-![Matrices de Adyacencia. Fuente: Wikipedia.](../../../courses/infovis/10_redes/images/adjacency_matrix_hu31dc0059dc2b597f0dd780b383c634cf_204095_660x0_resize_box_3.png)
+![Matrices de Adyacencia. Fuente: Wikipedia.](http://datagramas.cl/courses/infovis/10_redes/images/adjacency_matrix_hu31dc0059dc2b597f0dd780b383c634cf_204095_660x0_resize_box_3.png)
 
 Matrices de Adyacencia. Fuente: Wikipedia.
 
@@ -98,7 +104,7 @@ Esta configuración implica que la escalabilidad de `adjacency_matrix` es enorme
 
 El siguiente ejemplo muestra una `adjacency_matrix` con datos que hemos visto: la conectividad en Santiago entre comunas para viajes realizados por motivos de salud. Es decir, las comunas de la ciudad son nodos, y dos comunas `A -> B` están conectadas si alguien que vive en la comuna `A` va a la comuna `B` para ir al consultorio, al hospital, a una consulta médica o dental, entre otras:
 
-![Ejemplo de Matriz de Adjacencia de viajes, o Matriz Origen-Destino. Fuente: Eduardo Graells-Garrido.](../../../courses/infovis/10_redes/images/od_matrix_hube831279f22c40f7e678c2fc5fcfeaab_215459_660x0_resize_box_3.png)
+![Ejemplo de Matriz de Adjacencia de viajes, o Matriz Origen-Destino. Fuente: Eduardo Graells-Garrido.](http://datagramas.cl/courses/infovis/10_redes/images/od_matrix_hube831279f22c40f7e678c2fc5fcfeaab_215459_660x0_resize_box_3.png)
 
 Ejemplo de Matriz de Adjacencia de viajes, o Matriz Origen-Destino. Fuente: Eduardo Graells-Garrido.
 
@@ -117,7 +123,7 @@ Entonces, dependiendo de cuál de esas ventajas se necesite para la tarea a reso
 
 Podemos ejemplificar la tarea de identificar topología y cómo se diferencia entre ambas visualizaciones en este [diagrama de Michael J. McGuffin](http://www.michaelmcguffin.com/courses/vis/):
 
-![Fuente: Michael J. McGuffin](../../../courses/infovis/10_redes/images/adjacency_comparison_hu0924a28ddb4c293fe8649acf08c5c678_384349_660x0_resize_box_3.png)
+![Fuente: Michael J. McGuffin](http://datagramas.cl/courses/infovis/10_redes/images/adjacency_comparison_hu0924a28ddb4c293fe8649acf08c5c678_384349_660x0_resize_box_3.png)
 
 Fuente: Michael J. McGuffin.
 
@@ -125,13 +131,13 @@ Fuente: Michael J. McGuffin.
 
 La segunda pregunta del encabezado se puede responder: ¡sí! Existe una técnica llamada `NodeTrix` que combina lo mejor de ambos mundos: una organizacińo basada en `node_link`, donde cada nodo es en realidad una sub-red representada con un glifo de `adjacency_matrix`:
 
-![<code>NodeTrix</code> combina ambas técnicas: <code>node_link</code> y <code>adjacency_matrix</code>. Fuente: Henry et al, NodeTrix: a hybrid visualization of social networks.](../../../courses/infovis/10_redes/images/nodetrix_hu03b4c033c84d90965171205e6d8695a1_12608_660x0_resize_box_3.png)
+![<code>NodeTrix</code> combina ambas técnicas: <code>node_link</code> y <code>adjacency_matrix</code>. Fuente: Henry et al, NodeTrix: a hybrid visualization of social networks.](http://datagramas.cl/courses/infovis/10_redes/images/nodetrix_hu03b4c033c84d90965171205e6d8695a1_12608_660x0_resize_box_3.png)
 
 `NodeTrix` combina ambas técnicas: `node_link` y `adjacency_matrix`. Fuente: Henry et al, NodeTrix: a hybrid visualization of social networks.
 
 Genial, ¿no? Esta visualización puede ser útil cuando nos interesa la estructura de la red, particularmente, los caminos entre una comunidad y otra. Un ejemplo de aplicación de `NodeTrix` visualiza redes cerebrales:
 
-![Fuente: Yang et al, Blockwise human brain network visual comparison using NodeTrix representation.](../../../courses/infovis/10_redes/images/brain_networks_hua1dbd4a1af5fe310749864d31531ea41_495033_660x0_resize_box_3.png)
+![Fuente: Yang et al, Blockwise human brain network visual comparison using NodeTrix representation.](http://datagramas.cl/courses/infovis/10_redes/images/brain_networks_hua1dbd4a1af5fe310749864d31531ea41_495033_660x0_resize_box_3.png)
 
 Fuente: Yang et al, Blockwise human brain network visual comparison using NodeTrix representation.
 
@@ -143,7 +149,7 @@ Esta visualización permite conocer la red de cada área del cerebro (con una `a
 
 Existen muchas técnicas de `edge_bundling`. Quizás las más ad-hoc al contenido introductorio de este curso son dos: `force_directed_edge_bundling` y `hierarchical_edge_bundling`. La segunda es la técnica pionera, al ser la primera en plantear la idea, sin embargo, la primera es más aplicable a lo que hemos visto. En `force_directed_edge_bundling` se parte de un gráfico `node_link`, con aristas representadas como líneas rectas. El propósito de la técnica es que las aristas que sean similares tengan recorridos cercanos en la visualización, casi como si un elástico las restringiese en sus puntos más cercanos. Así, un algoritmo de esta técnica debe identificar o crear esos puntos cercanos, y manipular la forma geométrica de las aristas para que se agrupen, convirtiéndolas en curvas suaves. La siguiente imagen ilustra un par de técnicas en una red de vuelos entre aeropuertos en los Estados Unidos:
 
-![Force Directed Edge Bundling. Fuente: Holten &amp; Van Wijk, Force‐directed edge bundling for graph visualization.](../../../courses/infovis/10_redes/images/force_directed_edge_bundling_hu01715f337a6263cdc0d6e2202692f6c3_1502366_660x0_resize_box_3.png)
+![Force Directed Edge Bundling. Fuente: Holten &amp; Van Wijk, Force‐directed edge bundling for graph visualization.](http://datagramas.cl/courses/infovis/10_redes/images/force_directed_edge_bundling_hu01715f337a6263cdc0d6e2202692f6c3_1502366_660x0_resize_box_3.png)
 
 Force Directed Edge Bundling. Fuente: Holten & Van Wijk, Force‐directed edge bundling for graph visualization.
 
@@ -151,13 +157,13 @@ Force Directed Edge Bundling. Fuente: Holten & Van Wijk, Force‐directed edge b
 
 La primera aplicación concreta de esta técnica se publicó el año 2006, llamada `hierarchical_edge_bundling`. Tiene el nombre _hierarchical_ porque se aplica principalmente a árboles, o a redes en los que se puede inferir una estructura jerárquica (esto es posible en algunos algoritmos de detección de comunidades o de clustering). La técnica tiene la siguiente apariencia:
 
-![Hierarchical Edge Bundling. Fuente: Holten, Hierarchical edge bundles: Visualization of adjacency relations in hierarchical data.](../../../courses/infovis/10_redes/images/hierarchical_edge_bundling_hu063c3bb77914e7ad8424800af43a0580_2109830_660x0_resize_box_3.png)
+![Hierarchical Edge Bundling. Fuente: Holten, Hierarchical edge bundles: Visualization of adjacency relations in hierarchical data.](http://datagramas.cl/courses/infovis/10_redes/images/hierarchical_edge_bundling_hu063c3bb77914e7ad8424800af43a0580_2109830_660x0_resize_box_3.png)
 
 Hierarchical Edge Bundling. Fuente: Holten, Hierarchical edge bundles: Visualization of adjacency relations in hierarchical data.
 
 En `hierarchical_edge_bundling` se utiliza una codificación similar a `node_link`. Los nodos se expresan con marcas de círculos o puntos organizados de manera circular, por comunidades. En el ejemplo, se muestra la red de código fuente de un _framework_, de modo que existen componentes (comunidades) dentro de macro-componentes, y todas las macro-componentes pertenecen al mismo framework. Los nodos son conectados entre sí con aristas, como en `node_link`, sin embargo estas aristas no son líneas rectas, sino que son curvas siguen el camino jerárquico: imaginen que existen círculos internos en la visualización, uno por cada nivel de jerarquía, hasta llegar al centro del círculo, que contiene la raíz de ésta. Cada arista sigue un camino que la acerca a los nodos de la jerarquía que marcan el camino desde un nodo a otro. Para ejemplificar veamos una red pequeña, el genoma del gusano [C. elegans](https://es.wikipedia.org/wiki/Caenorhabditis_elegans):
 
-![Red del genoma de un gusano. Fuente: graph-tool.](../../../courses/infovis/10_redes/images/celegans-hsbm-fit_hu18ae759eb648deedb76acb41f67192b3_6480920_660x0_resize_box_3.png)
+![Red del genoma de un gusano. Fuente: graph-tool.](http://datagramas.cl/courses/infovis/10_redes/images/celegans-hsbm-fit_hu18ae759eb648deedb76acb41f67192b3_6480920_660x0_resize_box_3.png)
 
 Red del genoma de un gusano. Fuente: graph-tool.
 
@@ -169,7 +175,7 @@ En términos de implementación, cada arista es una curva [B-Spline](https://es.
 
 La técnica `arc_diagram` puede ser similar a `node_link`, en tanto los nodos se posicionan en una línea recta, y las aristas son arcos sobre o bajo esta línea, dispuestos de acuerdo a algún criterio (como orden temporal, o inferido utilizando un algoritmo). Un ejemplo de esta visualización es [Edge Maps](http://mariandoerk.de/edgemaps/), que muestra relaciones de influencia entre personajes filosóficos:
 
-![Edge Maps, una visualización estilo <code>arc_diagram</code>. Fuente: Marian Dörk.](../../../courses/infovis/10_redes/images/edgemaps_hucd5b310d07c027d9276cea1555b61fdb_206285_660x0_resize_box_3.png)
+![Edge Maps, una visualización estilo <code>arc_diagram</code>. Fuente: Marian Dörk.](http://datagramas.cl/courses/infovis/10_redes/images/edgemaps_hucd5b310d07c027d9276cea1555b61fdb_206285_660x0_resize_box_3.png)
 
 Edge Maps, una visualización estilo `arc_diagram`. Fuente: Marian Dörk.
 
@@ -179,7 +185,7 @@ Este tipo de visualización es menos escalable que `node_link` debido a la restr
 
 En `arc_diagram` también podemos utilizar un glifo como nodo. El siguiente ejemplo de [Gastón Sánchez](http://www.gastonsanchez.com/visually-enforced/got-plot/crunching-data/2013/02/03/Star-Wars-Arc-Diagram/) muestra relaciones de personajes en Star Wars, donde cada nodo además de incorporar el nombre del o de la personaje correspondiente, muestra un gráfico de barras con sus palabras más usadas en los diálogos de la película:
 
-![Star Wars <code>arc_diagram</code>. Fuente: Gastón Sánchez.](../../../courses/infovis/10_redes/images/arc_diagram_hu7489a94c865c80c3113470582c22215e_1133411_660x0_resize_box_3.png)
+![Star Wars <code>arc_diagram</code>. Fuente: Gastón Sánchez.](http://datagramas.cl/courses/infovis/10_redes/images/arc_diagram_hu7489a94c865c80c3113470582c22215e_1133411_660x0_resize_box_3.png)
 
 Star Wars `arc_diagram`. Fuente: Gastón Sánchez.
 
@@ -189,13 +195,13 @@ Al ser una técnica que funciona sobre una línea recta, es posible complementar
 
 La técnica `hive_plot` busca resolver el problema de la falta de estructura (o una estructura artificial basada en criterios estéticos de un algoritmo) en los diagramas tradicionales, al definir ejes estructurales donde posicionar los nodos. La especificación de la técnica es la siguiente:
 
-![Diseño de <code>hive_plot</code>. Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks.](../../../courses/infovis/10_redes/images/hive_plot_hubdf8c09c1eedb10f9c297a6853db8b6c_301257_660x0_resize_box_3.png)
+![Diseño de <code>hive_plot</code>. Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks.](http://datagramas.cl/courses/infovis/10_redes/images/hive_plot_hubdf8c09c1eedb10f9c297a6853db8b6c_301257_660x0_resize_box_3.png)
 
 Diseño de `hive_plot`. Fuente: Krzywinski et al, Hive plots—rational approach to visualizing networks.
 
 Es una idea similar a `parallel_coordinates` para visualizar tablas, pero para redes. Las tareas relacionadas con estructura y topología de la red pueden facilitarse en función de la definición de los ejes de esta visualización. Los nodos pueden repetirse entre ejes, dependiendo de lo que codifique cada uno de ellos. Al igual que `parallel_coordinates` es una técnica que requiere entrenamiento para ser utilizada. Eso no es una limitante, pero sí es algo que debe ser considerado. La siguiente imagen ilustra la diferencia entre `node_link` y `hive_plot`:
 
-![Diferencia entre <code>node_link</code> y <code>hive_plot</code>. Fuente: Krzywinski et al.](../../../courses/infovis/10_redes/images/hive_plots_examples_hu6499bc234b239b92fc808b36dbe9d7be_1548625_660x0_resize_box_3.png)
+![Diferencia entre <code>node_link</code> y <code>hive_plot</code>. Fuente: Krzywinski et al.](http://datagramas.cl/courses/infovis/10_redes/images/hive_plots_examples_hu6499bc234b239b92fc808b36dbe9d7be_1548625_660x0_resize_box_3.png)
 
 Diferencia entre `node_link` y `hive_plot`. Fuente: Krzywinski et al.
 
@@ -205,7 +211,7 @@ Una tarea que se vuelve posible con esta visualización, que no era factible con
 
 La técnica `radial_node_link` es una instancia específica de `node_link` para árboles. Utiliza la misma codificación visual, pero la organización y orientación de los nodos está restringida por la estructura de la red. El nodo central es la raíz del árbol, y desde allí se ramifican las aristas a cada nivel de profundidad del árbol. Luce así:
 
-![Ejemplo de <code>radial_node_link</code>. Fuente: Mike Bostock.](../../../courses/infovis/10_redes/images/radial_node_link.png)
+![Ejemplo de <code>radial_node_link</code>. Fuente: Mike Bostock.](http://datagramas.cl/courses/infovis/10_redes/images/radial_node_link.png)
 
 Ejemplo de `radial_node_link`. Fuente: Mike Bostock.
 
@@ -215,7 +221,7 @@ Además de las tareas y especificaciones de escalabilidad de `node_link`, al uti
 
 La visualización `treemap` también está orientada a árboles. Sin embargo, presenta un esquema distinto a las visualizaciones anteriores, ya que es una técnica de estilo _space filling_, es decir, llena todo el espacio de la visualización. Es una visualización recursiva que utiliza la estructura de la red para dividir el espacio, que utiliza rectángulos como marca para cada nodo. Primero, la raíz ocupa todo el espacio rectangular. Luego, cada uno de los nodos es representando con un rectángulo cuyo tamaño es proporcional a la cantidad de nodos que descienden de él (o de un valor total calculado para todos sus nodos descendientes a partir de un atributo cuantitativo). Cada uno de esos rectángulos es dividido siguiendo el mismo esquema. Una manera de ejemplificar esto es a través del sistema [TreeSize](https://en.wikipedia.org/wiki/TreeSize), que visualiza el contenido de un dispositivo de almacenamiento:
 
-![Ejemplo de <code>treemap</code> en el sistema TreeSize. Fuente: Wikipedia.](../../../courses/infovis/10_redes/images/treemap_hud849eb11742d8f427eb45b98c0f8ec68_32637_660x0_resize_box_3.png)
+![Ejemplo de <code>treemap</code> en el sistema TreeSize. Fuente: Wikipedia.](http://datagramas.cl/courses/infovis/10_redes/images/treemap_hud849eb11742d8f427eb45b98c0f8ec68_32637_660x0_resize_box_3.png)
 
 Ejemplo de `treemap` en el sistema TreeSize. Fuente: Wikipedia.
 
@@ -229,13 +235,13 @@ Esta técnica de visualización está implementada en todos los sistemas de visu
 
 La técnica `voronoi_treemap` extiende la propuesta de `treemap` a áreas flexibles en vez de rectángulos, lo que consigue una mejor relación entre el tamaño asignado a un área y el valor codificado por ella. Como su nombre lo dice, utiliza [diagramas de Voronoi](https://es.wikipedia.org/wiki/Pol%C3%ADgonos_de_Thiessen) para lograr ese efecto. Un ejemplo que visualiza un repositorio de código luce así:
 
-![Ejemplo de <code>voronoi_treemap</code> para un repositorio de código. Fuente: Balzer et al, Voronoi treemaps for the visualization of software metrics.](../../../courses/infovis/10_redes/images/voronoi_treemap_hud95b7c059ab86011b91dfb2b53f10613_8523528_660x0_resize_box_3.png)
+![Ejemplo de <code>voronoi_treemap</code> para un repositorio de código. Fuente: Balzer et al, Voronoi treemaps for the visualization of software metrics.](http://datagramas.cl/courses/infovis/10_redes/images/voronoi_treemap_hud95b7c059ab86011b91dfb2b53f10613_8523528_660x0_resize_box_3.png)
 
 Ejemplo de `voronoi_treemap` para un repositorio de código. Fuente: Balzer et al, Voronoi treemaps for the visualization of software metrics.
 
 Como vemos, la apariencia es más orgánica y flexible que en el `treemap` tradicional, aunque es también puede perjudicar la comprensión de la visualización. Sin embargo, ésa es también la fortaleza de esta visualización. Al ser adaptable a cualquier forma los podemos utilizar dentro de otras visualizaciones, por ejemplo con datos geográficos. El New York Times realizó una visualización que convirtió las tasas de migración interna e internacional en cada estado en los Estados Unidos en una estructura de árbol, donde la raíz es el país, los nodos del primer nivel son los estados, y los nodos del segundo nivel son los orígenes de la población de cada estado. Por tanto, es posible construir una visualización mixta:
 
-![&ldquo;Mapping Migration in the US,&rdquo; un ejemplo de visualización mixta de mapas y <code>voronoi_treemap</code>. Fuente: New York Times.](../../../courses/infovis/10_redes/images/voronoi_treemap_us_huec6e1bd0f88633b7a3ed6714e76769ec_1544418_660x0_resize_box_3.png)
+![&ldquo;Mapping Migration in the US,&rdquo; un ejemplo de visualización mixta de mapas y <code>voronoi_treemap</code>. Fuente: New York Times.](http://datagramas.cl/courses/infovis/10_redes/images/voronoi_treemap_us_huec6e1bd0f88633b7a3ed6714e76769ec_1544418_660x0_resize_box_3.png)
 
 _Mapping Migration in the US_, un ejemplo de visualización mixta de mapas y `voronoi_treemap`. Fuente: New York Times.
 

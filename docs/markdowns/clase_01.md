@@ -4,19 +4,29 @@ Tamara Munzner provee la siguiente definición para _Visualización de Informaci
 
 > Los **sistemas computacionales** de visualización **proveen representaciones visuales de conjuntos de datos** diseñadas para ayudar a las **personas** a efectuar **tareas de manera más efectiva**.
 
-No es la única definición, pero es la que mejor se adecúa a los propósitos de este curso, ya que está vinculada a **data science**: queremos resolver tareas (de un dominio específico) en sistemas computacionales.
+No es la única definición, pero es la que mejor se adecúa a los propósitos de este curso, ya que está vinculada a **data science**: 
+queremos resolver tareas (de un dominio específico) en sistemas computacionales.
 
-Para motivar esta definición hay dos videos que podrían ser de interés. El primero se titula “200 países, 200 años, 4 minutos - La alegría de las Estadísticas” de Hans Rosling:
+Para motivar esta definición hay dos videos que podrían ser de interés.
+El primero se titula “200 países, 200 años, 4 minutos - La alegría de las Estadísticas” de Hans Rosling:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jbkSRLYSojo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe>
+</div>
 
 Es una maravilla ver en tan solo cuatro minutos una explicación visual del desarrollo de la humanidad en los últimos siglos. Esa misma historia se puede contar solo con palabras, pero, ¿sería igual de efectiva? Ciertamente no. Por otro lado, la cantidad de datos que fueron analizados no se pueden plasmar (al menos de manera realista) en palabras. Por otro lado, no podemos dejar de lado el carisma de Hans Rosling al contar la historia. En visualización también importa la comunicación.
 
 El siguiente video es de la empresa Carto, que provee servicios de análisis y visualización de datos geográficos:
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vyfywbAzdGI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen="" title="YouTube Video"></iframe>
+</div>
+
 Un aspecto interesante del video es que no solo habla de las posibilidades de la visualización interactiva y geográfica, sino que también habla de la relevancia que tendrá la programación en el futuro profesional de las personas.
 
 Ahora bien, los dos ejemplos que hemos visto utilizan el tiempo y la interactividad como recurso. Pero también es posible hacer visualización de impacto mundial con un gráfico estadístico. Un ejemplo de ello son las visualizaciones que ha publicado [John Burn-Murdoch](https://twitter.com/jburnmurdoch) sobre la evolución del COVID-19:
 
-![Fuente: Financial Times.](../../../courses/infovis/01_intro/images/john-burn-murdoch_hud94c1ff31eb06ead99876a04b357db60_536195_660x0_resize_q75_box.jpg)
+![Fuente: Financial Times.](http://datagramas.cl/courses/infovis/01_intro/images/john-burn-murdoch_hud94c1ff31eb06ead99876a04b357db60_536195_660x0_resize_q75_box.jpg)
 
 Fuente: Financial Times.
 
@@ -32,7 +42,7 @@ Hay personas involucradas en todo el proceso de visualización, por tanto, la vi
 
 Además, las visualizaciones son utilizadas por una persona, y esta persona no suele ser quien programa, diseña o implementa la visualización. Un proceso de análisis, diseño y uso de una visualización luce así:
 
-![Fuente: Dürsteler &amp; Engelhardt.](../../../courses/infovis/01_intro/images/esquema_notacional_hu961dd776a5abfd0752aefb9e387e2b0b_363552_660x0_resize_box_3.png)
+![Fuente: Dürsteler &amp; Engelhardt.](http://datagramas.cl/courses/infovis/01_intro/images/esquema_notacional_hu961dd776a5abfd0752aefb9e387e2b0b_363552_660x0_resize_box_3.png)
 
 Fuente: Dürsteler & Engelhardt.
 
@@ -52,25 +62,25 @@ Nuestra definición habla de sistema computacional. Históricamente, la visualiz
 
 De hecho, se ha hecho visualización utilizando tecnologías analógicas. Si retrocedemos un poco, podemos ver el [proceso completo de las visualizaciones que se incluían en The Economist](https://medium.economist.com/data-visualisation-from-1987-to-today-65d0609c6017) en los 80s, consistentes en apilar y pintar transparencias:
 
-![Fuente: Graham Douglas, The Economist.](../../../courses/infovis/01_intro/images/layered_visualization.png)
+![Fuente: Graham Douglas, The Economist.](http://datagramas.cl/courses/infovis/01_intro/images/layered_visualization.png)
 
 Fuente: Graham Douglas, The Economist.
 
 Podemos retroceder más y llegar a los 20s, y encontrar el [trabajo mecánico de Jacques Bertin](http://www.aviz.fr/diyMatrix/) en la visualización de matrices:
 
-![Fuente: Jacques Bertin en http://www.aviz.fr/diyMatrix/.](../../../courses/infovis/01_intro/images/physical_matrix_hu98d0873056c247521661595e39c37106_650846_660x0_resize_box_3.png)
+![Fuente: Jacques Bertin en http://www.aviz.fr/diyMatrix/.](http://datagramas.cl/courses/infovis/01_intro/images/physical_matrix_hu98d0873056c247521661595e39c37106_650846_660x0_resize_box_3.png)
 
 Fuente: Jacques Bertin en [http://www.aviz.fr/diyMatrix/](http://www.aviz.fr/diyMatrix/).
 
 El diseño de Bertin era una maravilla no solo por su flexibilidad, sino también por el uso compartido que habilitaba. Hace algunos años en la conferencia IEEE VIS se le hizo un homenaje que reconstruyó sus mecanismos de visualización:
 
-![Fuente: http://www.aviz.fr/diyMatrix/.](../../../courses/infovis/01_intro/images/physical_matrix_modern_hu81bbf02bcdbc9f61438b72846976d34a_622402_660x0_resize_box_3.png)
+![Fuente: http://www.aviz.fr/diyMatrix/.](http://datagramas.cl/courses/infovis/01_intro/images/physical_matrix_modern_hu81bbf02bcdbc9f61438b72846976d34a_622402_660x0_resize_box_3.png)
 
 Fuente: [http://www.aviz.fr/diyMatrix/](http://www.aviz.fr/diyMatrix/).
 
 Los sistemas computacionales abren nuevas puertas en la **colaboración**. El enfoque más directo es la habilitación de un espacio de trabajo con datos, como los _Wall Displays_:
 
-![Investigadores del Instituto de Data Science UDD, INRIA Chile, Metro de Santiago, Secretaría de Transporte, CEDEUS.](../../../courses/infovis/01_intro/images/inria_transporte_hu7e9ea0b2fbcdfa4991d41c61cf5da8aa_7077888_660x0_resize_q75_box.jpg)
+![Investigadores del Instituto de Data Science UDD, INRIA Chile, Metro de Santiago, Secretaría de Transporte, CEDEUS.](http://datagramas.cl/courses/infovis/01_intro/images/inria_transporte_hu7e9ea0b2fbcdfa4991d41c61cf5da8aa_7077888_660x0_resize_q75_box.jpg)
 
 Investigadores del Instituto de Data Science UDD, INRIA Chile, Metro de Santiago, Secretaría de Transporte, CEDEUS.
 
@@ -82,13 +92,11 @@ Ahora bien, en este tiempo ya no es necesario que estemos todes en la misma sala
 
 Quizás un límite que tienen las computadoras es el número de píxeles en pantalla. Sin embargo, también nos proveen **interactividad**. Una visualización estática permite una única vista de los datos, la interactividad permite que lo que se muestra cambie, creando potencialmente infinitas vistas de los datos. Una cita famosa en el área es la siguiente:
 
-> Una imagen vale mil palabras. Una interfaz de usuario vale mil imágenes.
-> 
-> – Ben Shneiderman
+> Una imagen vale mil palabras. Una interfaz de usuario vale mil imágenes – Ben Shneiderman
 
 Un ejemplo típico de sistema interactivo son las [dashboards](https://www.tableau.com/learn/articles/business-intelligence-dashboards-examples). La siguiente fue construida con el software Tableau:
 
-![http://giitral.iingen.unam.mx/Estudios/EOD-Estadisticas-01.html](../../../courses/infovis/01_intro/images/EOD_H_2017_EntreSemana_hudb18341b11c5ce41792771f74b6cf6a2_888265_660x0_resize_box_3.png)
+![http://giitral.iingen.unam.mx/Estudios/EOD-Estadisticas-01.html](http://datagramas.cl/courses/infovis/01_intro/images/EOD_H_2017_EntreSemana_hudb18341b11c5ce41792771f74b6cf6a2_888265_660x0_resize_box_3.png)
 
 [http://giitral.iingen.unam.mx/Estudios/EOD-Estadisticas-01.html](http://giitral.iingen.unam.mx/Estudios/EOD-Estadisticas-01.html)
 
@@ -102,13 +110,13 @@ La visión es un **sentido perceptualmente eficiente** porque la comunicación c
 
 Intenten encontrar el círculo rojo en la siguiente imagen:
 
-![Perception in Visualization, Christopher G. Healey. https://www.csc2.ncsu.edu/faculty/healey/PP/.](../../../courses/infovis/01_intro/images/saliency.gif)
+![Perception in Visualization, Christopher G. Healey. https://www.csc2.ncsu.edu/faculty/healey/PP/.](http://datagramas.cl/courses/infovis/01_intro/images/saliency.gif)
 
 Perception in Visualization, Christopher G. Healey. [https://www.csc2.ncsu.edu/faculty/healey/PP/](https://www.csc2.ncsu.edu/faculty/healey/PP/).
 
 La eficiencia con la cual pudieron responder la pregunta es una demostración de la percepción y del procesamiento en paralelo. Sin embargo, hay que considerar que no siempre la respuesta es tan fácil y rápida de obtener. Nuevamente, intenten encontrar el círculo rojo en la siguiente imagen:
 
-![Perception in Visualization, Christopher G. Healey. https://www.csc2.ncsu.edu/faculty/healey/PP/.](../../../courses/infovis/01_intro/images/saliency_same_color.gif)
+![Perception in Visualization, Christopher G. Healey. https://www.csc2.ncsu.edu/faculty/healey/PP/.](http://datagramas.cl/courses/infovis/01_intro/images/saliency_same_color.gif)
 
 Perception in Visualization, Christopher G. Healey. [https://www.csc2.ncsu.edu/faculty/healey/PP/](https://www.csc2.ncsu.edu/faculty/healey/PP/).
 
@@ -116,7 +124,7 @@ Ahora tomó más tiempo, ¿no es así? Entender cómo funciona nuestra percepci�
 
 Así, la visualización permite tener una _representación externa_ de la información que reemplaza **cognición** por **percepción**. Pero, ¿qué es la percepción visual? El concepto ha sido de interés por siglos, no solo para las ciencias, sino también para el arte. De hecho, la explicación que más me gusta proviene del mundo del cómic, de la tinta de Scott McCloud:
 
-![Scott McCloud, Understanding Comics.](../../../courses/infovis/01_intro/images/mccloud_abstraccion.png)
+![Scott McCloud, Understanding Comics.](http://datagramas.cl/courses/infovis/01_intro/images/mccloud_abstraccion.png)
 
 Scott McCloud, Understanding Comics.
 
@@ -124,7 +132,7 @@ Al ver una imagen recibimos información que es interpretada de manera automáti
 
 Pero, ¿qué es la abstracción? Nuevamente usemos el ejemplo del cómic:
 
-![Scott McCloud, Understanding Comics.](../../../courses/infovis/01_intro/images/mccloud_abstraccion_significado_hu55d77d222c00a17a28a4e2c41e2ac9d3_883963_660x0_resize_box_3.png)
+![Scott McCloud, Understanding Comics.](http://datagramas.cl/courses/infovis/01_intro/images/mccloud_abstraccion_significado_hu55d77d222c00a17a28a4e2c41e2ac9d3_883963_660x0_resize_box_3.png)
 
 Scott McCloud, Understanding Comics.
 
@@ -132,7 +140,7 @@ La abstracción es el mecanismo por el cual expresamos lo importante de una enti
 
 La metáfora del texto se puede ilustrar de la siguiente manera. La tabla contiene las ventas domésticas e internacionales de una empresa:
 
-![Stephen Few, Why do we visualize Quantitative Data? https://www.perceptualedge.com/blog/?p=1897.](../../../courses/infovis/01_intro/images/sales_table_hubd68666757d4ad8a08b82a6e6ed80911_18503_660x0_resize_q75_box.jpg)
+![Stephen Few, Why do we visualize Quantitative Data? https://www.perceptualedge.com/blog/?p=1897.](http://datagramas.cl/courses/infovis/01_intro/images/sales_table_hubd68666757d4ad8a08b82a6e6ed80911_18503_660x0_resize_q75_box.jpg)
 
 Stephen Few, Why do we visualize Quantitative Data? [https://www.perceptualedge.com/blog/?p=1897](https://www.perceptualedge.com/blog/?p=1897).
 
@@ -144,7 +152,7 @@ Algunas preguntas que podemos hacer sobre esta tabla son:
 
 Responder cada una de estas preguntas implica tener que escanear los valores que contiene, memorizarlos, y realizar operaciones matemáticas en nuestra mente. Utilizamos la **cognición**. En cambio, una representación visual como la siguiente permite realizar operaciones que en la tabla son más difíciles. Comparar, buscar períodos relevantes, medir tendencias locales, etc.:
 
-![Stephen Few, Why do we visualize Quantitative Data? https://www.perceptualedge.com/blog/?p=1897](../../../courses/infovis/01_intro/images/sales_chart.jpg)
+![Stephen Few, Why do we visualize Quantitative Data? https://www.perceptualedge.com/blog/?p=1897](http://datagramas.cl/courses/infovis/01_intro/images/sales_chart.jpg)
 
 Stephen Few, Why do we visualize Quantitative Data? [https://www.perceptualedge.com/blog/?p=1897](https://www.perceptualedge.com/blog/?p=1897)
 
@@ -152,21 +160,19 @@ Para responder preguntas que no son directas (como máximos o mínimos) **no nec
 
 Veamos otro ejemplo, un ejercicio clásico basado en la estadística descriptiva. De cierto modo, _estas estadísticas ya abstraen los datos de una manera_, al presentar medidas como el promedio, la varianza, la correlación, etc. Sin embargo, esta abstracción oculta variabilidad que puede ser importante, por un lado, puede inducir a errores de interpretación:
 
-> Hay dos panes. Usted se come dos. Yo ninguno. Consumo promedio: un pan por persona
-> 
-> – Nicanor Parra
+> Hay dos panes. Usted se come dos. Yo ninguno. Consumo promedio: un pan por persona – Nicanor Parra
 
 Por otro lado, la estadística descriptiva limita la capacidad de encontrar algo que no esperábamos, porque la agregación usualmente se hace pensando en un fin específico. De manera análoga, puede ocultar patrones en los datos que sean relevantes.
 
 Un dataset que ilustra estas limitantes se llama “El Cuarteto de Anscombe” y consiste en cuatro conjuntos con las mismas estadísticas descriptivas básicas: tienen el mismo promedio (x=9, y=7.5), varianza (x=11, y=4.125), correlación de r=0.816, y misma regresión lineal (y = 3 + 0.5x). Sin embargo, tienen naturalezas diferentes:
 
-![https://en.wikipedia.org/wiki/Anscombe%27s_quartet.](../../../courses/infovis/01_intro/images/anscombe_hub7d1f2c88ec8e274c1a4a2610d8eaef0_36010_660x0_resize_box_3.png)
+![https://en.wikipedia.org/wiki/Anscombe%27s_quartet.](http://datagramas.cl/courses/infovis/01_intro/images/anscombe_hub7d1f2c88ec8e274c1a4a2610d8eaef0_36010_660x0_resize_box_3.png)
 
 [https://en.wikipedia.org/wiki/Anscombe%27s](https://en.wikipedia.org/wiki/Anscombe%27s)\_quartet.
 
 Vemos que datasets lineales, cuadráticos, y con outliers severos poseen las mismas estadísticas. Este ejemplo llevado al extremo (y al absurdo, de cierto modo) es el Datasaurus Dozen:
 
-![AUTODESK Research https://www.autodeskresearch.com/publications/samestats.](../../../courses/infovis/01_intro/images/AllDinosGrey_1_hu0b4d0572c21b173cbde617a5414601e6_623480_660x0_resize_box_3.png)
+![AUTODESK Research https://www.autodeskresearch.com/publications/samestats.](http://datagramas.cl/courses/infovis/01_intro/images/AllDinosGrey_1_hu0b4d0572c21b173cbde617a5414601e6_623480_660x0_resize_box_3.png)
 
 AUTODESK Research [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
 
@@ -189,7 +195,7 @@ Además es necesario considerar que no todas las tareas están relacionadas a ne
 
 Imaginemos que ya tenemos una noción de las tareas que debemos realizar en nuestro proyecto. La siguiente pregunta que nos debemos hacer es: ¿debemos usar visualización para cada una? ¡No siempre! Dependerá principalmente de dos factores: la claridad de la tarea y la disponibilidad de todos los datos necesarios para llevarla a cabo. Observemos el siguiente diagrama:
 
-![Metodología de Diseño. Fuente: Tamara Munzner, http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/.](../../../courses/infovis/01_intro/images/design_methodology_hu6ff35125d68ee7d6fd5558db0248d112_163935_660x0_resize_box_3.png)
+![Metodología de Diseño. Fuente: Tamara Munzner, http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/.](http://datagramas.cl/courses/infovis/01_intro/images/design_methodology_hu6ff35125d68ee7d6fd5558db0248d112_163935_660x0_resize_box_3.png)
 
 Metodología de Diseño. Fuente: Tamara Munzner, [http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/](http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/).
 
@@ -201,7 +207,7 @@ Entre los dos ejes mencionados hay tres situaciones:
 
 Veamos dos ejemplos clásicos. El primero es el mapa de cólera en la Londres victoriana que hizo [John Snow](https://es.wikipedia.org/wiki/John_Snow) (el que sí sabe):
 
-![Fuente: https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak_.](../../../courses/infovis/01_intro/images/john_snow_hub40daff58806067c22f461db271ce5a7_779537_660x0_resize_box_3.png)
+![Fuente: https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak_.](http://datagramas.cl/courses/infovis/01_intro/images/john_snow_hub40daff58806067c22f461db271ce5a7_779537_660x0_resize_box_3.png)
 
 Fuente: [https://en.wikipedia.org/wiki/1854](https://en.wikipedia.org/wiki/1854)\_Broad\_Street\_cholera\_outbreak\_.
 
@@ -209,7 +215,7 @@ En el siglo 19, en plena epidemia de cólera, no estaba claro el modo de transmi
 
 El segundo ejemplo también proviene del siglo 19, de 1857 en particular. La enfermera y estadística [Florence Nightingale](https://es.wikipedia.org/wiki/Florence_Nightingale) utilizó un gráfico de área polar (que lleva su nombre ahora, el _diagrama de rosa de Nightingale_) para **medir la distribución de las causas de muerte en los hospitales en las colonias inglesas** y entender su **[relación con los eventos importantes](https://www.ft.com/content/2e43b3e8-01c7-11e6-ac98-3c15a1aa2e62?siteedition=intl#axzz465hy8PL1)**. El gráfico luce así (en su versión restaurada digital):
 
-![Fuente: https://es.wikipedia.org/wiki/Florence_Nightingale.](../../../courses/infovis/01_intro/images/nightingale_hu6d7c10d9a4874d97b0e66c40b6083ac5_415098_660x0_resize_q75_box.jpg)
+![Fuente: https://es.wikipedia.org/wiki/Florence_Nightingale.](http://datagramas.cl/courses/infovis/01_intro/images/nightingale_hu6d7c10d9a4874d97b0e66c40b6083ac5_415098_660x0_resize_q75_box.jpg)
 
 Fuente: [https://es.wikipedia.org/wiki/Florence](https://es.wikipedia.org/wiki/Florence)\_Nightingale.
 
@@ -217,19 +223,19 @@ La composición de dos gráficos permite entender cómo se distribuyen distintas
 
 En este curso veremos una manera de definir formalmente tareas para visualización. Ahora bien, no existe una manera única de identificar y categorizar las tareas. Por ejemplo, el [Vocabulario Visual Interactivo](https://ft-interactive.github.io/visual-vocabulary/) del Financial Times define multiples tareas a realizar y para cada una lista las visualizaciones que pueden ser adecuadas para el caso. Su versión póster luce así:
 
-![Vocabulario Visual del Financial Times. Para tareas, visualizaciones.](../../../courses/infovis/01_intro/images/visual_vocabulary_hu1c57fdedc012372e09eca268a594a5fc_1061415_660x0_resize_box_3.png)
+![Vocabulario Visual del Financial Times. Para tareas, visualizaciones.](http://datagramas.cl/courses/infovis/01_intro/images/visual_vocabulary_hu1c57fdedc012372e09eca268a594a5fc_1061415_660x0_resize_box_3.png)
 
 Vocabulario Visual del Financial Times. Para tareas, visualizaciones.
 
 Este tipo de taxonomía muestra que no todos los diseños de visualización son efectivos para cada tarea. Si estás leyendo esto, probablemente conoces o has realizado visualizaciones durante tu vida académica o profesional, y estás al tanto de algunos de esos diseños. Uno de los propósitos de este curso es expandir el espacio de soluciones conocidas, de modo que ante una tarea que se te presente en el futuro, puedas elegir entre las opciones que conozcan, que seguramente incluirán un diseño que sea al menos adecuado para realizar la tarea:
 
-![Espacio de Soluciones por Tamara Munzner.](../../../courses/infovis/01_intro/images/solution_space_hu67ff674d0b8518cebd41d42f7361babb_246179_660x0_resize_box_3.png)
+![Espacio de Soluciones por Tamara Munzner.](http://datagramas.cl/courses/infovis/01_intro/images/solution_space_hu67ff674d0b8518cebd41d42f7361babb_246179_660x0_resize_box_3.png)
 
 Espacio de Soluciones por Tamara Munzner.
 
 Nos queda una decisión aún. Si tenemos un conjunto de diseños/soluciones buena para una tarea, ¿cómo elegir? Dado que en visualización estamos _abstrayendo datos_, estamos decidiendo qué es importante de mostrar y cómo hacerlo. Recordemos, también, que tenemos que considerar a la persona que hará uso de la visualización. Teniendo todo eso en cuenta, podemos utilizar las siguientes dimensiones para elegir:
 
-![Rueda de Abstracción por Alberto Cairo.](../../../courses/infovis/01_intro/images/rueda_trade-offs_hu93b7cfb5a1eb51d7b5903167939ef481_157321_660x0_resize_box_3.png)
+![Rueda de Abstracción por Alberto Cairo.](http://datagramas.cl/courses/infovis/01_intro/images/rueda_trade-offs_hu93b7cfb5a1eb51d7b5903167939ef481_157321_660x0_resize_box_3.png)
 
 Rueda de Abstracción por Alberto Cairo.
 

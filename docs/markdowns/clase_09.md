@@ -20,7 +20,7 @@ Hay otra etapa importante que sucede después del diseño, del desarrollo, y de 
 
 Hemos visto en el curso el proceso de diseño de una visualización como `datos -> tareas -> codificación visual`. El viejo dicho “función antes de forma” se refiere a que antes de tener la forma (la _codificación visual_) debemos tener clara la función (la _tarea_). En un proyecto es mejor enfocarse en la funcionalidad que provee la solución a un problema, antes que pensar en cómo se va a resolver. Como diseñaremos visualizaciones para otras personas, debemos tener claro lo que **necesitan**, no lo que **quieren**, como lo muestra este clásico cómic utilizado en administración de proyectos:
 
-![Distintas visiones sobre lo que pide un cliente por diferentes roles en un proyecto. Lo que necesitaba el cliente es distinto incluso de la manera en que solicitó el proyecto. Fuente: Cartoons Mix.](http://datagramas.cl/courses/infovis/11_practicas/images/tree_swing_hu92e3fb06d34cc45d66551541dd627fbc_1204561_660x0_resize_box_3.png)
+![Distintas visiones sobre lo que pide un cliente por diferentes roles en un proyecto. Lo que necesitaba el cliente es distinto incluso de la manera en que solicitó el proyecto. Fuente: Cartoons Mix.](../images/courses/infovis/tree_swing_hu92e3fb06d34cc45d66551541dd627fbc_1204561_660x0_resize_box_3.png)
 
 Distintas visiones sobre lo que pide un cliente por diferentes roles en un proyecto. Lo que necesitaba el cliente es distinto incluso de la manera en que solicitó el proyecto. Fuente: Cartoons Mix.
 
@@ -42,7 +42,7 @@ Fuente: The functional art, Alberto Cairo.
 
 ¿Cómo luciría esta idea con datos actuales? El siguiente gráfico muestra las defunciones en la Región Metropolitana de Chile en los últimos años:
 
-![Defunciones diarias en la Región Metropolitana. Fuente: Alonso Silva, con datos de DEIS.](http://datagramas.cl/courses/infovis/11_practicas/images/defunciones_rm_hu740fc484a36e84e3ae65fee958ee2b31_6749060_660x0_resize_box_3.png)
+![Defunciones diarias en la Región Metropolitana. Fuente: Alonso Silva, con datos de DEIS.](../images/courses/infovis/defunciones_rm_hu740fc484a36e84e3ae65fee958ee2b31_6749060_660x0_resize_box_3.png)
 
 Defunciones diarias en la Región Metropolitana. Fuente: Alonso Silva, con datos de DEIS.
 
@@ -64,7 +64,7 @@ La vista general permite identificar patrones globales, comparar, resumir; proce
 
 En general las visualizaciones que aplican este paradigma son complejas, con múltiples capas de interactividad. Existe un tipo de técnica llamada `focus+context` que ejemplifica parte de este paradigma interactivo, en la que una visualización tiene al menos dos partes: una donde se muestra a grosso modo el dataset (`context`), y una donde se muestra con mucho detalle el contenido de la parte de interés (`focus`). Estas técnicas suelen ser interactivas no solamente en términos de hacer clic, sino en reaccionar a lo que hace la persona que utiliza el sistema. Un ejemplo es la visualización [Periphery Plots](http://gotz.web.unc.edu/research-project/periphery-plots/), donde el contexto lo da una línea temporal (que puede tener visualizaciones auxiliares o no) y el detalle contiene series temporales para cada atributo del dataset, cuya extensión se puede modificar a gusto tanto desde el contexto como desde cada una de las visualizaciones detalladas:
 
-![Periphery Plots.](http://datagramas.cl/courses/infovis/11_practicas/images/periphery_plots_animated.gif)
+![Periphery Plots.](../images/courses/infovis/periphery_plots_animated.gif)
 
 Periphery Plots.
 
@@ -76,7 +76,7 @@ Cuando tenemos múltiples datos que queremos comparar, tenemos alternativas como
 
 Cuando utilizamos distintos gráficos, si éstos están cerca, es fácil comparar elementos desplazando nuestro foco de atención entre vistas paralelas. En cambio cuando utilizamos interactividad o animación, nos daremos cuenta que es difícil comparar elementos si solamente veo uno y tengo que recordar el otro. Aunque una animación es buena para mostrar la transición entre un dataset y otro, si hay demasiadas transiciones, cada una con varios cambios, es preferible utilizar _small multiples_, es decir, múltiples visualizaciones pequeñas pero que comparten la codificación visual de modo que podamos comparar entre ellas. Una manera de hacerlo usar la memoria es destacar visualmente la diferencia relevante para el análisis. Este ejemplo de [Martin Krzywinski](https://mobile.twitter.com/MKrzywinski/status/1138170272656179201) nos da una guía visual de cómo hacerlo:
 
-![Hay que hacer explícitas las diferencias, no basta con mostrar los datos. Fuente: Martin Krzywinski.](http://datagramas.cl/courses/infovis/11_practicas/images/difference_comparison_hu28be612e9b54f669b59421518078bbdd_242294_660x0_resize_q75_box.jpg)
+![Hay que hacer explícitas las diferencias, no basta con mostrar los datos. Fuente: Martin Krzywinski.](../images/courses/infovis/difference_comparison_hu28be612e9b54f669b59421518078bbdd_242294_660x0_resize_q75_box.jpg)
 
 Hay que hacer explícitas las diferencias, no basta con mostrar los datos. Fuente: Martin Krzywinski.
 
@@ -88,7 +88,7 @@ Se dice que los datos son _duros_ y que son _objetivos_, pero esta visión de lo
 
 [Nick Diakopoulos](http://www.nickdiakopoulos.com/2011/08/13/unpacking-visualization-rhetoric/) explica el siguiente caso publicado en el New York Times:
 
-![Heatmap de opiniones respecto al gasto público en los Estados Unidos. Fuente: New York Times.](http://datagramas.cl/courses/infovis/11_practicas/images/rethoric_nyt_hu6e8b2cd6dd74259a85166d4885319ecd_82665_660x0_resize_box_3.png)
+![Heatmap de opiniones respecto al gasto público en los Estados Unidos. Fuente: New York Times.](../images/courses/infovis/rethoric_nyt_hu6e8b2cd6dd74259a85166d4885319ecd_82665_660x0_resize_box_3.png)
 
 Heatmap de opiniones respecto al gasto público en los Estados Unidos. Fuente: New York Times.
 
@@ -96,19 +96,19 @@ Esta visualización de tipo `heatmap` permitía a las personas que leen el peri�
 
 El sitio [The Correspondent](https://thecorrespondent.com/664/how-maps-in-the-media-make-us-more-negative-about-migrants/738023272448-bac255ba) realizó una exploración visual sobre cómo la codificación visual y otros elementos gráficos en los mapas cambian la percepción sobre la inmigración irregular en Europa. El primer mapa, que es el más frecuente, utiliza colores rojos (culturalmente asociados al peligro), flechas (que pueden dar sensación de _invasión_, pues es lo utilizado en mapas de guerra) y un título que habla de “inmigrantes ilegales”:
 
-![Mapa sobre la inmigración irregular en Europa, versión sesgada hacia una vista negativa del fenómeno. Fuente: The Correspondent con datos de Frontex.](http://datagramas.cl/courses/infovis/11_practicas/images/migrants_map_red_hu1c1dbd15a689c0ce09d2dbe96ff0e51d_454177_660x0_resize_box_3.png)
+![Mapa sobre la inmigración irregular en Europa, versión sesgada hacia una vista negativa del fenómeno. Fuente: The Correspondent con datos de Frontex.](../images/courses/infovis/migrants_map_red_hu1c1dbd15a689c0ce09d2dbe96ff0e51d_454177_660x0_resize_box_3.png)
 
 Mapa sobre la inmigración irregular en Europa, versión sesgada hacia una vista negativa del fenómeno. Fuente: The Correspondent con datos de Frontex.
 
 Una versión neutral de este mapa utiliza el término “inmigración irregular” (que es correcto, puesto que las personas no son ilegales), elimina el uso de flechas, pues indica el lugar por el que llegan las personas a Europa, no la dirección, y utiliza un color azul que no es asociado al peligro:
 
-![Mapa sobre la inmigración irregular en Europa, versión neutral. Fuente: The Correspondent con datos de Frontex.](http://datagramas.cl/courses/infovis/11_practicas/images/migrants_map_blue_hu8131f06ec71634d2ec83336f6a02eb53_426852_660x0_resize_box_3.png)
+![Mapa sobre la inmigración irregular en Europa, versión neutral. Fuente: The Correspondent con datos de Frontex.](../images/courses/infovis/migrants_map_blue_hu8131f06ec71634d2ec83336f6a02eb53_426852_660x0_resize_box_3.png)
 
 Mapa sobre la inmigración irregular en Europa, versión neutral. Fuente: The Correspondent con datos de Frontex.
 
 Ambos mapas muestran la misma información pero son percibidos de manera distinta. Sin embargo, siguen omitiendo algo: no sabemos cuál es la proporción de personas que migran en Europa. Los números nos parecen grandes, pero, ¿lo son realmente? El siguiente esquema muestra que la inmigración irregular es pequeña en comparación al total de inmigración en el continente, de hecho, es mucho menor al total de personas que _emigran_ desde Europa:
 
-![Migración irregular en Europa, versión neutral. Fuente: The Correspondent con datos de Frontex y Eurostat.](http://datagramas.cl/courses/infovis/11_practicas/images/migrants_map_blue_all_hu1ca868a492ae4aedf55422140921aff1_134647_660x0_resize_box_3.png)
+![Migración irregular en Europa, versión neutral. Fuente: The Correspondent con datos de Frontex y Eurostat.](../images/courses/infovis/migrants_map_blue_all_hu1ca868a492ae4aedf55422140921aff1_134647_660x0_resize_box_3.png)
 
 Migración irregular en Europa, versión neutral. Fuente: The Correspondent con datos de Frontex y Eurostat.
 
@@ -120,13 +120,13 @@ Por tanto, la retórica detrás de una visualización es importante, ya que infl
 
 En el debate de las últimas elecciones presidenciales de Chile, el entonces candidato y actual presidente Sebastián Piñera enseñó el siguiente `bar_chart` de la victimización del país en tres años distintos:
 
-![Un gráfico que engaña al presentar una configuración visual que distorsiona nuestra percepción. Fuente: CNN.](http://datagramas.cl/courses/infovis/11_practicas/images/pinera_barras_hu38526a8915ab75f5d0d08a7912ca2ff2_30140_660x0_resize_q75_box.jpg)
+![Un gráfico que engaña al presentar una configuración visual que distorsiona nuestra percepción. Fuente: CNN.](../images/courses/infovis/pinera_barras_hu38526a8915ab75f5d0d08a7912ca2ff2_30140_660x0_resize_q75_box.jpg)
 
 Un gráfico que engaña al presentar una configuración visual que distorsiona nuestra percepción. Fuente: CNN.
 
 El gráfico está hecho de manera que distorsiona los datos. Por un lado, la base de las barras no comienza de `0`. Como en un `bar_chart` utilizamos el canal de largo de cada barra para realizar comparaciones, necesitamos que el largo (altura) de éstas sea representativo de los datos que presentan. En este caso, una barra cuyo valor es de 22.8 pareciera ser menor a la mitad de otra cuyo valor es 27.3. Lo primero que vemos son las barras, no los números. Como comenta Alberto Cairo en su libro How Charts Lie, incluso cuando están los números presentes tendemos a estimar erróneamente los valores que vemos en este gráfico. Por otro lado, el gráfico no contiene todos los años posibles, lo que permitiría ver la evolución de la victimización cada año. Un gráfico sin distorsiones sería como el propuesto por Daniel Matamala:
 
-![Un gráfico de barras que no distorsiona nuestra percepción al tener 0 como base. Fuente: CNN.](http://datagramas.cl/courses/infovis/11_practicas/images/matamala_barras.jpg)
+![Un gráfico de barras que no distorsiona nuestra percepción al tener 0 como base. Fuente: CNN.](../images/courses/infovis/matamala_barras.jpg)
 
 Un gráfico de barras que no distorsiona nuestra percepción al tener 0 como base. Fuente: CNN.
 
@@ -136,13 +136,13 @@ Es por ello que un `bar_chart` debiese tener su base en 0. No hacerlo es distors
 
 La situación es diferente cuando hablamos de `line_chart`, donde no siempre es necesario tener la base del eje `y` en 0, puesto que la tarea no es comparar largos sino comparar posiciones y tendencias. El siguiente gráfico de positividad de exámenes PCR presentado por el ministro de salud Enrique Paris causó polémica:
 
-![Tasa de positividad de exámenes PCR de COVID-19 en Chile el 7 de Julio de 2020. Fuente: @juancriolivares.](http://datagramas.cl/courses/infovis/11_practicas/images/parisi_positividad_hu6666a7cd15639c6c41fce25fb2e97dd5_78088_660x0_resize_q75_box.jpg)
+![Tasa de positividad de exámenes PCR de COVID-19 en Chile el 7 de Julio de 2020. Fuente: @juancriolivares.](../images/courses/infovis/parisi_positividad_hu6666a7cd15639c6c41fce25fb2e97dd5_78088_660x0_resize_q75_box.jpg)
 
 Tasa de positividad de exámenes PCR de COVID-19 en Chile el 7 de Julio de 2020. Fuente: @juancriolivares.
 
 Se criticó al ministro por no comenzar el gráfico con base en 0, sin embargo, no es necesario dada la tarea a resolver: medir la tendencia en el cambio de positividad. Ahora bien, eso no implica que el gráfico no distorsione los datos, puesto que si se mostrase toda la serie temporal de positividad de exámenes PCR, entonces se vería que es cierto que la tendencia había bajado en los últimos días, pero que su nivel seguía siendo excesivamente alto en comparación al inicio de la crisis sanitaria. El siguiente gráfico (que lamentablemente no incluye las fechas en el eje `x`) muestra la serie completa, ilustrando la distorsión que presenta el gráfico original:
 
-![Tasa de positividad de COVID-19 en Chile el 7 de Julio de 2020. Fuente: @juancriolivares.](http://datagramas.cl/courses/infovis/11_practicas/images/parisi_positividad_all_hu158ffd4c61edf33a1f55a94776072809_31992_660x0_resize_q75_box.jpg)
+![Tasa de positividad de COVID-19 en Chile el 7 de Julio de 2020. Fuente: @juancriolivares.](../images/courses/infovis/parisi_positividad_all_hu158ffd4c61edf33a1f55a94776072809_31992_660x0_resize_q75_box.jpg)
 
 Tasa de positividad de COVID-19 en Chile el 7 de Julio de 2020. Fuente: @juancriolivares.
 
@@ -152,7 +152,7 @@ Entonces, ¿cuál es la base adecuada para un `line_chart`? La respuesta está e
 
 Recomiendo leer el libro How Charts Lie de Alberto Cairo para ver muchos ejemplos de estas situaciones de distorsión. La siguiente es una guía de casos comunes de distorsión extraída del libro:
 
-![Distorsiones comunes y sus soluciones. Fuente: How Charts Lie, Alberto Cairo.](http://datagramas.cl/courses/infovis/11_practicas/images/distorsiones_hu288f14fddbe3202ec8983cebb26b9ee8_132732_660x0_resize_box_3.png)
+![Distorsiones comunes y sus soluciones. Fuente: How Charts Lie, Alberto Cairo.](../images/courses/infovis/distorsiones_hu288f14fddbe3202ec8983cebb26b9ee8_132732_660x0_resize_box_3.png)
 
 Distorsiones comunes y sus soluciones. Fuente: How Charts Lie, Alberto Cairo.
 
@@ -169,7 +169,7 @@ Las visualizaciones en 3D pueden ser atractivas pero el peligro de cometer error
 
 De acuerdo a los estudios de percepción, la profundidad no es un buen canal para codificar información. Aprendimos que la información en un plano tiene una mejor codificación: se corresponde 1 a 1 en la variación de la información, y contiene los canales más eficientes a la hora de trabajar con datos de magnitud. Aunque creamos que por _ver_ y _vivir_ en 3D una visualización sería mejor, la verdad es que no vemos en 3D, sino que en 2.5D, porque solamente vemos las superficies proyectadas en nuestro campo de visión:
 
-![Vemos en dos dimensiones y media, no tres. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/11_practicas/images/2.5d_vision_hu0f81aa6c567e96b6b88ddf0aa25e10aa_143744_660x0_resize_box_3.png)
+![Vemos en dos dimensiones y media, no tres. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/2.5d_vision_hu0f81aa6c567e96b6b88ddf0aa25e10aa_143744_660x0_resize_box_3.png)
 
 Vemos en dos dimensiones y media, no tres. Fuente: Visualization Analysis & Design.
 
@@ -177,7 +177,7 @@ En comparación, en profundidad debemos desplazarnos, en caso de ser una visuali
 
 El siguiente tema en el uso de 3D es la oclusión: los objetos más cercanos a la cámara pueden tapar a los que están más lejos. Este fenómeno oculta información, como se ve a continuación:
 
-![Distintas visualizaciones de redes en 3D con oclusión entre nodos. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/11_practicas/images/occlusion_hu00959b54875065f3541e16f8ba2c3ef6_648998_660x0_resize_box_3.png)
+![Distintas visualizaciones de redes en 3D con oclusión entre nodos. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/occlusion_hu00959b54875065f3541e16f8ba2c3ef6_648998_660x0_resize_box_3.png)
 
 Distintas visualizaciones de redes en 3D con oclusión entre nodos. Fuente: Visualization Analysis & Design.
 
@@ -185,13 +185,13 @@ La oclusión se puede disminuir utilizando técnicas complejas de interacción, 
 
 El uso de perspectiva en 3D también provoca pérdidas de información, ya que interfiere con los canales que utilizan el tamaño para codificar atributos. En el siguiente ejemplo se visualizan documentos en un espacio 3D:
 
-![¿Cuáles documentos son más grandes que otros? La perspectiva impide responde esto. Fuente: Mukherjea et al, Visualizing the results of multimedia web search engines.](http://datagramas.cl/courses/infovis/11_practicas/images/perspective_huf9f95995b62d4404fdc6b61d8312a446_99468_660x0_resize_box_3.png)
+![¿Cuáles documentos son más grandes que otros? La perspectiva impide responde esto. Fuente: Mukherjea et al, Visualizing the results of multimedia web search engines.](../images/courses/infovis/perspective_huf9f95995b62d4404fdc6b61d8312a446_99468_660x0_resize_box_3.png)
 
 ¿Cuáles documentos son más grandes que otros? La perspectiva impide responde esto. Fuente: Mukherjea et al, Visualizing the results of multimedia web search engines.
 
 Los documentos que están más lejos pueden ser igual de importantes que los que están más cerca, sin embargo, al estar posicionados más lejos de la cámara podemos ignorarlos o bien asumir que no son relevantes. Podemos ejemplificar éste y otros de los conceptos vistos hasta ahora en una escena clásica de Jurassic Park, en la que se navegaba por un sistema de archivos en 3D:
 
-![Navegando en un espacio de información en 3D. Fuente: Steven Spielberg.](http://datagramas.cl/courses/infovis/11_practicas/images/jurassic_park_hu3bdc6fef07d658d8db9288d18f9f6d4a_709053_660x0_resize_box_3.png)
+![Navegando en un espacio de información en 3D. Fuente: Steven Spielberg.](../images/courses/infovis/jurassic_park_hu3bdc6fef07d658d8db9288d18f9f6d4a_709053_660x0_resize_box_3.png)
 
 Navegando en un espacio de información en 3D. Fuente: Steven Spielberg.
 
@@ -201,7 +201,7 @@ En resumen, los puntos anteriores nos indican que para datos abstractos se neces
 
 Veamos un ejemplo concreto de cómo convertir una visualización 3D sin justificación a una 2D efectiva. En este ejemplo disponemos de una serie temporal de consumo eléctrico en un edificio por cada día del año. La tarea a realizar es identificar perfiles (patrones) de consumo eléctrico, tanto en su forma como en las fechas en que se encuentra dicho perfil. La visualización 3D directa luce así:
 
-![Visualización 3D de series temporales diarias de consumo energético en un edificio. Fuente: Van Wijk et al, Cluster and calendar based visualization of time series data.](http://datagramas.cl/courses/infovis/11_practicas/images/building_energy_3d_hu5e4100915d6883fed56fb85d36ddf8ce_2014808_660x0_resize_box_3.png)
+![Visualización 3D de series temporales diarias de consumo energético en un edificio. Fuente: Van Wijk et al, Cluster and calendar based visualization of time series data.](../images/courses/infovis/building_energy_3d_hu5e4100915d6883fed56fb85d36ddf8ce_2014808_660x0_resize_box_3.png)
 
 Visualización 3D de series temporales diarias de consumo energético en un edificio. Fuente: Van Wijk et al, Cluster and calendar based visualization of time series data.
 
@@ -209,7 +209,7 @@ La visualización en 3D permite mostrar todos los días del año en un solo grá
 
 Para crear una visualización efectiva, el equipo transformó los datos y luego utilizó visualización en 2D. Primero, determinaron que en el dominio del problema (electricidad) era relevante definir _patrones de consumo eléctrico_. Para identificar estos patrones agruparon las series temporales con una técnica de clustering. De este modo, cada día pertenecía a un cluster específico, es decir, tenía un patrón único. Luego visualizaron esos patrones, que también son series temporales, superimpuestos en un `line_chart`. La distribución de los patrones se visualizó en una visualización `calendar_view` (vista de calendario 2D). La visualización final luce así:
 
-![Visualización 2D de series temporales diarias de consumo energético en un edificio, agrupadas con un algoritmo de clustering, con vista de calendario. Fuente: Van Wijk et al, Cluster and calendar based visualization of time series data.](http://datagramas.cl/courses/infovis/11_practicas/images/building_energy_2d_hude90e375678e71ebddbfc9fa7540f744_263854_660x0_resize_box_3.png)
+![Visualización 2D de series temporales diarias de consumo energético en un edificio, agrupadas con un algoritmo de clustering, con vista de calendario. Fuente: Van Wijk et al, Cluster and calendar based visualization of time series data.](../images/courses/infovis/building_energy_2d_hude90e375678e71ebddbfc9fa7540f744_263854_660x0_resize_box_3.png)
 
 Visualización 2D de series temporales diarias de consumo energético en un edificio, agrupadas con un algoritmo de clustering, con vista de calendario. Fuente: Van Wijk et al, Cluster and calendar based visualization of time series data.
 
@@ -217,7 +217,7 @@ Como ven, es posible conocer los perfiles de uso energético y su distribución 
 
 Veamos ahora un ejemplo de 3D justificado. Cuando la tarea es estudiar la forma en tres dimensiones, los beneficios de usar 3D superan los costos en la eficiencia de la visualización. No siempre es fácil, porque visualizar en 3D puede incluir visualizar volúmenes. El siguiente ejemplo muestra como la visualización 3D directa no es útil, pero una visualización 3D con geometría derivada, en este caso, líneas de contorno que caracterizan el volumen que junto con la interacción permiten apreciar la forma de lo visualizado:
 
-![Visualización 3D directa (a) y con geometría derivada (b). Fuente: Li et al, Image-based streamline generation and rendering.](http://datagramas.cl/courses/infovis/11_practicas/images/body_scan_hue2a22c7a45e9b266ee7087e03b7ec9a9_785170_660x0_resize_box_3.png)
+![Visualización 3D directa (a) y con geometría derivada (b). Fuente: Li et al, Image-based streamline generation and rendering.](../images/courses/infovis/body_scan_hue2a22c7a45e9b266ee7087e03b7ec9a9_785170_660x0_resize_box_3.png)
 
 Visualización 3D directa (a) y con geometría derivada (b). Fuente: Li et al, Image-based streamline generation and rendering.
 
@@ -229,7 +229,7 @@ Gran parte de las visualizaciones que hagamos serán 2D y está bien, utilizarem
 
 Si la tarea es principalmente topológica, entonces el uso de 2D para la red está justificado: los costos son menores a los beneficios. Pero de todos modos debemos tener cuidado con la legibilidad, aunque dependerá de la cantidad de nodos que tenga la red si esto será un problema. Un ejemplo de cómo visualizar una red de manera efectiva considerando texto es el sistema Cerebral:
 
-![Fuente: Barsky et al, VCerebral: Visualizing multiple experimental conditions on a graph with biological context.](http://datagramas.cl/courses/infovis/11_practicas/images/cerebral_hu0a0a765a1e619d00901183e3d564fe9f_1057209_660x0_resize_box_3.png)
+![Fuente: Barsky et al, VCerebral: Visualizing multiple experimental conditions on a graph with biological context.](../images/courses/infovis/cerebral_hu0a0a765a1e619d00901183e3d564fe9f_1057209_660x0_resize_box_3.png)
 
 Fuente: Barsky et al, VCerebral: Visualizing multiple experimental conditions on a graph with biological context.
 
@@ -247,7 +247,7 @@ La única manera de saber si diseñados bien nuestro sistema es realizando una e
 
 La investigadora Tamara Munzner propone un modelo anidado de visualización definido a continuación:
 
-![Modelo Anidado de Evaluación de Visualizaciones. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/11_practicas/images/nested_evaluation_hu36b83ece90bf1a36fc463b7275b46f47_95462_660x0_resize_box_3.png)
+![Modelo Anidado de Evaluación de Visualizaciones. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/nested_evaluation_hu36b83ece90bf1a36fc463b7275b46f47_95462_660x0_resize_box_3.png)
 
 Modelo Anidado de Evaluación de Visualizaciones. Fuente: Visualization Analysis & Design.
 

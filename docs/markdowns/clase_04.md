@@ -4,7 +4,7 @@ A partir de ahora el curso se enfocará en el diseño e implementación de visua
 
 En esta unidad nos enfocaremos en la codificación, que, siguiendo las temáticas de las unidades anteriores, puede ser interpretada como **abstracción visual**. Los otros aspectos los definiremos en unidades posteriores de manera transversal, puesto que aparecen al trabajar en nuestros proyectos y al definir técnicas de visualización.
 
-![¿Cómo visualizar? Diseñando una solución en cuatro aspectos: codificación, manipulación, facetamiento y reducción. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/how_conceptual_framework_hu645184129b0910567c496478c7e94821_106714_660x0_resize_box_3.png)
+![¿Cómo visualizar? Diseñando una solución en cuatro aspectos: codificación, manipulación, facetamiento y reducción. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/how_conceptual_framework_hu645184129b0910567c496478c7e94821_106714_660x0_resize_box_3.png)
 
 ¿Cómo visualizar? Diseñando una solución en cuatro aspectos: codificación, manipulación, facetamiento y reducción. Fuente: Visualization Analysis & Design.
 
@@ -57,19 +57,19 @@ Discutiremos soluciones para este problema después de la siguiente sección.
 
 La codificacioń visual es el proceso en el que asignamos propiedades gráficas (formas, colores) a los atributos de nuestros datos. Este proceso se hace a través de **marcas** y **canales**.
 
-![Marcas (barras, círculos) y Canales (eje x, eje y, tamaño, color). Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/visual_encoding_huf4cdd3ec58152f5f00b09431f22443e1_9631_660x0_resize_box_3.png)
+![Marcas (barras, círculos) y Canales (eje x, eje y, tamaño, color). Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/visual_encoding_huf4cdd3ec58152f5f00b09431f22443e1_9631_660x0_resize_box_3.png)
 
 Marcas (barras, círculos) y Canales (eje x, eje y, tamaño, color). Fuente: Visualization Analysis & Design.
 
 Las marcas (_marks_) son primitivas geométricas que sirven de bloques de construcción de elementos gráficos. Ejemplos incluyen puntos, líneas y áreas:
 
-![Primitivas básicas que definen marcas. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/marks_hu02e31612a8b77d407671b91b66655c6c_13125_660x0_resize_box_3.png)
+![Primitivas básicas que definen marcas. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/marks_hu02e31612a8b77d407671b91b66655c6c_13125_660x0_resize_box_3.png)
 
 Primitivas básicas que definen marcas. Fuente: Visualization Analysis & Design.
 
 Los canales controlan la apariencia de las marcas. Existen canales de _posición_, de _forma_, de _tamaño_, de _color_, de _inclinación_, de _volumen_:
 
-![Canales básicos. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/channels_hua614831a3d1afd305d8fc12ff340a2b4_31036_660x0_resize_box_3.png)
+![Canales básicos. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/channels_hua614831a3d1afd305d8fc12ff340a2b4_31036_660x0_resize_box_3.png)
 
 Canales básicos. Fuente: Visualization Analysis & Design.
 
@@ -77,7 +77,7 @@ Los canales pueden ser combinados e incluso ser redundantes. Interactúan con la
 
 El concepto de marcas y canales en la codificación visual fue propuesto por Jacques Bertin en 1967, en su libro Sémiologie Graphique (La Semiología de los Gráficos):
 
-![Fuente: The Semiology of Graphics.](http://datagramas.cl/courses/infovis/06_codificacion/images/bertin_visual_encoding_hu9c04aa7f0a41cde44ba49738fc32f346_328510_660x0_resize_box_3.png)
+![Fuente: The Semiology of Graphics.](../images/courses/infovis/bertin_visual_encoding_hu9c04aa7f0a41cde44ba49738fc32f346_328510_660x0_resize_box_3.png)
 
 Fuente: The Semiology of Graphics.
 
@@ -89,7 +89,7 @@ Una vez que tenemos una tarea a resolver con datos, debemos elegir las marcas qu
 
 En la literatura actual existe un ranking de efectividad de canales, de modo que podemos elegir los mejores canales disponibles para los distintos atributos que necesitemos representar en la visualización. Este ranking es el siguiente (los mejores canales están en la parte superior de la imagen):
 
-![Ranking de canales para magnitud (izquierda) e identidad (derecha). Los mejores canales aparecen en la parte superior. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/expressiveness_effectiveness_hu08e88542d782b2aa870e85e1d054e0f0_79259_660x0_resize_box_3.png)
+![Ranking de canales para magnitud (izquierda) e identidad (derecha). Los mejores canales aparecen en la parte superior. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/expressiveness_effectiveness_hu08e88542d782b2aa870e85e1d054e0f0_79259_660x0_resize_box_3.png)
 
 Ranking de canales para magnitud (izquierda) e identidad (derecha). Los mejores canales aparecen en la parte superior. Fuente: Visualization Analysis & Design.
 
@@ -127,7 +127,7 @@ Primero, convertimos la pregunta a una tarea: `identificar correlación entre do
 
 El resultado se ve así:
 
-![Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.](http://datagramas.cl/courses/infovis/06_codificacion/images/cars_scatter_hu9662dfd87da40accd211f7d63dc77cdb_47221_660x0_resize_box_3.png)
+![Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.](../images/courses/infovis/cars_scatter_hu9662dfd87da40accd211f7d63dc77cdb_47221_660x0_resize_box_3.png)
 
 Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.
 
@@ -139,7 +139,7 @@ La tarea consiste en `descubrir la distribución de cada atributo`. Como son dos
 
 El resultado se ve así:
 
-![Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.](http://datagramas.cl/courses/infovis/06_codificacion/images/cars_bars_hubc553251f0a80caf5e1ad91045b33d87_56324_660x0_resize_box_3.png)
+![Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.](../images/courses/infovis/cars_bars_hubc553251f0a80caf5e1ad91045b33d87_56324_660x0_resize_box_3.png)
 
 Fuente: Mackinlay, Automating the Design of Graphical Presentations of Relational Information.
 
@@ -153,7 +153,7 @@ La efectividad (o falta de esta) de los canales se deterimna a partir de estudio
 
 Este tipo de estudios no es exclusivo de la visualización. El cómo percibimos los estímulos es una rama propia de la _psicofísica_. En esta área existen diversas leyes empíricas relacionadas con la intensidad de los estímulos y nuestra percepción sobre éstos. Una ley de percepción vigente (en tanto es aceptada) es la [Ley de Stevens](https://en.wikipedia.org/wiki/Stevens%27s_power_law). Stanley Smith Stevens publicó en 1957 su ley, que postula que el cuerpo humano rige la percepción de los estímulos utilizando una ley de potencias, y que distintos estímulos configuran distintos exponentes en esta ecuación. La siguiente imagen ilustra las curvas exponenciales (y sus exponentes) de algunos estímulos, resultados de experimentos de Stevens:
 
-![<em>Ley de Stevens</em> sobre percepción de estímulos. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/psychophysics_scale_hu6b78279ef88da4dc36092acc91594904_95457_660x0_resize_box_3.png)
+![<em>Ley de Stevens</em> sobre percepción de estímulos. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/psychophysics_scale_hu6b78279ef88da4dc36092acc91594904_95457_660x0_resize_box_3.png)
 
 _Ley de Stevens_ sobre percepción de estímulos. Fuente: Visualization Analysis & Design.
 
@@ -165,7 +165,7 @@ Los pioneros en visualización estadística Cleveland y McGill hicieron estudios
 
 Heer y Bostock (otros pioneros, pero de la visualización moderna) utilizaron Mechanical Turk para extender el experimento de Cleveland y McGill. Mechanical Turk es un sitio de _crowdsourcing_, en el que se conectan personas de todo el mundo para ejecutar tareas a través de la pantalla de sus computadores. Las tareas pueden ser de todo tipo, por lo que Heer y Bostock aprovecharon de poner a prueba el método de evaluación, esta vez de manera distribuida y a escala, puesto que se pueden obtener cientos de respuestas en poco tiempo. Los resultados se muestran a continuación:
 
-![Fuente: Heer &amp; Bostock, Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/precision_study_hu64bb79fb6cc80e8ce38271937985cbf2_82300_660x0_resize_box_3.png)
+![Fuente: Heer &amp; Bostock, Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design.](../images/courses/infovis/precision_study_hu64bb79fb6cc80e8ce38271937985cbf2_82300_660x0_resize_box_3.png)
 
 Fuente: Heer & Bostock, Crowdsourcing Graphical Perception: Using Mechanical Turk to Assess Visualization Design.
 
@@ -175,7 +175,7 @@ El siguiente concepto es la **discriminabilidad**. Se refiere a la siguiente pre
 
 Observemos el siguiente mapa:
 
-![Flujo de tráfico en la red de telefónica entre países de Europa a fines de los 90. Fuente: Mappa Mundi Magazine.](http://datagramas.cl/courses/infovis/06_codificacion/images/discriminability_hu2d9a69824d482d862618aa7448eb9a51_70390_660x0_resize_box_3.png)
+![Flujo de tráfico en la red de telefónica entre países de Europa a fines de los 90. Fuente: Mappa Mundi Magazine.](../images/courses/infovis/discriminability_hu2d9a69824d482d862618aa7448eb9a51_70390_660x0_resize_box_3.png)
 
 Flujo de tráfico en la red de telefónica entre países de Europa a fines de los 90. Fuente: Mappa Mundi Magazine.
 
@@ -183,7 +183,7 @@ En el [mapa](https://mappa.mundi.net/maps/maps_014/index.html#telegeography) se 
 
 Otros conceptos importantes son la **separabilidad** e **integridad** de los canales. Ambos conceptos se refieren a la cualidad de los canales de ser percibidos de manera independiente (ser separables) o como un todo (estar integrados). Veamos unos ejemplos:
 
-![Ejemplos de distintos grados de separabilidad e integridad. Fuente: Visualizacion Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/separability_hua23abf88a0f709d2e3884614cc08cac9_51244_660x0_resize_box_3.png)
+![Ejemplos de distintos grados de separabilidad e integridad. Fuente: Visualizacion Analysis &amp; Design.](../images/courses/infovis/separability_hua23abf88a0f709d2e3884614cc08cac9_51244_660x0_resize_box_3.png)
 
 Ejemplos de distintos grados de separabilidad e integridad. Fuente: Visualizacion Analysis & Design.
 
@@ -191,7 +191,7 @@ El primer cuadro presenta dos canales (posición y tono). La posición y el tono
 
 La **saliencia** es el siguiente concepto. Se refiere a la cualidad de uno o más elementos de sobresalir por sobre el resto. Como vimos en la primera clase, encuentren el punto rojo en cada uno de los siguientes cuadros:
 
-![¡Encuentra el punto rojo! Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/saliency_hu7071f014a715db6772e88b5ef7297822_44646_660x0_resize_box_3.png)
+![¡Encuentra el punto rojo! Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/saliency_hu7071f014a715db6772e88b5ef7297822_44646_660x0_resize_box_3.png)
 
 ¡Encuentra el punto rojo! Fuente: Visualization Analysis & Design.
 
@@ -199,7 +199,7 @@ Nuestro cerebro es capaz de procesar información en paralelo, y algunos canales
 
 Finalmente, el concepto de **relatividad** se refiere a que nuestro sistema de percepción opera mayoritariamente con razonamiento relativo, no absoluto. Esto también lo explica la psicofísica a través de la [Ley de Weber-Fechner](https://en.wikipedia.org/wiki/Weber%E2%80%93Fechner_law), que postula que la percepción de la diferencia de un estímulo es proporcial a un estímulo inicial. Esto explica porque el canal de magnitud más efectivo es una posición alineada respecto a un eje: es un canal que codifica nuestra manera de percibir las cosas. La siguiente imagen ejemplifica esto:
 
-![Relatividad al juzgar los tamaños de las barras. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/06_codificacion/images/alignment_huba4b8e8d6d7074a6bb39618e5e63866d_35525_660x0_resize_box_3.png)
+![Relatividad al juzgar los tamaños de las barras. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/alignment_huba4b8e8d6d7074a6bb39618e5e63866d_35525_660x0_resize_box_3.png)
 
 Relatividad al juzgar los tamaños de las barras. Fuente: Visualization Analysis & Design.
 
@@ -211,7 +211,7 @@ Hay que tener cuidado cuando elegimos canales para configurar nuestra visualizac
 
 La siguiente imagen muestra dos alternativas para visualizar el valor de mercado de empresa:
 
-![Fuente: Alberto Cairo.](http://datagramas.cl/courses/infovis/06_codificacion/images/bars_and_circles.png)
+![Fuente: Alberto Cairo.](../images/courses/infovis/bars_and_circles.png)
 
 Fuente: Alberto Cairo.
 
@@ -225,7 +225,7 @@ Usualmente es mejor usar un `barchart`, pero eso se debe a que la tarea de compa
 
 No sólo las áreas son difíciles de comparar, los ángulos también. Y un `piechart` o gráfico de torta mezcla ambas cosas. Esta visualización es utilizada a destajo y hemos visto crímenes horrorosos con ella, cuya denuncia quedará para otra unidad. Aquí nos enfocaremos en sus propiedades de codificación visual, ejemplificadas en la siguiente imagen:
 
-![Fuente: https://en.wikipedia.org/wiki/Pie_chart](http://datagramas.cl/courses/infovis/06_codificacion/images/pie_ordering_hud06917dff821073c021a2c76a3fe8aaf_51399_660x0_resize_box_3.png)
+![Fuente: https://en.wikipedia.org/wiki/Pie_chart](../images/courses/infovis/pie_ordering_hud06917dff821073c021a2c76a3fe8aaf_51399_660x0_resize_box_3.png)
 
 Fuente: [https://en.wikipedia.org/wiki/Pie](https://en.wikipedia.org/wiki/Pie)\_chart
 
@@ -233,7 +233,7 @@ Las tortas `A`, `B` y `C` se parecen mucho. Si les pidiera ordenar los colores d
 
 Este es otro caso de elegir la visualización adecuada para la tarea, porque también es un error decir que siempre se deben preferir los gráficos de barra a los gráficos de torta. Si la tarea y los datos son adecuados, un `piechart` puede presentar una visualización directa y llamativa:
 
-![Fuente: https://xkcd.com/290/](http://datagramas.cl/courses/infovis/06_codificacion/images/mario_kart.png)
+![Fuente: https://xkcd.com/290/](../images/courses/infovis/mario_kart.png)
 
 Fuente: [https://xkcd.com/290/](https://xkcd.com/290/)
 
@@ -241,7 +241,7 @@ Fuente: [https://xkcd.com/290/](https://xkcd.com/290/)
 
 Finalizamos esta unidad con un tipo de marca que no hemos visto. Una visualización también puede ser una marca. Es lo que se conoce como _glifo_ Una visualización también puede ser una marca (un _glifo_). Existen distintos tipos de glifo, como se ve en la imagen a continuación:
 
-![Tipos de Glifo. Fuente: Systematising Glyph Design for Visualization, de E.J aguire.](http://datagramas.cl/courses/infovis/06_codificacion/images/glyph_design_hufd45eac1c69bdd90564205c649ce45d2_227114_660x0_resize_box_3.png)
+![Tipos de Glifo. Fuente: Systematising Glyph Design for Visualization, de E.J aguire.](../images/courses/infovis/glyph_design_hufd45eac1c69bdd90564205c649ce45d2_227114_660x0_resize_box_3.png)
 
 Tipos de Glifo. Fuente: Systematising Glyph Design for Visualization, de E.J aguire.
 
@@ -249,13 +249,13 @@ La imagen contiene elementos diversos: a) glifos de perfil, b) glifos tipo estre
 
 Quizás el primer ejemplo de uso de glifos es del año 1858, en una [visualización de Charles Minard](https://commons.wikimedia.org/wiki/File:Minard-carte-viande-1858.png) que utiliza múltiples `piechart` para categorizar distribución geográfica de cantidad y categorías de un producto (carne) en Francia:
 
-![&ldquo;Carte figurative et approximative des quantités de viandes de boucherie envoyées sur pied par les départements et consommateurs à Paris,&rdquo; traducido como &ldquo;Mapa figurativo y aproximado de las cantidades de carne de carnicero enviadas a pie por los departamentos y consumidores de París,&rdquo; por Charles Minard, 1858. Fuente: Wikimedia Commons.](http://datagramas.cl/courses/infovis/06_codificacion/images/1064px-Minard-carte-viande-1858_hu44b2b6151eaea88551da138eef153dde_1732961_660x0_resize_box_3.png)
+![&ldquo;Carte figurative et approximative des quantités de viandes de boucherie envoyées sur pied par les départements et consommateurs à Paris,&rdquo; traducido como &ldquo;Mapa figurativo y aproximado de las cantidades de carne de carnicero enviadas a pie por los departamentos y consumidores de París,&rdquo; por Charles Minard, 1858. Fuente: Wikimedia Commons.](../images/courses/infovis/1064px-Minard-carte-viande-1858_hu44b2b6151eaea88551da138eef153dde_1732961_660x0_resize_box_3.png)
 
 _Carte figurative et approximative des quantités de viandes de boucherie envoyées sur pied par les départements et consommateurs à Paris_, traducido como _Mapa figurativo y aproximado de las cantidades de carne de carnicero enviadas a pie por los departamentos y consumidores de París_, por Charles Minard, 1858. Fuente: Wikimedia Commons.
 
 Que increíble, ¿no? Hace más de 150 años ya había gente creando visualizaciones que hacen estallar nuestras mentes (en un sentido visual, no literal). En este curso veremos como realizar este tipo de gráficos en Python una vez que lleguemos a la clase de visualización con mapas. El siguiente es un ejemplo de los tipos de gráfico que podremos hacer:
 
-![¿Cómo se movían las personas de las comunas de Santiago durante la pandemia de COVID-19? Fuente: Eduardo Graells-Garrido.](http://datagramas.cl/courses/infovis/06_codificacion/images/20200522_mobility_incidence_map_huc39e1bcc0a1d60bc609c467775598b4e_1580178_660x0_resize_box_3.png)
+![¿Cómo se movían las personas de las comunas de Santiago durante la pandemia de COVID-19? Fuente: Eduardo Graells-Garrido.](../images/courses/infovis/20200522_mobility_incidence_map_huc39e1bcc0a1d60bc609c467775598b4e_1580178_660x0_resize_box_3.png)
 
 ¿Cómo se movían las personas de las comunas de Santiago durante la pandemia de COVID-19? Fuente: Eduardo Graells-Garrido.
 

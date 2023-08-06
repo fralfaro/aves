@@ -6,7 +6,7 @@ Además tenemos que considerar que existen distintos tipos de tablas. Si definim
 
 Estos conceptos son ilustrados en la siguiente imagen:
 
-![Organización de tablas. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/07_tablas/images/arrange_tables_hu8c9686d8c28e0e356d226d8e5d2ccf79_119524_660x0_resize_box_3.png)
+![Organización de tablas. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/arrange_tables_hu8c9686d8c28e0e356d226d8e5d2ccf79_119524_660x0_resize_box_3.png)
 
 Organización de tablas. Fuente: Visualization Analysis & Design.
 
@@ -20,7 +20,7 @@ Iniciemos el recorrido.
 
 El clásico `scatterplot` es un gráfico denso que expresa atributos cuantitativos. Se suele ver así:
 
-![Scatterplots básicos. Al segundo gráfico se le ha agregado una curva de tendencia. Fuente: A layered grammar of graphics, Wickham.](http://datagramas.cl/courses/infovis/07_tablas/images/scatterplot_basic_hu822ce5e3c758a8be1d1911b9c0bfd8cd_134830_660x0_resize_box_3.png)
+![Scatterplots básicos. Al segundo gráfico se le ha agregado una curva de tendencia. Fuente: A layered grammar of graphics, Wickham.](../images/courses/infovis/scatterplot_basic_hu822ce5e3c758a8be1d1911b9c0bfd8cd_134830_660x0_resize_box_3.png)
 
 Scatterplots básicos. Al segundo gráfico se le ha agregado una curva de tendencia. Fuente: A layered grammar of graphics, Wickham.
 
@@ -30,7 +30,7 @@ Este gráfico se utiliza para **encontrar patrones**, **outliers**, **distribuci
 
 El siguiente es un `scatterplot` que grafica ejemplifica algunas tareas:
 
-![Infografía de 538.](http://datagramas.cl/courses/infovis/07_tablas/images/scatterplot_movies_hu2be6b8c721c539cd61ad0a46c6be2bf2_236565_660x0_resize_box_3.png)
+![Infografía de 538.](../images/courses/infovis/scatterplot_movies_hu2be6b8c721c539cd61ad0a46c6be2bf2_236565_660x0_resize_box_3.png)
 
 Infografía de 538.
 
@@ -42,7 +42,7 @@ El `scatterplot` es parte de la navaja suiza de toda persona que haga visualizac
 
 El `linechart` es otro gráfico clásico. Al igual que el gráfico anterior, muestra dos valores cuantitativos; a diferencia, uno de éstos valores es la llave de la tabla. La marca son puntos conectados a través de líneas, lo que configura una polílinea en la visualización (los puntos pueden tener tamaño 0, de modo que solamente la línea es visible). Este ejemplo nos muestra el peso de un gato (atributo) a lo largo de los años (llave):
 
-![Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/07_tablas/images/line_chart_hudac677ed5fb275774111fc360ebea419_48419_660x0_resize_box_3.png)
+![Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/line_chart_hudac677ed5fb275774111fc360ebea419_48419_660x0_resize_box_3.png)
 
 Fuente: Visualization Analysis & Design.
 
@@ -52,7 +52,7 @@ El ejemplo del `linechart` nos permite ejemplificar el uso de las llaves. La lla
 
 Ahora bien, ¿qué pasa si tenemos múltiples entidades en un gráfico? Veamos un `linechart` con múltiples líneas:
 
-![Visualización de cantidad de visitas que recibió cada candidate presidencial o la presidenta Bachelet en el período de la última elección. Fuente: Wikipedia Pageviews](http://datagramas.cl/courses/infovis/07_tablas/images/line_chart_wikipedia_huf37dcaa229bd7ad4b7d2721a0f8144e2_723949_660x0_resize_box_3.png)
+![Visualización de cantidad de visitas que recibió cada candidate presidencial o la presidenta Bachelet en el período de la última elección. Fuente: Wikipedia Pageviews](../images/courses/infovis/line_chart_wikipedia_huf37dcaa229bd7ad4b7d2721a0f8144e2_723949_660x0_resize_box_3.png)
 
 Visualización de cantidad de visitas que recibió cada candidate presidencial o la presidenta Bachelet en el período de la última elección. Fuente: Wikipedia Pageviews.
 
@@ -64,7 +64,7 @@ Otra característica del ejemplo es que su canal de posición para el atributo c
 
 Para cerrar la trilogía de clásicos estudiaremos el `barchart`. Esta visualización expresa un atributo categórico y uno cuantitativo de la siguiente manera:
 
-![Dos maneras de graficar los mismos datos con un barchart. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/07_tablas/images/bar_chart_hu2ae71d9be86e049330efe1df89963082_41801_660x0_resize_box_3.png)
+![Dos maneras de graficar los mismos datos con un barchart. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/bar_chart_hu2ae71d9be86e049330efe1df89963082_41801_660x0_resize_box_3.png)
 
 Dos maneras de graficar los mismos datos con un barchart. Fuente: Visualization Analysis & Design.
 
@@ -74,7 +74,7 @@ Las tareas que permite un `barchart` son comparar, encontrar valores, encontrar 
 
 Ilustremos un uso con más categorías y con una configuración de canales distinta. Este gráfico muestra el uso de transporte público en comparación al privado en cada comuna de Santiago:
 
-![Uso de transporte público en Santiago, por comuna, usando Encuesta OD 2012.](http://datagramas.cl/courses/infovis/07_tablas/images/bar_chart_transantiago_hu5cd9e39bea92ff11f2a23a151d38b56a_127159_660x0_resize_box_3.png)
+![Uso de transporte público en Santiago, por comuna, usando Encuesta OD 2012.](../images/courses/infovis/bar_chart_transantiago_hu5cd9e39bea92ff11f2a23a151d38b56a_127159_660x0_resize_box_3.png)
 
 Uso de transporte público en Santiago, por comuna, usando Encuesta OD 2012.
 
@@ -86,7 +86,7 @@ Un `barchart` es un gráfico que, pese a la rigidez que parezca comunicar un gru
 
 Tanto `linechart` como `barchart` visualizan dos atributos, y es posible hacer que el atributo categórico del `barchart` funcione como llave en el `linechart` Sin embargo, que sea posible lo significa que sea correcto. Veamos dos ejemplos donde se visualiza la altura de dos grupos de población, primero por sexo y luego por edad:
 
-![“Mientras más hombre sea el sexo de una persona, más alta es”. Fuente: Visualization Analysis &amp; Design, basado en <em>Bars and Lines: A Study of Graphic Communication</em> de Zacks &amp; Tversky, en Memory and Cognition.](http://datagramas.cl/courses/infovis/07_tablas/images/bars_and_lines_hudf6bd69d6abe28fb6cb74cea89723138_61429_660x0_resize_box_3.png)
+![“Mientras más hombre sea el sexo de una persona, más alta es”. Fuente: Visualization Analysis &amp; Design, basado en <em>Bars and Lines: A Study of Graphic Communication</em> de Zacks &amp; Tversky, en Memory and Cognition.](../images/courses/infovis/bars_and_lines_hudf6bd69d6abe28fb6cb74cea89723138_61429_660x0_resize_box_3.png)
 
 “Mientras más hombre sea el sexo de una persona, más alta es”. Fuente: Visualization Analysis & Design, basado en _Bars and Lines: A Study of Graphic Communication_ de Zacks & Tversky, en Memory and Cognition.
 
@@ -98,7 +98,7 @@ La fila superior muestra como variable categórica el sexo (binario, hombre o mu
 
 El `stacked_barchart` es un gráfico de barras apiladas. Esto quiere decir que ya no usamos solamente una barra por categoría, sino múltiples, una sobre otra. Como ejemplo, el siguiente gráfico demuestra como distintas componentes de un sistema computacional (procesador, procedimiento, estructura de datos) intentan leer información que no están en la memoria caché, forzando una lectura lenta del sistema para traer datos a la memoria. Ese tipo de análisis es crucial es la implementación de aplicaciones y sistemas de alta _performance_:
 
-![Uso de memoria caché en un sistema. Fuente: <em>Using Visualization to Understand the Behavior of Computer Systems</em>. Bosch. Ph.D. thesis, Stanford Computer Science, 2001.](http://datagramas.cl/courses/infovis/07_tablas/images/stacked_bar_chart_hua4d7d590d2c1e1a9273cb9b412d6b315_238435_660x0_resize_box_3.png)
+![Uso de memoria caché en un sistema. Fuente: <em>Using Visualization to Understand the Behavior of Computer Systems</em>. Bosch. Ph.D. thesis, Stanford Computer Science, 2001.](../images/courses/infovis/stacked_bar_chart_hua4d7d590d2c1e1a9273cb9b412d6b315_238435_660x0_resize_box_3.png)
 
 Uso de memoria caché en un sistema. Fuente: _Using Visualization to Understand the Behavior of Computer Systems_. Bosch. Ph.D. thesis, Stanford Computer Science, 2001.
 
@@ -112,7 +112,7 @@ Noten que los glifos se alinean a través de la barra que está en la posición 
 
 Existe una variación para el gráfico anterior, llamada `normalized_stacked_barchart`. Como lo dice su nombre, este gráfico normaliza cada glifo — es decir, antes de graficar cada glifo, divide los valores de cada barra por la suma total de valores en el glifo. De este modo, todos los glifos tienen el mismo tamaño y utilizan todo el espacio vertical. El siguiente gráfico con la distribución de uso de modo de transporte en Santiago ejemplifica esto:
 
-![Uso de modos de transporte en Santiago.](http://datagramas.cl/courses/infovis/07_tablas/images/normalized_stacked_bar_mode_of_transportation_huc508b00f318ce4d1c428b22a04bbaad6_128165_660x0_resize_box_3.png)
+![Uso de modos de transporte en Santiago.](../images/courses/infovis/normalized_stacked_bar_mode_of_transportation_huc508b00f318ce4d1c428b22a04bbaad6_128165_660x0_resize_box_3.png)
 
 Uso de modos de transporte en Santiago.
 
@@ -122,7 +122,7 @@ Sabemos que cada comuna tiene una población distinta, por tanto, en un gráfico
 
 ¿Qué sucede cuando al `normalized_stacked_barchart` le agregamos un canal para otro atributo cuantitativo? En la siguiente imagen se despliega como cada estado (atributo categórico) en los Estados Unidos generó energía eléctrica. El glifo codifica la distribución de las fuentes de energía (atributos categórico secundario para el color, y el atributo cuantitativo para el tamaño). La cantidad de energía total generada por cada estado es expresada en el canal de grosor de cada glifo:
 
-![Consumo de energía en los US. Fuente: Washington Post](http://datagramas.cl/courses/infovis/07_tablas/images/marimekko_hubb8413a3fc12eb6939595e33e3b73026_1015412_660x0_resize_q75_h2_box_2.webp)
+![Consumo de energía en los US. Fuente: Washington Post](../images/courses/infovis/marimekko_hubb8413a3fc12eb6939595e33e3b73026_1015412_660x0_resize_q75_h2_box_2.webp)
 
 Consumo de energía en los US. Fuente: Washington Post.
 
@@ -134,7 +134,7 @@ Este tipo de visualización es conocida como `marimekko_chart` o `mosaic_plot`.
 
 Del mismo modo que un `linechart` presenta una llave de tipo cuantitativa u ordinal, y el `barchart` de tipo categórica, el `stacked_area_chart` presenta una llave de tipo cuantitativa u ordinal. Así, pasamos de una o más línea que expresaban valores, a una o múltiples áreas que expresan valores: la visualización presenta distintas capas (_layers_). Esto implica que necesitamos un atributo adicional que se codifica en un canal: el orden de estas capas. El sitio [Storytelling with Data](http://www.storytellingwithdata.com/blog/2020/4/9/what-is-an-area-graph) nos brinda un ejemplo que visualiza la venta de música en distintos formatos:
 
-![&ldquo;What is an area graph.&rdquo; Fuente: Mike Cisneros, en Storytelling with Data.](http://datagramas.cl/courses/infovis/07_tablas/images/area_stacked_music_sales_hub2f3901fa0e6eacf000895bea84b54e4_169971_660x0_resize_box_3.png)
+![&ldquo;What is an area graph.&rdquo; Fuente: Mike Cisneros, en Storytelling with Data.](../images/courses/infovis/area_stacked_music_sales_hub2f3901fa0e6eacf000895bea84b54e4_169971_660x0_resize_box_3.png)
 
 ‘What is an area graph.’ Fuente: Mike Cisneros, en Storytelling with Data.
 
@@ -142,7 +142,7 @@ Para cada año existe un volumen de ventas de cada medio. Se aprencia claramente
 
 La siguiente imagen ilustra que un `stacked_area_chart` puede usar distintas funciones de conexión entre elementos de la llave índice (años en este caso). Por ejemplo, se puede usar la \_step function\_o [_función escalonada_](https://es.wikipedia.org/wiki/Funci%C3%B3n_escalonada) que hace que tenga una curva que no es suave, pero que no fuerza interpolaciones entre observaciones, dando a entender que hay una medición por año. La visualización se refiere a la carrera por llegar al espacio:
 
-![&ldquo;The space race is dominated by new contenders.&rdquo; Fuente: The Economist.](http://datagramas.cl/courses/infovis/07_tablas/images/stacked_area_space_hu6a710a59c2238b9301bde9058abad995_356182_660x0_resize_box_3.png)
+![&ldquo;The space race is dominated by new contenders.&rdquo; Fuente: The Economist.](../images/courses/infovis/stacked_area_space_hu6a710a59c2238b9301bde9058abad995_356182_660x0_resize_box_3.png)
 
 _The space race is dominated by new contenders_. Fuente: The Economist.
 
@@ -152,7 +152,7 @@ Esa separación nos lleva a mostrar un tipo de visualización derivada, conocida
 
 Así se ve un `streamgraph` de acuerdo al paper que estableció su definición formal:
 
-![Fuente: <em>Stacked Graphs Geometry &amp; Aesthetics</em>. Byron and Wattenberg. IEEE Trans. Visualization and Computer Graphics.](http://datagramas.cl/courses/infovis/07_tablas/images/streamgraph_hucc78ca518b250699d4ffe249d37846af_975544_660x0_resize_box_3.png)
+![Fuente: <em>Stacked Graphs Geometry &amp; Aesthetics</em>. Byron and Wattenberg. IEEE Trans. Visualization and Computer Graphics.](../images/courses/infovis/streamgraph_hucc78ca518b250699d4ffe249d37846af_975544_660x0_resize_box_3.png)
 
 Fuente: _Stacked Graphs Geometry & Aesthetics_. Byron and Wattenberg. IEEE Trans. Visualization and Computer Graphics.
 
@@ -160,7 +160,7 @@ Esta visualización tiene una apariencia orgánica que puede ser atractiva si se
 
 En tiempos de COVID-19 también se han realizado visualizaciones que incluyen `streamgraph` (y `normalized_stacked_bar_chart`), como muestra [este artículo del Financial Times](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938):
 
-![Fuente: Financial Times.](http://datagramas.cl/courses/infovis/07_tablas/images/covid_streamgraph_hu96364faff485c12253d33365a7e26ad5_271044_660x0_resize_q75_h2_box_2.webp)
+![Fuente: Financial Times.](../images/courses/infovis/covid_streamgraph_hu96364faff485c12253d33365a7e26ad5_271044_660x0_resize_q75_h2_box_2.webp)
 
 Fuente: Financial Times.
 
@@ -172,7 +172,7 @@ Aunque esta última visualización tenga pocas áreas (en orden de decenas), un 
 
 Éste gráfico es el análogo del `normalized_stacked_barchart`, pero para áreas. Quizás uno de los gráficos de tipo `normalized_stacked_area` que más me ha inspirado es el siguiente, proveniente del [New York Times](https://archive.nytimes.com/www.nytimes.com/interactive/2009/07/31/business/20080801-metrics-graphic.html) (aunque ya no funciona en todos los navegadores debido a la tecnología que utilizaba), mostrando las rutinas diarias de las personas en Estados Unidos de acuerdo a una encuesta de uso del tiempo:
 
-![¿Qué hacen las personas en un día? Gráfico interactivo del New York Times.](http://datagramas.cl/courses/infovis/07_tablas/images/normalized_area_chart_hucc6b60c9a00260d18d1f34509c6ed45e_295666_660x0_resize_box_3.png)
+![¿Qué hacen las personas en un día? Gráfico interactivo del New York Times.](../images/courses/infovis/normalized_area_chart_hucc6b60c9a00260d18d1f34509c6ed45e_295666_660x0_resize_box_3.png)
 
 ¿Qué hacen las personas en un día? Gráfico interactivo del New York Times.
 
@@ -182,7 +182,7 @@ La rutina desplegada en la imagen representa el promedio de la población. Sin e
 
 Las visualizaciones anteriores eran de tipo denso, utilizaban ejes rectilíneos, y trabajaban con datos de una llave. En cambio, la visualización `heatmap` es de tipo _space-filling_ y trabaja con datos de dos llaves, es decir, con matrices. El siguiente es un ejemplo de un `heatmap` básico:
 
-![Tamaño de cosecha de distintas granjas por tipo de producto. Fuente: matplotlib.](http://datagramas.cl/courses/infovis/07_tablas/images/heatmap_basic.png)
+![Tamaño de cosecha de distintas granjas por tipo de producto. Fuente: matplotlib.](../images/courses/infovis/heatmap_basic.png)
 
 Tamaño de cosecha de distintas granjas por tipo de producto. Fuente: matplotlib.
 
@@ -190,7 +190,7 @@ Los datos consisten en dos llaves (categóricas) y un atributo ordinal o cuantit
 
 En la clase de exhibición de proyectos vimos este `heatmap` creado en el [Wall Street Journal](https://graphics.wsj.com/infectious-diseases-and-vaccines/) sobre la aplicación de la vacuna para el sarampión en los Estados Unidos:
 
-![Heatmap de incidencia de sarampión en los Estados Unidos. Fuente: Wall Street Journal.](http://datagramas.cl/courses/infovis/07_tablas/images/heatmap_hu2ebbfb0c77f82bf3f354aeaebb08ee69_159506_660x0_resize_box_3.png)
+![Heatmap de incidencia de sarampión en los Estados Unidos. Fuente: Wall Street Journal.](../images/courses/infovis/heatmap_hu2ebbfb0c77f82bf3f354aeaebb08ee69_159506_660x0_resize_box_3.png)
 
 Heatmap de incidencia de sarampión en los Estados Unidos. Fuente: Wall Street Journal.
 
@@ -200,7 +200,7 @@ Este `heatmap` tuvo impacto, fue difundido y discutido por mucha gente alrededor
 
 La técnica `clustermap` extiende el `heatmap` de la siguiente manera: primero, se añade una tarea de derivar datos, que consiste en realizar _clustering_ de las filas y las columnas del heatmap; segundo, se agrega una nueva marca, el _dendrograma_, un árbol que visualiza los resultados del clustering (son dos en total), utilizando líneas que determinan las conexiones jerárquicas de los clusters; finalmente, una marca extra que consiste en un área alineada con cada llave, cuyo tono identifica el cluster al que pertenece (esta marca es opcional, no siempre se utiliza). Como ejemplo, una red de zonas del cerebro se ve así en un ejemplo de la biblioteca `seaborn`
 
-![Fuente: <code>seaborn</code>.](http://datagramas.cl/courses/infovis/07_tablas/images/structured_heatmap_hu6892bdd3144683fc30464540aef7436b_62234_660x0_resize_box_3.png)
+![Fuente: <code>seaborn</code>.](../images/courses/infovis/structured_heatmap_hu6892bdd3144683fc30464540aef7436b_62234_660x0_resize_box_3.png)
 
 Fuente: `seaborn`.
 
@@ -210,7 +210,7 @@ La propuesta del `clustermap` es que utiliza el clustering para (re-)ordenar las
 
 Hemos visto gráficos _space-filling_ que visualizan matrices, y gráficos de _densidad_ que visualizan tablas de una dimensión. La técnica `splom` mezcla lo mejor de ambos mundos: ¡una matriz de visualizaciones `scatterplot`! La `splom` explora todos los pares posibles de atributos de una tabla con un `scatterplot` de cada uno de esos pares. Una tabla donde cada fila es un modelo de automóvil y sus atributos son caballos de fuerza (_horsepower_), peso (_weight_), aceleración (_acceleration_) y desplazamiento (_displacement_) se ve así:
 
-![Scatterplot Matrix (SPLOM).](http://datagramas.cl/courses/infovis/07_tablas/images/scatter_matrix_hueb058e7a261a6a170d7a056e80a6cb79_427610_660x0_resize_box_3.png)
+![Scatterplot Matrix (SPLOM).](../images/courses/infovis/scatter_matrix_hueb058e7a261a6a170d7a056e80a6cb79_427610_660x0_resize_box_3.png)
 
 Scatterplot Matrix (SPLOM).
 
@@ -222,7 +222,7 @@ La escalabilidad de la `splom` llega a la docena de atributos, y, como cada `sca
 
 La técnica de coordenadas paralelas (`parallel_coordinates`), al igual que `splom`, se encarga de visualizar datos multidimensionales, particularmente múltiples atributos cuantitativos. Utiliza codificaciones visuales conocidas pero de una manera distinta. Hay dos tipos de marcas, las dos son líneas: primero, cada observación/fila/ítem de la tabla es una polilínea; segundo, cada atributo es representado por un eje. Los ejes pueden ser horizontales o verticales, pero solo puede haber un tipo de eje. Están dispuestos de manera paralela (por ello el nombre de la visualización), de modo que cada polilínea conecta los valores de cada atributo del ítem correspondiente. En el sitio [Observable](https://observablehq.com/@d3/parallel-coordinates) muestran un dataset de automóviles similar al de la visualización anterior, esta vez utilizando `parallel_coordinates`:
 
-![Demostración de Parallel Coordinates. Fuente: Observable.](http://datagramas.cl/courses/infovis/07_tablas/images/parallel_coordinates_hu203288a16bafc7ca6226d7e68908bb65_1561582_660x0_resize_q75_h2_box_2.webp)
+![Demostración de Parallel Coordinates. Fuente: Observable.](../images/courses/infovis/parallel_coordinates_hu203288a16bafc7ca6226d7e68908bb65_1561582_660x0_resize_q75_h2_box_2.webp)
 
 Demostración de Parallel Coordinates. Fuente: Observable.
 
@@ -236,7 +236,7 @@ El diseño de `parallel_coordinates` tiene una escalabilidad de decenas de atrib
 
 Otros clásicos de la visualización (y cómo no decirlo, controversiales también) son el `pie_chart` y el `polar_area_chart`. Ambos tienen apariencias similares y utilizan ejes radiales, pero utilizan canales distintos. Son gráficos basados en ángulos, que visualizan un atributo llave categórico y un atributo cuantitativo. En ambos la marca es un área que nace en un círculo y que tiene un radio y ángulo. La siguiente imagen muestra ambos gráficos:
 
-![Pie Chart y Polar Area Chart. Fuente: A layered grammar of graphics, Wickham.](http://datagramas.cl/courses/infovis/07_tablas/images/radial_charts_hua27e8ce3f0aea1807ca0c25519cd51a8_39686_660x0_resize_q75_h2_box_2.webp)
+![Pie Chart y Polar Area Chart. Fuente: A layered grammar of graphics, Wickham.](../images/courses/infovis/radial_charts_hua27e8ce3f0aea1807ca0c25519cd51a8_39686_660x0_resize_q75_h2_box_2.webp)
 
 Pie Chart y Polar Area Chart. Fuente: A layered grammar of graphics, Wickham.
 
@@ -253,7 +253,7 @@ Comparando estos gráficos con otras técnicas, la disposición circular implica
 
 Las técnicas que hemos visto en esta unidad trabajan directamente con la tabla a visualizar. Ahora bien, existen ocasiones en las que no necesitamos ver cada elemento de la tabla, sino que la tarea es encontrar la distribución de grupos dentro de la tabla, y comparar dichas distribuciones. Ésa es la funcionalidad de un `box_plot`, que agrega los ítemes de una tabla, como se ve a continuación:
 
-![Datos de experimentos que mide la velocidad de la luz. Fuente: Wikipedia.](http://datagramas.cl/courses/infovis/07_tablas/images/boxplot_hue94a72c9c1d321b127225699e8771e13_54029_660x0_resize_box_3.png)
+![Datos de experimentos que mide la velocidad de la luz. Fuente: Wikipedia.](../images/courses/infovis/boxplot_hue94a72c9c1d321b127225699e8771e13_54029_660x0_resize_box_3.png)
 
 Datos de experimentos que mide la velocidad de la luz. Fuente: Wikipedia.
 
@@ -261,7 +261,7 @@ Este `box_plot` muestra los resultados de distintos experimentos (numerados del 
 
 Hoy este gráfico sigue siendo utilizado para comparar distribuciones y encontrar outliers, tanto en análisis exploratorio como en tareas específicas. Ahora bien, los `box_plot` fueron diseñados en una época en la que las visualizaciones se hacían con papel y lápiz, por tanto tienen defectos derivados de los límites del medio original. El principal es que omiten características relevantes de las distribuciones de los datos. Existen alternativas más modernas que modifican las marcas para que incluyan información de las distribuciones:
 
-![Existen alternativas al <code>box_plot</code>. Fuente: 40 years of boxplots, Wickam &amp; Stryjewski.](http://datagramas.cl/courses/infovis/07_tablas/images/box_plots_distributions_hu4b83e6f27602cf432e67cdfc1c5d6f9a_122799_660x0_resize_box_3.png)
+![Existen alternativas al <code>box_plot</code>. Fuente: 40 years of boxplots, Wickam &amp; Stryjewski.](../images/courses/infovis/box_plots_distributions_hu4b83e6f27602cf432e67cdfc1c5d6f9a_122799_660x0_resize_box_3.png)
 
 Existen alternativas al `box_plot`. Fuente: 40 years of boxplots, Wickam & Stryjewski.
 

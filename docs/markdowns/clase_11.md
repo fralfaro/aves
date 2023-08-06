@@ -18,7 +18,7 @@ Desde un punto de vista filosófico, todo dataset es derivado, pero en esta ocas
 
 ¿Por qué haríamos esto? Porque a veces lo más directo es calcular una métrica derivada a visualizar. No es necesario que muestres los datos tal cual los recibes, o que muestres todo lo que tengas. El siguiente ejemplo muestra como una simple derivación puede hacer responder directamente la evolución del balance de las importances de un país:
 
-![Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/13_interactividad/images/derived_data_huce0cb2fda9ce6c1e2efa62bdc368b520_60678_660x0_resize_box_3.png)
+![Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/derived_data_huce0cb2fda9ce6c1e2efa62bdc368b520_60678_660x0_resize_box_3.png)
 
 Fuente: Visualization Analysis & Design.
 
@@ -26,7 +26,7 @@ Si la tarea se enfoca en el balance, no necesitamos mostrar los datos originales
 
 Ahora bien, ¿existen ejemplos reales de derivación de datos? En la próxima unidad veremos visualización de texto, que, en esencia, se compone principalmente de datos derivados que permiten convertir el texto (que no es estructurado) en un dataset que cumpla con la estructura necesaria para la tarea a resolver. El siguiente ejemplo convirtió un conjunto de documentos en una red bipartita que permitió entender cómo se agrupan las palabras de cada documento en temáticas:
 
-![Fuente: M. Gerlach, T.P. Peixoto, &amp; E.G. Altmann. A network approach to topic models.](http://datagramas.cl/courses/infovis/13_interactividad/images/hsbm_hu6137b3691ffc0e859a16b51a4630ff43_227815_660x0_resize_q75_box.jpg)
+![Fuente: M. Gerlach, T.P. Peixoto, &amp; E.G. Altmann. A network approach to topic models.](../images/courses/infovis/hsbm_hu6137b3691ffc0e859a16b51a4630ff43_227815_660x0_resize_q75_box.jpg)
 
 Fuente: M. Gerlach, T.P. Peixoto, & E.G. Altmann. A network approach to topic models.
 
@@ -38,7 +38,7 @@ La reducción dimensional busca encontrar una representación más compacta de u
 
 Si bien la reducción dimensional es una técnica propia de _Machine Learning_, puede ser parte de un proceso de visualización. El siguiente proceso para _clasificar documentos_ puede dividirse en tres tareas:
 
-![Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/13_interactividad/images/dimensional_reduction_tasks_hud3426bd918ae3c404ff59a615f43d146_153948_660x0_resize_box_3.png)
+![Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/dimensional_reduction_tasks_hud3426bd918ae3c404ff59a615f43d146_153948_660x0_resize_box_3.png)
 
 Fuente: Visualization Analysis & Design.
 
@@ -46,7 +46,7 @@ La primera subtarea es reducir la dimensión de los datos. Noten que pasamos de 
 
 En general, las técnicas de reducción dimensional generan un conjunto de columnas donde los elementos que están cerca o son similares, mantienen cierta cercanía o similitud en la representación reducida. Esta cualidad hace que se puedan visualizar datasets utilizando representaciones familiares. El siguiente ejemplo visualiza algunos pajaritos de acuerdo a sus preferencias de alimentación. La variedad alimenticia de cada pajarito cubre hasta nueve fuentes distintas — es decir, la tabla de pajaritos tiene `9` columnas. ¿Cómo podemos visualizar esta tabla para identificar grupos de pajaritos que se alimenten de manera similar? Una solución es siguiendo el proceso descrito anteriormente: realizar reducción dimensional (con `2` dimensiones utilizando el método [Independent Component Analysis](https://en.wikipedia.org/wiki/Independent_component_analysis)), visualizar en un `scatter_plot`, agrupar elementos y etiquetarlos. El resultado luce así:
 
-![Fuente: https://www.reddit.com/r/dataisbeautiful/comments/8vr4rv/grouping_birds_by_their_feeding_preferences_using/.](http://datagramas.cl/courses/infovis/13_interactividad/images/dimensional_reduction_birds_hu10b909fd1612c1abaf5e810c0e699db8_639780_660x0_resize_box_3.png)
+![Fuente: https://www.reddit.com/r/dataisbeautiful/comments/8vr4rv/grouping_birds_by_their_feeding_preferences_using/.](../images/courses/infovis/dimensional_reduction_birds_hu10b909fd1612c1abaf5e810c0e699db8_639780_660x0_resize_box_3.png)
 
 Fuente: [https://www.reddit.com/r/dataisbeautiful/comments/8vr4rv/grouping\_birds\_by\_their\_feeding\_preferences\_using/](https://www.reddit.com/r/dataisbeautiful/comments/8vr4rv/grouping_birds_by_their_feeding_preferences_using/).
 
@@ -58,7 +58,7 @@ En un sistema de filtros dinámicos buscamos reducir la complejidad de la visual
 
 Usualmente los sistemas que utilizan el paradigma de una `vista global primero, zoom y filtro, y detalles a medida que sean necesarios` trabajan con filtros dinámicos. El sistema FilmFinder permite encontrar de manera visual una película que cumpla con nuestros criterios. Se basa en un `scatter_plot` que muestra la popularidad y el año de creación de las películas, como se ve a continuación:
 
-![El sistema FilmFinder. Fuente: C. Ahlberg &amp; B. Shneiderman. Visual information seeking: Tight coupling of dynamic query filters with starfield displays.](http://datagramas.cl/courses/infovis/13_interactividad/images/film_finder_hu626de1267c1fa9ffcc308ca31f5d8d8b_679223_660x0_resize_box_3.png)
+![El sistema FilmFinder. Fuente: C. Ahlberg &amp; B. Shneiderman. Visual information seeking: Tight coupling of dynamic query filters with starfield displays.](../images/courses/infovis/film_finder_hu626de1267c1fa9ffcc308ca31f5d8d8b_679223_660x0_resize_box_3.png)
 
 El sistema FilmFinder. Fuente: C. Ahlberg & B. Shneiderman. Visual information seeking: Tight coupling of dynamic query filters with starfield displays.
 
@@ -72,7 +72,7 @@ Una manera de reducir la complejidad es no mostrar todos los aspectos del datase
 
 El trabajo con facetas tiene tres grandes categorías de trabajo: **yuxtaposición**, **partición**, y **superposición**. Las tres categorías se ejemplifican en el siguiente marco conceptual:
 
-![Marco conceptual de visualización de facetas. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/13_interactividad/images/faceting_huf7942e389bd2dfa9fc0ca9d2df829e30_104902_660x0_resize_box_3.png)
+![Marco conceptual de visualización de facetas. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/faceting_huf7942e389bd2dfa9fc0ca9d2df829e30_104902_660x0_resize_box_3.png)
 
 Marco conceptual de visualización de facetas. Fuente: Visualization Analysis & Design.
 
@@ -90,14 +90,14 @@ A continuación veremos algunos ejemplos de cada tipo de técnica de facetamient
 
 Si tenemos un mismo dataset visualizado con múltiples gráficos, podemos utilizar la técnica de “vistas coordinadas” (_coordinated views_). En ella, las interacciones que realizamos en un gráfico afectan los datos vistos en los otros gráficos. El [siguiente ejemplo](https://medium.com/plotly/introducing-plotly-express-808df010143d) muestra una `splom` (matriz de `scatter_plot`) donde las interacciones que tengamos en uno de los gráficos afecta a los demás:
 
-![Vistas Coordinadas en una Scatterplot Matrix (<code>splom</code>). Fuente: Plotly Express.](http://datagramas.cl/courses/infovis/13_interactividad/images/coordinated_views_hud72eda5eee5f965eede982db27bc4a20_1249108_660x0_resize_box.gif)
+![Vistas Coordinadas en una Scatterplot Matrix (<code>splom</code>). Fuente: Plotly Express.](../images/courses/infovis/coordinated_views_hud72eda5eee5f965eede982db27bc4a20_1249108_660x0_resize_box.gif)
 
 Vistas Coordinadas en una Scatterplot Matrix (`splom`). Fuente: Plotly Express.
 
 En el caso de la `splom`, cada gráfico utiliza la misma codificación visual. Sin embargo, esa no es una restricción, ya que podemos tener múltiples gráficos, cada uno con su propia codificación visual o vista del sistema, y aún así coordinarlos por las acciones que realicemos. Ése es el paradigma conocido como “selecciones compartidas” (_linked highlighting_), donde destacamos un subconjunto de los datos en un gráficos, y vemos como ese mismo subconjunto se distribuye en los demas. 
 El siguiente ejemplo muestra este paradigma para visualizar el desempeño de los jugadores de una liga deportiva:
 
-![Selecciones Compartidas en múltiples visualizaciones. Fuente: G. Wills. Visual Exploration of Large Structured Datasets.](http://datagramas.cl/courses/infovis/13_interactividad/images/linked_highlighting_hudba4c2d817fcc4056dadb6f4eb804340_188894_660x0_resize_box_3.png)
+![Selecciones Compartidas en múltiples visualizaciones. Fuente: G. Wills. Visual Exploration of Large Structured Datasets.](../images/courses/infovis/linked_highlighting_hudba4c2d817fcc4056dadb6f4eb804340_188894_660x0_resize_box_3.png)
 
 Selecciones Compartidas en múltiples visualizaciones. Fuente: G. Wills. Visual Exploration of Large Structured Datasets.
 
@@ -105,7 +105,7 @@ Cada gráfico muestra distintos atributos de los jugadores. En algunos se ve cad
 
 Como un ejemplo más completo, el sistema Improvise lleva estos paradigmas al extremo al explorar los límites en torno a múltiples vistas y la complejidad de la interacción. El sistema luce así:
 
-![Improvise, un sistema de Vistas Coordinadas y Selecciones Compartidas. Fuente: C. Weaver. Building Highly-Coordinated Visualizations In Improvise.](http://datagramas.cl/courses/infovis/13_interactividad/images/improvise_hufb2bce4b2a73bcefd42b2b6661e12cc1_1175714_660x0_resize_box_3.png)
+![Improvise, un sistema de Vistas Coordinadas y Selecciones Compartidas. Fuente: C. Weaver. Building Highly-Coordinated Visualizations In Improvise.](../images/courses/infovis/improvise_hufb2bce4b2a73bcefd42b2b6661e12cc1_1175714_660x0_resize_box_3.png)
 
 Improvise, un sistema de Vistas Coordinadas y Selecciones Compartidas. Fuente: C. Weaver. Building Highly-Coordinated Visualizations In Improvise.
 
@@ -117,7 +117,7 @@ Otro estilo de yuxtaposición es la de múltiples vistas paralelas que utilizan 
 
 Un ejemplo reciente de esta técnica lo provee la [siguiente visualización sobre el exceso de fallecimientos durante la pandemia de COVID-19](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938), donde para cada país se compara el total de fallecides el año 2020 con años anteriores:
 
-![Exceso de muertes por país durante la pandemia de COVID-19. Fuente: Financial Times.](http://datagramas.cl/courses/infovis/13_interactividad/images/covid_excess_deaths_hu1be19b10ea81f057ffb3100902707472_126420_660x0_resize_q75_box.jpg)
+![Exceso de muertes por país durante la pandemia de COVID-19. Fuente: Financial Times.](../images/courses/infovis/covid_excess_deaths_hu1be19b10ea81f057ffb3100902707472_126420_660x0_resize_q75_box.jpg)
 
 Exceso de muertes por país durante la pandemia de COVID-19. Fuente: Financial Times.
 
@@ -141,7 +141,7 @@ Otro tipo de vista compartida es la partición lado-a-lado (o _side-by-side_). E
 
 Para ilustrar esta definición veamos el siguiente ejemplo de la biblioteca [Kepler.gl](https://medium.com/vis-gl/exploring-geospatial-data-with-kepler-gl-cf655839628f):
 
-![Fuente: Kepler.gl](http://datagramas.cl/courses/infovis/13_interactividad/images/keplergl_split_view_hu76c0363bf268d2f8457e0a8422b5e8e1_10891224_660x0_resize_box.gif)
+![Fuente: Kepler.gl](../images/courses/infovis/keplergl_split_view_hu76c0363bf268d2f8457e0a8422b5e8e1_10891224_660x0_resize_box.gif)
 
 Fuente: Kepler.gl.
 
@@ -153,7 +153,7 @@ Hemos definido la superposición como el uso de la misma codificación visual en
 
 Para ejemplificar este concepto trabajaremos con redes. La siguiente imagen muestra dos tipos de yuxtaposición y una superposición de dos gráficos de red:
 
-![Comparación entre yuxtaposición y superposición de redes (vista parcial de una figura que contiene más comparaciones). Fuente: M. Gleicher et al. Visual Comparison for Information Visualization.](http://datagramas.cl/courses/infovis/13_interactividad/images/juxtaposition_superposition_networks_hu258735a5603e17e8d71cd7c166abeba2_71281_660x0_resize_box_3.png)
+![Comparación entre yuxtaposición y superposición de redes (vista parcial de una figura que contiene más comparaciones). Fuente: M. Gleicher et al. Visual Comparison for Information Visualization.](../images/courses/infovis/juxtaposition_superposition_networks_hu258735a5603e17e8d71cd7c166abeba2_71281_660x0_resize_box_3.png)
 
 Comparación entre yuxtaposición y superposición de redes (vista parcial de una figura que contiene más comparaciones). Fuente: M. Gleicher et al. Visual Comparison for Information Visualization.
 
@@ -161,7 +161,7 @@ Como hemos visto, los gráficos `node_link` suelen calcular una organización (_
 
 El sistema _Cerebral_ permite visualizar redes de interacción biológica con este esquema. Múltiples redes, con nodos en común pero diferentes entre sí, son desplegadas en el mismo espacio. Al hacer clic o poner el puntero sobre un nodo es posible ver de manera interactiva las redes en las que este nodo es relevante. Lo que no es relevante para ese nodo sigue desplegado en gris y en el fondo, como contexto:
 
-![Sistema Cerebral. Fuente: A. Barsky et al. Cerebral: a Cytoscape plugin for layout of and interaction with biological networks using subcellular localization annotation.](http://datagramas.cl/courses/infovis/13_interactividad/images/cerebral_superimposition_huff70ab145fb7874270e53212eb36f6c6_909823_660x0_resize_box_3.png)
+![Sistema Cerebral. Fuente: A. Barsky et al. Cerebral: a Cytoscape plugin for layout of and interaction with biological networks using subcellular localization annotation.](../images/courses/infovis/cerebral_superimposition_huff70ab145fb7874270e53212eb36f6c6_909823_660x0_resize_box_3.png)
 
 Sistema Cerebral. Fuente: A. Barsky et al. Cerebral: a Cytoscape plugin for layout of and interaction with biological networks using subcellular localization annotation.
 
@@ -171,7 +171,7 @@ Una visualización como ésta puede estar sobrecargada (_clutter_), lo que dific
 
 Otra manera de reducir la complejidad es permitir que la persona elija qué ver a través de la interacción con el sistema. En las visualizaciones anteriores ya hemos interactuado con los sistemas, pero no habíamos enmarcado esas interacciones dentro de un marco común. A los mecanismos de interacción les llamamos **manipulación**, y están clasificados en los siguientes aspectos:
 
-![Marco conceptual de manipulación de visualizaciones. Fuente: Visualization Analysis &amp; Design.](http://datagramas.cl/courses/infovis/13_interactividad/images/manipulate_framework_hued554168e2015c6a179db7e93116604c_69809_660x0_resize_box_3.png)
+![Marco conceptual de manipulación de visualizaciones. Fuente: Visualization Analysis &amp; Design.](../images/courses/infovis/manipulate_framework_hued554168e2015c6a179db7e93116604c_69809_660x0_resize_box_3.png)
 
 Marco conceptual de manipulación de visualizaciones. Fuente: Visualization Analysis & Design.
 
@@ -183,7 +183,7 @@ A grandes rasgos hay tres tipos de manipulación:
 
 Los sistemas que son fuertes en interacción, que permiten manipular cambios, selecciones, y navegar en profundidad, suelen pertenecer a un área de la visualización llamada **[Visual Analytics](https://en.wikipedia.org/wiki/Visual_analytics)**. En esta área, que une visualización y Machine Learning para generar conocimiento accionable para la toma de decisiones, la interacción con los datos también genera conocimiento que permite mejorar el entendimiento de los datos y el refinamiento de los modelos, a través de ciclos de realimentación:
 
-![Visual Analytics. Fuente: https://visual-analytics.eu/faq/](http://datagramas.cl/courses/infovis/13_interactividad/images/visual_analytics_hub46327486e950154d8e2f614f1df60e8_147733_660x0_resize_box_3.png)
+![Visual Analytics. Fuente: https://visual-analytics.eu/faq/](../images/courses/infovis/visual_analytics_hub46327486e950154d8e2f614f1df60e8_147733_660x0_resize_box_3.png)
 
 Visual Analytics. Fuente: [https://visual-analytics.eu/faq/](https://visual-analytics.eu/faq/)
 
@@ -195,7 +195,7 @@ Cuando hablamos de recodificación visual nos referimos a que las marcas y canal
 
 El sistema [Tableau](http://tableausoftware.com) ejemplifican este paradigma. Mediante clics en las opciones del programa y en las columnas de nuestros datos, podemos elegir y manipular la abstracción visual utilizada, por ejemplo, decidiendo ente un `bar_chart` a un `bubble_map`.
 
-![Distintas vistas en Tableau para los mismos datos.](http://datagramas.cl/courses/infovis/13_interactividad/images/tableau_hu29f389b04b33be291db697a34bf00ab1_1515260_660x0_resize_box_3.png)
+![Distintas vistas en Tableau para los mismos datos.](../images/courses/infovis/tableau_hu29f389b04b33be291db697a34bf00ab1_1515260_660x0_resize_box_3.png)
 
 Distintas vistas en Tableau para los mismos datos.
 
@@ -207,7 +207,7 @@ Un tipo de gráfico que se beneficia de la manipulación en la codificación vis
 
 El sistema LineUp se construye sobre la premisa de trabajar con `stacked_bar_chart` para comparar instituciones educacionales en distintos rankings, y en las distintas facetas considerados por cada ranking. Luce así:
 
-![Sistema LineUp. Fuente: S. Gratzl et al. LineUp: Visual Analysis of Multi-Attribute Rankings.](http://datagramas.cl/courses/infovis/13_interactividad/images/lineup_hude3c4d8d280850d1f210b1c2a950b2cc_509575_660x0_resize_box_3.png)
+![Sistema LineUp. Fuente: S. Gratzl et al. LineUp: Visual Analysis of Multi-Attribute Rankings.](../images/courses/infovis/lineup_hude3c4d8d280850d1f210b1c2a950b2cc_509575_660x0_resize_box_3.png)
 
 Sistema LineUp. Fuente: S. Gratzl et al. LineUp: Visual Analysis of Multi-Attribute Rankings.
 
@@ -215,7 +215,7 @@ Como observamos en la imagen, LineUp permite recodificar cada `stacked_bar_chart
 
 En LineUp cada institución tiene la misma importancia. Todas presentan la misma codificación visual, pero, ¿qué pasa si queremos cambiar la codificación visual para cada institución (o su equivalente en otro dataset)? Ese caso sería una recodificación más grande. Esa es la propuesta del sistema LiveRAC, que monitorea el estado de los distintos componentes de un sistema complejo (por ej., servidores, maquinaria, etc.). Quien utiliza el sistema puede priorizar componentes, de modo que las componentes con mayor importancia reciban mayor espacio en el sistema y tengan una codificación visual más detallada:
 
-![Sistema LiveRAC. Fuente: P. McLachlan et al. LiveRAC - Interactive Visual Exploration of System Management Time-Series Data.](http://datagramas.cl/courses/infovis/13_interactividad/images/liverac_hu12818380de004c764be8120079100c76_186998_660x0_resize_box_3.png)
+![Sistema LiveRAC. Fuente: P. McLachlan et al. LiveRAC - Interactive Visual Exploration of System Management Time-Series Data.](../images/courses/infovis/liverac_hu12818380de004c764be8120079100c76_186998_660x0_resize_box_3.png)
 
 Sistema LiveRAC. Fuente: P. McLachlan et al. LiveRAC - Interactive Visual Exploration of System Management Time-Series Data.
 

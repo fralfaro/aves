@@ -17,7 +17,7 @@ Esta [visualización interactiva que permite simular contagios del coronavirus](
 ## Charles Minard (1869)
 
 
-![Carte figurative des pertes successives en hommes de l&rsquo;Armée Française dans la campagne de Russie 1812-1813.](http://datagramas.cl/courses/infovis/02_showcase/images/minard_napoleon_hu8e279259f9c99509ae3ba82891408878_687027_1320x0_resize_box_3.png)
+![Carte figurative des pertes successives en hommes de l&rsquo;Armée Française dans la campagne de Russie 1812-1813.](../images/courses/infovis/minard_napoleon_hu8e279259f9c99509ae3ba82891408878_687027_1320x0_resize_box_3.png)
 
 Carte figurative des pertes successives en hommes de l’Armée Française dans la campagne de Russie 1812-1813.
 

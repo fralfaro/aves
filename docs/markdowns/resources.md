@@ -42,8 +42,7 @@ Podrían contener información relevante de/sobre/en Chile.
 
 *   [Kaggle](https://www.kaggle.com/datasets): más de 50 mil datasets, algunos utilizados para competencias. Hay mucho por explorar (algunos de los datasets vinculados arriba están en Kaggle).
 
-## Sitios para buscar inspiración [#](#sitios-para-buscar-inspiraci%c3%b3n)
-
+## Sitios para buscar inspiración
 
 *   [Kantar Information is Beautiful Awards](https://www.informationisbeautifulawards.com/showcase?page=1&type=awards)
 *   [Nightingale](https://medium.com/nightingale) (visítenlo en una ventana anónima del navegador, para poder leer los artículos).

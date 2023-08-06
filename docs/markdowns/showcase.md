@@ -6,8 +6,11 @@ El propósito de esta página es entregar experiencias, ideas y potencial proyec
 
 ## Outbreak Simulation 
 
-
-!\[“Why outbreaks like coronavirus spread exponentially, and how to “flatten the curve”\](images/coronavirus.gif ““Why outbreaks like coronavirus spread exponentially, and how to “flatten the curve””)
+```
+!\[“Why outbreaks like coronavirus spread exponentially, and how to “flatten
+the curve”\](images/coronavirus.gif ““Why outbreaks like coronavirus spread
+exponentially, and how to “flatten the curve””)
+```
 
 Esta [visualización interactiva que permite simular contagios del coronavirus](https://www.washingtonpost.com/graphics/2020/world/corona-simulator/) ha sido el artículo más visitado del Washington Post (¡en toda su historia!).
 
@@ -20,15 +23,14 @@ Carte figurative des pertes successives en hommes de l’Armée Française dans 
 
 Algunos dicen que es el gráfico estadístico más completo en la historia.
 
-## The Image of the City [#](#the-image-of-the-city)
+## The Image of the City 
 
 
 ![Mapas mentales de Boston por Kevin Lynch, ilustrados con lo que la gente imaginaba y recordaba de la ciudad (sus propias abstracciones).](http://datagramas.cl/courses/infovis/02_showcase/images/kevin_lynch_huf50aeea35e7782968d1161054de2cbd9_757264_1320x0_resize_box_3.png)
 
 Mapas mentales de Boston por Kevin Lynch, ilustrados con lo que la gente imaginaba y recordaba de la ciudad (sus propias abstracciones).
 
-## NameVoyager [#](#namevoyager)
-
+## NameVoyager
 
 ![Martin Wattenberg y Fernanda Viegas. NameVoyager.](http://datagramas.cl/courses/infovis/02_showcase/images/namevoyager_hu8bf360e455c3feee421f3489b84ed0ce_80810_660x0_resize_box_3.png)
 

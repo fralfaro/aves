@@ -76,7 +76,7 @@ El criterio de evaluación es:
 *   **Suficiente (4 a 5.5)**: Los gráficos utilizados respetan los principios de eficiencia y coherencia, están debidamente etiquetados y anotados, utilizan una paleta de colores adecuada.
 *   **Excelente (5.6 a 7)**: Los gráficos utilizados para realizar el análisis cumplen con los principios de eficiencia y coherencia, utilizan técnicas de reducción de complejidad, están debidamente etiquetados y anotados, utilizan una paleta de colores adecuada, y no es evidente que haya una técnica mejor (de las disponibles en el curso) para cumplir con las tareas derivadas del análisis.
 
-## Tipo 3: Implementación en Python [#](#tipo-3-implementaci%c3%b3n-en-python)
+## Tipo 3: Implementación en Python
 
 El proyecto consiste en **desarrollar una técnica de visualización en Python**. Este tipo de proyecto está dirigido a quienes tengan un perfil de _Computer Science_ y quieran aprender el funcionamiento interno de una visualización. Por tanto, el objetivo de aprendizaje es evaluar e implementar los métodos necesarios para llevar a cabo una técnica de visualización definida en la literatura, de tal manera que pueda ser incorporado en un módulo de visualización (`aves` en este caso) y así ser utilizada por otras personas. Para ello se evaluará de la siguiente manera:
 
